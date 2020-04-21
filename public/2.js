@@ -136,6 +136,96 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -147,7 +237,29 @@ __webpack_require__.r(__webpack_exports__);
         text: 'Quien soy',
         disabled: true,
         href: '/about-me'
-      }]
+      }],
+      messages: [{
+        avatar: 'https://avatars0.githubusercontent.com/u/9064066?v=4&s=460',
+        name: 'John Leider',
+        title: 'Welcome to Vuetify.js!',
+        excerpt: 'Thank you for joining our community...'
+      }, {
+        color: 'red',
+        icon: 'people',
+        name: 'Social',
+        "new": 1,
+        total: 3,
+        title: 'Twitter'
+      }, {
+        color: 'teal',
+        icon: 'local_offer',
+        name: 'Promos',
+        "new": 2,
+        total: 4,
+        title: 'Shop your way',
+        exceprt: 'New deals available, Join Today'
+      }],
+      lorem: 'Lorem ipsum dolor sit amet, at aliquam vivendum vel, everti delicatissimi cu eos. Dico iuvaret debitis mel an, et cum zril menandri. Eum in consul legimus accusam. Ea dico abhorreant duo, quo illum minimum incorrupte no, nostro voluptaria sea eu. Suas eligendi ius at, at nemore equidem est. Sed in error hendrerit, in consul constituam cum.'
     };
   }
 });
@@ -234,7 +346,187 @@ var render = function() {
       1
     ),
     _vm._v(" "),
-    _vm._m(0)
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "section",
+      [
+        _c(
+          "v-container",
+          { attrs: { fluid: "" } },
+          [
+            _c(
+              "v-row",
+              { attrs: { justify: "center" } },
+              [
+                _c("v-subheader", [_vm._v("Today")]),
+                _vm._v(" "),
+                _c(
+                  "v-expansion-panels",
+                  { attrs: { popout: "" } },
+                  _vm._l(_vm.messages, function(message, i) {
+                    return _c(
+                      "v-expansion-panel",
+                      { key: i, attrs: { "hide-actions": "" } },
+                      [
+                        _c(
+                          "v-expansion-panel-header",
+                          [
+                            _c(
+                              "v-row",
+                              {
+                                staticClass: "spacer",
+                                attrs: { align: "center", "no-gutters": "" }
+                              },
+                              [
+                                _c(
+                                  "v-col",
+                                  { attrs: { cols: "4", sm: "2", md: "1" } },
+                                  [
+                                    _c(
+                                      "v-avatar",
+                                      { attrs: { size: "36px" } },
+                                      [
+                                        message.avatar
+                                          ? _c("img", {
+                                              attrs: {
+                                                alt: "Avatar",
+                                                src:
+                                                  "https://avatars0.githubusercontent.com/u/9064066?v=4&s=460"
+                                              }
+                                            })
+                                          : _c("v-icon", {
+                                              attrs: { color: message.color },
+                                              domProps: {
+                                                textContent: _vm._s(
+                                                  message.icon
+                                                )
+                                              }
+                                            })
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "v-col",
+                                  {
+                                    staticClass: "hidden-xs-only",
+                                    attrs: { sm: "5", md: "3" }
+                                  },
+                                  [
+                                    _c("strong", {
+                                      domProps: {
+                                        innerHTML: _vm._s(message.name)
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    message.total
+                                      ? _c(
+                                          "span",
+                                          { staticClass: "grey--text" },
+                                          [
+                                            _vm._v(
+                                              "\n               (" +
+                                                _vm._s(message.total) +
+                                                ")\n            "
+                                            )
+                                          ]
+                                        )
+                                      : _vm._e()
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "v-col",
+                                  {
+                                    staticClass: "text-no-wrap",
+                                    attrs: { cols: "5", sm: "3" }
+                                  },
+                                  [
+                                    message.new
+                                      ? _c(
+                                          "v-chip",
+                                          {
+                                            staticClass:
+                                              "ml-0 mr-2 black--text",
+                                            attrs: {
+                                              color:
+                                                message.color + " lighten-4",
+                                              label: "",
+                                              small: ""
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                        " +
+                                                _vm._s(message.new) +
+                                                " new\n                                    "
+                                            )
+                                          ]
+                                        )
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _c("strong", {
+                                      domProps: {
+                                        innerHTML: _vm._s(message.title)
+                                      }
+                                    })
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                message.excerpt
+                                  ? _c(
+                                      "v-col",
+                                      {
+                                        staticClass:
+                                          "grey--text text-truncate hidden-sm-and-down"
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                                    —\n                                    " +
+                                            _vm._s(message.excerpt) +
+                                            "\n                                "
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e()
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "v-expansion-panel-content",
+                          [
+                            _c("v-divider"),
+                            _vm._v(" "),
+                            _c("v-card-text", {
+                              domProps: { textContent: _vm._s(_vm.lorem) }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  }),
+                  1
+                )
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ],
+      1
+    )
   ])
 }
 var staticRenderFns = [

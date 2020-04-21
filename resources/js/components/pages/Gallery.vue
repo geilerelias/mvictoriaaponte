@@ -49,16 +49,30 @@
                     style="max-width:28px"
                 ></v-divider>
             </div>
+
             <v-container>
+                <v-text-field
+                    v-model="search"
+                    rounded
+                    append-icon="mdi-magnify"
+                    class="mx-4"
+                    flat
+                    hide-details
+                    label="Search"
+                    solo
+                    outlined
+                    dense
+                ></v-text-field>
                 <v-row>
                     <v-col
-                        v-for="(item, i) in gallery"
+                        v-for="(item, i) in listaVideos"
                         :key="i"
                         cols="12"
                         md="4"
                     >
                         <v-hover v-slot:default="{ hover }" open-delay="200">
                             <v-card
+                                style="border-radius: 0"
                                 :color="hover ? 'primary' : 'grey lighten-1'"
                                 :elevation="hover ? 16 : 2"
                                 class="mx-auto"
@@ -151,41 +165,96 @@
                         </v-toolbar-items>
                     </v-toolbar>
                     <v-container>
-                        <v-carousel
-                            v-model="model"
-                            hide-delimiters
-                            style="max-width: 100%;max-height:600px;height: auto;"
-                        >
-                            <v-carousel-item
-                                v-for="(item, n) in gallery"
-                                :key="n"
-                                :aspect-ratio="16 / 9"
-                            >
-                                <v-sheet tile class="mb-0 pb-0 mx-auto">
-                                    <v-row
-                                        class="fill-height"
-                                        align="center"
-                                        justify="center"
-                                        :aspect-ratio="16 / 9"
-                                    >
-                                        <video
-                                            :id='item.name'
-                                            :aspect-ratio="16 / 9"
-                                            ref="videoPlayer"
-                                            autoplay
-                                            controls
-                                            class="mb-0 pb-0 mx-auto"
-                                            style="max-width: 100%;max-height:500px;height: auto;"
+                        <v-row>
+                            <v-col cols="12" md="9">
+                                <v-card style="border-radius: 0">
+                                    <v-responsive>
+                                        <v-carousel
+                                            height="auto"
+                                            @change="cambioCarousel"
+                                            v-model="model"
+                                            hide-delimiters
                                         >
-                                            <source
-                                                :src="item.src"
-                                                type="video/mp4"
-                                            />
-                                        </video>
-                                    </v-row>
-                                </v-sheet>
-                            </v-carousel-item>
-                        </v-carousel>
+                                            <v-carousel-item
+                                                v-for="(item, n) in gallery"
+                                                :key="n"
+                                            >
+                                                <v-sheet tile class="mb-0 pb-0 mx-auto">
+                                                    <v-row
+                                                        align="center"
+                                                        justify="center"
+                                                    >
+                                                        <video
+                                                            :poster="item.thumbnail"
+                                                            :id='"player-"+n'
+                                                            :aspect-ratio="16 / 9"
+                                                            ref="videoPlayer"
+                                                            autoplay
+                                                            controls
+                                                            class="mb-0 pb-0 mx-auto"
+                                                            style="max-width: 100%;max-height:500px;height: auto;"
+                                                        >
+                                                            <source
+                                                                :src="item.src"
+                                                                type="video/mp4"
+                                                            />
+                                                        </video>
+                                                    </v-row>
+                                                </v-sheet>
+                                            </v-carousel-item>
+                                        </v-carousel>
+                                    </v-responsive>
+                                </v-card>
+                            </v-col>
+                            <v-col cols="12" md="3">
+                                <v-card style="border-radius: 0" class="grey lighten-3">
+                                    <v-toolbar
+                                        color="primary"
+                                        dark
+                                        dense
+                                        flat
+                                    >
+                                        <v-toolbar-title>Lista de videos</v-toolbar-title>
+
+                                    </v-toolbar>
+                                    <v-responsive
+                                        class="overflow-y-auto"
+                                        max-height="450"
+                                    >
+                                        <v-responsive>
+                                            <v-lazy
+                                                v-model="isActive"
+                                                :options="{threshold: .5 }"
+                                                min-height="200"
+                                                transition="fade-transition"
+                                            >
+                                                <v-list>
+                                                    <v-list-item-group color="primary" v-model="model">
+                                                        <v-list-item v-for="(item, i) in gallery"
+                                                                     :key="i"
+                                                                     @click="cambioCarousel">
+                                                            <v-list-item-content>
+                                                                <v-img
+                                                                    max-height="100"
+                                                                    max-width="100"
+                                                                    :aspect-ratio="16 / 9"
+                                                                    :src="item.thumbnail"
+                                                                ></v-img>
+                                                            </v-list-item-content>
+                                                            <v-list-item-content>
+                                                                <v-list-item-title
+                                                                    v-text="item.name"></v-list-item-title>
+                                                            </v-list-item-content>
+                                                        </v-list-item>
+                                                    </v-list-item-group>
+                                                </v-list>
+                                            </v-lazy>
+                                        </v-responsive>
+                                    </v-responsive>
+                                </v-card>
+                            </v-col>
+                        </v-row>
+
                         <v-card-actions class="justify-space-between">
                             <v-sheet class="hidden-sm-and-down">
                                 <v-slide-group
@@ -240,9 +309,13 @@
     export default {
 
         data: () => ({
+            search: '',
+            selected: [],
+            isActive: false,
             dialog: false,
             colors: ["primary", "secondary", "yellow darken-2", "red", "orange"],
             model: 0,
+            modelAux: 0,
             links: [
                 {
                     text: "Inicio",
@@ -310,21 +383,65 @@
                 }
             ]
         }),
+        computed:{
+            listaVideos () {
+                const search = this.search.toLowerCase()
+
+                if (!search) return this.gallery
+
+                return this.gallery.filter(item => {
+                    const text = item.name.toLowerCase()
+
+                    return text.indexOf(search) > -1
+                })
+            },
+            selections () {
+                const selections = []
+
+                for (const selection of this.selected) {
+                    selections.push(this.items[selection])
+                }
+
+                return selections
+            },
+        },
         mounted() {
 
         },
         methods: {
             visualizar(item) {
-                this.dialog = !this.dialog;
+                this.modelAux =
+                    this.dialog = !this.dialog;
                 this.model = this.gallery.indexOf(item);
+                this.modelAux = this.model;
+            },
+            cambioCarousel() {
+                console.log(this.model)
+                this.pausarVideo(this.modelAux);
+                this.modelAux = this.model;
+            },
+            pausarVideo(number) {
+                const reproductor = document.getElementById("player-" + number);
+                reproductor.pause();
             },
             close() {
                 this.dialog = false;
-                var reproductor = document.getElementById("player-" + this.model);
-                reproductor.pause();
+                this.pausarVideo(this.model);
             }
         }
     };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+    .slide-fade-enter-active {
+        transition: all .3s ease;
+    }
+    .slide-fade-leave-active {
+        transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    }
+    .slide-fade-enter, .slide-fade-leave-to
+        /* .slide-fade-leave-active below version 2.1.8 */ {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+</style>

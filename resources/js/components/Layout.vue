@@ -58,7 +58,7 @@
 
                         <!-- Grid column -->
                         <v-col class="col-md-5 col-lg-5 col-xl-3 mx-auto mt-3">
-                            <h3 class="text-uppercase title font-weight-bold mb-1 text-left">
+                            <h3 class="text-uppercase subtitle-1 font-weight-bold mb-1 text-left primary--text">
                                 Soy Maria Victoria Aponte
                             </h3>
                             <v-divider class="primary mr-auto mb-6" style="max-width: 70px;"></v-divider>
@@ -76,7 +76,7 @@
 
                         <!-- Grid column -->
                         <v-col class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h3 class="text-uppercase title font-weight-bold mb-1 text-left">
+                            <h3 class="text-uppercase subtitle-1 font-weight-bold mb-1 text-left primary--text">
                                 Servicios
                             </h3>
                             <v-divider class="primary mr-auto mb-2" style="max-width: 28px;"></v-divider>
@@ -91,7 +91,7 @@
 
                         <!-- Grid column -->
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h3 class="text-uppercase title font-weight-bold mb-1 text-left">
+                            <h3 class="text-uppercase subtitle-1 font-weight-bold mb-1 text-left primary--text">
                                 ENLACES ÚTILES
                             </h3>
                             <v-divider class="primary mr-auto mb-2" style="max-width: 28px;"></v-divider>
@@ -108,7 +108,7 @@
 
                         <!-- Grid column -->
                         <v-col class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h3 class="text-uppercase title font-weight-bold mb-1 text-left">
+                            <h3 class="text-uppercase subtitle-1 font-weight-bold mb-1 text-left primary--text">
                                 Contáctame
                             </h3>
                             <v-divider class="primary mr-auto mb-2" style="max-width: 28px;"></v-divider>

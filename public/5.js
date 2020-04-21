@@ -9,6 +9,74 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -249,9 +317,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
+      search: '',
+      selected: [],
+      isActive: false,
       dialog: false,
       colors: ["primary", "secondary", "yellow darken-2", "red", "orange"],
       model: 0,
+      modelAux: 0,
       links: [{
         text: "Inicio",
         disabled: false,
@@ -305,16 +377,54 @@ __webpack_require__.r(__webpack_exports__);
       }]
     };
   },
+  computed: {
+    listaVideos: function listaVideos() {
+      var search = this.search.toLowerCase();
+      if (!search) return this.gallery;
+      return this.gallery.filter(function (item) {
+        var text = item.name.toLowerCase();
+        return text.indexOf(search) > -1;
+      });
+    },
+    selections: function selections() {
+      var selections = [];
+
+      var _iterator = _createForOfIteratorHelper(this.selected),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var selection = _step.value;
+          selections.push(this.items[selection]);
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+
+      return selections;
+    }
+  },
   mounted: function mounted() {},
   methods: {
     visualizar: function visualizar(item) {
-      this.dialog = !this.dialog;
+      this.modelAux = this.dialog = !this.dialog;
       this.model = this.gallery.indexOf(item);
+      this.modelAux = this.model;
+    },
+    cambioCarousel: function cambioCarousel() {
+      console.log(this.model);
+      this.pausarVideo(this.modelAux);
+      this.modelAux = this.model;
+    },
+    pausarVideo: function pausarVideo(number) {
+      var reproductor = document.getElementById("player-" + number);
+      reproductor.pause();
     },
     close: function close() {
       this.dialog = false;
-      var reproductor = document.getElementById("player-" + this.model);
-      reproductor.pause();
+      this.pausarVideo(this.model);
     }
   }
 });
@@ -463,6 +573,7 @@ var render = function() {
                                     "v-card",
                                     {
                                       staticClass: "mx-auto",
+                                      staticStyle: { "border-radius": "0" },
                                       attrs: {
                                         color: hover
                                           ? "primary"
@@ -698,73 +809,260 @@ var render = function() {
                     "v-container",
                     [
                       _c(
-                        "v-carousel",
-                        {
-                          staticStyle: {
-                            "max-width": "100%",
-                            "max-height": "600px",
-                            height: "auto"
-                          },
-                          attrs: { "hide-delimiters": "" },
-                          model: {
-                            value: _vm.model,
-                            callback: function($$v) {
-                              _vm.model = $$v
-                            },
-                            expression: "model"
-                          }
-                        },
-                        _vm._l(_vm.gallery, function(item, n) {
-                          return _c(
-                            "v-carousel-item",
-                            { key: n, attrs: { "aspect-ratio": 16 / 9 } },
+                        "v-row",
+                        [
+                          _c(
+                            "v-col",
+                            { attrs: { cols: "12", md: "9" } },
                             [
                               _c(
-                                "v-sheet",
+                                "v-card",
+                                { staticStyle: { "border-radius": "0" } },
+                                [
+                                  _c(
+                                    "v-responsive",
+                                    [
+                                      _c(
+                                        "v-carousel",
+                                        {
+                                          attrs: {
+                                            height: "auto",
+                                            "hide-delimiters": ""
+                                          },
+                                          on: { change: _vm.cambioCarousel },
+                                          model: {
+                                            value: _vm.model,
+                                            callback: function($$v) {
+                                              _vm.model = $$v
+                                            },
+                                            expression: "model"
+                                          }
+                                        },
+                                        _vm._l(_vm.gallery, function(item, n) {
+                                          return _c(
+                                            "v-carousel-item",
+                                            { key: n },
+                                            [
+                                              _c(
+                                                "v-sheet",
+                                                {
+                                                  staticClass:
+                                                    "mb-0 pb-0 mx-auto",
+                                                  attrs: { tile: "" }
+                                                },
+                                                [
+                                                  _c(
+                                                    "v-row",
+                                                    {
+                                                      attrs: {
+                                                        align: "center",
+                                                        justify: "center"
+                                                      }
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "video",
+                                                        {
+                                                          ref: "videoPlayer",
+                                                          refInFor: true,
+                                                          staticClass:
+                                                            "mb-0 pb-0 mx-auto",
+                                                          staticStyle: {
+                                                            "max-width": "100%",
+                                                            "max-height":
+                                                              "500px",
+                                                            height: "auto"
+                                                          },
+                                                          attrs: {
+                                                            poster:
+                                                              item.thumbnail,
+                                                            id: "player-" + n,
+                                                            "aspect-ratio":
+                                                              16 / 9,
+                                                            autoplay: "",
+                                                            controls: ""
+                                                          }
+                                                        },
+                                                        [
+                                                          _c("source", {
+                                                            attrs: {
+                                                              src: item.src,
+                                                              type: "video/mp4"
+                                                            }
+                                                          })
+                                                        ]
+                                                      )
+                                                    ]
+                                                  )
+                                                ],
+                                                1
+                                              )
+                                            ],
+                                            1
+                                          )
+                                        }),
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-col",
+                            { attrs: { cols: "12", md: "3" } },
+                            [
+                              _c(
+                                "v-card",
                                 {
-                                  staticClass: "mb-0 pb-0 mx-auto",
-                                  attrs: { tile: "" }
+                                  staticClass: "grey lighten-3",
+                                  staticStyle: { "border-radius": "0" }
                                 },
                                 [
                                   _c(
-                                    "v-row",
+                                    "v-toolbar",
                                     {
-                                      staticClass: "fill-height",
                                       attrs: {
-                                        align: "center",
-                                        justify: "center",
-                                        "aspect-ratio": 16 / 9
+                                        color: "primary",
+                                        dark: "",
+                                        dense: "",
+                                        flat: ""
                                       }
                                     },
                                     [
+                                      _c("v-toolbar-title", [
+                                        _vm._v("Lista de videos")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("v-spacer"),
+                                      _vm._v(" "),
                                       _c(
-                                        "video",
-                                        {
-                                          ref: "videoPlayer",
-                                          refInFor: true,
-                                          staticClass: "mb-0 pb-0 mx-auto",
-                                          staticStyle: {
-                                            "max-width": "100%",
-                                            "max-height": "500px",
-                                            height: "auto"
-                                          },
-                                          attrs: {
-                                            id: item.name,
-                                            "aspect-ratio": 16 / 9,
-                                            autoplay: "",
-                                            controls: ""
-                                          }
-                                        },
-                                        [
-                                          _c("source", {
-                                            attrs: {
-                                              src: item.src,
-                                              type: "video/mp4"
-                                            }
-                                          })
-                                        ]
+                                        "v-btn",
+                                        { attrs: { icon: "" } },
+                                        [_c("v-icon", [_vm._v("mdi-magnify")])],
+                                        1
                                       )
-                                    ]
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-responsive",
+                                    {
+                                      staticClass: "overflow-y-auto",
+                                      attrs: { "max-height": "450" }
+                                    },
+                                    [
+                                      _c(
+                                        "v-responsive",
+                                        [
+                                          _c(
+                                            "v-lazy",
+                                            {
+                                              attrs: {
+                                                options: { threshold: 0.5 },
+                                                "min-height": "200",
+                                                transition: "fade-transition"
+                                              },
+                                              model: {
+                                                value: _vm.isActive,
+                                                callback: function($$v) {
+                                                  _vm.isActive = $$v
+                                                },
+                                                expression: "isActive"
+                                              }
+                                            },
+                                            [
+                                              _c(
+                                                "v-list",
+                                                [
+                                                  _c(
+                                                    "v-list-item-group",
+                                                    {
+                                                      attrs: {
+                                                        color: "primary"
+                                                      },
+                                                      model: {
+                                                        value: _vm.model,
+                                                        callback: function(
+                                                          $$v
+                                                        ) {
+                                                          _vm.model = $$v
+                                                        },
+                                                        expression: "model"
+                                                      }
+                                                    },
+                                                    _vm._l(
+                                                      _vm.listaVideos,
+                                                      function(item, i) {
+                                                        return _c(
+                                                          "v-list-item",
+                                                          {
+                                                            key: i,
+                                                            on: {
+                                                              click:
+                                                                _vm.cambioCarousel
+                                                            }
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "v-list-item-content",
+                                                              [
+                                                                _c("v-img", {
+                                                                  attrs: {
+                                                                    "max-height":
+                                                                      "100",
+                                                                    "max-width":
+                                                                      "100",
+                                                                    "aspect-ratio":
+                                                                      16 / 9,
+                                                                    src:
+                                                                      item.thumbnail
+                                                                  }
+                                                                })
+                                                              ],
+                                                              1
+                                                            ),
+                                                            _vm._v(" "),
+                                                            _c(
+                                                              "v-list-item-content",
+                                                              [
+                                                                _c(
+                                                                  "v-list-item-title",
+                                                                  {
+                                                                    domProps: {
+                                                                      textContent: _vm._s(
+                                                                        item.name
+                                                                      )
+                                                                    }
+                                                                  }
+                                                                )
+                                                              ],
+                                                              1
+                                                            )
+                                                          ],
+                                                          1
+                                                        )
+                                                      }
+                                                    ),
+                                                    1
+                                                  )
+                                                ],
+                                                1
+                                              )
+                                            ],
+                                            1
+                                          )
+                                        ],
+                                        1
+                                      )
+                                    ],
+                                    1
                                   )
                                 ],
                                 1
@@ -772,7 +1070,7 @@ var render = function() {
                             ],
                             1
                           )
-                        }),
+                        ],
                         1
                       ),
                       _vm._v(" "),

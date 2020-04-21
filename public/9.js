@@ -489,7 +489,7 @@ var render = function() {
                             "h3",
                             {
                               staticClass:
-                                "text-uppercase title font-weight-bold mb-1 text-left"
+                                "text-uppercase subtitle-1 font-weight-bold mb-1 text-left primary--text"
                             },
                             [
                               _vm._v(
@@ -522,7 +522,7 @@ var render = function() {
                             "h3",
                             {
                               staticClass:
-                                "text-uppercase title font-weight-bold mb-1 text-left"
+                                "text-uppercase subtitle-1 font-weight-bold mb-1 text-left primary--text"
                             },
                             [
                               _vm._v(
@@ -577,7 +577,7 @@ var render = function() {
                             "h3",
                             {
                               staticClass:
-                                "text-uppercase title font-weight-bold mb-1 text-left"
+                                "text-uppercase subtitle-1 font-weight-bold mb-1 text-left primary--text"
                             },
                             [
                               _vm._v(
@@ -632,7 +632,7 @@ var render = function() {
                             "h3",
                             {
                               staticClass:
-                                "text-uppercase title font-weight-bold mb-1 text-left"
+                                "text-uppercase subtitle-1 font-weight-bold mb-1 text-left primary--text"
                             },
                             [
                               _vm._v(
