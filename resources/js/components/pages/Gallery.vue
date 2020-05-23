@@ -58,7 +58,7 @@
                     class="mx-4"
                     flat
                     hide-details
-                    label="Search"
+                    label="Buscar"
                     solo
                     outlined
                     dense
@@ -68,74 +68,78 @@
                         v-for="(item, i) in listaVideos"
                         :key="i"
                         cols="12"
+                        sm="6"
                         md="4"
                     >
                         <v-hover v-slot:default="{ hover }" open-delay="200">
-                            <v-card
-                                style="border-radius: 0"
-                                :color="hover ? 'primary' : 'grey lighten-1'"
-                                :elevation="hover ? 16 : 2"
-                                class="mx-auto"
-                            >
-                                <v-img
-                                    :src="item.thumbnail"
-                                    :lazy-src="
+                            <div>
+                                <v-card
+                                    style="border-radius: 0"
+                                    :color="hover ? 'primary' : 'grey lighten-1'"
+                                    :elevation="hover ? 16 : 2"
+                                    class="mx-auto"
+                                >
+                                    <v-img
+                                        :src="item.thumbnail"
+                                        :lazy-src="
                                         `https://picsum.photos/10/6?image=${i *
                                             5 +
                                             10}`
                                     "
-                                    :aspect-ratio="16 / 9"
-                                    :gradient="
+                                        :aspect-ratio="16 / 9"
+                                        :gradient="
                                         hover
                                             ? 'to right top, rgba(101, 50, 77, 0.71), rgba(158, 67, 115, 0.83)'
                                             : ''
                                     "
-                                >
-                                    <v-scale-transition>
-                                        <v-row
-                                            v-if="hover"
-                                            class="fill-height"
-                                            align="center"
-                                            justify="center"
-                                        >
-                                            <v-col>
-                                                <v-row>
-                                                    <v-col
-                                                        cols="12"
-                                                        class="text-center"
-                                                    >
-                                                        <v-btn
-                                                            fab
-                                                            color="white"
-                                                            v-if="hover"
-                                                            @click="
+                                    >
+                                        <transition name="fade">
+                                            <v-row
+                                                v-if="hover"
+                                                class="fill-height"
+                                                align="center"
+                                                justify="center"
+                                            >
+                                                <v-col>
+                                                    <v-row>
+                                                        <v-col
+                                                            cols="12"
+                                                            class="text-center"
+                                                        >
+                                                            <v-btn
+                                                                fab
+                                                                color="white"
+                                                                v-if="hover"
+                                                                @click="
                                                                 visualizar(item)
                                                             "
-                                                        >
-                                                            <v-icon
-                                                                color="primary"
-                                                                size="48"
                                                             >
-                                                                mdi-play
-                                                            </v-icon>
-                                                        </v-btn>
-                                                    </v-col>
-                                                    <v-col
-                                                        cols="12"
-                                                        class="text-center lightbox white--text px-2 pb-2 fill-height"
-                                                    >
-                                                        <div
-                                                            class="body-1 text-uppercase font-weight-black"
+                                                                <v-icon
+                                                                    color="primary"
+                                                                    size="48"
+                                                                >
+                                                                    mdi-play
+                                                                </v-icon>
+                                                            </v-btn>
+                                                        </v-col>
+                                                        <v-col
+                                                            cols="12"
+                                                            class="text-center lightbox white--text px-2 pb-2 fill-height"
                                                         >
-                                                            {{ item.name }}
-                                                        </div>
-                                                    </v-col>
-                                                </v-row>
-                                            </v-col>
-                                        </v-row>
-                                    </v-scale-transition>
-                                </v-img>
-                            </v-card>
+                                                            <div
+                                                                class="body-1 text-uppercase font-weight-black"
+                                                            >
+                                                                {{ item.name }}
+                                                            </div>
+                                                        </v-col>
+                                                    </v-row>
+                                                </v-col>
+                                            </v-row>
+                                        </transition>
+                                    </v-img>
+                                </v-card>
+                                <p class="title primary--text"> {{item.name}}</p>
+                            </div>
                         </v-hover>
                     </v-col>
                 </v-row>
@@ -305,9 +309,7 @@
 </template>
 
 <script>
-
     export default {
-
         data: () => ({
             search: '',
             selected: [],
@@ -383,8 +385,8 @@
                 }
             ]
         }),
-        computed:{
-            listaVideos () {
+        computed: {
+            listaVideos() {
                 const search = this.search.toLowerCase()
 
                 if (!search) return this.gallery
@@ -395,7 +397,7 @@
                     return text.indexOf(search) > -1
                 })
             },
-            selections () {
+            selections() {
                 const selections = []
 
                 for (const selection of this.selected) {
@@ -436,11 +438,14 @@
     .slide-fade-enter-active {
         transition: all .3s ease;
     }
+
     .slide-fade-leave-active {
         transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
     }
+
     .slide-fade-enter, .slide-fade-leave-to
-        /* .slide-fade-leave-active below version 2.1.8 */ {
+        /* .slide-fade-leave-active below version 2.1.8 */
+    {
         transform: translateX(10px);
         opacity: 0;
     }

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,57 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{any?}', function () {
-    return view("app");
-})->where('any', '.*')->name('app');
+Route::get('/clear-cache', function () {
+    try {
+        $exitCode = Artisan::call('config:cache');
+        return 'DONE'; //Return anything
+    } catch (Throwable $th) {
+        //throw $th;
+    }
+});
+
+Route::get('/document/{filename}', function ($filename) {
+
+    try {
+        $path = public_path() . '/documents/' . $filename;
+        //si no se encuentra lanzamos un error 404.
+        echo $path;
+        if (!file_exists($path)) {
+            echo "error en ruta de documento";
+            abort(404);
+        }
+        echo "no entra";
+
+        $file = File::get($path);
+        $type = File::mimeType($path);
+
+        $response = Response::make($file, 200);
+        $response->header("Content-Type", $type);
+        return $response;
+    } catch (\Throwable $th) {
+        return $th->getMessage();
+    }
+});
+
+Route::get('storage/{folder}/{filename}', function ($folder, $filename) {
+
+    try {
+        $path = storage_path() . '/app/' . $folder . '/' . $filename;
+
+        //si no se encuentra lanzamos un error 404.
+        if (!Storage::exists($folder . '/' . $filename)) {
+            abort(404);
+        }
+
+        $file = File::get($path);
+        $type = File::mimeType($path);
+
+        $response = Response::make($file, 200);
+        $response->header("Content-Type", $type);
+        return $response;
+    } catch (\Throwable $th) {
+        return $th->getMessage();
+    }
+});
+
+Route::get('/{any}', 'SpaController@index')->where('any', '.*')->name('app');

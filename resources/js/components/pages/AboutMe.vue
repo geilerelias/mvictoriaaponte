@@ -2,7 +2,7 @@
     <div>
         <section>
             <v-img
-                src="https://daedal-free.zeroskillz.now.sh/img/about.3946684e.jpg"
+                src="images/quien-soy/creciendo-juntas.jpg"
                 gradient="to top, rgba(5, 11, 31, 0.8), rgba(5, 11, 31, 0.8)"
                 color="#45516b"
                 flat
@@ -22,202 +22,119 @@
                 </v-row>
             </v-img>
         </section>
-        <section id="about-our-product" style="padding: 96px 0px;">
-            <div class="base-section-heading text-center mb-12">
-                <div class="base-avatar d-inline-flex mb-4"><!---->
-                    <div class="v-avatar base-avatar__avatar primary"
-                         style="height: 56px; min-width: 56px; width: 56px;"><i aria-hidden="true"
-                                                                                class="v-icon notranslate mdi mdi-vuetify theme--dark"
-                                                                                dark="true"
-                                                                                style="font-size: 28px;"></i></div>
-                </div><!----><h1 class="text-uppercase headline font-weight-bold mb-2 text-center"> About our
-                Product </h1>
-                <div class="v-responsive base-divider grey lighten-2 mx-auto mb-6" style="max-width: 28px;">
-                    <div class="v-responsive__content">
-                        <hr role="separator" aria-orientation="horizontal" class="v-divider theme--light">
-                    </div>
-                </div><!----></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-12">
-                        <div class="container pa-0">
-                            <div class="row no-gutters justify-start"><!---->
-                                <div class="col col-9">
-                                    <div class="body-2 font-weight-regular mb-1 text-left grey--text"> Best
-                                        Productivity
-                                    </div>
-                                    <h3 class="text-uppercase title font-weight-bold mb-1 text-left"> Grow your
-                                        Revenue </h3>
-                                    <div class="v-responsive base-divider primary mr-auto mb-6"
-                                         style="max-width: 28px;">
-                                        <div class="v-responsive__content">
-                                            <hr role="separator" aria-orientation="horizontal"
-                                                class="v-divider theme--light">
-                                        </div>
-                                    </div>
-                                    <p class="base-body body-1 grey--text text--darken-1 text-left mb-6">
-                                    <div>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborut
-                                        dolorum fuga.harum quidem rerum facilis estexpedita distinctio.
-                                    </div>
-                                    </p></div>
-                                <div class="col col-2">
-                                    <div class="display-3 grey--text text--lighten-4 font-weight-bold pr-8">01</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-12">
-                        <div class="container pa-0">
-                            <div class="row no-gutters justify-start"><!---->
-                                <div class="col col-9">
-                                    <div class="body-2 font-weight-regular mb-1 text-left grey--text"> Special Offers
-                                    </div>
-                                    <h3 class="text-uppercase title font-weight-bold mb-1 text-left"> Affordable
-                                        Prices </h3>
-                                    <div class="v-responsive base-divider primary mr-auto mb-6"
-                                         style="max-width: 28px;">
-                                        <div class="v-responsive__content">
-                                            <hr role="separator" aria-orientation="horizontal"
-                                                class="v-divider theme--light">
-                                        </div>
-                                    </div>
-                                    <p class="base-body body-1 grey--text text--darken-1 text-left mb-6">
-                                        Similique sunt in culpa qui officia deserunt mollitia animi, id est laborut
-                                        dolorum fuga.harum quidem rerum facilis estexpedita distinctio.
 
-                                    </p>
-                                </div>
-                                <div class="col col-2">
-                                    <div class="display-3 grey--text text--lighten-4 font-weight-bold pr-8">02</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-12">
-                        <div class="container pa-0">
-                            <div class="row no-gutters justify-start"><!---->
-                                <div class="col col-9">
-                                    <div class="body-2 font-weight-regular mb-1 text-left grey--text"> Income Flow</div>
-                                    <h3 class="text-uppercase title font-weight-bold mb-1 text-left"> Target
-                                        Setting </h3>
-                                    <div class="v-responsive base-divider primary mr-auto mb-6"
-                                         style="max-width: 28px;">
-                                        <div class="v-responsive__content">
-                                            <hr role="separator" aria-orientation="horizontal"
-                                                class="v-divider theme--light">
-                                        </div>
-                                    </div>
-                                    <p class="base-body body-1 grey--text text--darken-1 text-left mb-6">
-                                        Similique sunt in culpa qui officia deserunt mollitia animi, id est laborut
-                                        dolorum fuga.harum quidem rerum facilis estexpedita distinctio.
-                                    </p>
-                                </div>
+        <div class="container">
+            <v-row>
+                <v-col class="col-md-6 col-12">
+                    <h2 class="display-1 ">
+                        Mi nombre es Maria Victoria Aponte.
+                    </h2>
+                    <h2 class="headline mb-4 ">
+                        Soy Magister en Investigación Social,
+                        Especialista en Administración y docencia universitaria.
+                    </h2>
+                    <p class="subtitle-1 text-justify">
+                        Me he desempeñado, desde lo social como profesional universitario,
+                        en oficinas de la mujer a nivel municipal y como personal directivo en el orden departamental.
+                        De igual manera, me desempeñé, cómo directora de Bienestar Universitario. Así mismo, fui
+                        directora de
+                        la Asociación de Trabajadores Sociales del Cesar y directora de una Fundación sin ánimo de lucro
+                        que
+                        trabajaba por los jóvenes. Actualmente soy Docente universitaria.
+                    </p>
+                    <p class="mb-5 text-justify"> Mi trayectoria profesional, se ha
+                        caracterizado por investigar problemáticas de la mujer, y la violencia de género,
+                        la recuperación de la memoria entre otros, con el ánimo de ser referente de
+                        cambio para las mujeres a través de un diálogo de saberes que permita
+                        transformarla de la subordinación al protagonismo en el contexto
+                        socio-cultural.
+                    </p>
+                    <v-btn outlined text to="/contact"
+                           class="px-5  primary--text">
+                        Contáctame
+                    </v-btn>
+                </v-col>
+                <v-col class="col-md-5 offset-md-1 col-12">
+                    <v-card>
+                        <v-img src="images/quien-soy/quien-soy.jpg">
+                        </v-img>
+                    </v-card>
 
-                                <div class="col col-2">
-                                    <div class="display-3 grey--text text--lighten-4 font-weight-bold pr-8">03</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+                </v-col>
+            </v-row>
+        </div>
         <section>
-            <v-container fluid>
-                <v-row justify="center">
-                    <v-subheader>Today</v-subheader>
-
-                    <v-expansion-panels popout>
-                        <v-expansion-panel
-                            v-for="(message, i) in messages"
-                            :key="i"
-                            hide-actions
-                        >
-                            <v-expansion-panel-header>
-                                <v-row
-                                    align="center"
-                                    class="spacer"
-                                    no-gutters
-                                >
-                                    <v-col
-                                        cols="4"
-                                        sm="2"
-                                        md="1"
-                                    >
-                                        <v-avatar
-                                            size="36px"
-                                        >
-                                            <img
-                                                v-if="message.avatar"
-                                                alt="Avatar"
-                                                src="https://avatars0.githubusercontent.com/u/9064066?v=4&s=460"
-                                            >
-                                            <v-icon
-                                                v-else
-                                                :color="message.color"
-                                                v-text="message.icon"
-                                            ></v-icon>
-                                        </v-avatar>
-                                    </v-col>
-
-                                    <v-col
-                                        class="hidden-xs-only"
-                                        sm="5"
-                                        md="3"
-                                    >
-                                        <strong v-html="message.name"></strong>
-                                        <span
-                                            v-if="message.total"
-                                            class="grey--text"
-                                        >
-                  &nbsp;({{ message.total }})
-                </span>
-                                    </v-col>
-
-                                    <v-col
-                                        class="text-no-wrap"
-                                        cols="5"
-                                        sm="3"
-                                    >
-                                        <v-chip
-                                            v-if="message.new"
-                                            :color="`${message.color} lighten-4`"
-                                            class="ml-0 mr-2 black--text"
-                                            label
-                                            small
-                                        >
-                                            {{ message.new }} new
-                                        </v-chip>
-                                        <strong v-html="message.title"></strong>
-                                    </v-col>
-
-                                    <v-col
-                                        v-if="message.excerpt"
-                                        class="grey--text text-truncate hidden-sm-and-down"
-                                    >
-                                        &mdash;
-                                        {{ message.excerpt }}
-                                    </v-col>
-                                </v-row>
-                            </v-expansion-panel-header>
-
-                            <v-expansion-panel-content>
-                                <v-divider></v-divider>
-                                <v-card-text v-text="lorem"></v-card-text>
-                            </v-expansion-panel-content>
-                        </v-expansion-panel>
-                    </v-expansion-panels>
-                </v-row>
-            </v-container>
+            <div class="base-section-heading text-center mb-12">
+                <v-avatar class="d-inline-flex mb-4 primary" size="56">
+                    <v-icon size="28" dark>
+                        mdi-vuetify
+                    </v-icon>
+                </v-avatar>
+                <h1 class="text-uppercase headline font-weight-bold mb-2 text-center">
+                    TRAVESÍA PERSONAL DESDE MI CONCIENCIA
+                    <br>
+                    <span class="text-lowercase caption">Autobiografía</span>
+                </h1>
+                <v-divider class="grey lighten-2 mx-auto mb-6" style="max-width: 28px;"></v-divider>
+                <p class="mb-10 grey--text text--darken-1 base-body body-1 mx-auto text-center ">
+                    Este es un escrito en el que hablo acerca de mis travesías personales y mi experiencia como mujer
+                    empoderada
+                </p>
+                <v-btn @click="dialog=!dialog">
+                    ver documento
+                </v-btn>
+            </div>
 
         </section>
+        <v-row justify="center">
+            <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
+                <v-card>
+                    <v-toolbar dark color="primary">
+                        <v-btn icon dark @click="dialog = false">
+                            <v-icon>mdi-close</v-icon>
+                        </v-btn>
+                        <v-toolbar-title>TRAVESÍA PERSONAL DESDE MI CONCIENCIA</v-toolbar-title>
+                        <v-spacer></v-spacer>
+                        <v-toolbar-items>
+                            <v-btn dark text @click="dialog = false">Cerrar</v-btn>
+                        </v-toolbar-items>
+                    </v-toolbar>
+                    <v-card-text>
+                        <section>
+                            <v-container>
+                                <v-card v-for="i in numPages"
+                                        :key="i" class="my-2">
+                                    <pdf
+                                        :src="src"
+                                        :page="i"
+                                        style="display: inline-block; width: 100%;"
+                                    ></pdf>
+                                </v-card>
+                            </v-container>
+                        </section>
+                    </v-card-text>
+                </v-card>
+            </v-dialog>
+        </v-row>
     </div>
 </template>
 
 <script>
+    import pdf from 'vue-pdf'
+
+    var loadingTask = pdf.createLoadingTask('/document/AUTOBIOGRAFÍA-TRAVESÍA%20PERSONAL%20DESDE%20MI%20CONCIENCIA.pdf');
     export default {
+        components: {
+            pdf
+        },
+        mounted() {
+            this.src.then(pdf => {
+                this.numPages = pdf.numPages;
+            });
+        },
         data: () => ({
+            src: loadingTask,
+            numPages: undefined,
             links: [
                 {
                     text: 'Inicio',
@@ -230,32 +147,7 @@
                     href: '/about-me',
                 },
             ],
-            messages: [
-                {
-                    avatar: 'https://avatars0.githubusercontent.com/u/9064066?v=4&s=460',
-                    name: 'John Leider',
-                    title: 'Welcome to Vuetify.js!',
-                    excerpt: 'Thank you for joining our community...',
-                },
-                {
-                    color: 'red',
-                    icon: 'people',
-                    name: 'Social',
-                    new: 1,
-                    total: 3,
-                    title: 'Twitter',
-                },
-                {
-                    color: 'teal',
-                    icon: 'local_offer',
-                    name: 'Promos',
-                    new: 2,
-                    total: 4,
-                    title: 'Shop your way',
-                    exceprt: 'New deals available, Join Today',
-                },
-            ],
-            lorem: 'Lorem ipsum dolor sit amet, at aliquam vivendum vel, everti delicatissimi cu eos. Dico iuvaret debitis mel an, et cum zril menandri. Eum in consul legimus accusam. Ea dico abhorreant duo, quo illum minimum incorrupte no, nostro voluptaria sea eu. Suas eligendi ius at, at nemore equidem est. Sed in error hendrerit, in consul constituam cum.',
+            dialog: false
         }),
 
     };

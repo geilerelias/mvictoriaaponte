@@ -4,12 +4,15 @@ window.Event = new Vue();
 import Vuetify from "vuetify";
 import axios from "axios";
 import VueAxios from "vue-axios";
+import PerfectScrollbar from "vue2-perfect-scrollbar";
+import "vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css";
 
 Vue.use(Vuetify);
 Vue.use(VueAxios, axios);
+Vue.use(PerfectScrollbar);
 
 import store from "./store";
-import router from "./router.js";
+import router from "./routes.js";
 import Auth from "./auth.js";
 import Api from "./api.js";
 
@@ -28,7 +31,7 @@ const app = new Vue({
             themes: {
                 light: {
                     primary: '#9e4373',
-                    secondary: '#8c4572',
+                    secondary: '#be87a4',
                     accent: '#3f51b5',
                     error: '#f44336',
                     warning: '#ffc107',
@@ -48,5 +51,5 @@ const app = new Vue({
         },
     }),
     store,
-    router,
+    router
 });

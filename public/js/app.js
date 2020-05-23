@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"vendors~pdfjsWorker":"vendors~pdfjsWorker"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -2035,6 +2035,112 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css":
+/*!*************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css ***!
+  \*************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*\n * Container style\n */\n.ps {\n  overflow: hidden !important;\n  overflow-anchor: none;\n  -ms-overflow-style: none;\n  touch-action: auto;\n  -ms-touch-action: auto;\n}\n/*\n * Scrollbar rail styles\n */\n.ps__rail-x {\n  display: none;\n  opacity: 0;\n  transition: background-color .2s linear, opacity .2s linear;\n  -webkit-transition: background-color .2s linear, opacity .2s linear;\n  height: 15px;\n  /* there must be 'bottom' or 'top' for ps__rail-x */\n  bottom: 0px;\n  /* please don't change 'position' */\n  position: absolute;\n}\n.ps__rail-y {\n  display: none;\n  opacity: 0;\n  transition: background-color .2s linear, opacity .2s linear;\n  -webkit-transition: background-color .2s linear, opacity .2s linear;\n  width: 15px;\n  /* there must be 'right' or 'left' for ps__rail-y */\n  right: 0;\n  /* please don't change 'position' */\n  position: absolute;\n}\n.ps--active-x > .ps__rail-x,\n.ps--active-y > .ps__rail-y {\n  display: block;\n  background-color: transparent;\n}\n.ps:hover > .ps__rail-x,\n.ps:hover > .ps__rail-y,\n.ps--focus > .ps__rail-x,\n.ps--focus > .ps__rail-y,\n.ps--scrolling-x > .ps__rail-x,\n.ps--scrolling-y > .ps__rail-y {\n  opacity: 0.6;\n}\n.ps .ps__rail-x:hover,\n.ps .ps__rail-y:hover,\n.ps .ps__rail-x:focus,\n.ps .ps__rail-y:focus,\n.ps .ps__rail-x.ps--clicking,\n.ps .ps__rail-y.ps--clicking {\n  background-color: #eee;\n  opacity: 0.9;\n}\n/*\n * Scrollbar thumb styles\n */\n.ps__thumb-x {\n  background-color: #aaa;\n  border-radius: 6px;\n  transition: background-color .2s linear, height .2s ease-in-out;\n  -webkit-transition: background-color .2s linear, height .2s ease-in-out;\n  height: 6px;\n  /* there must be 'bottom' for ps__thumb-x */\n  bottom: 2px;\n  /* please don't change 'position' */\n  position: absolute;\n}\n.ps__thumb-y {\n  background-color: #aaa;\n  border-radius: 6px;\n  transition: background-color .2s linear, width .2s ease-in-out;\n  -webkit-transition: background-color .2s linear, width .2s ease-in-out;\n  width: 6px;\n  /* there must be 'right' for ps__thumb-y */\n  right: 2px;\n  /* please don't change 'position' */\n  position: absolute;\n}\n.ps__rail-x:hover > .ps__thumb-x,\n.ps__rail-x:focus > .ps__thumb-x,\n.ps__rail-x.ps--clicking .ps__thumb-x {\n  background-color: #999;\n  height: 11px;\n}\n.ps__rail-y:hover > .ps__thumb-y,\n.ps__rail-y:focus > .ps__thumb-y,\n.ps__rail-y.ps--clicking .ps__thumb-y {\n  background-color: #999;\n  width: 11px;\n}\n/* MS supports */\n@supports (-ms-overflow-style: none) {\n  .ps {\n    overflow: auto !important;\n  }\n}\n@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {\n  .ps {\n    overflow: auto !important;\n  }\n}\n.ps {\n    position: relative;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/lib/css-base.js":
+/*!*************************************************!*\
+  !*** ./node_modules/css-loader/lib/css-base.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/process/browser.js":
 /*!*****************************************!*\
   !*** ./node_modules/process/browser.js ***!
@@ -2425,6 +2531,515 @@ process.umask = function() { return 0; };
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/lib/addStyles.js":
+/*!****************************************************!*\
+  !*** ./node_modules/style-loader/lib/addStyles.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+
+var stylesInDom = {};
+
+var	memoize = function (fn) {
+	var memo;
+
+	return function () {
+		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+		return memo;
+	};
+};
+
+var isOldIE = memoize(function () {
+	// Test for IE <= 9 as proposed by Browserhacks
+	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+	// Tests for existence of standard globals is to allow style-loader
+	// to operate correctly into non-standard environments
+	// @see https://github.com/webpack-contrib/style-loader/issues/177
+	return window && document && document.all && !window.atob;
+});
+
+var getTarget = function (target, parent) {
+  if (parent){
+    return parent.querySelector(target);
+  }
+  return document.querySelector(target);
+};
+
+var getElement = (function (fn) {
+	var memo = {};
+
+	return function(target, parent) {
+                // If passing function in options, then use it for resolve "head" element.
+                // Useful for Shadow Root style i.e
+                // {
+                //   insertInto: function () { return document.querySelector("#foo").shadowRoot }
+                // }
+                if (typeof target === 'function') {
+                        return target();
+                }
+                if (typeof memo[target] === "undefined") {
+			var styleTarget = getTarget.call(this, target, parent);
+			// Special case to return head of iframe instead of iframe itself
+			if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+				try {
+					// This will throw an exception if access to iframe is blocked
+					// due to cross-origin restrictions
+					styleTarget = styleTarget.contentDocument.head;
+				} catch(e) {
+					styleTarget = null;
+				}
+			}
+			memo[target] = styleTarget;
+		}
+		return memo[target]
+	};
+})();
+
+var singleton = null;
+var	singletonCounter = 0;
+var	stylesInsertedAtTop = [];
+
+var	fixUrls = __webpack_require__(/*! ./urls */ "./node_modules/style-loader/lib/urls.js");
+
+module.exports = function(list, options) {
+	if (typeof DEBUG !== "undefined" && DEBUG) {
+		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+	}
+
+	options = options || {};
+
+	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
+
+	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// tags it will allow on a page
+	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
+
+	// By default, add <style> tags to the <head> element
+        if (!options.insertInto) options.insertInto = "head";
+
+	// By default, add <style> tags to the bottom of the target
+	if (!options.insertAt) options.insertAt = "bottom";
+
+	var styles = listToStyles(list, options);
+
+	addStylesToDom(styles, options);
+
+	return function update (newList) {
+		var mayRemove = [];
+
+		for (var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+
+		if(newList) {
+			var newStyles = listToStyles(newList, options);
+			addStylesToDom(newStyles, options);
+		}
+
+		for (var i = 0; i < mayRemove.length; i++) {
+			var domStyle = mayRemove[i];
+
+			if(domStyle.refs === 0) {
+				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
+
+				delete stylesInDom[domStyle.id];
+			}
+		}
+	};
+};
+
+function addStylesToDom (styles, options) {
+	for (var i = 0; i < styles.length; i++) {
+		var item = styles[i];
+		var domStyle = stylesInDom[item.id];
+
+		if(domStyle) {
+			domStyle.refs++;
+
+			for(var j = 0; j < domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+
+			for(; j < item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} else {
+			var parts = [];
+
+			for(var j = 0; j < item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+
+			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+		}
+	}
+}
+
+function listToStyles (list, options) {
+	var styles = [];
+	var newStyles = {};
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var id = options.base ? item[0] + options.base : item[0];
+		var css = item[1];
+		var media = item[2];
+		var sourceMap = item[3];
+		var part = {css: css, media: media, sourceMap: sourceMap};
+
+		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
+		else newStyles[id].parts.push(part);
+	}
+
+	return styles;
+}
+
+function insertStyleElement (options, style) {
+	var target = getElement(options.insertInto)
+
+	if (!target) {
+		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
+	}
+
+	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
+
+	if (options.insertAt === "top") {
+		if (!lastStyleElementInsertedAtTop) {
+			target.insertBefore(style, target.firstChild);
+		} else if (lastStyleElementInsertedAtTop.nextSibling) {
+			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
+		} else {
+			target.appendChild(style);
+		}
+		stylesInsertedAtTop.push(style);
+	} else if (options.insertAt === "bottom") {
+		target.appendChild(style);
+	} else if (typeof options.insertAt === "object" && options.insertAt.before) {
+		var nextSibling = getElement(options.insertAt.before, target);
+		target.insertBefore(style, nextSibling);
+	} else {
+		throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");
+	}
+}
+
+function removeStyleElement (style) {
+	if (style.parentNode === null) return false;
+	style.parentNode.removeChild(style);
+
+	var idx = stylesInsertedAtTop.indexOf(style);
+	if(idx >= 0) {
+		stylesInsertedAtTop.splice(idx, 1);
+	}
+}
+
+function createStyleElement (options) {
+	var style = document.createElement("style");
+
+	if(options.attrs.type === undefined) {
+		options.attrs.type = "text/css";
+	}
+
+	if(options.attrs.nonce === undefined) {
+		var nonce = getNonce();
+		if (nonce) {
+			options.attrs.nonce = nonce;
+		}
+	}
+
+	addAttrs(style, options.attrs);
+	insertStyleElement(options, style);
+
+	return style;
+}
+
+function createLinkElement (options) {
+	var link = document.createElement("link");
+
+	if(options.attrs.type === undefined) {
+		options.attrs.type = "text/css";
+	}
+	options.attrs.rel = "stylesheet";
+
+	addAttrs(link, options.attrs);
+	insertStyleElement(options, link);
+
+	return link;
+}
+
+function addAttrs (el, attrs) {
+	Object.keys(attrs).forEach(function (key) {
+		el.setAttribute(key, attrs[key]);
+	});
+}
+
+function getNonce() {
+	if (false) {}
+
+	return __webpack_require__.nc;
+}
+
+function addStyle (obj, options) {
+	var style, update, remove, result;
+
+	// If a transform function was defined, run it on the css
+	if (options.transform && obj.css) {
+	    result = typeof options.transform === 'function'
+		 ? options.transform(obj.css) 
+		 : options.transform.default(obj.css);
+
+	    if (result) {
+	    	// If transform returns a value, use that instead of the original css.
+	    	// This allows running runtime transformations on the css.
+	    	obj.css = result;
+	    } else {
+	    	// If the transform function returns a falsy value, don't add this css.
+	    	// This allows conditional loading of css
+	    	return function() {
+	    		// noop
+	    	};
+	    }
+	}
+
+	if (options.singleton) {
+		var styleIndex = singletonCounter++;
+
+		style = singleton || (singleton = createStyleElement(options));
+
+		update = applyToSingletonTag.bind(null, style, styleIndex, false);
+		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+
+	} else if (
+		obj.sourceMap &&
+		typeof URL === "function" &&
+		typeof URL.createObjectURL === "function" &&
+		typeof URL.revokeObjectURL === "function" &&
+		typeof Blob === "function" &&
+		typeof btoa === "function"
+	) {
+		style = createLinkElement(options);
+		update = updateLink.bind(null, style, options);
+		remove = function () {
+			removeStyleElement(style);
+
+			if(style.href) URL.revokeObjectURL(style.href);
+		};
+	} else {
+		style = createStyleElement(options);
+		update = applyToTag.bind(null, style);
+		remove = function () {
+			removeStyleElement(style);
+		};
+	}
+
+	update(obj);
+
+	return function updateStyle (newObj) {
+		if (newObj) {
+			if (
+				newObj.css === obj.css &&
+				newObj.media === obj.media &&
+				newObj.sourceMap === obj.sourceMap
+			) {
+				return;
+			}
+
+			update(obj = newObj);
+		} else {
+			remove();
+		}
+	};
+}
+
+var replaceText = (function () {
+	var textStore = [];
+
+	return function (index, replacement) {
+		textStore[index] = replacement;
+
+		return textStore.filter(Boolean).join('\n');
+	};
+})();
+
+function applyToSingletonTag (style, index, remove, obj) {
+	var css = remove ? "" : obj.css;
+
+	if (style.styleSheet) {
+		style.styleSheet.cssText = replaceText(index, css);
+	} else {
+		var cssNode = document.createTextNode(css);
+		var childNodes = style.childNodes;
+
+		if (childNodes[index]) style.removeChild(childNodes[index]);
+
+		if (childNodes.length) {
+			style.insertBefore(cssNode, childNodes[index]);
+		} else {
+			style.appendChild(cssNode);
+		}
+	}
+}
+
+function applyToTag (style, obj) {
+	var css = obj.css;
+	var media = obj.media;
+
+	if(media) {
+		style.setAttribute("media", media)
+	}
+
+	if(style.styleSheet) {
+		style.styleSheet.cssText = css;
+	} else {
+		while(style.firstChild) {
+			style.removeChild(style.firstChild);
+		}
+
+		style.appendChild(document.createTextNode(css));
+	}
+}
+
+function updateLink (link, options, obj) {
+	var css = obj.css;
+	var sourceMap = obj.sourceMap;
+
+	/*
+		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+		and there is no publicPath defined then lets turn convertToAbsoluteUrls
+		on by default.  Otherwise default to the convertToAbsoluteUrls option
+		directly
+	*/
+	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
+
+	if (options.convertToAbsoluteUrls || autoFixUrls) {
+		css = fixUrls(css);
+	}
+
+	if (sourceMap) {
+		// http://stackoverflow.com/a/26603875
+		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+	}
+
+	var blob = new Blob([css], { type: "text/css" });
+
+	var oldSrc = link.href;
+
+	link.href = URL.createObjectURL(blob);
+
+	if(oldSrc) URL.revokeObjectURL(oldSrc);
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/lib/urls.js":
+/*!***********************************************!*\
+  !*** ./node_modules/style-loader/lib/urls.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
+
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
 
 /***/ }),
 
@@ -17560,6 +18175,1518 @@ module.exports = Vue;
 if (false) {} else {
   module.exports = __webpack_require__(/*! ./vue.common.dev.js */ "./node_modules/vue/dist/vue.common.dev.js")
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../css-loader??ref--6-1!../../postcss-loader/src??ref--6-2!./vue2-perfect-scrollbar.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.umd.js":
+/*!********************************************************************************!*\
+  !*** ./node_modules/vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.umd.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, (function (exports) { 'use strict';
+
+  /*!
+   * perfect-scrollbar v1.5.0
+   * Copyright 2020 Hyunje Jun, MDBootstrap and Contributors
+   * Licensed under MIT
+   */
+
+  function get(element) {
+    return getComputedStyle(element);
+  }
+
+  function set(element, obj) {
+    for (var key in obj) {
+      var val = obj[key];
+      if (typeof val === 'number') {
+        val = val + "px";
+      }
+      element.style[key] = val;
+    }
+    return element;
+  }
+
+  function div(className) {
+    var div = document.createElement('div');
+    div.className = className;
+    return div;
+  }
+
+  var elMatches =
+    typeof Element !== 'undefined' &&
+    (Element.prototype.matches ||
+      Element.prototype.webkitMatchesSelector ||
+      Element.prototype.mozMatchesSelector ||
+      Element.prototype.msMatchesSelector);
+
+  function matches(element, query) {
+    if (!elMatches) {
+      throw new Error('No element matching method supported');
+    }
+
+    return elMatches.call(element, query);
+  }
+
+  function remove(element) {
+    if (element.remove) {
+      element.remove();
+    } else {
+      if (element.parentNode) {
+        element.parentNode.removeChild(element);
+      }
+    }
+  }
+
+  function queryChildren(element, selector) {
+    return Array.prototype.filter.call(element.children, function (child) { return matches(child, selector); }
+    );
+  }
+
+  var cls = {
+    main: 'ps',
+    rtl: 'ps__rtl',
+    element: {
+      thumb: function (x) { return ("ps__thumb-" + x); },
+      rail: function (x) { return ("ps__rail-" + x); },
+      consuming: 'ps__child--consume',
+    },
+    state: {
+      focus: 'ps--focus',
+      clicking: 'ps--clicking',
+      active: function (x) { return ("ps--active-" + x); },
+      scrolling: function (x) { return ("ps--scrolling-" + x); },
+    },
+  };
+
+  /*
+   * Helper methods
+   */
+  var scrollingClassTimeout = { x: null, y: null };
+
+  function addScrollingClass(i, x) {
+    var classList = i.element.classList;
+    var className = cls.state.scrolling(x);
+
+    if (classList.contains(className)) {
+      clearTimeout(scrollingClassTimeout[x]);
+    } else {
+      classList.add(className);
+    }
+  }
+
+  function removeScrollingClass(i, x) {
+    scrollingClassTimeout[x] = setTimeout(
+      function () { return i.isAlive && i.element.classList.remove(cls.state.scrolling(x)); },
+      i.settings.scrollingThreshold
+    );
+  }
+
+  function setScrollingClassInstantly(i, x) {
+    addScrollingClass(i, x);
+    removeScrollingClass(i, x);
+  }
+
+  var EventElement = function EventElement(element) {
+    this.element = element;
+    this.handlers = {};
+  };
+
+  var prototypeAccessors = { isEmpty: { configurable: true } };
+
+  EventElement.prototype.bind = function bind (eventName, handler) {
+    if (typeof this.handlers[eventName] === 'undefined') {
+      this.handlers[eventName] = [];
+    }
+    this.handlers[eventName].push(handler);
+    this.element.addEventListener(eventName, handler, false);
+  };
+
+  EventElement.prototype.unbind = function unbind (eventName, target) {
+      var this$1 = this;
+
+    this.handlers[eventName] = this.handlers[eventName].filter(function (handler) {
+      if (target && handler !== target) {
+        return true;
+      }
+      this$1.element.removeEventListener(eventName, handler, false);
+      return false;
+    });
+  };
+
+  EventElement.prototype.unbindAll = function unbindAll () {
+    var this$1 = this;
+
+    for (var name in this$1.handlers) {
+      this$1.unbind(name);
+    }
+  };
+
+  prototypeAccessors.isEmpty.get = function () {
+      var this$1 = this;
+
+    return Object.keys(this.handlers).every(
+      function (key) { return this$1.handlers[key].length === 0; }
+    );
+  };
+
+  Object.defineProperties( EventElement.prototype, prototypeAccessors );
+
+  var EventManager = function EventManager() {
+    this.eventElements = [];
+  };
+
+  EventManager.prototype.eventElement = function eventElement (element) {
+    var ee = this.eventElements.filter(function (ee) { return ee.element === element; })[0];
+    if (!ee) {
+      ee = new EventElement(element);
+      this.eventElements.push(ee);
+    }
+    return ee;
+  };
+
+  EventManager.prototype.bind = function bind (element, eventName, handler) {
+    this.eventElement(element).bind(eventName, handler);
+  };
+
+  EventManager.prototype.unbind = function unbind (element, eventName, handler) {
+    var ee = this.eventElement(element);
+    ee.unbind(eventName, handler);
+
+    if (ee.isEmpty) {
+      // remove
+      this.eventElements.splice(this.eventElements.indexOf(ee), 1);
+    }
+  };
+
+  EventManager.prototype.unbindAll = function unbindAll () {
+    this.eventElements.forEach(function (e) { return e.unbindAll(); });
+    this.eventElements = [];
+  };
+
+  EventManager.prototype.once = function once (element, eventName, handler) {
+    var ee = this.eventElement(element);
+    var onceHandler = function (evt) {
+      ee.unbind(eventName, onceHandler);
+      handler(evt);
+    };
+    ee.bind(eventName, onceHandler);
+  };
+
+  function createEvent(name) {
+    if (typeof window.CustomEvent === 'function') {
+      return new CustomEvent(name);
+    } else {
+      var evt = document.createEvent('CustomEvent');
+      evt.initCustomEvent(name, false, false, undefined);
+      return evt;
+    }
+  }
+
+  function processScrollDiff(
+    i,
+    axis,
+    diff,
+    useScrollingClass,
+    forceFireReachEvent
+  ) {
+    if ( useScrollingClass === void 0 ) { useScrollingClass = true; }
+    if ( forceFireReachEvent === void 0 ) { forceFireReachEvent = false; }
+
+    var fields;
+    if (axis === 'top') {
+      fields = [
+        'contentHeight',
+        'containerHeight',
+        'scrollTop',
+        'y',
+        'up',
+        'down' ];
+    } else if (axis === 'left') {
+      fields = [
+        'contentWidth',
+        'containerWidth',
+        'scrollLeft',
+        'x',
+        'left',
+        'right' ];
+    } else {
+      throw new Error('A proper axis should be provided');
+    }
+
+    processScrollDiff$1(i, diff, fields, useScrollingClass, forceFireReachEvent);
+  }
+
+  function processScrollDiff$1(
+    i,
+    diff,
+    ref,
+    useScrollingClass,
+    forceFireReachEvent
+  ) {
+    var contentHeight = ref[0];
+    var containerHeight = ref[1];
+    var scrollTop = ref[2];
+    var y = ref[3];
+    var up = ref[4];
+    var down = ref[5];
+    if ( useScrollingClass === void 0 ) { useScrollingClass = true; }
+    if ( forceFireReachEvent === void 0 ) { forceFireReachEvent = false; }
+
+    var element = i.element;
+
+    // reset reach
+    i.reach[y] = null;
+
+    // 1 for subpixel rounding
+    if (element[scrollTop] < 1) {
+      i.reach[y] = 'start';
+    }
+
+    // 1 for subpixel rounding
+    if (element[scrollTop] > i[contentHeight] - i[containerHeight] - 1) {
+      i.reach[y] = 'end';
+    }
+
+    if (diff) {
+      element.dispatchEvent(createEvent(("ps-scroll-" + y)));
+
+      if (diff < 0) {
+        element.dispatchEvent(createEvent(("ps-scroll-" + up)));
+      } else if (diff > 0) {
+        element.dispatchEvent(createEvent(("ps-scroll-" + down)));
+      }
+
+      if (useScrollingClass) {
+        setScrollingClassInstantly(i, y);
+      }
+    }
+
+    if (i.reach[y] && (diff || forceFireReachEvent)) {
+      element.dispatchEvent(createEvent(("ps-" + y + "-reach-" + (i.reach[y]))));
+    }
+  }
+
+  function toInt(x) {
+    return parseInt(x, 10) || 0;
+  }
+
+  function isEditable(el) {
+    return (
+      matches(el, 'input,[contenteditable]') ||
+      matches(el, 'select,[contenteditable]') ||
+      matches(el, 'textarea,[contenteditable]') ||
+      matches(el, 'button,[contenteditable]')
+    );
+  }
+
+  function outerWidth(element) {
+    var styles = get(element);
+    return (
+      toInt(styles.width) +
+      toInt(styles.paddingLeft) +
+      toInt(styles.paddingRight) +
+      toInt(styles.borderLeftWidth) +
+      toInt(styles.borderRightWidth)
+    );
+  }
+
+  var env = {
+    isWebKit:
+      typeof document !== 'undefined' &&
+      'WebkitAppearance' in document.documentElement.style,
+    supportsTouch:
+      typeof window !== 'undefined' &&
+      ('ontouchstart' in window ||
+        ('maxTouchPoints' in window.navigator &&
+          window.navigator.maxTouchPoints > 0) ||
+        (window.DocumentTouch && document instanceof window.DocumentTouch)),
+    supportsIePointer:
+      typeof navigator !== 'undefined' && navigator.msMaxTouchPoints,
+    isChrome:
+      typeof navigator !== 'undefined' &&
+      /Chrome/i.test(navigator && navigator.userAgent),
+  };
+
+  function updateGeometry(i) {
+    var element = i.element;
+    var roundedScrollTop = Math.floor(element.scrollTop);
+    var rect = element.getBoundingClientRect();
+
+    i.containerWidth = Math.ceil(rect.width);
+    i.containerHeight = Math.ceil(rect.height);
+    i.contentWidth = element.scrollWidth;
+    i.contentHeight = element.scrollHeight;
+
+    if (!element.contains(i.scrollbarXRail)) {
+      // clean up and append
+      queryChildren(element, cls.element.rail('x')).forEach(function (el) { return remove(el); }
+      );
+      element.appendChild(i.scrollbarXRail);
+    }
+    if (!element.contains(i.scrollbarYRail)) {
+      // clean up and append
+      queryChildren(element, cls.element.rail('y')).forEach(function (el) { return remove(el); }
+      );
+      element.appendChild(i.scrollbarYRail);
+    }
+
+    if (
+      !i.settings.suppressScrollX &&
+      i.containerWidth + i.settings.scrollXMarginOffset < i.contentWidth
+    ) {
+      i.scrollbarXActive = true;
+      i.railXWidth = i.containerWidth - i.railXMarginWidth;
+      i.railXRatio = i.containerWidth / i.railXWidth;
+      i.scrollbarXWidth = getThumbSize(
+        i,
+        toInt((i.railXWidth * i.containerWidth) / i.contentWidth)
+      );
+      i.scrollbarXLeft = toInt(
+        ((i.negativeScrollAdjustment + element.scrollLeft) *
+          (i.railXWidth - i.scrollbarXWidth)) /
+          (i.contentWidth - i.containerWidth)
+      );
+    } else {
+      i.scrollbarXActive = false;
+    }
+
+    if (
+      !i.settings.suppressScrollY &&
+      i.containerHeight + i.settings.scrollYMarginOffset < i.contentHeight
+    ) {
+      i.scrollbarYActive = true;
+      i.railYHeight = i.containerHeight - i.railYMarginHeight;
+      i.railYRatio = i.containerHeight / i.railYHeight;
+      i.scrollbarYHeight = getThumbSize(
+        i,
+        toInt((i.railYHeight * i.containerHeight) / i.contentHeight)
+      );
+      i.scrollbarYTop = toInt(
+        (roundedScrollTop * (i.railYHeight - i.scrollbarYHeight)) /
+          (i.contentHeight - i.containerHeight)
+      );
+    } else {
+      i.scrollbarYActive = false;
+    }
+
+    if (i.scrollbarXLeft >= i.railXWidth - i.scrollbarXWidth) {
+      i.scrollbarXLeft = i.railXWidth - i.scrollbarXWidth;
+    }
+    if (i.scrollbarYTop >= i.railYHeight - i.scrollbarYHeight) {
+      i.scrollbarYTop = i.railYHeight - i.scrollbarYHeight;
+    }
+
+    updateCss(element, i);
+
+    if (i.scrollbarXActive) {
+      element.classList.add(cls.state.active('x'));
+    } else {
+      element.classList.remove(cls.state.active('x'));
+      i.scrollbarXWidth = 0;
+      i.scrollbarXLeft = 0;
+      element.scrollLeft = i.isRtl === true ? i.contentWidth : 0;
+    }
+    if (i.scrollbarYActive) {
+      element.classList.add(cls.state.active('y'));
+    } else {
+      element.classList.remove(cls.state.active('y'));
+      i.scrollbarYHeight = 0;
+      i.scrollbarYTop = 0;
+      element.scrollTop = 0;
+    }
+  }
+
+  function getThumbSize(i, thumbSize) {
+    if (i.settings.minScrollbarLength) {
+      thumbSize = Math.max(thumbSize, i.settings.minScrollbarLength);
+    }
+    if (i.settings.maxScrollbarLength) {
+      thumbSize = Math.min(thumbSize, i.settings.maxScrollbarLength);
+    }
+    return thumbSize;
+  }
+
+  function updateCss(element, i) {
+    var xRailOffset = { width: i.railXWidth };
+    var roundedScrollTop = Math.floor(element.scrollTop);
+
+    if (i.isRtl) {
+      xRailOffset.left =
+        i.negativeScrollAdjustment +
+        element.scrollLeft +
+        i.containerWidth -
+        i.contentWidth;
+    } else {
+      xRailOffset.left = element.scrollLeft;
+    }
+    if (i.isScrollbarXUsingBottom) {
+      xRailOffset.bottom = i.scrollbarXBottom - roundedScrollTop;
+    } else {
+      xRailOffset.top = i.scrollbarXTop + roundedScrollTop;
+    }
+    set(i.scrollbarXRail, xRailOffset);
+
+    var yRailOffset = { top: roundedScrollTop, height: i.railYHeight };
+    if (i.isScrollbarYUsingRight) {
+      if (i.isRtl) {
+        yRailOffset.right =
+          i.contentWidth -
+          (i.negativeScrollAdjustment + element.scrollLeft) -
+          i.scrollbarYRight -
+          i.scrollbarYOuterWidth -
+          9;
+      } else {
+        yRailOffset.right = i.scrollbarYRight - element.scrollLeft;
+      }
+    } else {
+      if (i.isRtl) {
+        yRailOffset.left =
+          i.negativeScrollAdjustment +
+          element.scrollLeft +
+          i.containerWidth * 2 -
+          i.contentWidth -
+          i.scrollbarYLeft -
+          i.scrollbarYOuterWidth;
+      } else {
+        yRailOffset.left = i.scrollbarYLeft + element.scrollLeft;
+      }
+    }
+    set(i.scrollbarYRail, yRailOffset);
+
+    set(i.scrollbarX, {
+      left: i.scrollbarXLeft,
+      width: i.scrollbarXWidth - i.railBorderXWidth,
+    });
+    set(i.scrollbarY, {
+      top: i.scrollbarYTop,
+      height: i.scrollbarYHeight - i.railBorderYWidth,
+    });
+  }
+
+  function clickRail(i) {
+    var element = i.element;
+
+    i.event.bind(i.scrollbarY, 'mousedown', function (e) { return e.stopPropagation(); });
+    i.event.bind(i.scrollbarYRail, 'mousedown', function (e) {
+      var positionTop =
+        e.pageY -
+        window.pageYOffset -
+        i.scrollbarYRail.getBoundingClientRect().top;
+      var direction = positionTop > i.scrollbarYTop ? 1 : -1;
+
+      i.element.scrollTop += direction * i.containerHeight;
+      updateGeometry(i);
+
+      e.stopPropagation();
+    });
+
+    i.event.bind(i.scrollbarX, 'mousedown', function (e) { return e.stopPropagation(); });
+    i.event.bind(i.scrollbarXRail, 'mousedown', function (e) {
+      var positionLeft =
+        e.pageX -
+        window.pageXOffset -
+        i.scrollbarXRail.getBoundingClientRect().left;
+      var direction = positionLeft > i.scrollbarXLeft ? 1 : -1;
+
+      i.element.scrollLeft += direction * i.containerWidth;
+      updateGeometry(i);
+
+      e.stopPropagation();
+    });
+  }
+
+  function dragThumb(i) {
+    bindMouseScrollHandler(i, [
+      'containerWidth',
+      'contentWidth',
+      'pageX',
+      'railXWidth',
+      'scrollbarX',
+      'scrollbarXWidth',
+      'scrollLeft',
+      'x',
+      'scrollbarXRail' ]);
+    bindMouseScrollHandler(i, [
+      'containerHeight',
+      'contentHeight',
+      'pageY',
+      'railYHeight',
+      'scrollbarY',
+      'scrollbarYHeight',
+      'scrollTop',
+      'y',
+      'scrollbarYRail' ]);
+  }
+
+  function bindMouseScrollHandler(
+    i,
+    ref
+  ) {
+    var containerHeight = ref[0];
+    var contentHeight = ref[1];
+    var pageY = ref[2];
+    var railYHeight = ref[3];
+    var scrollbarY = ref[4];
+    var scrollbarYHeight = ref[5];
+    var scrollTop = ref[6];
+    var y = ref[7];
+    var scrollbarYRail = ref[8];
+
+    var element = i.element;
+
+    var startingScrollTop = null;
+    var startingMousePageY = null;
+    var scrollBy = null;
+
+    function mouseMoveHandler(e) {
+      if (e.touches && e.touches[0]) {
+        e[pageY] = e.touches[0].pageY;
+      }
+      element[scrollTop] =
+        startingScrollTop + scrollBy * (e[pageY] - startingMousePageY);
+      addScrollingClass(i, y);
+      updateGeometry(i);
+
+      e.stopPropagation();
+      e.preventDefault();
+    }
+
+    function mouseUpHandler() {
+      removeScrollingClass(i, y);
+      i[scrollbarYRail].classList.remove(cls.state.clicking);
+      i.event.unbind(i.ownerDocument, 'mousemove', mouseMoveHandler);
+    }
+
+    function bindMoves(e, touchMode) {
+      startingScrollTop = element[scrollTop];
+      if (touchMode && e.touches) {
+        e[pageY] = e.touches[0].pageY;
+      }
+      startingMousePageY = e[pageY];
+      scrollBy =
+        (i[contentHeight] - i[containerHeight]) /
+        (i[railYHeight] - i[scrollbarYHeight]);
+      if (!touchMode) {
+        i.event.bind(i.ownerDocument, 'mousemove', mouseMoveHandler);
+        i.event.once(i.ownerDocument, 'mouseup', mouseUpHandler);
+        e.preventDefault();
+      } else {
+        i.event.bind(i.ownerDocument, 'touchmove', mouseMoveHandler);
+      }
+
+      i[scrollbarYRail].classList.add(cls.state.clicking);
+
+      e.stopPropagation();
+    }
+
+    i.event.bind(i[scrollbarY], 'mousedown', function (e) {
+      bindMoves(e);
+    });
+    i.event.bind(i[scrollbarY], 'touchstart', function (e) {
+      bindMoves(e, true);
+    });
+  }
+
+  function keyboard(i) {
+    var element = i.element;
+
+    var elementHovered = function () { return matches(element, ':hover'); };
+    var scrollbarFocused = function () { return matches(i.scrollbarX, ':focus') || matches(i.scrollbarY, ':focus'); };
+
+    function shouldPreventDefault(deltaX, deltaY) {
+      var scrollTop = Math.floor(element.scrollTop);
+      if (deltaX === 0) {
+        if (!i.scrollbarYActive) {
+          return false;
+        }
+        if (
+          (scrollTop === 0 && deltaY > 0) ||
+          (scrollTop >= i.contentHeight - i.containerHeight && deltaY < 0)
+        ) {
+          return !i.settings.wheelPropagation;
+        }
+      }
+
+      var scrollLeft = element.scrollLeft;
+      if (deltaY === 0) {
+        if (!i.scrollbarXActive) {
+          return false;
+        }
+        if (
+          (scrollLeft === 0 && deltaX < 0) ||
+          (scrollLeft >= i.contentWidth - i.containerWidth && deltaX > 0)
+        ) {
+          return !i.settings.wheelPropagation;
+        }
+      }
+      return true;
+    }
+
+    i.event.bind(i.ownerDocument, 'keydown', function (e) {
+      if (
+        (e.isDefaultPrevented && e.isDefaultPrevented()) ||
+        e.defaultPrevented
+      ) {
+        return;
+      }
+
+      if (!elementHovered() && !scrollbarFocused()) {
+        return;
+      }
+
+      var activeElement = document.activeElement
+        ? document.activeElement
+        : i.ownerDocument.activeElement;
+      if (activeElement) {
+        if (activeElement.tagName === 'IFRAME') {
+          activeElement = activeElement.contentDocument.activeElement;
+        } else {
+          // go deeper if element is a webcomponent
+          while (activeElement.shadowRoot) {
+            activeElement = activeElement.shadowRoot.activeElement;
+          }
+        }
+        if (isEditable(activeElement)) {
+          return;
+        }
+      }
+
+      var deltaX = 0;
+      var deltaY = 0;
+
+      switch (e.which) {
+        case 37: // left
+          if (e.metaKey) {
+            deltaX = -i.contentWidth;
+          } else if (e.altKey) {
+            deltaX = -i.containerWidth;
+          } else {
+            deltaX = -30;
+          }
+          break;
+        case 38: // up
+          if (e.metaKey) {
+            deltaY = i.contentHeight;
+          } else if (e.altKey) {
+            deltaY = i.containerHeight;
+          } else {
+            deltaY = 30;
+          }
+          break;
+        case 39: // right
+          if (e.metaKey) {
+            deltaX = i.contentWidth;
+          } else if (e.altKey) {
+            deltaX = i.containerWidth;
+          } else {
+            deltaX = 30;
+          }
+          break;
+        case 40: // down
+          if (e.metaKey) {
+            deltaY = -i.contentHeight;
+          } else if (e.altKey) {
+            deltaY = -i.containerHeight;
+          } else {
+            deltaY = -30;
+          }
+          break;
+        case 32: // space bar
+          if (e.shiftKey) {
+            deltaY = i.containerHeight;
+          } else {
+            deltaY = -i.containerHeight;
+          }
+          break;
+        case 33: // page up
+          deltaY = i.containerHeight;
+          break;
+        case 34: // page down
+          deltaY = -i.containerHeight;
+          break;
+        case 36: // home
+          deltaY = i.contentHeight;
+          break;
+        case 35: // end
+          deltaY = -i.contentHeight;
+          break;
+        default:
+          return;
+      }
+
+      if (i.settings.suppressScrollX && deltaX !== 0) {
+        return;
+      }
+      if (i.settings.suppressScrollY && deltaY !== 0) {
+        return;
+      }
+
+      element.scrollTop -= deltaY;
+      element.scrollLeft += deltaX;
+      updateGeometry(i);
+
+      if (shouldPreventDefault(deltaX, deltaY)) {
+        e.preventDefault();
+      }
+    });
+  }
+
+  function wheel(i) {
+    var element = i.element;
+
+    function shouldPreventDefault(deltaX, deltaY) {
+      var roundedScrollTop = Math.floor(element.scrollTop);
+      var isTop = element.scrollTop === 0;
+      var isBottom =
+        roundedScrollTop + element.offsetHeight === element.scrollHeight;
+      var isLeft = element.scrollLeft === 0;
+      var isRight =
+        element.scrollLeft + element.offsetWidth === element.scrollWidth;
+
+      var hitsBound;
+
+      // pick axis with primary direction
+      if (Math.abs(deltaY) > Math.abs(deltaX)) {
+        hitsBound = isTop || isBottom;
+      } else {
+        hitsBound = isLeft || isRight;
+      }
+
+      return hitsBound ? !i.settings.wheelPropagation : true;
+    }
+
+    function getDeltaFromEvent(e) {
+      var deltaX = e.deltaX;
+      var deltaY = -1 * e.deltaY;
+
+      if (typeof deltaX === 'undefined' || typeof deltaY === 'undefined') {
+        // OS X Safari
+        deltaX = (-1 * e.wheelDeltaX) / 6;
+        deltaY = e.wheelDeltaY / 6;
+      }
+
+      if (e.deltaMode && e.deltaMode === 1) {
+        // Firefox in deltaMode 1: Line scrolling
+        deltaX *= 10;
+        deltaY *= 10;
+      }
+
+      if (deltaX !== deltaX && deltaY !== deltaY /* NaN checks */) {
+        // IE in some mouse drivers
+        deltaX = 0;
+        deltaY = e.wheelDelta;
+      }
+
+      if (e.shiftKey) {
+        // reverse axis with shift key
+        return [-deltaY, -deltaX];
+      }
+      return [deltaX, deltaY];
+    }
+
+    function shouldBeConsumedByChild(target, deltaX, deltaY) {
+      // FIXME: this is a workaround for <select> issue in FF and IE #571
+      if (!env.isWebKit && element.querySelector('select:focus')) {
+        return true;
+      }
+
+      if (!element.contains(target)) {
+        return false;
+      }
+
+      var cursor = target;
+
+      while (cursor && cursor !== element) {
+        if (cursor.classList.contains(cls.element.consuming)) {
+          return true;
+        }
+
+        var style = get(cursor);
+
+        // if deltaY && vertical scrollable
+        if (deltaY && style.overflowY.match(/(scroll|auto)/)) {
+          var maxScrollTop = cursor.scrollHeight - cursor.clientHeight;
+          if (maxScrollTop > 0) {
+            if (
+              (cursor.scrollTop > 0 && deltaY < 0) ||
+              (cursor.scrollTop < maxScrollTop && deltaY > 0)
+            ) {
+              return true;
+            }
+          }
+        }
+        // if deltaX && horizontal scrollable
+        if (deltaX && style.overflowX.match(/(scroll|auto)/)) {
+          var maxScrollLeft = cursor.scrollWidth - cursor.clientWidth;
+          if (maxScrollLeft > 0) {
+            if (
+              (cursor.scrollLeft > 0 && deltaX < 0) ||
+              (cursor.scrollLeft < maxScrollLeft && deltaX > 0)
+            ) {
+              return true;
+            }
+          }
+        }
+
+        cursor = cursor.parentNode;
+      }
+
+      return false;
+    }
+
+    function mousewheelHandler(e) {
+      var ref = getDeltaFromEvent(e);
+      var deltaX = ref[0];
+      var deltaY = ref[1];
+
+      if (shouldBeConsumedByChild(e.target, deltaX, deltaY)) {
+        return;
+      }
+
+      var shouldPrevent = false;
+      if (!i.settings.useBothWheelAxes) {
+        // deltaX will only be used for horizontal scrolling and deltaY will
+        // only be used for vertical scrolling - this is the default
+        element.scrollTop -= deltaY * i.settings.wheelSpeed;
+        element.scrollLeft += deltaX * i.settings.wheelSpeed;
+      } else if (i.scrollbarYActive && !i.scrollbarXActive) {
+        // only vertical scrollbar is active and useBothWheelAxes option is
+        // active, so let's scroll vertical bar using both mouse wheel axes
+        if (deltaY) {
+          element.scrollTop -= deltaY * i.settings.wheelSpeed;
+        } else {
+          element.scrollTop += deltaX * i.settings.wheelSpeed;
+        }
+        shouldPrevent = true;
+      } else if (i.scrollbarXActive && !i.scrollbarYActive) {
+        // useBothWheelAxes and only horizontal bar is active, so use both
+        // wheel axes for horizontal bar
+        if (deltaX) {
+          element.scrollLeft += deltaX * i.settings.wheelSpeed;
+        } else {
+          element.scrollLeft -= deltaY * i.settings.wheelSpeed;
+        }
+        shouldPrevent = true;
+      }
+
+      updateGeometry(i);
+
+      shouldPrevent = shouldPrevent || shouldPreventDefault(deltaX, deltaY);
+      if (shouldPrevent && !e.ctrlKey) {
+        e.stopPropagation();
+        e.preventDefault();
+      }
+    }
+
+    if (typeof window.onwheel !== 'undefined') {
+      i.event.bind(element, 'wheel', mousewheelHandler);
+    } else if (typeof window.onmousewheel !== 'undefined') {
+      i.event.bind(element, 'mousewheel', mousewheelHandler);
+    }
+  }
+
+  function touch(i) {
+    if (!env.supportsTouch && !env.supportsIePointer) {
+      return;
+    }
+
+    var element = i.element;
+
+    function shouldPrevent(deltaX, deltaY) {
+      var scrollTop = Math.floor(element.scrollTop);
+      var scrollLeft = element.scrollLeft;
+      var magnitudeX = Math.abs(deltaX);
+      var magnitudeY = Math.abs(deltaY);
+
+      if (magnitudeY > magnitudeX) {
+        // user is perhaps trying to swipe up/down the page
+
+        if (
+          (deltaY < 0 && scrollTop === i.contentHeight - i.containerHeight) ||
+          (deltaY > 0 && scrollTop === 0)
+        ) {
+          // set prevent for mobile Chrome refresh
+          return window.scrollY === 0 && deltaY > 0 && env.isChrome;
+        }
+      } else if (magnitudeX > magnitudeY) {
+        // user is perhaps trying to swipe left/right across the page
+
+        if (
+          (deltaX < 0 && scrollLeft === i.contentWidth - i.containerWidth) ||
+          (deltaX > 0 && scrollLeft === 0)
+        ) {
+          return true;
+        }
+      }
+
+      return true;
+    }
+
+    function applyTouchMove(differenceX, differenceY) {
+      element.scrollTop -= differenceY;
+      element.scrollLeft -= differenceX;
+
+      updateGeometry(i);
+    }
+
+    var startOffset = {};
+    var startTime = 0;
+    var speed = {};
+    var easingLoop = null;
+
+    function getTouch(e) {
+      if (e.targetTouches) {
+        return e.targetTouches[0];
+      } else {
+        // Maybe IE pointer
+        return e;
+      }
+    }
+
+    function shouldHandle(e) {
+      if (e.pointerType && e.pointerType === 'pen' && e.buttons === 0) {
+        return false;
+      }
+      if (e.targetTouches && e.targetTouches.length === 1) {
+        return true;
+      }
+      if (
+        e.pointerType &&
+        e.pointerType !== 'mouse' &&
+        e.pointerType !== e.MSPOINTER_TYPE_MOUSE
+      ) {
+        return true;
+      }
+      return false;
+    }
+
+    function touchStart(e) {
+      if (!shouldHandle(e)) {
+        return;
+      }
+
+      var touch = getTouch(e);
+
+      startOffset.pageX = touch.pageX;
+      startOffset.pageY = touch.pageY;
+
+      startTime = new Date().getTime();
+
+      if (easingLoop !== null) {
+        clearInterval(easingLoop);
+      }
+    }
+
+    function shouldBeConsumedByChild(target, deltaX, deltaY) {
+      if (!element.contains(target)) {
+        return false;
+      }
+
+      var cursor = target;
+
+      while (cursor && cursor !== element) {
+        if (cursor.classList.contains(cls.element.consuming)) {
+          return true;
+        }
+
+        var style = get(cursor);
+
+        // if deltaY && vertical scrollable
+        if (deltaY && style.overflowY.match(/(scroll|auto)/)) {
+          var maxScrollTop = cursor.scrollHeight - cursor.clientHeight;
+          if (maxScrollTop > 0) {
+            if (
+              (cursor.scrollTop > 0 && deltaY < 0) ||
+              (cursor.scrollTop < maxScrollTop && deltaY > 0)
+            ) {
+              return true;
+            }
+          }
+        }
+        // if deltaX && horizontal scrollable
+        if (deltaX && style.overflowX.match(/(scroll|auto)/)) {
+          var maxScrollLeft = cursor.scrollWidth - cursor.clientWidth;
+          if (maxScrollLeft > 0) {
+            if (
+              (cursor.scrollLeft > 0 && deltaX < 0) ||
+              (cursor.scrollLeft < maxScrollLeft && deltaX > 0)
+            ) {
+              return true;
+            }
+          }
+        }
+
+        cursor = cursor.parentNode;
+      }
+
+      return false;
+    }
+
+    function touchMove(e) {
+      if (shouldHandle(e)) {
+        var touch = getTouch(e);
+
+        var currentOffset = { pageX: touch.pageX, pageY: touch.pageY };
+
+        var differenceX = currentOffset.pageX - startOffset.pageX;
+        var differenceY = currentOffset.pageY - startOffset.pageY;
+
+        if (shouldBeConsumedByChild(e.target, differenceX, differenceY)) {
+          return;
+        }
+
+        applyTouchMove(differenceX, differenceY);
+        startOffset = currentOffset;
+
+        var currentTime = new Date().getTime();
+
+        var timeGap = currentTime - startTime;
+        if (timeGap > 0) {
+          speed.x = differenceX / timeGap;
+          speed.y = differenceY / timeGap;
+          startTime = currentTime;
+        }
+
+        if (shouldPrevent(differenceX, differenceY)) {
+          e.preventDefault();
+        }
+      }
+    }
+    function touchEnd() {
+      if (i.settings.swipeEasing) {
+        clearInterval(easingLoop);
+        easingLoop = setInterval(function() {
+          if (i.isInitialized) {
+            clearInterval(easingLoop);
+            return;
+          }
+
+          if (!speed.x && !speed.y) {
+            clearInterval(easingLoop);
+            return;
+          }
+
+          if (Math.abs(speed.x) < 0.01 && Math.abs(speed.y) < 0.01) {
+            clearInterval(easingLoop);
+            return;
+          }
+
+          applyTouchMove(speed.x * 30, speed.y * 30);
+
+          speed.x *= 0.8;
+          speed.y *= 0.8;
+        }, 10);
+      }
+    }
+
+    if (env.supportsTouch) {
+      i.event.bind(element, 'touchstart', touchStart);
+      i.event.bind(element, 'touchmove', touchMove);
+      i.event.bind(element, 'touchend', touchEnd);
+    } else if (env.supportsIePointer) {
+      if (window.PointerEvent) {
+        i.event.bind(element, 'pointerdown', touchStart);
+        i.event.bind(element, 'pointermove', touchMove);
+        i.event.bind(element, 'pointerup', touchEnd);
+      } else if (window.MSPointerEvent) {
+        i.event.bind(element, 'MSPointerDown', touchStart);
+        i.event.bind(element, 'MSPointerMove', touchMove);
+        i.event.bind(element, 'MSPointerUp', touchEnd);
+      }
+    }
+  }
+
+  var defaultSettings = function () { return ({
+    handlers: ['click-rail', 'drag-thumb', 'keyboard', 'wheel', 'touch'],
+    maxScrollbarLength: null,
+    minScrollbarLength: null,
+    scrollingThreshold: 1000,
+    scrollXMarginOffset: 0,
+    scrollYMarginOffset: 0,
+    suppressScrollX: false,
+    suppressScrollY: false,
+    swipeEasing: true,
+    useBothWheelAxes: false,
+    wheelPropagation: true,
+    wheelSpeed: 1,
+  }); };
+
+  var handlers = {
+    'click-rail': clickRail,
+    'drag-thumb': dragThumb,
+    keyboard: keyboard,
+    wheel: wheel,
+    touch: touch,
+  };
+
+  var PerfectScrollbar = function PerfectScrollbar(element, userSettings) {
+    var this$2 = this;
+
+    var this$1 = this;
+    if ( userSettings === void 0 ) { userSettings = {}; }
+
+    if (typeof element === 'string') {
+      element = document.querySelector(element);
+    }
+
+    if (!element || !element.nodeName) {
+      throw new Error('no element is specified to initialize PerfectScrollbar');
+    }
+
+    this.element = element;
+
+    element.classList.add(cls.main);
+
+    this.settings = defaultSettings();
+    for (var key in userSettings) {
+      this$2.settings[key] = userSettings[key];
+    }
+
+    this.containerWidth = null;
+    this.containerHeight = null;
+    this.contentWidth = null;
+    this.contentHeight = null;
+
+    var focus = function () { return element.classList.add(cls.state.focus); };
+    var blur = function () { return element.classList.remove(cls.state.focus); };
+
+    this.isRtl = get(element).direction === 'rtl';
+    if (this.isRtl === true) {
+      element.classList.add(cls.rtl);
+    }
+    this.isNegativeScroll = (function () {
+      var originalScrollLeft = element.scrollLeft;
+      var result = null;
+      element.scrollLeft = -1;
+      result = element.scrollLeft < 0;
+      element.scrollLeft = originalScrollLeft;
+      return result;
+    })();
+    this.negativeScrollAdjustment = this.isNegativeScroll
+      ? element.scrollWidth - element.clientWidth
+      : 0;
+    this.event = new EventManager();
+    this.ownerDocument = element.ownerDocument || document;
+
+    this.scrollbarXRail = div(cls.element.rail('x'));
+    element.appendChild(this.scrollbarXRail);
+    this.scrollbarX = div(cls.element.thumb('x'));
+    this.scrollbarXRail.appendChild(this.scrollbarX);
+    this.scrollbarX.setAttribute('tabindex', 0);
+    this.event.bind(this.scrollbarX, 'focus', focus);
+    this.event.bind(this.scrollbarX, 'blur', blur);
+    this.scrollbarXActive = null;
+    this.scrollbarXWidth = null;
+    this.scrollbarXLeft = null;
+    var railXStyle = get(this.scrollbarXRail);
+    this.scrollbarXBottom = parseInt(railXStyle.bottom, 10);
+    if (isNaN(this.scrollbarXBottom)) {
+      this.isScrollbarXUsingBottom = false;
+      this.scrollbarXTop = toInt(railXStyle.top);
+    } else {
+      this.isScrollbarXUsingBottom = true;
+    }
+    this.railBorderXWidth =
+      toInt(railXStyle.borderLeftWidth) + toInt(railXStyle.borderRightWidth);
+    // Set rail to display:block to calculate margins
+    set(this.scrollbarXRail, { display: 'block' });
+    this.railXMarginWidth =
+      toInt(railXStyle.marginLeft) + toInt(railXStyle.marginRight);
+    set(this.scrollbarXRail, { display: '' });
+    this.railXWidth = null;
+    this.railXRatio = null;
+
+    this.scrollbarYRail = div(cls.element.rail('y'));
+    element.appendChild(this.scrollbarYRail);
+    this.scrollbarY = div(cls.element.thumb('y'));
+    this.scrollbarYRail.appendChild(this.scrollbarY);
+    this.scrollbarY.setAttribute('tabindex', 0);
+    this.event.bind(this.scrollbarY, 'focus', focus);
+    this.event.bind(this.scrollbarY, 'blur', blur);
+    this.scrollbarYActive = null;
+    this.scrollbarYHeight = null;
+    this.scrollbarYTop = null;
+    var railYStyle = get(this.scrollbarYRail);
+    this.scrollbarYRight = parseInt(railYStyle.right, 10);
+    if (isNaN(this.scrollbarYRight)) {
+      this.isScrollbarYUsingRight = false;
+      this.scrollbarYLeft = toInt(railYStyle.left);
+    } else {
+      this.isScrollbarYUsingRight = true;
+    }
+    this.scrollbarYOuterWidth = this.isRtl ? outerWidth(this.scrollbarY) : null;
+    this.railBorderYWidth =
+      toInt(railYStyle.borderTopWidth) + toInt(railYStyle.borderBottomWidth);
+    set(this.scrollbarYRail, { display: 'block' });
+    this.railYMarginHeight =
+      toInt(railYStyle.marginTop) + toInt(railYStyle.marginBottom);
+    set(this.scrollbarYRail, { display: '' });
+    this.railYHeight = null;
+    this.railYRatio = null;
+
+    this.reach = {
+      x:
+        element.scrollLeft <= 0
+          ? 'start'
+          : element.scrollLeft >= this.contentWidth - this.containerWidth
+          ? 'end'
+          : null,
+      y:
+        element.scrollTop <= 0
+          ? 'start'
+          : element.scrollTop >= this.contentHeight - this.containerHeight
+          ? 'end'
+          : null,
+    };
+
+    this.isAlive = true;
+
+    this.settings.handlers.forEach(function (handlerName) { return handlers[handlerName](this$1); });
+
+    this.lastScrollTop = Math.floor(element.scrollTop); // for onScroll only
+    this.lastScrollLeft = element.scrollLeft; // for onScroll only
+    this.event.bind(this.element, 'scroll', function (e) { return this$1.onScroll(e); });
+    updateGeometry(this);
+  };
+
+  PerfectScrollbar.prototype.update = function update () {
+    if (!this.isAlive) {
+      return;
+    }
+
+    // Recalcuate negative scrollLeft adjustment
+    this.negativeScrollAdjustment = this.isNegativeScroll
+      ? this.element.scrollWidth - this.element.clientWidth
+      : 0;
+
+    // Recalculate rail margins
+    set(this.scrollbarXRail, { display: 'block' });
+    set(this.scrollbarYRail, { display: 'block' });
+    this.railXMarginWidth =
+      toInt(get(this.scrollbarXRail).marginLeft) +
+      toInt(get(this.scrollbarXRail).marginRight);
+    this.railYMarginHeight =
+      toInt(get(this.scrollbarYRail).marginTop) +
+      toInt(get(this.scrollbarYRail).marginBottom);
+
+    // Hide scrollbars not to affect scrollWidth and scrollHeight
+    set(this.scrollbarXRail, { display: 'none' });
+    set(this.scrollbarYRail, { display: 'none' });
+
+    updateGeometry(this);
+
+    processScrollDiff(this, 'top', 0, false, true);
+    processScrollDiff(this, 'left', 0, false, true);
+
+    set(this.scrollbarXRail, { display: '' });
+    set(this.scrollbarYRail, { display: '' });
+  };
+
+  PerfectScrollbar.prototype.onScroll = function onScroll (e) {
+    if (!this.isAlive) {
+      return;
+    }
+
+    updateGeometry(this);
+    processScrollDiff(this, 'top', this.element.scrollTop - this.lastScrollTop);
+    processScrollDiff(
+      this,
+      'left',
+      this.element.scrollLeft - this.lastScrollLeft
+    );
+
+    this.lastScrollTop = Math.floor(this.element.scrollTop);
+    this.lastScrollLeft = this.element.scrollLeft;
+  };
+
+  PerfectScrollbar.prototype.destroy = function destroy () {
+    if (!this.isAlive) {
+      return;
+    }
+
+    this.event.unbindAll();
+    remove(this.scrollbarX);
+    remove(this.scrollbarY);
+    remove(this.scrollbarXRail);
+    remove(this.scrollbarYRail);
+    this.removePsClasses();
+
+    // unset elements
+    this.element = null;
+    this.scrollbarX = null;
+    this.scrollbarY = null;
+    this.scrollbarXRail = null;
+    this.scrollbarYRail = null;
+
+    this.isAlive = false;
+  };
+
+  PerfectScrollbar.prototype.removePsClasses = function removePsClasses () {
+    this.element.className = this.element.className
+      .split(' ')
+      .filter(function (name) { return !name.match(/^ps([-_].+|)$/); })
+      .join(' ');
+  };
+
+  var PerfectScrollbar$1 = {
+    name: 'PerfectScrollbar',
+    props: {
+      options: {
+        type: Object,
+        required: false,
+        default: function () {}
+      },
+      tag: {
+        type: String,
+        required: false,
+        default: 'div'
+      },
+      watchOptions: {
+        type: Boolean,
+        required: false,
+        default: false
+      }
+    },
+    data: function data () {
+      return {
+        ps: null
+      }
+    },
+    watch: {
+      watchOptions: function watchOptions (shouldWatch) {
+        if (!shouldWatch && this.watcher) {
+          this.watcher();
+        } else {
+          this.createWatcher();
+        }
+      }
+    },
+    mounted: function mounted () {
+      this.create();
+
+      if (this.watchOptions) {
+        this.createWatcher();
+      }
+    },
+    updated: function updated () {
+      var this$1 = this;
+
+      this.$nextTick(function () {
+        this$1.update();
+      });
+    },
+    beforeDestroy: function beforeDestroy () {
+      this.destroy();
+    },
+    methods: {
+      create: function create () {
+        if (!(this.ps && this.$isServer)) {
+          this.ps = new PerfectScrollbar(this.$refs.container, this.options);
+        }
+      },
+      createWatcher: function createWatcher () {
+        var this$1 = this;
+
+        this.watcher = this.$watch('options', function () {
+          this$1.destroy();
+          this$1.create();
+        }, {
+          deep: true
+        });
+      },
+      update: function update () {
+        if (this.ps) {
+          this.ps.update();
+        }
+      },
+      destroy: function destroy () {
+        if (this.ps) {
+          this.ps.destroy();
+          this.ps = null;
+        }
+      }
+    },
+    render: function render (h) {
+      return h(this.tag,
+        {
+          ref: 'container',
+          class: 'ps',
+          on: this.$listeners
+        },
+        this.$slots.default)
+    }
+  };
+
+  function install (Vue, settings) {
+    if (settings) {
+      if (settings.name && typeof settings.name === 'string') {
+        PerfectScrollbar$1.name = settings.name;
+      }
+
+      if (settings.options && typeof settings.options === 'object') {
+        PerfectScrollbar$1.props.options.default = function () {
+          return settings.options
+        };
+      }
+
+      if (settings.tag && typeof settings.tag === 'string') {
+        PerfectScrollbar$1.props.tag.default = settings.tag;
+      }
+
+      if (settings.watchOptions && typeof settings.watchOptions === 'boolean') {
+        PerfectScrollbar$1.props.watchOptions = settings.watchOptions;
+      }
+    }
+
+    Vue.component(
+      PerfectScrollbar$1.name,
+      PerfectScrollbar$1
+    );
+  }
+
+  exports.install = install;
+  exports.PerfectScrollbar = PerfectScrollbar$1;
+  exports.default = install;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
 
 
 /***/ }),
@@ -59099,6 +61226,1099 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_vue__;
 
 /***/ }),
 
+/***/ "./node_modules/vuex/dist/vuex.esm.js":
+/*!********************************************!*\
+  !*** ./node_modules/vuex/dist/vuex.esm.js ***!
+  \********************************************/
+/*! exports provided: default, Store, install, mapState, mapMutations, mapGetters, mapActions, createNamespacedHelpers */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Store", function() { return Store; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "install", function() { return install; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapState", function() { return mapState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapMutations", function() { return mapMutations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapGetters", function() { return mapGetters; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapActions", function() { return mapActions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createNamespacedHelpers", function() { return createNamespacedHelpers; });
+/**
+ * vuex v3.2.0
+ * (c) 2020 Evan You
+ * @license MIT
+ */
+function applyMixin (Vue) {
+  var version = Number(Vue.version.split('.')[0]);
+
+  if (version >= 2) {
+    Vue.mixin({ beforeCreate: vuexInit });
+  } else {
+    // override init and inject vuex init procedure
+    // for 1.x backwards compatibility.
+    var _init = Vue.prototype._init;
+    Vue.prototype._init = function (options) {
+      if ( options === void 0 ) options = {};
+
+      options.init = options.init
+        ? [vuexInit].concat(options.init)
+        : vuexInit;
+      _init.call(this, options);
+    };
+  }
+
+  /**
+   * Vuex init hook, injected into each instances init hooks list.
+   */
+
+  function vuexInit () {
+    var options = this.$options;
+    // store injection
+    if (options.store) {
+      this.$store = typeof options.store === 'function'
+        ? options.store()
+        : options.store;
+    } else if (options.parent && options.parent.$store) {
+      this.$store = options.parent.$store;
+    }
+  }
+}
+
+var target = typeof window !== 'undefined'
+  ? window
+  : typeof global !== 'undefined'
+    ? global
+    : {};
+var devtoolHook = target.__VUE_DEVTOOLS_GLOBAL_HOOK__;
+
+function devtoolPlugin (store) {
+  if (!devtoolHook) { return }
+
+  store._devtoolHook = devtoolHook;
+
+  devtoolHook.emit('vuex:init', store);
+
+  devtoolHook.on('vuex:travel-to-state', function (targetState) {
+    store.replaceState(targetState);
+  });
+
+  store.subscribe(function (mutation, state) {
+    devtoolHook.emit('vuex:mutation', mutation, state);
+  });
+}
+
+/**
+ * Get the first item that pass the test
+ * by second argument function
+ *
+ * @param {Array} list
+ * @param {Function} f
+ * @return {*}
+ */
+
+/**
+ * forEach for object
+ */
+function forEachValue (obj, fn) {
+  Object.keys(obj).forEach(function (key) { return fn(obj[key], key); });
+}
+
+function isObject (obj) {
+  return obj !== null && typeof obj === 'object'
+}
+
+function isPromise (val) {
+  return val && typeof val.then === 'function'
+}
+
+function assert (condition, msg) {
+  if (!condition) { throw new Error(("[vuex] " + msg)) }
+}
+
+function partial (fn, arg) {
+  return function () {
+    return fn(arg)
+  }
+}
+
+// Base data struct for store's module, package with some attribute and method
+var Module = function Module (rawModule, runtime) {
+  this.runtime = runtime;
+  // Store some children item
+  this._children = Object.create(null);
+  // Store the origin module object which passed by programmer
+  this._rawModule = rawModule;
+  var rawState = rawModule.state;
+
+  // Store the origin module's state
+  this.state = (typeof rawState === 'function' ? rawState() : rawState) || {};
+};
+
+var prototypeAccessors = { namespaced: { configurable: true } };
+
+prototypeAccessors.namespaced.get = function () {
+  return !!this._rawModule.namespaced
+};
+
+Module.prototype.addChild = function addChild (key, module) {
+  this._children[key] = module;
+};
+
+Module.prototype.removeChild = function removeChild (key) {
+  delete this._children[key];
+};
+
+Module.prototype.getChild = function getChild (key) {
+  return this._children[key]
+};
+
+Module.prototype.hasChild = function hasChild (key) {
+  return key in this._children
+};
+
+Module.prototype.update = function update (rawModule) {
+  this._rawModule.namespaced = rawModule.namespaced;
+  if (rawModule.actions) {
+    this._rawModule.actions = rawModule.actions;
+  }
+  if (rawModule.mutations) {
+    this._rawModule.mutations = rawModule.mutations;
+  }
+  if (rawModule.getters) {
+    this._rawModule.getters = rawModule.getters;
+  }
+};
+
+Module.prototype.forEachChild = function forEachChild (fn) {
+  forEachValue(this._children, fn);
+};
+
+Module.prototype.forEachGetter = function forEachGetter (fn) {
+  if (this._rawModule.getters) {
+    forEachValue(this._rawModule.getters, fn);
+  }
+};
+
+Module.prototype.forEachAction = function forEachAction (fn) {
+  if (this._rawModule.actions) {
+    forEachValue(this._rawModule.actions, fn);
+  }
+};
+
+Module.prototype.forEachMutation = function forEachMutation (fn) {
+  if (this._rawModule.mutations) {
+    forEachValue(this._rawModule.mutations, fn);
+  }
+};
+
+Object.defineProperties( Module.prototype, prototypeAccessors );
+
+var ModuleCollection = function ModuleCollection (rawRootModule) {
+  // register root module (Vuex.Store options)
+  this.register([], rawRootModule, false);
+};
+
+ModuleCollection.prototype.get = function get (path) {
+  return path.reduce(function (module, key) {
+    return module.getChild(key)
+  }, this.root)
+};
+
+ModuleCollection.prototype.getNamespace = function getNamespace (path) {
+  var module = this.root;
+  return path.reduce(function (namespace, key) {
+    module = module.getChild(key);
+    return namespace + (module.namespaced ? key + '/' : '')
+  }, '')
+};
+
+ModuleCollection.prototype.update = function update$1 (rawRootModule) {
+  update([], this.root, rawRootModule);
+};
+
+ModuleCollection.prototype.register = function register (path, rawModule, runtime) {
+    var this$1 = this;
+    if ( runtime === void 0 ) runtime = true;
+
+  if (true) {
+    assertRawModule(path, rawModule);
+  }
+
+  var newModule = new Module(rawModule, runtime);
+  if (path.length === 0) {
+    this.root = newModule;
+  } else {
+    var parent = this.get(path.slice(0, -1));
+    parent.addChild(path[path.length - 1], newModule);
+  }
+
+  // register nested modules
+  if (rawModule.modules) {
+    forEachValue(rawModule.modules, function (rawChildModule, key) {
+      this$1.register(path.concat(key), rawChildModule, runtime);
+    });
+  }
+};
+
+ModuleCollection.prototype.unregister = function unregister (path) {
+  var parent = this.get(path.slice(0, -1));
+  var key = path[path.length - 1];
+  if (!parent.getChild(key).runtime) { return }
+
+  parent.removeChild(key);
+};
+
+ModuleCollection.prototype.isRegistered = function isRegistered (path) {
+  var parent = this.get(path.slice(0, -1));
+  var key = path[path.length - 1];
+
+  return parent.hasChild(key)
+};
+
+function update (path, targetModule, newModule) {
+  if (true) {
+    assertRawModule(path, newModule);
+  }
+
+  // update target module
+  targetModule.update(newModule);
+
+  // update nested modules
+  if (newModule.modules) {
+    for (var key in newModule.modules) {
+      if (!targetModule.getChild(key)) {
+        if (true) {
+          console.warn(
+            "[vuex] trying to add a new module '" + key + "' on hot reloading, " +
+            'manual reload is needed'
+          );
+        }
+        return
+      }
+      update(
+        path.concat(key),
+        targetModule.getChild(key),
+        newModule.modules[key]
+      );
+    }
+  }
+}
+
+var functionAssert = {
+  assert: function (value) { return typeof value === 'function'; },
+  expected: 'function'
+};
+
+var objectAssert = {
+  assert: function (value) { return typeof value === 'function' ||
+    (typeof value === 'object' && typeof value.handler === 'function'); },
+  expected: 'function or object with "handler" function'
+};
+
+var assertTypes = {
+  getters: functionAssert,
+  mutations: functionAssert,
+  actions: objectAssert
+};
+
+function assertRawModule (path, rawModule) {
+  Object.keys(assertTypes).forEach(function (key) {
+    if (!rawModule[key]) { return }
+
+    var assertOptions = assertTypes[key];
+
+    forEachValue(rawModule[key], function (value, type) {
+      assert(
+        assertOptions.assert(value),
+        makeAssertionMessage(path, key, type, value, assertOptions.expected)
+      );
+    });
+  });
+}
+
+function makeAssertionMessage (path, key, type, value, expected) {
+  var buf = key + " should be " + expected + " but \"" + key + "." + type + "\"";
+  if (path.length > 0) {
+    buf += " in module \"" + (path.join('.')) + "\"";
+  }
+  buf += " is " + (JSON.stringify(value)) + ".";
+  return buf
+}
+
+var Vue; // bind on install
+
+var Store = function Store (options) {
+  var this$1 = this;
+  if ( options === void 0 ) options = {};
+
+  // Auto install if it is not done yet and `window` has `Vue`.
+  // To allow users to avoid auto-installation in some cases,
+  // this code should be placed here. See #731
+  if (!Vue && typeof window !== 'undefined' && window.Vue) {
+    install(window.Vue);
+  }
+
+  if (true) {
+    assert(Vue, "must call Vue.use(Vuex) before creating a store instance.");
+    assert(typeof Promise !== 'undefined', "vuex requires a Promise polyfill in this browser.");
+    assert(this instanceof Store, "store must be called with the new operator.");
+  }
+
+  var plugins = options.plugins; if ( plugins === void 0 ) plugins = [];
+  var strict = options.strict; if ( strict === void 0 ) strict = false;
+
+  // store internal state
+  this._committing = false;
+  this._actions = Object.create(null);
+  this._actionSubscribers = [];
+  this._mutations = Object.create(null);
+  this._wrappedGetters = Object.create(null);
+  this._modules = new ModuleCollection(options);
+  this._modulesNamespaceMap = Object.create(null);
+  this._subscribers = [];
+  this._watcherVM = new Vue();
+  this._makeLocalGettersCache = Object.create(null);
+
+  // bind commit and dispatch to self
+  var store = this;
+  var ref = this;
+  var dispatch = ref.dispatch;
+  var commit = ref.commit;
+  this.dispatch = function boundDispatch (type, payload) {
+    return dispatch.call(store, type, payload)
+  };
+  this.commit = function boundCommit (type, payload, options) {
+    return commit.call(store, type, payload, options)
+  };
+
+  // strict mode
+  this.strict = strict;
+
+  var state = this._modules.root.state;
+
+  // init root module.
+  // this also recursively registers all sub-modules
+  // and collects all module getters inside this._wrappedGetters
+  installModule(this, state, [], this._modules.root);
+
+  // initialize the store vm, which is responsible for the reactivity
+  // (also registers _wrappedGetters as computed properties)
+  resetStoreVM(this, state);
+
+  // apply plugins
+  plugins.forEach(function (plugin) { return plugin(this$1); });
+
+  var useDevtools = options.devtools !== undefined ? options.devtools : Vue.config.devtools;
+  if (useDevtools) {
+    devtoolPlugin(this);
+  }
+};
+
+var prototypeAccessors$1 = { state: { configurable: true } };
+
+prototypeAccessors$1.state.get = function () {
+  return this._vm._data.$$state
+};
+
+prototypeAccessors$1.state.set = function (v) {
+  if (true) {
+    assert(false, "use store.replaceState() to explicit replace store state.");
+  }
+};
+
+Store.prototype.commit = function commit (_type, _payload, _options) {
+    var this$1 = this;
+
+  // check object-style commit
+  var ref = unifyObjectStyle(_type, _payload, _options);
+    var type = ref.type;
+    var payload = ref.payload;
+    var options = ref.options;
+
+  var mutation = { type: type, payload: payload };
+  var entry = this._mutations[type];
+  if (!entry) {
+    if (true) {
+      console.error(("[vuex] unknown mutation type: " + type));
+    }
+    return
+  }
+  this._withCommit(function () {
+    entry.forEach(function commitIterator (handler) {
+      handler(payload);
+    });
+  });
+
+  this._subscribers
+    .slice() // shallow copy to prevent iterator invalidation if subscriber synchronously calls unsubscribe
+    .forEach(function (sub) { return sub(mutation, this$1.state); });
+
+  if (
+     true &&
+    options && options.silent
+  ) {
+    console.warn(
+      "[vuex] mutation type: " + type + ". Silent option has been removed. " +
+      'Use the filter functionality in the vue-devtools'
+    );
+  }
+};
+
+Store.prototype.dispatch = function dispatch (_type, _payload) {
+    var this$1 = this;
+
+  // check object-style dispatch
+  var ref = unifyObjectStyle(_type, _payload);
+    var type = ref.type;
+    var payload = ref.payload;
+
+  var action = { type: type, payload: payload };
+  var entry = this._actions[type];
+  if (!entry) {
+    if (true) {
+      console.error(("[vuex] unknown action type: " + type));
+    }
+    return
+  }
+
+  try {
+    this._actionSubscribers
+      .slice() // shallow copy to prevent iterator invalidation if subscriber synchronously calls unsubscribe
+      .filter(function (sub) { return sub.before; })
+      .forEach(function (sub) { return sub.before(action, this$1.state); });
+  } catch (e) {
+    if (true) {
+      console.warn("[vuex] error in before action subscribers: ");
+      console.error(e);
+    }
+  }
+
+  var result = entry.length > 1
+    ? Promise.all(entry.map(function (handler) { return handler(payload); }))
+    : entry[0](payload);
+
+  return result.then(function (res) {
+    try {
+      this$1._actionSubscribers
+        .filter(function (sub) { return sub.after; })
+        .forEach(function (sub) { return sub.after(action, this$1.state); });
+    } catch (e) {
+      if (true) {
+        console.warn("[vuex] error in after action subscribers: ");
+        console.error(e);
+      }
+    }
+    return res
+  })
+};
+
+Store.prototype.subscribe = function subscribe (fn) {
+  return genericSubscribe(fn, this._subscribers)
+};
+
+Store.prototype.subscribeAction = function subscribeAction (fn) {
+  var subs = typeof fn === 'function' ? { before: fn } : fn;
+  return genericSubscribe(subs, this._actionSubscribers)
+};
+
+Store.prototype.watch = function watch (getter, cb, options) {
+    var this$1 = this;
+
+  if (true) {
+    assert(typeof getter === 'function', "store.watch only accepts a function.");
+  }
+  return this._watcherVM.$watch(function () { return getter(this$1.state, this$1.getters); }, cb, options)
+};
+
+Store.prototype.replaceState = function replaceState (state) {
+    var this$1 = this;
+
+  this._withCommit(function () {
+    this$1._vm._data.$$state = state;
+  });
+};
+
+Store.prototype.registerModule = function registerModule (path, rawModule, options) {
+    if ( options === void 0 ) options = {};
+
+  if (typeof path === 'string') { path = [path]; }
+
+  if (true) {
+    assert(Array.isArray(path), "module path must be a string or an Array.");
+    assert(path.length > 0, 'cannot register the root module by using registerModule.');
+  }
+
+  this._modules.register(path, rawModule);
+  installModule(this, this.state, path, this._modules.get(path), options.preserveState);
+  // reset store to update getters...
+  resetStoreVM(this, this.state);
+};
+
+Store.prototype.unregisterModule = function unregisterModule (path) {
+    var this$1 = this;
+
+  if (typeof path === 'string') { path = [path]; }
+
+  if (true) {
+    assert(Array.isArray(path), "module path must be a string or an Array.");
+  }
+
+  this._modules.unregister(path);
+  this._withCommit(function () {
+    var parentState = getNestedState(this$1.state, path.slice(0, -1));
+    Vue.delete(parentState, path[path.length - 1]);
+  });
+  resetStore(this);
+};
+
+Store.prototype.hasModule = function hasModule (path) {
+  if (typeof path === 'string') { path = [path]; }
+
+  if (true) {
+    assert(Array.isArray(path), "module path must be a string or an Array.");
+  }
+
+  return this._modules.isRegistered(path)
+};
+
+Store.prototype.hotUpdate = function hotUpdate (newOptions) {
+  this._modules.update(newOptions);
+  resetStore(this, true);
+};
+
+Store.prototype._withCommit = function _withCommit (fn) {
+  var committing = this._committing;
+  this._committing = true;
+  fn();
+  this._committing = committing;
+};
+
+Object.defineProperties( Store.prototype, prototypeAccessors$1 );
+
+function genericSubscribe (fn, subs) {
+  if (subs.indexOf(fn) < 0) {
+    subs.push(fn);
+  }
+  return function () {
+    var i = subs.indexOf(fn);
+    if (i > -1) {
+      subs.splice(i, 1);
+    }
+  }
+}
+
+function resetStore (store, hot) {
+  store._actions = Object.create(null);
+  store._mutations = Object.create(null);
+  store._wrappedGetters = Object.create(null);
+  store._modulesNamespaceMap = Object.create(null);
+  var state = store.state;
+  // init all modules
+  installModule(store, state, [], store._modules.root, true);
+  // reset vm
+  resetStoreVM(store, state, hot);
+}
+
+function resetStoreVM (store, state, hot) {
+  var oldVm = store._vm;
+
+  // bind store public getters
+  store.getters = {};
+  // reset local getters cache
+  store._makeLocalGettersCache = Object.create(null);
+  var wrappedGetters = store._wrappedGetters;
+  var computed = {};
+  forEachValue(wrappedGetters, function (fn, key) {
+    // use computed to leverage its lazy-caching mechanism
+    // direct inline function use will lead to closure preserving oldVm.
+    // using partial to return function with only arguments preserved in closure environment.
+    computed[key] = partial(fn, store);
+    Object.defineProperty(store.getters, key, {
+      get: function () { return store._vm[key]; },
+      enumerable: true // for local getters
+    });
+  });
+
+  // use a Vue instance to store the state tree
+  // suppress warnings just in case the user has added
+  // some funky global mixins
+  var silent = Vue.config.silent;
+  Vue.config.silent = true;
+  store._vm = new Vue({
+    data: {
+      $$state: state
+    },
+    computed: computed
+  });
+  Vue.config.silent = silent;
+
+  // enable strict mode for new vm
+  if (store.strict) {
+    enableStrictMode(store);
+  }
+
+  if (oldVm) {
+    if (hot) {
+      // dispatch changes in all subscribed watchers
+      // to force getter re-evaluation for hot reloading.
+      store._withCommit(function () {
+        oldVm._data.$$state = null;
+      });
+    }
+    Vue.nextTick(function () { return oldVm.$destroy(); });
+  }
+}
+
+function installModule (store, rootState, path, module, hot) {
+  var isRoot = !path.length;
+  var namespace = store._modules.getNamespace(path);
+
+  // register in namespace map
+  if (module.namespaced) {
+    if (store._modulesNamespaceMap[namespace] && "development" !== 'production') {
+      console.error(("[vuex] duplicate namespace " + namespace + " for the namespaced module " + (path.join('/'))));
+    }
+    store._modulesNamespaceMap[namespace] = module;
+  }
+
+  // set state
+  if (!isRoot && !hot) {
+    var parentState = getNestedState(rootState, path.slice(0, -1));
+    var moduleName = path[path.length - 1];
+    store._withCommit(function () {
+      if (true) {
+        if (moduleName in parentState) {
+          console.warn(
+            ("[vuex] state field \"" + moduleName + "\" was overridden by a module with the same name at \"" + (path.join('.')) + "\"")
+          );
+        }
+      }
+      Vue.set(parentState, moduleName, module.state);
+    });
+  }
+
+  var local = module.context = makeLocalContext(store, namespace, path);
+
+  module.forEachMutation(function (mutation, key) {
+    var namespacedType = namespace + key;
+    registerMutation(store, namespacedType, mutation, local);
+  });
+
+  module.forEachAction(function (action, key) {
+    var type = action.root ? key : namespace + key;
+    var handler = action.handler || action;
+    registerAction(store, type, handler, local);
+  });
+
+  module.forEachGetter(function (getter, key) {
+    var namespacedType = namespace + key;
+    registerGetter(store, namespacedType, getter, local);
+  });
+
+  module.forEachChild(function (child, key) {
+    installModule(store, rootState, path.concat(key), child, hot);
+  });
+}
+
+/**
+ * make localized dispatch, commit, getters and state
+ * if there is no namespace, just use root ones
+ */
+function makeLocalContext (store, namespace, path) {
+  var noNamespace = namespace === '';
+
+  var local = {
+    dispatch: noNamespace ? store.dispatch : function (_type, _payload, _options) {
+      var args = unifyObjectStyle(_type, _payload, _options);
+      var payload = args.payload;
+      var options = args.options;
+      var type = args.type;
+
+      if (!options || !options.root) {
+        type = namespace + type;
+        if ( true && !store._actions[type]) {
+          console.error(("[vuex] unknown local action type: " + (args.type) + ", global type: " + type));
+          return
+        }
+      }
+
+      return store.dispatch(type, payload)
+    },
+
+    commit: noNamespace ? store.commit : function (_type, _payload, _options) {
+      var args = unifyObjectStyle(_type, _payload, _options);
+      var payload = args.payload;
+      var options = args.options;
+      var type = args.type;
+
+      if (!options || !options.root) {
+        type = namespace + type;
+        if ( true && !store._mutations[type]) {
+          console.error(("[vuex] unknown local mutation type: " + (args.type) + ", global type: " + type));
+          return
+        }
+      }
+
+      store.commit(type, payload, options);
+    }
+  };
+
+  // getters and state object must be gotten lazily
+  // because they will be changed by vm update
+  Object.defineProperties(local, {
+    getters: {
+      get: noNamespace
+        ? function () { return store.getters; }
+        : function () { return makeLocalGetters(store, namespace); }
+    },
+    state: {
+      get: function () { return getNestedState(store.state, path); }
+    }
+  });
+
+  return local
+}
+
+function makeLocalGetters (store, namespace) {
+  if (!store._makeLocalGettersCache[namespace]) {
+    var gettersProxy = {};
+    var splitPos = namespace.length;
+    Object.keys(store.getters).forEach(function (type) {
+      // skip if the target getter is not match this namespace
+      if (type.slice(0, splitPos) !== namespace) { return }
+
+      // extract local getter type
+      var localType = type.slice(splitPos);
+
+      // Add a port to the getters proxy.
+      // Define as getter property because
+      // we do not want to evaluate the getters in this time.
+      Object.defineProperty(gettersProxy, localType, {
+        get: function () { return store.getters[type]; },
+        enumerable: true
+      });
+    });
+    store._makeLocalGettersCache[namespace] = gettersProxy;
+  }
+
+  return store._makeLocalGettersCache[namespace]
+}
+
+function registerMutation (store, type, handler, local) {
+  var entry = store._mutations[type] || (store._mutations[type] = []);
+  entry.push(function wrappedMutationHandler (payload) {
+    handler.call(store, local.state, payload);
+  });
+}
+
+function registerAction (store, type, handler, local) {
+  var entry = store._actions[type] || (store._actions[type] = []);
+  entry.push(function wrappedActionHandler (payload) {
+    var res = handler.call(store, {
+      dispatch: local.dispatch,
+      commit: local.commit,
+      getters: local.getters,
+      state: local.state,
+      rootGetters: store.getters,
+      rootState: store.state
+    }, payload);
+    if (!isPromise(res)) {
+      res = Promise.resolve(res);
+    }
+    if (store._devtoolHook) {
+      return res.catch(function (err) {
+        store._devtoolHook.emit('vuex:error', err);
+        throw err
+      })
+    } else {
+      return res
+    }
+  });
+}
+
+function registerGetter (store, type, rawGetter, local) {
+  if (store._wrappedGetters[type]) {
+    if (true) {
+      console.error(("[vuex] duplicate getter key: " + type));
+    }
+    return
+  }
+  store._wrappedGetters[type] = function wrappedGetter (store) {
+    return rawGetter(
+      local.state, // local state
+      local.getters, // local getters
+      store.state, // root state
+      store.getters // root getters
+    )
+  };
+}
+
+function enableStrictMode (store) {
+  store._vm.$watch(function () { return this._data.$$state }, function () {
+    if (true) {
+      assert(store._committing, "do not mutate vuex store state outside mutation handlers.");
+    }
+  }, { deep: true, sync: true });
+}
+
+function getNestedState (state, path) {
+  return path.reduce(function (state, key) { return state[key]; }, state)
+}
+
+function unifyObjectStyle (type, payload, options) {
+  if (isObject(type) && type.type) {
+    options = payload;
+    payload = type;
+    type = type.type;
+  }
+
+  if (true) {
+    assert(typeof type === 'string', ("expects string as the type, but found " + (typeof type) + "."));
+  }
+
+  return { type: type, payload: payload, options: options }
+}
+
+function install (_Vue) {
+  if (Vue && _Vue === Vue) {
+    if (true) {
+      console.error(
+        '[vuex] already installed. Vue.use(Vuex) should be called only once.'
+      );
+    }
+    return
+  }
+  Vue = _Vue;
+  applyMixin(Vue);
+}
+
+/**
+ * Reduce the code which written in Vue.js for getting the state.
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} states # Object's item can be a function which accept state and getters for param, you can do something for state and getters in it.
+ * @param {Object}
+ */
+var mapState = normalizeNamespace(function (namespace, states) {
+  var res = {};
+  if ( true && !isValidMap(states)) {
+    console.error('[vuex] mapState: mapper parameter must be either an Array or an Object');
+  }
+  normalizeMap(states).forEach(function (ref) {
+    var key = ref.key;
+    var val = ref.val;
+
+    res[key] = function mappedState () {
+      var state = this.$store.state;
+      var getters = this.$store.getters;
+      if (namespace) {
+        var module = getModuleByNamespace(this.$store, 'mapState', namespace);
+        if (!module) {
+          return
+        }
+        state = module.context.state;
+        getters = module.context.getters;
+      }
+      return typeof val === 'function'
+        ? val.call(this, state, getters)
+        : state[val]
+    };
+    // mark vuex getter for devtools
+    res[key].vuex = true;
+  });
+  return res
+});
+
+/**
+ * Reduce the code which written in Vue.js for committing the mutation
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} mutations # Object's item can be a function which accept `commit` function as the first param, it can accept anthor params. You can commit mutation and do any other things in this function. specially, You need to pass anthor params from the mapped function.
+ * @return {Object}
+ */
+var mapMutations = normalizeNamespace(function (namespace, mutations) {
+  var res = {};
+  if ( true && !isValidMap(mutations)) {
+    console.error('[vuex] mapMutations: mapper parameter must be either an Array or an Object');
+  }
+  normalizeMap(mutations).forEach(function (ref) {
+    var key = ref.key;
+    var val = ref.val;
+
+    res[key] = function mappedMutation () {
+      var args = [], len = arguments.length;
+      while ( len-- ) args[ len ] = arguments[ len ];
+
+      // Get the commit method from store
+      var commit = this.$store.commit;
+      if (namespace) {
+        var module = getModuleByNamespace(this.$store, 'mapMutations', namespace);
+        if (!module) {
+          return
+        }
+        commit = module.context.commit;
+      }
+      return typeof val === 'function'
+        ? val.apply(this, [commit].concat(args))
+        : commit.apply(this.$store, [val].concat(args))
+    };
+  });
+  return res
+});
+
+/**
+ * Reduce the code which written in Vue.js for getting the getters
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} getters
+ * @return {Object}
+ */
+var mapGetters = normalizeNamespace(function (namespace, getters) {
+  var res = {};
+  if ( true && !isValidMap(getters)) {
+    console.error('[vuex] mapGetters: mapper parameter must be either an Array or an Object');
+  }
+  normalizeMap(getters).forEach(function (ref) {
+    var key = ref.key;
+    var val = ref.val;
+
+    // The namespace has been mutated by normalizeNamespace
+    val = namespace + val;
+    res[key] = function mappedGetter () {
+      if (namespace && !getModuleByNamespace(this.$store, 'mapGetters', namespace)) {
+        return
+      }
+      if ( true && !(val in this.$store.getters)) {
+        console.error(("[vuex] unknown getter: " + val));
+        return
+      }
+      return this.$store.getters[val]
+    };
+    // mark vuex getter for devtools
+    res[key].vuex = true;
+  });
+  return res
+});
+
+/**
+ * Reduce the code which written in Vue.js for dispatch the action
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} actions # Object's item can be a function which accept `dispatch` function as the first param, it can accept anthor params. You can dispatch action and do any other things in this function. specially, You need to pass anthor params from the mapped function.
+ * @return {Object}
+ */
+var mapActions = normalizeNamespace(function (namespace, actions) {
+  var res = {};
+  if ( true && !isValidMap(actions)) {
+    console.error('[vuex] mapActions: mapper parameter must be either an Array or an Object');
+  }
+  normalizeMap(actions).forEach(function (ref) {
+    var key = ref.key;
+    var val = ref.val;
+
+    res[key] = function mappedAction () {
+      var args = [], len = arguments.length;
+      while ( len-- ) args[ len ] = arguments[ len ];
+
+      // get dispatch function from store
+      var dispatch = this.$store.dispatch;
+      if (namespace) {
+        var module = getModuleByNamespace(this.$store, 'mapActions', namespace);
+        if (!module) {
+          return
+        }
+        dispatch = module.context.dispatch;
+      }
+      return typeof val === 'function'
+        ? val.apply(this, [dispatch].concat(args))
+        : dispatch.apply(this.$store, [val].concat(args))
+    };
+  });
+  return res
+});
+
+/**
+ * Rebinding namespace param for mapXXX function in special scoped, and return them by simple object
+ * @param {String} namespace
+ * @return {Object}
+ */
+var createNamespacedHelpers = function (namespace) { return ({
+  mapState: mapState.bind(null, namespace),
+  mapGetters: mapGetters.bind(null, namespace),
+  mapMutations: mapMutations.bind(null, namespace),
+  mapActions: mapActions.bind(null, namespace)
+}); };
+
+/**
+ * Normalize the map
+ * normalizeMap([1, 2, 3]) => [ { key: 1, val: 1 }, { key: 2, val: 2 }, { key: 3, val: 3 } ]
+ * normalizeMap({a: 1, b: 2, c: 3}) => [ { key: 'a', val: 1 }, { key: 'b', val: 2 }, { key: 'c', val: 3 } ]
+ * @param {Array|Object} map
+ * @return {Object}
+ */
+function normalizeMap (map) {
+  if (!isValidMap(map)) {
+    return []
+  }
+  return Array.isArray(map)
+    ? map.map(function (key) { return ({ key: key, val: key }); })
+    : Object.keys(map).map(function (key) { return ({ key: key, val: map[key] }); })
+}
+
+/**
+ * Validate whether given map is valid or not
+ * @param {*} map
+ * @return {Boolean}
+ */
+function isValidMap (map) {
+  return Array.isArray(map) || isObject(map)
+}
+
+/**
+ * Return a function expect two param contains namespace and map. it will normalize the namespace and then the param's function will handle the new namespace and the map.
+ * @param {Function} fn
+ * @return {Function}
+ */
+function normalizeNamespace (fn) {
+  return function (namespace, map) {
+    if (typeof namespace !== 'string') {
+      map = namespace;
+      namespace = '';
+    } else if (namespace.charAt(namespace.length - 1) !== '/') {
+      namespace += '/';
+    }
+    return fn(namespace, map)
+  }
+}
+
+/**
+ * Search a special module from store by namespace. if module not exist, print error message.
+ * @param {Object} store
+ * @param {String} helper
+ * @param {String} namespace
+ * @return {Object}
+ */
+function getModuleByNamespace (store, helper, namespace) {
+  var module = store._modulesNamespaceMap[namespace];
+  if ( true && !module) {
+    console.error(("[vuex] module namespace not found in " + helper + "(): " + namespace));
+  }
+  return module
+}
+
+var index_esm = {
+  Store: Store,
+  install: install,
+  version: '3.2.0',
+  mapState: mapState,
+  mapMutations: mapMutations,
+  mapGetters: mapGetters,
+  mapActions: mapActions,
+  createNamespacedHelpers: createNamespacedHelpers
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (index_esm);
+
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -59265,24 +62485,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var vue_axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-axios */ "./node_modules/vue-axios/dist/vue-axios.min.js");
 /* harmony import */ var vue_axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./store */ "./resources/js/store.js");
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_store__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _router_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./router.js */ "./resources/js/router.js");
-/* harmony import */ var _auth_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./auth.js */ "./resources/js/auth.js");
-/* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./api.js */ "./resources/js/api.js");
+/* harmony import */ var vue2_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue2-perfect-scrollbar */ "./node_modules/vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.umd.js");
+/* harmony import */ var vue2_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vue2_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var vue2_perfect_scrollbar_dist_vue2_perfect_scrollbar_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css */ "./node_modules/vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css");
+/* harmony import */ var vue2_perfect_scrollbar_dist_vue2_perfect_scrollbar_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(vue2_perfect_scrollbar_dist_vue2_perfect_scrollbar_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./store */ "./resources/js/store.js");
+/* harmony import */ var _routes_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./routes.js */ "./resources/js/routes.js");
+/* harmony import */ var _auth_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./auth.js */ "./resources/js/auth.js");
+/* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./api.js */ "./resources/js/api.js");
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 window.Event = new Vue();
 
 
 
+
+
 Vue.use(vuetify__WEBPACK_IMPORTED_MODULE_0___default.a);
 Vue.use(vue_axios__WEBPACK_IMPORTED_MODULE_2___default.a, axios__WEBPACK_IMPORTED_MODULE_1___default.a);
+Vue.use(vue2_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_3___default.a);
 
 
 
 
-window.auth = new _auth_js__WEBPACK_IMPORTED_MODULE_5__["default"]();
-window.api = new _api_js__WEBPACK_IMPORTED_MODULE_6__["default"]();
+window.auth = new _auth_js__WEBPACK_IMPORTED_MODULE_7__["default"]();
+window.api = new _api_js__WEBPACK_IMPORTED_MODULE_8__["default"]();
 Vue.component("vue-app", __webpack_require__(/*! ./App.vue */ "./resources/js/App.vue")["default"]);
 var app = new Vue({
   el: "#app",
@@ -59294,7 +62520,7 @@ var app = new Vue({
       themes: {
         light: {
           primary: '#9e4373',
-          secondary: '#8c4572',
+          secondary: '#be87a4',
           accent: '#3f51b5',
           error: '#f44336',
           warning: '#ffc107',
@@ -59313,8 +62539,8 @@ var app = new Vue({
       }
     }
   }),
-  store: _store__WEBPACK_IMPORTED_MODULE_3___default.a,
-  router: _router_js__WEBPACK_IMPORTED_MODULE_4__["default"]
+  store: _store__WEBPACK_IMPORTED_MODULE_5__["default"],
+  router: _routes_js__WEBPACK_IMPORTED_MODULE_6__["default"]
 });
 
 /***/ }),
@@ -59415,9 +62641,9 @@ var Auth = /*#__PURE__*/function () {
 
 /***/ }),
 
-/***/ "./resources/js/router.js":
+/***/ "./resources/js/routes.js":
 /*!********************************!*\
-  !*** ./resources/js/router.js ***!
+  !*** ./resources/js/routes.js ***!
   \********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -59430,59 +62656,67 @@ __webpack_require__.r(__webpack_exports__);
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+var withPrefix = function withPrefix(prefix, routes) {
+  return routes.map(function (route) {
+    route.path = prefix + route.path;
+    return route;
+  });
+};
+
 var routes = [{
   path: '/',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, /*! ./components/Layout.vue */ "./resources/js/components/Layout.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(10), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! ./components/Layout.vue */ "./resources/js/components/Layout.vue"));
   },
   children: [{
     path: '/',
     name: 'Home',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./components/pages/Home.vue */ "./resources/js/components/pages/Home.vue"));
+      return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ./components/pages/Home.vue */ "./resources/js/components/pages/Home.vue"));
     }
   }, {
     path: '/about-me',
     name: 'AboutMe',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./components/pages/AboutMe.vue */ "./resources/js/components/pages/AboutMe.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, /*! ./components/pages/AboutMe.vue */ "./resources/js/components/pages/AboutMe.vue"));
     }
   }, {
     path: '/events',
     name: 'Events',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./components/pages/Events.vue */ "./resources/js/components/pages/Events.vue"));
+      return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ./components/pages/Events.vue */ "./resources/js/components/pages/Events.vue"));
     }
   }, {
     path: '/publications',
     name: 'Publications',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ./components/pages/Publications.vue */ "./resources/js/components/pages/Publications.vue"));
+      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ./components/pages/Publications.vue */ "./resources/js/components/pages/Publications.vue"));
     }
   }, {
     path: '/services',
     name: 'Services',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ./components/pages/Services.vue */ "./resources/js/components/pages/Services.vue"));
+      return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./components/pages/Services.vue */ "./resources/js/components/pages/Services.vue"));
     }
   }, {
     path: '/gallery',
     name: 'Gallery',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! ./components/pages/Gallery.vue */ "./resources/js/components/pages/Gallery.vue"));
+      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./components/pages/Gallery.vue */ "./resources/js/components/pages/Gallery.vue"));
     }
   }, {
     path: '/contact',
     name: 'Contact',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./components/pages/Contact.vue */ "./resources/js/components/pages/Contact.vue"));
+      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./components/pages/Contact.vue */ "./resources/js/components/pages/Contact.vue"));
     }
   }]
 }, {
   path: "*",
   name: "404",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! ./components/errors/404.vue */ "./resources/js/components/errors/404.vue"));
+    return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./components/errors/404.vue */ "./resources/js/components/errors/404.vue"));
   }
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
@@ -59526,10 +62760,88 @@ router.beforeEach(function (to, from, next) {
 /*!*******************************!*\
   !*** ./resources/js/store.js ***!
   \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 
 
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__["default"]);
+var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
+  state: {
+    numero: 10,
+    drawer: false,
+    links: [{
+      path: "/",
+      name: "Inicio",
+      icon: 'mdi-home'
+    }, {
+      path: "/about-me",
+      name: "¿Quíen soy?",
+      icon: 'mdi-account-question'
+    }, {
+      path: "/events",
+      name: "Eventos",
+      icon: 'mdi-calendar-multiple-check'
+    }, {
+      path: "/publications",
+      name: "Publicaciones",
+      icon: 'mdi-newspaper-variant'
+    }, {
+      path: "/services",
+      name: "Servicios",
+      icon: 'mdi-face-agent'
+    }, {
+      path: "/gallery",
+      name: "Galería",
+      icon: 'mdi-animation-play'
+    }, {
+      path: "/contact",
+      name: "Contacto",
+      icon: 'mdi-card-account-mail'
+    }],
+    search: "",
+    page: "",
+    flat: ""
+  },
+  getters: {
+    getDrawer: function getDrawer(state) {
+      return state.drawer;
+    },
+    getSearch: function getSearch(state) {
+      return state.search;
+    },
+    getPage: function getPage(state) {
+      return state.page;
+    },
+    getFlat: function getFlat(state) {
+      return state.flat;
+    }
+  },
+  mutations: {
+    setDrawer: function setDrawer(state, v) {
+      state.drawer = v;
+    },
+    setSearch: function setSearch(state, v) {
+      state.search = v;
+    },
+    setPage: function setPage(state, v) {
+      state.page = v;
+    },
+    setFlat: function setFlat(state, v) {
+      state.flat = v;
+    },
+    aumentar: function aumentar(state) {
+      state.numero++;
+    }
+  },
+  actions: {}
+});
+/* harmony default export */ __webpack_exports__["default"] = (store);
 
 /***/ }),
 

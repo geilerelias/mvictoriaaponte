@@ -9,6 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue_pdf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-pdf */ "./node_modules/vue-pdf/src/vuePdfNoSss.vue");
 //
 //
 //
@@ -130,105 +131,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+var loadingTask = vue_pdf__WEBPACK_IMPORTED_MODULE_0__["default"].createLoadingTask('/document/AUTOBIOGRAFÍA-TRAVESÍA%20PERSONAL%20DESDE%20MI%20CONCIENCIA.pdf');
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    pdf: vue_pdf__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    this.src.then(function (pdf) {
+      _this.numPages = pdf.numPages;
+    });
+  },
   data: function data() {
     return {
+      src: loadingTask,
+      numPages: undefined,
       links: [{
         text: 'Inicio',
         disabled: false,
@@ -238,28 +157,7 @@ __webpack_require__.r(__webpack_exports__);
         disabled: true,
         href: '/about-me'
       }],
-      messages: [{
-        avatar: 'https://avatars0.githubusercontent.com/u/9064066?v=4&s=460',
-        name: 'John Leider',
-        title: 'Welcome to Vuetify.js!',
-        excerpt: 'Thank you for joining our community...'
-      }, {
-        color: 'red',
-        icon: 'people',
-        name: 'Social',
-        "new": 1,
-        total: 3,
-        title: 'Twitter'
-      }, {
-        color: 'teal',
-        icon: 'local_offer',
-        name: 'Promos',
-        "new": 2,
-        total: 4,
-        title: 'Shop your way',
-        exceprt: 'New deals available, Join Today'
-      }],
-      lorem: 'Lorem ipsum dolor sit amet, at aliquam vivendum vel, everti delicatissimi cu eos. Dico iuvaret debitis mel an, et cum zril menandri. Eum in consul legimus accusam. Ea dico abhorreant duo, quo illum minimum incorrupte no, nostro voluptaria sea eu. Suas eligendi ius at, at nemore equidem est. Sed in error hendrerit, in consul constituam cum.'
+      dialog: false
     };
   }
 });
@@ -281,253 +179,311 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "section",
-      [
+  return _c(
+    "div",
+    [
+      _c(
+        "section",
+        [
+          _c(
+            "v-img",
+            {
+              attrs: {
+                src: "images/quien-soy/creciendo-juntas.jpg",
+                gradient: "to top, rgba(5, 11, 31, 0.8), rgba(5, 11, 31, 0.8)",
+                color: "#45516b",
+                flat: "",
+                tile: "",
+                height: "350",
+                "max-width": "100%"
+              }
+            },
+            [
+              _c(
+                "v-row",
+                {
+                  staticClass:
+                    "ma-0 fill-height text-center align-center justify-center"
+                },
+                [
+                  _c(
+                    "v-col",
+                    { staticClass: "col col-12" },
+                    [
+                      _c(
+                        "h1",
+                        {
+                          staticClass:
+                            "display-2 font-weight-500 mb-2 text-center white--text"
+                        },
+                        [
+                          _vm._v(
+                            "\n                        ¿Quíen Soy?\n                    "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("v-divider", {
+                        staticClass: "primary mx-auto mb-6 ",
+                        staticStyle: { "max-width": "28px" }
+                      }),
+                      _vm._v(" "),
+                      _c("v-breadcrumbs", {
+                        staticClass: " justify-center pa-0",
+                        attrs: { dark: "", items: _vm.links }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "container" },
+        [
+          _c(
+            "v-row",
+            [
+              _c(
+                "v-col",
+                { staticClass: "col-md-6 col-12" },
+                [
+                  _c("h2", { staticClass: "display-1 " }, [
+                    _vm._v(
+                      "\n                    Mi nombre es Maria Victoria Aponte.\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("h2", { staticClass: "headline mb-4 " }, [
+                    _vm._v(
+                      "\n                    Soy Magister en Investigación Social,\n                    Especialista en Administración y docencia universitaria.\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "subtitle-1 text-justify" }, [
+                    _vm._v(
+                      "\n                    Me he desempeñado, desde lo social como profesional universitario,\n                    en oficinas de la mujer a nivel municipal y como personal directivo en el orden departamental.\n                    De igual manera, me desempeñé, cómo directora de Bienestar Universitario. Así mismo, fui\n                    directora de\n                    la Asociación de Trabajadores Sociales del Cesar y directora de una Fundación sin ánimo de lucro\n                    que\n                    trabajaba por los jóvenes. Actualmente soy Docente universitaria.\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "mb-5 text-justify" }, [
+                    _vm._v(
+                      " Mi trayectoria profesional, se ha\n                    caracterizado por investigar problemáticas de la mujer, y la violencia de género,\n                    la recuperación de la memoria entre otros, con el ánimo de ser referente de\n                    cambio para las mujeres a través de un diálogo de saberes que permita\n                    transformarla de la subordinación al protagonismo en el contexto\n                    socio-cultural.\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "v-btn",
+                    {
+                      staticClass: "px-5  primary--text",
+                      attrs: { outlined: "", text: "", to: "/contact" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                    Contáctame\n                "
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                { staticClass: "col-md-5 offset-md-1 col-12" },
+                [
+                  _c(
+                    "v-card",
+                    [
+                      _c("v-img", {
+                        attrs: { src: "images/quien-soy/quien-soy.jpg" }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("section", [
         _c(
-          "v-img",
-          {
-            attrs: {
-              src:
-                "https://daedal-free.zeroskillz.now.sh/img/about.3946684e.jpg",
-              gradient: "to top, rgba(5, 11, 31, 0.8), rgba(5, 11, 31, 0.8)",
-              color: "#45516b",
-              flat: "",
-              tile: "",
-              height: "350",
-              "max-width": "100%"
-            }
-          },
+          "div",
+          { staticClass: "base-section-heading text-center mb-12" },
           [
             _c(
-              "v-row",
+              "v-avatar",
               {
-                staticClass:
-                  "ma-0 fill-height text-center align-center justify-center"
+                staticClass: "d-inline-flex mb-4 primary",
+                attrs: { size: "56" }
               },
               [
-                _c(
-                  "v-col",
-                  { staticClass: "col col-12" },
-                  [
-                    _c(
-                      "h1",
-                      {
-                        staticClass:
-                          "display-2 font-weight-500 mb-2 text-center white--text"
-                      },
-                      [
-                        _vm._v(
-                          "\n                        ¿Quíen Soy?\n                    "
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("v-divider", {
-                      staticClass: "primary mx-auto mb-6 ",
-                      staticStyle: { "max-width": "28px" }
-                    }),
-                    _vm._v(" "),
-                    _c("v-breadcrumbs", {
-                      staticClass: " justify-center pa-0",
-                      attrs: { dark: "", items: _vm.links }
-                    })
-                  ],
-                  1
-                )
+                _c("v-icon", { attrs: { size: "28", dark: "" } }, [
+                  _vm._v("\n                    mdi-vuetify\n                ")
+                ])
               ],
               1
+            ),
+            _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
+            _c("v-divider", {
+              staticClass: "grey lighten-2 mx-auto mb-6",
+              staticStyle: { "max-width": "28px" }
+            }),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                staticClass:
+                  "mb-10 grey--text text--darken-1 base-body body-1 mx-auto text-center "
+              },
+              [
+                _vm._v(
+                  "\n                Este es un escrito en el que hablo acerca de mis travesías personales y mi experiencia como mujer\n                empoderada\n            "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "v-btn",
+              {
+                on: {
+                  click: function($event) {
+                    _vm.dialog = !_vm.dialog
+                  }
+                }
+              },
+              [_vm._v("\n                ver documento\n            ")]
             )
           ],
           1
         )
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
-    _c(
-      "section",
-      [
-        _c(
-          "v-container",
-          { attrs: { fluid: "" } },
-          [
-            _c(
-              "v-row",
-              { attrs: { justify: "center" } },
-              [
-                _c("v-subheader", [_vm._v("Today")]),
-                _vm._v(" "),
-                _c(
-                  "v-expansion-panels",
-                  { attrs: { popout: "" } },
-                  _vm._l(_vm.messages, function(message, i) {
-                    return _c(
-                      "v-expansion-panel",
-                      { key: i, attrs: { "hide-actions": "" } },
+      ]),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        { attrs: { justify: "center" } },
+        [
+          _c(
+            "v-dialog",
+            {
+              attrs: {
+                fullscreen: "",
+                "hide-overlay": "",
+                transition: "dialog-bottom-transition"
+              },
+              model: {
+                value: _vm.dialog,
+                callback: function($$v) {
+                  _vm.dialog = $$v
+                },
+                expression: "dialog"
+              }
+            },
+            [
+              _c(
+                "v-card",
+                [
+                  _c(
+                    "v-toolbar",
+                    { attrs: { dark: "", color: "primary" } },
+                    [
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { icon: "", dark: "" },
+                          on: {
+                            click: function($event) {
+                              _vm.dialog = false
+                            }
+                          }
+                        },
+                        [_c("v-icon", [_vm._v("mdi-close")])],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("v-toolbar-title", [
+                        _vm._v("TRAVESÍA PERSONAL DESDE MI CONCIENCIA")
+                      ]),
+                      _vm._v(" "),
+                      _c("v-spacer"),
+                      _vm._v(" "),
+                      _c(
+                        "v-toolbar-items",
+                        [
+                          _c(
+                            "v-btn",
+                            {
+                              attrs: { dark: "", text: "" },
+                              on: {
+                                click: function($event) {
+                                  _vm.dialog = false
+                                }
+                              }
+                            },
+                            [_vm._v("Cerrar")]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("v-card-text", [
+                    _c(
+                      "section",
                       [
                         _c(
-                          "v-expansion-panel-header",
-                          [
-                            _c(
-                              "v-row",
-                              {
-                                staticClass: "spacer",
-                                attrs: { align: "center", "no-gutters": "" }
-                              },
+                          "v-container",
+                          _vm._l(_vm.numPages, function(i) {
+                            return _c(
+                              "v-card",
+                              { key: i, staticClass: "my-2" },
                               [
-                                _c(
-                                  "v-col",
-                                  { attrs: { cols: "4", sm: "2", md: "1" } },
-                                  [
-                                    _c(
-                                      "v-avatar",
-                                      { attrs: { size: "36px" } },
-                                      [
-                                        message.avatar
-                                          ? _c("img", {
-                                              attrs: {
-                                                alt: "Avatar",
-                                                src:
-                                                  "https://avatars0.githubusercontent.com/u/9064066?v=4&s=460"
-                                              }
-                                            })
-                                          : _c("v-icon", {
-                                              attrs: { color: message.color },
-                                              domProps: {
-                                                textContent: _vm._s(
-                                                  message.icon
-                                                )
-                                              }
-                                            })
-                                      ],
-                                      1
-                                    )
-                                  ],
-                                  1
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "v-col",
-                                  {
-                                    staticClass: "hidden-xs-only",
-                                    attrs: { sm: "5", md: "3" }
+                                _c("pdf", {
+                                  staticStyle: {
+                                    display: "inline-block",
+                                    width: "100%"
                                   },
-                                  [
-                                    _c("strong", {
-                                      domProps: {
-                                        innerHTML: _vm._s(message.name)
-                                      }
-                                    }),
-                                    _vm._v(" "),
-                                    message.total
-                                      ? _c(
-                                          "span",
-                                          { staticClass: "grey--text" },
-                                          [
-                                            _vm._v(
-                                              "\n               (" +
-                                                _vm._s(message.total) +
-                                                ")\n            "
-                                            )
-                                          ]
-                                        )
-                                      : _vm._e()
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "v-col",
-                                  {
-                                    staticClass: "text-no-wrap",
-                                    attrs: { cols: "5", sm: "3" }
-                                  },
-                                  [
-                                    message.new
-                                      ? _c(
-                                          "v-chip",
-                                          {
-                                            staticClass:
-                                              "ml-0 mr-2 black--text",
-                                            attrs: {
-                                              color:
-                                                message.color + " lighten-4",
-                                              label: "",
-                                              small: ""
-                                            }
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                                        " +
-                                                _vm._s(message.new) +
-                                                " new\n                                    "
-                                            )
-                                          ]
-                                        )
-                                      : _vm._e(),
-                                    _vm._v(" "),
-                                    _c("strong", {
-                                      domProps: {
-                                        innerHTML: _vm._s(message.title)
-                                      }
-                                    })
-                                  ],
-                                  1
-                                ),
-                                _vm._v(" "),
-                                message.excerpt
-                                  ? _c(
-                                      "v-col",
-                                      {
-                                        staticClass:
-                                          "grey--text text-truncate hidden-sm-and-down"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                    —\n                                    " +
-                                            _vm._s(message.excerpt) +
-                                            "\n                                "
-                                        )
-                                      ]
-                                    )
-                                  : _vm._e()
+                                  attrs: { src: _vm.src, page: i }
+                                })
                               ],
                               1
                             )
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "v-expansion-panel-content",
-                          [
-                            _c("v-divider"),
-                            _vm._v(" "),
-                            _c("v-card-text", {
-                              domProps: { textContent: _vm._s(_vm.lorem) }
-                            })
-                          ],
+                          }),
                           1
                         )
                       ],
                       1
                     )
-                  }),
-                  1
-                )
-              ],
-              1
-            )
-          ],
-          1
-        )
-      ],
-      1
-    )
-  ])
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function() {
@@ -535,291 +491,18 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c(
-      "section",
+      "h1",
       {
-        staticStyle: { padding: "96px 0px" },
-        attrs: { id: "about-our-product" }
+        staticClass: "text-uppercase headline font-weight-bold mb-2 text-center"
       },
       [
-        _c("div", { staticClass: "base-section-heading text-center mb-12" }, [
-          _c("div", { staticClass: "base-avatar d-inline-flex mb-4" }, [
-            _c(
-              "div",
-              {
-                staticClass: "v-avatar base-avatar__avatar primary",
-                staticStyle: {
-                  height: "56px",
-                  "min-width": "56px",
-                  width: "56px"
-                }
-              },
-              [
-                _c("i", {
-                  staticClass: "v-icon notranslate mdi mdi-vuetify theme--dark",
-                  staticStyle: { "font-size": "28px" },
-                  attrs: { "aria-hidden": "true", dark: "true" }
-                })
-              ]
-            )
-          ]),
-          _c(
-            "h1",
-            {
-              staticClass:
-                "text-uppercase headline font-weight-bold mb-2 text-center"
-            },
-            [_vm._v(" About our\n            Product ")]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "v-responsive base-divider grey lighten-2 mx-auto mb-6",
-              staticStyle: { "max-width": "28px" }
-            },
-            [
-              _c("div", { staticClass: "v-responsive__content" }, [
-                _c("hr", {
-                  staticClass: "v-divider theme--light",
-                  attrs: { role: "separator", "aria-orientation": "horizontal" }
-                })
-              ])
-            ]
-          )
-        ]),
+        _vm._v(
+          "\n                TRAVESÍA PERSONAL DESDE MI CONCIENCIA\n                "
+        ),
+        _c("br"),
         _vm._v(" "),
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-4 col-12" }, [
-              _c("div", { staticClass: "container pa-0" }, [
-                _c("div", { staticClass: "row no-gutters justify-start" }, [
-                  _c("div", { staticClass: "col col-9" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "body-2 font-weight-regular mb-1 text-left grey--text"
-                      },
-                      [
-                        _vm._v(
-                          " Best\n                                    Productivity\n                                "
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "h3",
-                      {
-                        staticClass:
-                          "text-uppercase title font-weight-bold mb-1 text-left"
-                      },
-                      [
-                        _vm._v(
-                          " Grow your\n                                    Revenue "
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "v-responsive base-divider primary mr-auto mb-6",
-                        staticStyle: { "max-width": "28px" }
-                      },
-                      [
-                        _c("div", { staticClass: "v-responsive__content" }, [
-                          _c("hr", {
-                            staticClass: "v-divider theme--light",
-                            attrs: {
-                              role: "separator",
-                              "aria-orientation": "horizontal"
-                            }
-                          })
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("p", {
-                      staticClass:
-                        "base-body body-1 grey--text text--darken-1 text-left mb-6"
-                    }),
-                    _c("div", [
-                      _vm._v(
-                        "Similique sunt in culpa qui officia deserunt mollitia animi, id est laborut\n                                    dolorum fuga.harum quidem rerum facilis estexpedita distinctio.\n                                "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("p")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col col-2" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "display-3 grey--text text--lighten-4 font-weight-bold pr-8"
-                      },
-                      [_vm._v("01")]
-                    )
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4 col-12" }, [
-              _c("div", { staticClass: "container pa-0" }, [
-                _c("div", { staticClass: "row no-gutters justify-start" }, [
-                  _c("div", { staticClass: "col col-9" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "body-2 font-weight-regular mb-1 text-left grey--text"
-                      },
-                      [
-                        _vm._v(
-                          " Special Offers\n                                "
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "h3",
-                      {
-                        staticClass:
-                          "text-uppercase title font-weight-bold mb-1 text-left"
-                      },
-                      [
-                        _vm._v(
-                          " Affordable\n                                    Prices "
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "v-responsive base-divider primary mr-auto mb-6",
-                        staticStyle: { "max-width": "28px" }
-                      },
-                      [
-                        _c("div", { staticClass: "v-responsive__content" }, [
-                          _c("hr", {
-                            staticClass: "v-divider theme--light",
-                            attrs: {
-                              role: "separator",
-                              "aria-orientation": "horizontal"
-                            }
-                          })
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "p",
-                      {
-                        staticClass:
-                          "base-body body-1 grey--text text--darken-1 text-left mb-6"
-                      },
-                      [
-                        _vm._v(
-                          "\n                                    Similique sunt in culpa qui officia deserunt mollitia animi, id est laborut\n                                    dolorum fuga.harum quidem rerum facilis estexpedita distinctio.\n\n                                "
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col col-2" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "display-3 grey--text text--lighten-4 font-weight-bold pr-8"
-                      },
-                      [_vm._v("02")]
-                    )
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4 col-12" }, [
-              _c("div", { staticClass: "container pa-0" }, [
-                _c("div", { staticClass: "row no-gutters justify-start" }, [
-                  _c("div", { staticClass: "col col-9" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "body-2 font-weight-regular mb-1 text-left grey--text"
-                      },
-                      [_vm._v(" Income Flow")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "h3",
-                      {
-                        staticClass:
-                          "text-uppercase title font-weight-bold mb-1 text-left"
-                      },
-                      [
-                        _vm._v(
-                          " Target\n                                    Setting "
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "v-responsive base-divider primary mr-auto mb-6",
-                        staticStyle: { "max-width": "28px" }
-                      },
-                      [
-                        _c("div", { staticClass: "v-responsive__content" }, [
-                          _c("hr", {
-                            staticClass: "v-divider theme--light",
-                            attrs: {
-                              role: "separator",
-                              "aria-orientation": "horizontal"
-                            }
-                          })
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "p",
-                      {
-                        staticClass:
-                          "base-body body-1 grey--text text--darken-1 text-left mb-6"
-                      },
-                      [
-                        _vm._v(
-                          "\n                                    Similique sunt in culpa qui officia deserunt mollitia animi, id est laborut\n                                    dolorum fuga.harum quidem rerum facilis estexpedita distinctio.\n                                "
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col col-2" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "display-3 grey--text text--lighten-4 font-weight-bold pr-8"
-                      },
-                      [_vm._v("03")]
-                    )
-                  ])
-                ])
-              ])
-            ])
-          ])
+        _c("span", { staticClass: "text-lowercase caption" }, [
+          _vm._v("Autobiografía")
         ])
       ]
     )
@@ -897,6 +580,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AboutMe_vue_vue_type_template_id_31f13d5f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ 1:
+/*!**********************!*\
+  !*** zlib (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 2:
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 3:
+/*!**********************!*\
+  !*** http (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 4:
+/*!***********************!*\
+  !*** https (ignored) ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
 
 /***/ })
 

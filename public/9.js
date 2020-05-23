@@ -1,14 +1,103 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[9],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Layout.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Layout.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Publications.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Publications.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -203,136 +292,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      drawer: false,
       links: [{
-        path: "/",
-        name: "Inicio"
+        text: 'Inicio',
+        disabled: false,
+        href: '/'
       }, {
-        path: "/about-me",
-        name: "¿Quíen soy?"
-      }, {
-        path: "/events",
-        name: "Eventos"
-      }, {
-        path: "/publications",
-        name: "Publicaciones"
-      }, {
-        path: "/services",
-        name: "Servicios"
-      }, {
-        path: "/gallery",
-        name: "Galería"
-      }, {
-        path: "/contact",
-        name: "Contacto"
-      }],
-      icons: [{
-        icon: "mdi-facebook",
-        color: '#3b5998'
-      }, {
-        icon: "mdi-twitter",
-        color: '#55acee'
-      }, {
-        icon: "mdi-google-plus",
-        color: '#dd4b39'
-      }, {
-        icon: "mdi-linkedin",
-        color: '#0082ca'
-      }, {
-        icon: "mdi-instagram",
-        color: '#ec4a89'
-      }],
-      contact: [{
-        icon: "mdi-map-marker-outline",
-        name: "Dirección",
-        content: "Cra 4-A # 54-52<br />Chapinero Alto, Bogot\xE1, Colombia"
-      }, {
-        icon: "mdi-cellphone",
-        name: "Teléfonos",
-        content: "+57 315 734 0385 "
-      }, {
-        icon: "mdi-email",
-        name: "Correos",
-        content: "contacto@mvictoriaaponte.com <br/> contacto@soecolombia.com "
-      }],
-      servicios: [{
-        name: "Investigación",
-        path: '/services#Investigación'
-      }, {
-        name: "Capacitación",
-        path: '/services#Capacitación'
-      }, {
-        name: "Asesorías",
-        path: '/services#Asesorías'
-      }, {
-        name: "Círculos de poder",
-        path: '/services#Círculos de poder'
-      }, {
-        name: "Coaching",
-        path: '/services#Coaching'
+        text: 'Publicaciones',
+        disabled: true,
+        href: '/publications'
       }]
     };
-  },
-  created: function created() {
-    this.$vuetify.theme.dark = false;
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Layout.vue?vue&type=style&index=0&lang=css&":
-/*!************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Layout.vue?vue&type=style&index=0&lang=css& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .v-btn--active {\n     background-color: white;\n    border-bottom: none !important;\n}\n.v-btn--active.v-btn--router > span {\n    transition: all 0.2s ease;\n    border-bottom: 2px solid white;\n    padding-bottom: 4px;\n    padding: 10px 0;\n    font-weight: bold;\n}\n\n.v-btn--router > span:hover {\n    transition: all 0.2s ease;\n    color: #7a0049;\n    padding: 10px 0;\n    font-weight: bold;\n} */\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Layout.vue?vue&type=style&index=0&lang=css&":
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Layout.vue?vue&type=style&index=0&lang=css& ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Layout.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Layout.vue?vue&type=style&index=0&lang=css&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Layout.vue?vue&type=template&id=e245f756&":
-/*!*********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Layout.vue?vue&type=template&id=e245f756& ***!
-  \*********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Publications.vue?vue&type=template&id=3e308646&scoped=true&":
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Publications.vue?vue&type=template&id=3e308646&scoped=true& ***!
+  \*********************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -344,410 +322,403 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "v-app",
-    { attrs: { id: "inspire" } },
-    [
-      _c(
-        "v-navigation-drawer",
-        {
-          attrs: { app: "", temporary: "" },
-          model: {
-            value: _vm.drawer,
-            callback: function($$v) {
-              _vm.drawer = $$v
-            },
-            expression: "drawer"
-          }
-        },
-        [
+  return _c("div", [
+    _c(
+      "section",
+      [
+        _c(
+          "v-img",
+          {
+            attrs: {
+              src: "images/fotos/web_publicaciones.jpg",
+              gradient: "to top, rgba(5, 11, 31, 0.8), rgba(5, 11, 31, 0.8)",
+              color: "#45516b",
+              flat: "",
+              tile: "",
+              height: "350",
+              "max-width": "100%"
+            }
+          },
+          [
+            _c(
+              "v-row",
+              {
+                staticClass:
+                  "ma-0 fill-height text-center align-center justify-center"
+              },
+              [
+                _c(
+                  "v-col",
+                  { staticClass: "col col-12" },
+                  [
+                    _c(
+                      "h1",
+                      {
+                        staticClass:
+                          "display-2 font-weight-500 mb-2 text-center white--text"
+                      },
+                      [
+                        _vm._v(
+                          "\n                        Publicaciones\n                    "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("v-divider", {
+                      staticClass: "primary mx-auto mb-6 ",
+                      staticStyle: { "max-width": "28px" }
+                    }),
+                    _vm._v(" "),
+                    _c("v-breadcrumbs", {
+                      staticClass: " justify-center pa-0",
+                      attrs: { dark: "", items: _vm.links }
+                    })
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "section",
+      [
+        _c(
+          "div",
+          { staticClass: "text-center my-12" },
+          [
+            _c(
+              "v-avatar",
+              { staticClass: "primary mb-4" },
+              [
+                _c("v-icon", { attrs: { size: "28", dark: "" } }, [
+                  _vm._v(
+                    "\n                    mdi-calendar-multiple-check\n                "
+                  )
+                ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "h1",
+              {
+                staticClass:
+                  "text-uppercase headline font-weight-bold mb-2 text-center"
+              },
+              [
+                _vm._v(
+                  "\n                Publicaciones científicas\n            "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c("v-divider", {
+              staticClass: "primary mx-auto mb-6",
+              staticStyle: { "max-width": "28px" }
+            })
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "v-container",
+          [
+            _c(
+              "div",
+              { staticClass: "col col-9" },
+              [
+                _c(
+                  "h3",
+                  {
+                    staticClass:
+                      "text-uppercase title font-weight-bold mb-1 text-left"
+                  },
+                  [_vm._v("Textos y capítulos de libros")]
+                ),
+                _vm._v(" "),
+                _c("v-divider", {
+                  staticClass: "primary mr-auto mb-6",
+                  staticStyle: { "max-width": "28px" }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "v-row",
+              [
+                _c(
+                  "v-col",
+                  { attrs: { cols: "12", sm: "6", md: "4", lg: "3" } },
+                  [
+                    _c(
+                      "v-card",
+                      { staticClass: "mx-auto", attrs: { "max-width": "343" } },
+                      [
+                        _c(
+                          "v-list-item",
+                          [
+                            _c(
+                              "v-list-item-content",
+                              [
+                                _c(
+                                  "v-list-item-title",
+                                  { staticClass: "headline" },
+                                  [
+                                    _vm._v(
+                                      "\n                                    Memorias\n                                "
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c("v-list-item-subtitle", [
+                                  _vm._v("Congreso Psicología- salud mental")
+                                ]),
+                                _vm._v(" "),
+                                _c("v-list-item-subtitle", [
+                                  _vm._v("Argentina- 2016")
+                                ])
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("v-img", {
+                          attrs: {
+                            src: "images/publicaciones/memorias-congreso.png",
+                            contain: ""
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("v-card-actions")
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "v-col",
+                  { attrs: { cols: "12", sm: "6", md: "4", lg: "3" } },
+                  [
+                    _c(
+                      "v-card",
+                      { staticClass: "mx-auto", attrs: { "max-width": "343" } },
+                      [
+                        _c(
+                          "v-list-item",
+                          [
+                            _c(
+                              "v-list-item-content",
+                              [
+                                _c(
+                                  "v-list-item-title",
+                                  { staticClass: "headline" },
+                                  [
+                                    _vm._v(
+                                      "\n                                    Reflexiones\n                                "
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c("v-list-item-subtitle", [
+                                  _vm._v("Humanidades- capítulo libro")
+                                ]),
+                                _vm._v(" "),
+                                _c("v-list-item-subtitle", [
+                                  _vm._v("Bogotá - 2018")
+                                ])
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("v-img", {
+                          attrs: {
+                            src: "images/publicaciones/reflexiones.jpg",
+                            contain: ""
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("v-card-actions")
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c("v-container", [
           _c(
-            "v-list",
-            { attrs: { dense: "" } },
+            "div",
+            { staticClass: "col col-9" },
             [
               _c(
-                "v-list-item",
-                { attrs: { link: "" } },
-                [
-                  _c(
-                    "v-list-item-action",
-                    [_c("v-icon", [_vm._v("mdi-view-dashboard")])],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-list-item-content",
-                    [_c("v-list-item-title", [_vm._v("Dashboard")])],
-                    1
-                  )
-                ],
-                1
+                "div",
+                {
+                  staticClass:
+                    "body-2 font-weight-regular mb-1 text-left grey--text"
+                },
+                [_vm._v("Facultad de Humanidades")]
               ),
               _vm._v(" "),
               _c(
-                "v-list-item",
-                { attrs: { link: "" } },
+                "h3",
+                {
+                  staticClass:
+                    "text-uppercase title font-weight-bold mb-1 text-left"
+                },
                 [
-                  _c(
-                    "v-list-item-action",
-                    [_c("v-icon", [_vm._v("mdi-settings")])],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-list-item-content",
-                    [_c("v-list-item-title", [_vm._v("Settings")])],
-                    1
+                  _vm._v(
+                    "Publicaciones- Capítulo de libro -\n                    Téxticas"
                   )
+                ]
+              ),
+              _vm._v(" "),
+              _c("v-divider", {
+                staticClass: "primary mr-auto mb-6",
+                staticStyle: { "max-width": "28px" }
+              }),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "row" },
+                [
+                  _c("v-col", { staticClass: "col-12" }, [
+                    _c(
+                      "div",
+                      { staticClass: "d-flex align-center" },
+                      [
+                        _c(
+                          "v-icon",
+                          {
+                            staticClass: "primary--text mr-3",
+                            attrs: { size: "28" }
+                          },
+                          [_vm._v("mdi-check-circle-outline")]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "subtitle-1" }, [
+                          _vm._v("1° puesto concurso de crónica")
+                        ])
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("v-col", { staticClass: "col-12" }, [
+                    _c(
+                      "div",
+                      { staticClass: "d-flex align-center" },
+                      [
+                        _c(
+                          "v-icon",
+                          {
+                            staticClass: "primary--text mr-3",
+                            attrs: { size: "28" }
+                          },
+                          [_vm._v("mdi-check-circle-outline")]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "subtitle-1" }, [
+                          _vm._v("2015: "),
+                          _c("span", { staticClass: "font-weight-bold" }, [
+                            _vm._v(
+                              " Reflexiones, del primer día de clases en el curso de investigación"
+                            )
+                          ])
+                        ])
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("v-col", { staticClass: "col-12" }, [
+                    _c(
+                      "div",
+                      { staticClass: "d-flex align-center" },
+                      [
+                        _c(
+                          "v-icon",
+                          {
+                            staticClass: "primary--text mr-3",
+                            attrs: { size: "28" }
+                          },
+                          [_vm._v("mdi-check-circle-outline")]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "subtitle-1" }, [
+                          _vm._v("Publicado junio 25-2019")
+                        ])
+                      ],
+                      1
+                    )
+                  ])
                 ],
                 1
               )
             ],
             1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "v-app-bar",
-        {
-          staticClass: "primary white--text",
-          attrs: { app: "", "clipped-left": "", dense: "" }
-        },
-        [
-          _c("v-app-bar-nav-icon", {
-            attrs: { color: "white" },
-            on: {
-              click: function($event) {
-                $event.stopPropagation()
-                _vm.drawer = !_vm.drawer
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("v-toolbar-title", [
-            _vm._v("\n            Soy Maria Victoria Aponte\n        ")
-          ]),
-          _vm._v(" "),
-          _c("v-spacer"),
+          ),
           _vm._v(" "),
           _c(
-            "v-toolbar-items",
-            _vm._l(_vm.links, function(link) {
-              return _c(
-                "v-btn",
-                {
-                  key: link.name,
-                  staticClass: "white--text",
-                  attrs: { dark: "", text: "", to: link.path }
-                },
-                [
-                  _vm._v(
-                    "\n                " + _vm._s(link.name) + "\n            "
-                  )
-                ]
-              )
-            }),
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c("v-content", [_c("router-view")], 1),
-      _vm._v(" "),
-      _c(
-        "v-sheet",
-        { attrs: { elevation: "12" } },
-        [
-          _c(
-            "v-footer",
-            { staticClass: "font-small mdb-color" },
+            "div",
             [
               _c(
-                "v-container",
-                {
-                  staticClass: "text-center text-md-left ",
-                  attrs: { fluid: "" }
-                },
+                "v-card",
                 [
                   _c(
-                    "v-row",
-                    {
-                      staticClass: "text-center text-md-left mt-3 pb-3 ",
-                      attrs: { color: "#1c2331" }
-                    },
+                    "v-container",
+                    { attrs: { fluid: "" } },
                     [
                       _c(
-                        "v-col",
-                        {
-                          staticClass: "col-md-5 col-lg-5 col-xl-3 mx-auto mt-3"
-                        },
-                        [
-                          _c(
-                            "h3",
-                            {
-                              staticClass:
-                                "text-uppercase subtitle-1 font-weight-bold mb-1 text-left primary--text"
-                            },
-                            [
-                              _vm._v(
-                                "\n                            Soy Maria Victoria Aponte\n                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("v-divider", {
-                            staticClass: "primary mr-auto mb-6",
-                            staticStyle: { "max-width": "70px" }
-                          }),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "text-justify" }, [
-                            _vm._v(
-                              "\n                            Me inspira el saber de las mujeres,\n                            estoy comprometida con su auto-valoración. Confiero pasión en el empoderamiento de cada\n                            mujer, con\n                            objetividad y claridad. Mi travesía personal refleja una combinación de saberes\n                            cotidianos,\n                            profesionales y sociales, inspirados en la necesidad de despertar conciencias de\n                            mujeres.\n                        "
-                            )
-                          ])
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-col",
-                        {
-                          staticClass: "col-md-2 col-lg-2 col-xl-2 mx-auto mt-3"
-                        },
-                        [
-                          _c(
-                            "h3",
-                            {
-                              staticClass:
-                                "text-uppercase subtitle-1 font-weight-bold mb-1 text-left primary--text"
-                            },
-                            [
-                              _vm._v(
-                                "\n                            Servicios\n                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("v-divider", {
-                            staticClass: "primary mr-auto mb-2",
-                            staticStyle: { "max-width": "28px" }
-                          }),
-                          _vm._v(" "),
-                          _vm._l(_vm.servicios, function(item, i) {
-                            return _c(
-                              "div",
-                              [
-                                _c(
-                                  "v-btn",
-                                  {
-                                    staticClass:
-                                      "mx-auto text-uppercase subtitle-2 mb-1 text-left black--text",
-                                    attrs: {
-                                      small: "",
-                                      rounded: "",
-                                      text: "",
-                                      href: item.path
-                                    }
-                                  },
-                                  [
-                                    _vm._v(
-                                      _vm._s(item.name) +
-                                        "\n                            "
-                                    )
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          })
-                        ],
-                        2
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "col-md-2 col-lg-2 col-xl-2 mx-auto mt-3"
-                        },
-                        [
-                          _c(
-                            "h3",
-                            {
-                              staticClass:
-                                "text-uppercase subtitle-1 font-weight-bold mb-1 text-left primary--text"
-                            },
-                            [
-                              _vm._v(
-                                "\n                            ENLACES ÚTILES\n                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("v-divider", {
-                            staticClass: "primary mr-auto mb-2",
-                            staticStyle: { "max-width": "28px" }
-                          }),
-                          _vm._v(" "),
-                          _vm._l(_vm.links, function(item, i) {
-                            return _c(
-                              "div",
-                              [
-                                _c(
-                                  "v-btn",
-                                  {
-                                    staticClass:
-                                      "mx-auto text-uppercase subtitle-2 mb-1 text-left black--text",
-                                    attrs: {
-                                      small: "",
-                                      rounded: "",
-                                      text: "",
-                                      to: item.path
-                                    }
-                                  },
-                                  [
-                                    _vm._v(
-                                      _vm._s(item.name) +
-                                        "\n                            "
-                                    )
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          })
-                        ],
-                        2
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-col",
-                        {
-                          staticClass: "col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"
-                        },
-                        [
-                          _c(
-                            "h3",
-                            {
-                              staticClass:
-                                "text-uppercase subtitle-1 font-weight-bold mb-1 text-left primary--text"
-                            },
-                            [
-                              _vm._v(
-                                "\n                            Contáctame\n                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("v-divider", {
-                            staticClass: "primary mr-auto mb-2",
-                            staticStyle: { "max-width": "28px" }
-                          }),
-                          _vm._v(" "),
-                          _vm._l(_vm.contact, function(item) {
-                            return _c(
-                              "div",
-                              {
-                                key: item.name,
-                                staticClass:
-                                  "pt-2 mb-0 d-flex justify-start align-content-start align-start"
-                              },
-                              [
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass:
-                                      "base-avatar d-inline-flex mb-3 ",
-                                    staticStyle: { "margin-left": "-10" }
-                                  },
-                                  [
-                                    _c("v-icon", {
-                                      staticClass: "mt-6",
-                                      attrs: { color: "grey", size: "32" },
-                                      domProps: {
-                                        textContent: _vm._s(item.icon)
-                                      }
-                                    })
-                                  ],
-                                  1
-                                ),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "ml-3" }, [
-                                  _c(
-                                    "h3",
-                                    {
-                                      staticClass:
-                                        "text-uppercase font-weight-bold subtitle-2 mb-1 text-left black--text"
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                                    " +
-                                          _vm._s(item.name) +
-                                          "\n                                "
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "base-body body-1 mx-auto  text--lighten-1 text-left mb-0"
-                                    },
-                                    [
-                                      _c("div", {
-                                        domProps: {
-                                          innerHTML: _vm._s(item.content)
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ])
-                              ]
-                            )
-                          })
-                        ],
-                        2
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("v-divider"),
-                  _vm._v(" "),
-                  _c(
-                    "v-row",
-                    { staticClass: "d-flex align-items-center" },
-                    [
-                      _c("v-col", { staticClass: "col-md-7 col-lg-8" }, [
-                        _c("p", { staticClass: "text-center text-md-left" }, [
-                          _vm._v(
-                            "© 2020 Copyright:\n                            "
-                          ),
-                          _c("a", { attrs: { href: "" } }, [
-                            _c("strong", [_vm._v(" mvictoriaaponte.com")])
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "v-col",
-                        { staticClass: "col-md-5 col-lg-4 ml-lg-0" },
-                        _vm._l(_vm.icons, function(item) {
+                        "v-row",
+                        _vm._l(3, function(n) {
                           return _c(
-                            "v-btn",
+                            "v-col",
                             {
-                              key: item.icon,
-                              staticClass: "mx-4",
-                              attrs: { color: item.color, icon: "" }
+                              key: n,
+                              staticClass: "d-flex child-flex",
+                              attrs: { cols: "4" }
                             },
                             [
                               _c(
-                                "v-icon",
-                                { attrs: { size: "32px", dark: "" } },
-                                [_vm._v(_vm._s(item.icon))]
+                                "v-card",
+                                {
+                                  staticClass: "d-flex",
+                                  attrs: { flat: "", tile: "" }
+                                },
+                                [
+                                  _c("v-img", {
+                                    staticClass: "grey lighten-2",
+                                    attrs: {
+                                      src:
+                                        "images/publicaciones/Imagen" +
+                                        n +
+                                        ".jpg",
+                                      "aspect-ratio": 4 / 5
+                                    }
+                                  })
+                                ],
+                                1
                               )
                             ],
                             1
@@ -763,13 +734,439 @@ var render = function() {
               )
             ],
             1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "mt-12" },
+            [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "body-2 font-weight-regular mb-1 text-left grey--text"
+                },
+                [
+                  _vm._v(
+                    "Asociacion de salud\n                    mental-Argentina\n                "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "h3",
+                {
+                  staticClass:
+                    "text-uppercase title font-weight-bold mb-1 text-left"
+                },
+                [
+                  _vm._v(
+                    "Publicaciones- Capítulo de\n                    libro"
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("v-divider", {
+                staticClass: "primary mr-auto mb-6",
+                staticStyle: { "max-width": "28px" }
+              }),
+              _vm._v(" "),
+              _c(
+                "v-row",
+                [
+                  _c(
+                    "v-col",
+                    { staticClass: "col-12 col-sm-4" },
+                    [
+                      _c("v-img", {
+                        attrs: {
+                          src:
+                            "images/publicaciones/los-limites-de-la-clinica.png",
+                          height: "250",
+                          contain: ""
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-col",
+                    { staticClass: "col-12 col-sm-8" },
+                    [
+                      _c(
+                        "p",
+                        {
+                          staticClass:
+                            "base-body body-1  text--darken-1 text-left mb-6"
+                        },
+                        [
+                          _vm._v(
+                            "\n                            Los Límites de la Clínica.\n                        "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("v-col", { staticClass: "col-12" }, [
+                        _c(
+                          "div",
+                          { staticClass: "d-flex align-start" },
+                          [
+                            _c(
+                              "v-icon",
+                              {
+                                staticClass: "primary--text mr-3",
+                                attrs: { size: "28" }
+                              },
+                              [_vm._v("mdi-check-circle-outline")]
+                            ),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "subtitle-1" }, [
+                              _vm._v(
+                                "\n                                    Memorias de violencia de género de enfermeras y enfermeros en el ámbito\n                                    laboral\n                                    de la salud en Bogotá en el año 2016. -3.500 profesionales inscritos y 2.000\n                                    ponencias. Se seleccionaron 270 ponencias, para el libro Los Límites de la\n                                    Clínica, entre los cuales se registra la ponencia del grupo Género e\n                                    Interculturalidad. "
+                              ),
+                              _c("br"),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "font-weight-bold" }, [
+                                _vm._v("Ponente: ")
+                              ]),
+                              _vm._v(
+                                "María Victoria Aponte\n                                    Valverde\n                                "
+                              )
+                            ])
+                          ],
+                          1
+                        )
+                      ])
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "mt-12" },
+            [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "body-2 font-weight-regular mb-1 text-left grey--text"
+                },
+                [_vm._v("Publicación libro-2013")]
+              ),
+              _vm._v(" "),
+              _c(
+                "h3",
+                {
+                  staticClass:
+                    "text-uppercase title font-weight-bold mb-1 text-left"
+                },
+                [
+                  _vm._v(
+                    "Informe final proyecto de\n                    investigación"
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("v-divider", {
+                staticClass: "primary mr-auto mb-6",
+                staticStyle: { "max-width": "28px" }
+              }),
+              _vm._v(" "),
+              _c("v-img", {
+                attrs: {
+                  src: "images/publicaciones/Informe final proyecto.png",
+                  height: "499",
+                  width: "764",
+                  contain: ""
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "mt-12" },
+            [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "body-2 font-weight-regular mb-1 text-left grey--text"
+                },
+                [_vm._v("Revista indexada- 2019")]
+              ),
+              _vm._v(" "),
+              _c(
+                "h3",
+                {
+                  staticClass:
+                    "text-uppercase title font-weight-bold mb-1 text-left"
+                },
+                [
+                  _vm._v(
+                    "Publicación de artículos\n                    científicos"
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("v-divider", {
+                staticClass: "primary mr-auto mb-6",
+                staticStyle: { "max-width": "28px" }
+              }),
+              _vm._v(" "),
+              _c(
+                "v-row",
+                [
+                  _c("v-col", [
+                    _c(
+                      "p",
+                      {
+                        staticClass:
+                          "base-body body-1 text--darken-1 text-left mb-6"
+                      },
+                      [
+                        _vm._v(
+                          "\n                            Revista International Journal of Scientific and Research Publications, Volume 9, Issue\n                            12, December 2019 824 ISSN 2250-3153\n                            Artículo: Social control: between theoretical analyzes of the past and future\n                            perspectives. The contribution of the theoretical criminological approach to the\n                            phenomenon. N. Malizia , M.V. Aponte Valverde\n                        "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "p",
+                      {
+                        staticClass:
+                          "base-body body-1 grey--text text--darken-1 text-left"
+                      },
+                      [
+                        _vm._v(
+                          "\n                            http://dx.doi.org/10.29322/IJSRP.9.12.2019.p96106 www.ijsrp.org\n                            * Associate Professor of Sociology of Law, Deviance and Social change - University of\n                            Enna “Kore”, Faculty of Human and Society Sciences\n                            ** Valverde, Social sciences Researcher, University Foundation of Andean Area, Bogotà,\n                            Colombia, Faculty of Health Sciences\n                            DOI: 10.29322/IJSRP.9.12.2019.p96106\n                            http://dx.doi.org/10.29322/IJSRP.9.12.2019.p96106\n\n                        "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "v-col",
+                    { attrs: { cols: "4" } },
+                    [
+                      _c(
+                        "v-card",
+                        {
+                          staticClass: "pa-4",
+                          attrs: { flat: "", outlined: "" }
+                        },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              src: "images/publicaciones/ijsrp-org.jpg",
+                              height: "200",
+                              contain: "",
+                              "aspect-ratio": "1"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("v-card-text", [
+                            _vm._v(
+                              "\n                                International Journal of Scientific and Research Publications\n                            "
+                            )
+                          ])
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "mt-12" },
+            [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "body-2 font-weight-regular mb-1 text-left grey--text"
+                },
+                [_vm._v("Universidad de Antioquia- 2019\n                ")]
+              ),
+              _vm._v(" "),
+              _c(
+                "h3",
+                {
+                  staticClass:
+                    "text-uppercase title font-weight-bold mb-1 text-left"
+                },
+                [
+                  _vm._v(
+                    "Publicación artículos\n                    científicos"
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("v-divider", {
+                staticClass: "primary mr-auto mb-6",
+                staticStyle: { "max-width": "28px" }
+              }),
+              _vm._v(" "),
+              _c(
+                "v-row",
+                [
+                  _c(
+                    "v-col",
+                    [
+                      _c(
+                        "v-row",
+                        [
+                          _c("v-col", { staticClass: "col-12" }, [
+                            _c(
+                              "div",
+                              { staticClass: "d-flex align-start" },
+                              [
+                                _c(
+                                  "v-icon",
+                                  {
+                                    staticClass: "primary--text mr-3",
+                                    attrs: { size: "28" }
+                                  },
+                                  [_vm._v("mdi-check-circle-outline")]
+                                ),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "subtitle-1" }, [
+                                  _vm._v(
+                                    "Universidad de Antioquia. Facultad de Salud Pública.\n                                        "
+                                  ),
+                                  _c(
+                                    "span",
+                                    { staticClass: "font-weight-bold" },
+                                    [
+                                      _vm._v(
+                                        "Revista Facultad Nacional de Salud Pública Vol. 37 Suplemento N.º 1, 2019 "
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(
+                                    '-\n                                        Facultad Nacional de Salud Pública "Héctor Abad Gómez” p.143- 149. Texto\n                                        presentado en el 10 Congreso Internacional de Salud Pública – Medellín,\n                                        octubre 18 de 2017\n                                    '
+                                  )
+                                ])
+                              ],
+                              1
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("v-col", { staticClass: "col-12" }, [
+                            _c(
+                              "div",
+                              { staticClass: "d-flex align-start" },
+                              [
+                                _c(
+                                  "v-icon",
+                                  {
+                                    staticClass: "primary--text mr-3",
+                                    attrs: { size: "28" }
+                                  },
+                                  [_vm._v("mdi-check-circle-outline")]
+                                ),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "subtitle-1" }, [
+                                  _c(
+                                    "span",
+                                    { staticClass: "font-weight-bold" },
+                                    [_vm._v("Reseña N°1.")]
+                                  ),
+                                  _vm._v(
+                                    " Una aproximación desde una\n                                        experiencia piloto a los significados\n                                        de memorias de violencia de género en mujeres adultas mayores de Bosa en la\n                                        ciudad de Bogotá en el 2017\n\n                                    "
+                                  )
+                                ])
+                              ],
+                              1
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("v-col", { staticClass: "col-12" }, [
+                            _c(
+                              "div",
+                              { staticClass: "d-flex align-start" },
+                              [
+                                _c(
+                                  "v-icon",
+                                  {
+                                    staticClass: "primary--text mr-3",
+                                    attrs: { size: "28" }
+                                  },
+                                  [_vm._v("mdi-check-circle-outline")]
+                                ),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "subtitle-1" }, [
+                                  _c(
+                                    "span",
+                                    { staticClass: "font-weight-bold" },
+                                    [_vm._v("Reseña N°2.")]
+                                  ),
+                                  _vm._v(
+                                    "\n                                        Caracterización de la violencia contra las mujeres estudiantes de\n                                        enfermería. Un primer acercamiento desde la percepción estudiantil de Bogotá\n                                    "
+                                  )
+                                ])
+                              ],
+                              1
+                            )
+                          ])
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-col",
+                    { attrs: { cols: "4" } },
+                    [
+                      _c(
+                        "v-card",
+                        {
+                          staticClass: "pa-4",
+                          attrs: { flat: "", outlined: "" }
+                        },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              src:
+                                "images/publicaciones/revista facultad de salud.png",
+                              height: "300",
+                              contain: ""
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
           )
-        ],
-        1
-      )
-    ],
-    1
-  )
+        ])
+      ],
+      1
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -778,20 +1175,18 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/components/Layout.vue":
-/*!********************************************!*\
-  !*** ./resources/js/components/Layout.vue ***!
-  \********************************************/
+/***/ "./resources/js/components/pages/Publications.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/pages/Publications.vue ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Layout_vue_vue_type_template_id_e245f756___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Layout.vue?vue&type=template&id=e245f756& */ "./resources/js/components/Layout.vue?vue&type=template&id=e245f756&");
-/* harmony import */ var _Layout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Layout.vue?vue&type=script&lang=js& */ "./resources/js/components/Layout.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _Layout_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Layout.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/Layout.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
+/* harmony import */ var _Publications_vue_vue_type_template_id_3e308646_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Publications.vue?vue&type=template&id=3e308646&scoped=true& */ "./resources/js/components/pages/Publications.vue?vue&type=template&id=3e308646&scoped=true&");
+/* harmony import */ var _Publications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Publications.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/Publications.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -799,67 +1194,51 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _Layout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Layout_vue_vue_type_template_id_e245f756___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Layout_vue_vue_type_template_id_e245f756___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Publications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Publications_vue_vue_type_template_id_3e308646_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Publications_vue_vue_type_template_id_3e308646_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "3e308646",
   null
   
 )
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/Layout.vue"
+component.options.__file = "resources/js/components/pages/Publications.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/components/Layout.vue?vue&type=script&lang=js&":
-/*!*********************************************************************!*\
-  !*** ./resources/js/components/Layout.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************/
+/***/ "./resources/js/components/pages/Publications.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/pages/Publications.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Layout.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Layout.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Publications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Publications.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Publications.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Publications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/components/Layout.vue?vue&type=style&index=0&lang=css&":
-/*!*****************************************************************************!*\
-  !*** ./resources/js/components/Layout.vue?vue&type=style&index=0&lang=css& ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Layout.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Layout.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
-/***/ "./resources/js/components/Layout.vue?vue&type=template&id=e245f756&":
-/*!***************************************************************************!*\
-  !*** ./resources/js/components/Layout.vue?vue&type=template&id=e245f756& ***!
-  \***************************************************************************/
+/***/ "./resources/js/components/pages/Publications.vue?vue&type=template&id=3e308646&scoped=true&":
+/*!***************************************************************************************************!*\
+  !*** ./resources/js/components/pages/Publications.vue?vue&type=template&id=3e308646&scoped=true& ***!
+  \***************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_template_id_e245f756___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Layout.vue?vue&type=template&id=e245f756& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Layout.vue?vue&type=template&id=e245f756&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_template_id_e245f756___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Publications_vue_vue_type_template_id_3e308646_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Publications.vue?vue&type=template&id=3e308646&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Publications.vue?vue&type=template&id=3e308646&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Publications_vue_vue_type_template_id_3e308646_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_template_id_e245f756___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Publications_vue_vue_type_template_id_3e308646_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
