@@ -516,8 +516,7 @@ var render = function() {
             "v-img",
             {
               attrs: {
-                src:
-                  "https://imagenes.universia.net/gc/net/images/educacion/p/pr/pro/programas_para_editar_videos.jpg",
+                src: "images/header/programas_para_editar_videos.jpg",
                 gradient: "to top, rgba(5, 11, 31, 0.8), rgba(5, 11, 31, 0.8)",
                 color: "#45516b",
                 flat: "",

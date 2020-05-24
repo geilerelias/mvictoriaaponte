@@ -2,7 +2,7 @@
     <div>
         <section>
             <v-img
-                src="images/servicios/capacitacion.jpg"
+                src="images/header/capacitacion.jpg"
                 gradient="to top, rgba(5, 11, 31, 0.8), rgba(5, 11, 31, 0.8)"
                 color="#45516b"
                 flat

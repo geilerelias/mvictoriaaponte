@@ -330,7 +330,7 @@ var render = function() {
           "v-img",
           {
             attrs: {
-              src: "images/fotos/web_publicaciones.jpg",
+              src: "images/header/web_publicaciones.jpg",
               gradient: "to top, rgba(5, 11, 31, 0.8), rgba(5, 11, 31, 0.8)",
               color: "#45516b",
               flat: "",

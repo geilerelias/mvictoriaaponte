@@ -189,7 +189,7 @@ var render = function() {
             "v-img",
             {
               attrs: {
-                src: "images/quien-soy/creciendo-juntas.jpg",
+                src: "images/header/creciendo-juntas.jpg",
                 gradient: "to top, rgba(5, 11, 31, 0.8), rgba(5, 11, 31, 0.8)",
                 color: "#45516b",
                 flat: "",

@@ -2,7 +2,7 @@
     <div>
         <section>
             <v-img
-                src="https://daedal-free.zeroskillz.now.sh/img/about.3946684e.jpg"
+                src="images/header/capacitacion 2.jpg"
                 gradient="to top, rgba(5, 11, 31, 0.8), rgba(5, 11, 31, 0.8)"
                 color="#45516b"
                 flat
