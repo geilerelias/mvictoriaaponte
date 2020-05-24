@@ -140,7 +140,7 @@
                 <v-divider class="primary mx-auto " style="max-width: 28px;">
                 </v-divider>
             </div>
-            <div  class="d-flex justify-center align-center">
+            <div class="d-flex justify-center align-center">
                 <v-slide-group
                     v-model="model"
                     class="py-4"
@@ -181,13 +181,43 @@
                 </v-slide-group>
             </div>
         </section>
+        <template>
+            <div class="text-center">
+                <v-dialog
+                    v-model="dialog"
+                    hide-overlay
+                    persistent
+                    width="300"
+                >
+                    <v-card
+                        color="primary"
+                        dark
+                    >
+                        <v-card-text>
+                            Please stand by
+                            <v-progress-linear
+                                indeterminate
+                                color="white"
+                                class="mb-0"
+                            ></v-progress-linear>
+                        </v-card-text>
+                    </v-card>
+                </v-dialog>
+            </div>
+        </template>
+
+
     </div>
 </template>
 
 <script>
     export default {
+        mounted() {
+            this.dialog = false;
+        },
         data: function () {
             return {
+                dialog: true,
                 model: null,
                 showArrows: true,
                 items: [

@@ -195,9 +195,39 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    this.dialog = false;
+  },
   data: function data() {
     return {
+      dialog: true,
       model: null,
       showArrows: true,
       items: [{
@@ -281,100 +311,465 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "section",
-      [
+  return _c(
+    "div",
+    [
+      _c(
+        "section",
+        [
+          _c(
+            "v-img",
+            {
+              staticClass: "white--text",
+              attrs: {
+                height: "95vh",
+                src: _vm.$vuetify.breakpoint.smAndUp
+                  ? "images/imagen principal maria victoria.jpg"
+                  : "images/imagen principal maria victoria movil.jpg",
+                gradient: _vm.$vuetify.breakpoint.smAndUp
+                  ? "to right, rgba(0, 0, 0, 0.7) 40%, rgba(68, 12, 64, 0) 70%"
+                  : "to top right, rgba(0, 0, 0, 0.7) 10%, rgba(68, 12, 64, 0) 70%"
+              }
+            },
+            [
+              _c(
+                "v-container",
+                { staticClass: "fill-height px-4 py-12" },
+                [
+                  _c(
+                    "v-flex",
+                    {
+                      staticClass: "d-flex align-end",
+                      staticStyle: {
+                        height: "100%",
+                        "max-width": "700px",
+                        width: "100%"
+                      }
+                    },
+                    [
+                      _c(
+                        "v-content",
+                        [
+                          _c(
+                            "h1",
+                            {
+                              staticClass:
+                                "font-weight-black mb-4 text-left white--text text-uppercase",
+                              class: _vm.$vuetify.breakpoint.smAndUp
+                                ? "display-2"
+                                : "display-1"
+                            },
+                            [
+                              _vm._v(
+                                "\n                            Soy\n                        "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h1",
+                            {
+                              staticClass:
+                                " font-weight-black mb-4 text-left white--text text-uppercase",
+                              class: _vm.$vuetify.breakpoint.smAndUp
+                                ? "display-2"
+                                : "display-1"
+                            },
+                            [
+                              _vm._v(
+                                "\n                            Maria Victoria Aponte\n                        "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "p",
+                            {
+                              staticClass:
+                                "base-body body-1 white--text text--lighten-1 text-left mb-10"
+                            },
+                            [
+                              _vm._v(
+                                "\n                            Trabajadora Social, con maestría en\n                            Investigación Social Interdisciplinaria, docente\n                            universitaria, e investigadora en problemáticas\n                            sobre violencia de género.\n                        "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              attrs: {
+                                rounded: "",
+                                color: "primary",
+                                dark: ""
+                              },
+                              on: {
+                                click: function($event) {
+                                  return _vm.$router.push("/about-me")
+                                }
+                              }
+                            },
+                            [_vm._v("¿Quién soy?")]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "section",
+        { staticClass: "mt-12" },
+        [
+          _c(
+            "v-container",
+            { staticClass: "base-section-heading text-center mb-12" },
+            [
+              _c(
+                "h1",
+                {
+                  staticClass:
+                    "text-uppercase headline font-weight-bold mb-2 text-center"
+                },
+                [_vm._v("\n                Mi motivación\n            ")]
+              ),
+              _vm._v(" "),
+              _c("v-divider", {
+                staticClass: " primary mx-auto mb-6",
+                staticStyle: { "max-width": "28px" }
+              }),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  staticClass:
+                    "body-1 mx-auto grey--text text--darken-1 mb-10 text-left",
+                  staticStyle: { "max-width": "700px" }
+                },
+                [
+                  _vm._v(
+                    "\n                Me inspira el saber de las mujeres,\n                estoy comprometida con su auto-valoración. Confiero pasión en el empoderamiento de cada mujer, con\n                objetividad y claridad. Mi travesía personal refleja una combinación de saberes cotidianos,\n                profesionales y sociales, inspirados en la necesidad de despertar conciencias de mujeres.\n            "
+                  )
+                ]
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("section", { staticClass: "py-9 secondary lighten-4" }, [
         _c(
-          "v-img",
-          {
-            staticClass: "white--text",
-            attrs: {
-              height: "95vh",
-              src: _vm.$vuetify.breakpoint.smAndUp
-                ? "images/imagen principal maria victoria.jpg"
-                : "images/imagen principal maria victoria movil.jpg",
-              gradient: _vm.$vuetify.breakpoint.smAndUp
-                ? "to right, rgba(0, 0, 0, 0.7) 40%, rgba(68, 12, 64, 0) 70%"
-                : "to top right, rgba(0, 0, 0, 0.7) 10%, rgba(68, 12, 64, 0) 70%"
-            }
-          },
+          "div",
+          { staticClass: "text-center mb-12" },
           [
             _c(
-              "v-container",
-              { staticClass: "fill-height px-4 py-12" },
+              "v-avatar",
+              { staticClass: "primary mb-4" },
               [
-                _c(
-                  "v-flex",
-                  {
-                    staticClass: "d-flex align-end",
-                    staticStyle: {
-                      height: "100%",
-                      "max-width": "700px",
-                      width: "100%"
-                    }
-                  },
+                _c("v-icon", { attrs: { size: "28", dark: "" } }, [
+                  _vm._v(
+                    "\n                    mdi-calendar-multiple-check\n                "
+                  )
+                ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "h1",
+              {
+                staticClass:
+                  "text-uppercase headline font-weight-bold mb-2 text-center"
+              },
+              [_vm._v("\n                Eventos académicos\n            ")]
+            ),
+            _vm._v(" "),
+            _c("v-divider", {
+              staticClass: "primary mx-auto mb-6",
+              staticStyle: { "max-width": "28px" }
+            }),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                staticClass:
+                  "base-body body-1 mx-auto grey--text text--darken-1 text-center mb-10",
+                staticStyle: { "max-width": "700px" }
+              },
+              [
+                _vm._v(
+                  "\n                Estos son algunos de los eventos internacionales y nacionales de los que he sido participe.\n            "
+                )
+              ]
+            )
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "container" },
+          [
+            _c(
+              "v-row",
+              _vm._l(_vm.eventos, function(item) {
+                return _c(
+                  "v-col",
+                  { key: item.title, staticClass: "col-md-6 col-12" },
                   [
                     _c(
-                      "v-content",
+                      "div",
+                      { staticClass: "pt-2 mb-8 d-flex" },
                       [
                         _c(
-                          "h1",
+                          "v-avatar",
                           {
-                            staticClass:
-                              "font-weight-black mb-4 text-left white--text text-uppercase",
-                            class: _vm.$vuetify.breakpoint.smAndUp
-                              ? "display-2"
-                              : "display-1"
+                            staticClass: "grey lighten-3 mb-3",
+                            attrs: { size: "84" }
                           },
-                          [
-                            _vm._v(
-                              "\n                            Soy\n                        "
-                            )
-                          ]
+                          [_c("v-img", { attrs: { src: item.image } })],
+                          1
                         ),
                         _vm._v(" "),
-                        _c(
-                          "h1",
-                          {
-                            staticClass:
-                              " font-weight-black mb-4 text-left white--text text-uppercase",
-                            class: _vm.$vuetify.breakpoint.smAndUp
-                              ? "display-2"
-                              : "display-1"
-                          },
-                          [
-                            _vm._v(
-                              "\n                            Maria Victoria Aponte\n                        "
+                        _c("div", { staticClass: "ml-6" }, [
+                          _c(
+                            "h3",
+                            {
+                              staticClass:
+                                "text-uppercase title font-weight-bold mb-3 text-left"
+                            },
+                            [
+                              _vm._v(
+                                "\n                                " +
+                                  _vm._s(item.title) +
+                                  "\n                            "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "p",
+                            {
+                              staticClass:
+                                "base-body body-1 mx-auto grey--text text--darken-1 text-left mb-0",
+                              staticStyle: { "max-width": "700px" }
+                            },
+                            [
+                              _vm._v(
+                                "\n                                " +
+                                  _vm._s(item.content) +
+                                  "\n                            "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "subtitle-2 mx-auto grey--text text--darken-1 text-left"
+                            },
+                            [
+                              _vm._v(
+                                "\n                                " +
+                                  _vm._s(item.location) +
+                                  "\n                            "
+                              )
+                            ]
+                          )
+                        ])
+                      ],
+                      1
+                    )
+                  ]
+                )
+              }),
+              1
+            )
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "mt-12" }, [
+        _c(
+          "div",
+          { staticClass: "text-center " },
+          [
+            _c(
+              "h1",
+              {
+                staticClass:
+                  "text-uppercase headline font-weight-bold mb-2 text-center"
+              },
+              [_vm._v("\n                Nuestros Servicios\n            ")]
+            ),
+            _vm._v(" "),
+            _c("v-divider", {
+              staticClass: "primary mx-auto ",
+              staticStyle: { "max-width": "28px" }
+            })
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "d-flex justify-center align-center" },
+          [
+            _c(
+              "v-slide-group",
+              {
+                staticClass: "py-4",
+                attrs: { "show-arrows": _vm.showArrows },
+                model: {
+                  value: _vm.model,
+                  callback: function($$v) {
+                    _vm.model = $$v
+                  },
+                  expression: "model"
+                }
+              },
+              _vm._l(_vm.services, function(item, h) {
+                return _c("v-slide-item", {
+                  key: h,
+                  scopedSlots: _vm._u(
+                    [
+                      {
+                        key: "default",
+                        fn: function(ref) {
+                          var active = ref.active
+                          var toggle = ref.toggle
+                          return [
+                            _c(
+                              "div",
+                              { staticClass: "text-center" },
+                              [
+                                _c(
+                                  "v-avatar",
+                                  {
+                                    staticClass: "mx-6",
+                                    attrs: { size: "100" }
+                                  },
+                                  [
+                                    _c(
+                                      "v-card",
+                                      {
+                                        attrs: {
+                                          flat: "",
+                                          height: "100",
+                                          width: "100",
+                                          href: "/services"
+                                        },
+                                        on: { click: toggle }
+                                      },
+                                      [
+                                        _c(
+                                          "v-row",
+                                          {
+                                            staticClass: "fill-height",
+                                            attrs: {
+                                              align: "center",
+                                              justify: "center"
+                                            }
+                                          },
+                                          [
+                                            _c("v-img", {
+                                              attrs: {
+                                                src: item.image,
+                                                gradient: active
+                                                  ? "to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+                                                  : ""
+                                              },
+                                              on: { click: function($event) {} }
+                                            })
+                                          ],
+                                          1
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "font-weight-light subtitle-2 text-uppercase d-block"
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(item.title) +
+                                        "\n                        "
+                                    )
+                                  ]
+                                )
+                              ],
+                              1
                             )
                           ]
+                        }
+                      }
+                    ],
+                    null,
+                    true
+                  )
+                })
+              }),
+              1
+            )
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      [
+        _c(
+          "div",
+          { staticClass: "text-center" },
+          [
+            _c(
+              "v-dialog",
+              {
+                attrs: { "hide-overlay": "", persistent: "", width: "300" },
+                model: {
+                  value: _vm.dialog,
+                  callback: function($$v) {
+                    _vm.dialog = $$v
+                  },
+                  expression: "dialog"
+                }
+              },
+              [
+                _c(
+                  "v-card",
+                  { attrs: { color: "primary", dark: "" } },
+                  [
+                    _c(
+                      "v-card-text",
+                      [
+                        _vm._v(
+                          "\n                        Please stand by\n                        "
                         ),
-                        _vm._v(" "),
-                        _c(
-                          "p",
-                          {
-                            staticClass:
-                              "base-body body-1 white--text text--lighten-1 text-left mb-10"
-                          },
-                          [
-                            _vm._v(
-                              "\n                            Trabajadora Social, con maestría en\n                            Investigación Social Interdisciplinaria, docente\n                            universitaria, e investigadora en problemáticas\n                            sobre violencia de género.\n                        "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "v-btn",
-                          {
-                            attrs: { rounded: "", color: "primary", dark: "" },
-                            on: {
-                              click: function($event) {
-                                return _vm.$router.push("/about-me")
-                              }
-                            }
-                          },
-                          [_vm._v("¿Quién soy?")]
-                        )
+                        _c("v-progress-linear", {
+                          staticClass: "mb-0",
+                          attrs: { indeterminate: "", color: "white" }
+                        })
                       ],
                       1
                     )
@@ -387,318 +782,10 @@ var render = function() {
           ],
           1
         )
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "section",
-      { staticClass: "mt-12" },
-      [
-        _c(
-          "v-container",
-          { staticClass: "base-section-heading text-center mb-12" },
-          [
-            _c(
-              "h1",
-              {
-                staticClass:
-                  "text-uppercase headline font-weight-bold mb-2 text-center"
-              },
-              [_vm._v("\n                Mi motivación\n            ")]
-            ),
-            _vm._v(" "),
-            _c("v-divider", {
-              staticClass: " primary mx-auto mb-6",
-              staticStyle: { "max-width": "28px" }
-            }),
-            _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticClass:
-                  "body-1 mx-auto grey--text text--darken-1 mb-10 text-left",
-                staticStyle: { "max-width": "700px" }
-              },
-              [
-                _vm._v(
-                  "\n                Me inspira el saber de las mujeres,\n                estoy comprometida con su auto-valoración. Confiero pasión en el empoderamiento de cada mujer, con\n                objetividad y claridad. Mi travesía personal refleja una combinación de saberes cotidianos,\n                profesionales y sociales, inspirados en la necesidad de despertar conciencias de mujeres.\n            "
-                )
-              ]
-            )
-          ],
-          1
-        )
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c("section", { staticClass: "py-9 secondary lighten-4" }, [
-      _c(
-        "div",
-        { staticClass: "text-center mb-12" },
-        [
-          _c(
-            "v-avatar",
-            { staticClass: "primary mb-4" },
-            [
-              _c("v-icon", { attrs: { size: "28", dark: "" } }, [
-                _vm._v(
-                  "\n                    mdi-calendar-multiple-check\n                "
-                )
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "h1",
-            {
-              staticClass:
-                "text-uppercase headline font-weight-bold mb-2 text-center"
-            },
-            [_vm._v("\n                Eventos académicos\n            ")]
-          ),
-          _vm._v(" "),
-          _c("v-divider", {
-            staticClass: "primary mx-auto mb-6",
-            staticStyle: { "max-width": "28px" }
-          }),
-          _vm._v(" "),
-          _c(
-            "p",
-            {
-              staticClass:
-                "base-body body-1 mx-auto grey--text text--darken-1 text-center mb-10",
-              staticStyle: { "max-width": "700px" }
-            },
-            [
-              _vm._v(
-                "\n                Estos son algunos de los eventos internacionales y nacionales de los que he sido participe.\n            "
-              )
-            ]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "container" },
-        [
-          _c(
-            "v-row",
-            _vm._l(_vm.eventos, function(item) {
-              return _c(
-                "v-col",
-                { key: item.title, staticClass: "col-md-6 col-12" },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "pt-2 mb-8 d-flex" },
-                    [
-                      _c(
-                        "v-avatar",
-                        {
-                          staticClass: "grey lighten-3 mb-3",
-                          attrs: { size: "84" }
-                        },
-                        [_c("v-img", { attrs: { src: item.image } })],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "ml-6" }, [
-                        _c(
-                          "h3",
-                          {
-                            staticClass:
-                              "text-uppercase title font-weight-bold mb-3 text-left"
-                          },
-                          [
-                            _vm._v(
-                              "\n                                " +
-                                _vm._s(item.title) +
-                                "\n                            "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "p",
-                          {
-                            staticClass:
-                              "base-body body-1 mx-auto grey--text text--darken-1 text-left mb-0",
-                            staticStyle: { "max-width": "700px" }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                " +
-                                _vm._s(item.content) +
-                                "\n                            "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "subtitle-2 mx-auto grey--text text--darken-1 text-left"
-                          },
-                          [
-                            _vm._v(
-                              "\n                                " +
-                                _vm._s(item.location) +
-                                "\n                            "
-                            )
-                          ]
-                        )
-                      ])
-                    ],
-                    1
-                  )
-                ]
-              )
-            }),
-            1
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("section", { staticClass: "mt-12" }, [
-      _c(
-        "div",
-        { staticClass: "text-center " },
-        [
-          _c(
-            "h1",
-            {
-              staticClass:
-                "text-uppercase headline font-weight-bold mb-2 text-center"
-            },
-            [_vm._v("\n                Nuestros Servicios\n            ")]
-          ),
-          _vm._v(" "),
-          _c("v-divider", {
-            staticClass: "primary mx-auto ",
-            staticStyle: { "max-width": "28px" }
-          })
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "d-flex justify-center align-center" },
-        [
-          _c(
-            "v-slide-group",
-            {
-              staticClass: "py-4",
-              attrs: { "show-arrows": _vm.showArrows },
-              model: {
-                value: _vm.model,
-                callback: function($$v) {
-                  _vm.model = $$v
-                },
-                expression: "model"
-              }
-            },
-            _vm._l(_vm.services, function(item, h) {
-              return _c("v-slide-item", {
-                key: h,
-                scopedSlots: _vm._u(
-                  [
-                    {
-                      key: "default",
-                      fn: function(ref) {
-                        var active = ref.active
-                        var toggle = ref.toggle
-                        return [
-                          _c(
-                            "div",
-                            { staticClass: "text-center" },
-                            [
-                              _c(
-                                "v-avatar",
-                                { staticClass: "mx-6", attrs: { size: "100" } },
-                                [
-                                  _c(
-                                    "v-card",
-                                    {
-                                      attrs: {
-                                        flat: "",
-                                        height: "100",
-                                        width: "100",
-                                        href: "/services"
-                                      },
-                                      on: { click: toggle }
-                                    },
-                                    [
-                                      _c(
-                                        "v-row",
-                                        {
-                                          staticClass: "fill-height",
-                                          attrs: {
-                                            align: "center",
-                                            justify: "center"
-                                          }
-                                        },
-                                        [
-                                          _c("v-img", {
-                                            attrs: {
-                                              src: item.image,
-                                              gradient: active
-                                                ? "to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-                                                : ""
-                                            },
-                                            on: { click: function($event) {} }
-                                          })
-                                        ],
-                                        1
-                                      )
-                                    ],
-                                    1
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                {
-                                  staticClass:
-                                    "font-weight-light subtitle-2 text-uppercase d-block"
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                            " +
-                                      _vm._s(item.title) +
-                                      "\n                        "
-                                  )
-                                ]
-                              )
-                            ],
-                            1
-                          )
-                        ]
-                      }
-                    }
-                  ],
-                  null,
-                  true
-                )
-              })
-            }),
-            1
-          )
-        ],
-        1
-      )
-    ])
-  ])
+      ]
+    ],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
