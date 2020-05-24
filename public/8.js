@@ -221,6 +221,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.dialog = false;
@@ -329,9 +338,37 @@ var render = function() {
                 gradient: _vm.$vuetify.breakpoint.smAndUp
                   ? "to right, rgba(0, 0, 0, 0.7) 40%, rgba(68, 12, 64, 0) 70%"
                   : "to top right, rgba(0, 0, 0, 0.7) 10%, rgba(68, 12, 64, 0) 70%"
-              }
+              },
+              scopedSlots: _vm._u([
+                {
+                  key: "placeholder",
+                  fn: function() {
+                    return [
+                      _c(
+                        "v-row",
+                        {
+                          staticClass: "fill-height ma-0",
+                          attrs: { align: "center", justify: "center" }
+                        },
+                        [
+                          _c("v-progress-circular", {
+                            attrs: {
+                              indeterminate: "",
+                              color: "grey lighten-5",
+                              size: "64"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ]
+                  },
+                  proxy: true
+                }
+              ])
             },
             [
+              _vm._v(" "),
               _c(
                 "v-container",
                 { staticClass: "fill-height px-4 py-12" },

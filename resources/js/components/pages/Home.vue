@@ -7,6 +7,15 @@
                 :src="$vuetify.breakpoint.smAndUp?'images/imagen principal maria victoria.jpg':'images/imagen principal maria victoria movil.jpg'"
                 :gradient="$vuetify.breakpoint.smAndUp?'to right, rgba(0, 0, 0, 0.7) 40%, rgba(68, 12, 64, 0) 70%':'to top right, rgba(0, 0, 0, 0.7) 10%, rgba(68, 12, 64, 0) 70%'"
             >
+                <template v-slot:placeholder>
+                    <v-row
+                        class="fill-height ma-0"
+                        align="center"
+                        justify="center"
+                    >
+                        <v-progress-circular indeterminate color="grey lighten-5" size="64"></v-progress-circular>
+                    </v-row>
+                </template>
                 <v-container class="fill-height px-4 py-12">
                     <v-flex
                         class="d-flex align-end"
