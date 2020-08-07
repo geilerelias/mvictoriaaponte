@@ -230,6 +230,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.dialog = false;
@@ -495,7 +496,7 @@ var render = function() {
                 },
                 [
                   _vm._v(
-                    "\n                Me inspira el saber de las mujeres,\n                estoy comprometida con su auto-valoración. Confiero pasión en el empoderamiento de cada mujer, con\n                objetividad y claridad. Mi travesía personal refleja una combinación de saberes cotidianos,\n                profesionales y sociales, inspirados en la necesidad de despertar conciencias de mujeres.\n            "
+                    "\n                Me inspira el saber de las mujeres,\n                estoy comprometida con su autovaloración. Confiero pasión en el empoderamiento de cada mujer, con\n                objetividad y claridad. Mi travesía personal refleja una combinación de saberes cotidianos,\n                profesionales y sociales, inspirados en la necesidad de despertar conciencias de mujeres.\n            "
                   )
                 ]
               )
@@ -547,7 +548,7 @@ var render = function() {
               },
               [
                 _vm._v(
-                  "\n                Estos son algunos de los eventos internacionales y nacionales de los que he sido participe.\n            "
+                  "\n                Estos son algunos de los eventos academico internacionales y nacionales de los que he participado,\n                como docente investigadora\n            "
                 )
               ]
             )

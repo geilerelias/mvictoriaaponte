@@ -9,6 +9,8 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -126,9 +128,46 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
+      dialog: false,
+      message: {
+        name: '',
+        email: '',
+        subject: '',
+        content: ''
+      },
       links: [{
         text: 'Inicio',
         disabled: false,
@@ -145,13 +184,59 @@ __webpack_require__.r(__webpack_exports__);
       }, {
         icon: "mdi-cellphone",
         name: "Teléfonos",
-        content: "+57 315 734 0385 "
+        content: "+57 315 734 0385"
       }, {
         icon: "mdi-email",
         name: "Correos",
         content: "contacto@mvictoriaaponte.com<br/>contacto@soecolombia.com"
       }]
     };
+  },
+  methods: {
+    enviar: function enviar() {
+      var _this = this;
+
+      this.dialog = true;
+
+      if (this.message.name.trim() === '' || this.message.content.trim() === '') {
+        alert('Debes completar todos los campos antes de guardar');
+        return;
+      }
+
+      var messageNuevo = this.message;
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/message', messageNuevo).then(function (response) {
+        if (response.status == 200) {
+          console.log(response);
+          console.log(response.data);
+          _this.dialog = false;
+          _this.message = {
+            name: '',
+            email: '',
+            subject: '',
+            content: ''
+          };
+          Swal.fire('Buen trabajo', 'Mensaje enviado con éxito!', 'success');
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+            footer: '<a href>Why do I have this issue?</a>'
+          });
+          console.log(response.data);
+          _this.dialog = false;
+        }
+      })["catch"](function (error) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Something went wrong!',
+          footer: '<a href>Why do I have this issue?</a>'
+        });
+        console.log(error);
+        _this.dialog = false;
+      });
+    }
   }
 });
 
@@ -360,7 +445,14 @@ var render = function() {
                           "div",
                           [
                             _c("v-text-field", {
-                              attrs: { label: "Nombre", outlined: "" }
+                              attrs: { label: "Nombre", outlined: "" },
+                              model: {
+                                value: _vm.message.name,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.message, "name", $$v)
+                                },
+                                expression: "message.name"
+                              }
                             }),
                             _vm._v(" "),
                             _c("v-text-field", {
@@ -369,27 +461,56 @@ var render = function() {
                                 label: "Correo",
                                 outlined: "",
                                 type: "email"
+                              },
+                              model: {
+                                value: _vm.message.email,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.message, "email", $$v)
+                                },
+                                expression: "message.email"
                               }
                             }),
                             _vm._v(" "),
                             _c("v-text-field", {
-                              attrs: { outlined: "", label: "Tema" }
+                              attrs: { outlined: "", label: "Tema" },
+                              model: {
+                                value: _vm.message.subject,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.message, "subject", $$v)
+                                },
+                                expression: "message.subject"
+                              }
                             }),
                             _vm._v(" "),
                             _c("v-textarea", {
                               attrs: {
                                 outlined: "",
                                 label: "Descripción o Mensaje"
+                              },
+                              model: {
+                                value: _vm.message.content,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.message, "content", $$v)
+                                },
+                                expression: "message.content"
                               }
                             }),
                             _vm._v(" "),
                             _c(
                               "v-btn",
                               {
+                                staticClass: "white--text",
                                 attrs: {
+                                  disabled: _vm.dialog,
+                                  loading: _vm.dialog,
                                   color: "primary",
                                   outlined: "",
                                   dark: ""
+                                },
+                                on: {
+                                  click: function($event) {
+                                    return _vm.enviar()
+                                  }
                                 }
                               },
                               [
@@ -403,6 +524,45 @@ var render = function() {
                         )
                       ])
                     ])
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "v-dialog",
+          {
+            attrs: { "hide-overlay": "", persistent: "", width: "300" },
+            model: {
+              value: _vm.dialog,
+              callback: function($$v) {
+                _vm.dialog = $$v
+              },
+              expression: "dialog"
+            }
+          },
+          [
+            _c(
+              "v-card",
+              { attrs: { color: "primary", dark: "" } },
+              [
+                _c(
+                  "v-card-text",
+                  { staticClass: "pa-4" },
+                  [
+                    _c("p", { staticClass: "mb-2" }, [
+                      _vm._v("Por favor espere")
+                    ]),
+                    _vm._v(" "),
+                    _c("v-progress-linear", {
+                      staticClass: "mb-0",
+                      attrs: { indeterminate: "", color: "white" }
+                    })
                   ],
                   1
                 )

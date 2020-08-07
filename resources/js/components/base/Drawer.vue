@@ -8,8 +8,8 @@
         >
             <v-row align="end" class="lightbox white--text pa-2 fill-height">
                 <v-col>
-                    <div class="subheading">Jonathan Lee</div>
-                    <div class="body-1">heyfromjonathan@gmail.com</div>
+                    <div class="subheading">Maria Victoria Aponte</div>
+                    <div class="body-1">contacto@mvictoriaaponte.com</div>
                 </v-col>
             </v-row>
         </v-img>

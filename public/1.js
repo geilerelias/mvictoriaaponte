@@ -548,11 +548,11 @@ var render = function() {
             [
               _c("v-col", [
                 _c("div", { staticClass: "subheading" }, [
-                  _vm._v("Jonathan Lee")
+                  _vm._v("Maria Victoria Aponte")
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "body-1" }, [
-                  _vm._v("heyfromjonathan@gmail.com")
+                  _vm._v("contacto@mvictoriaaponte.com")
                 ])
               ])
             ],
@@ -638,7 +638,7 @@ var render = function() {
                     },
                     [
                       _c("strong", { staticClass: "subheading" }, [
-                        _vm._v("¡Conéctate con migo en mis redes sociales!")
+                        _vm._v("¡Conéctate conmigo en mis redes sociales!")
                       ])
                     ]
                   ),

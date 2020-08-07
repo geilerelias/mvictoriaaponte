@@ -60,7 +60,7 @@
                 <p class="body-1 mx-auto grey--text text--darken-1 mb-10 text-left"
                    style="max-width: 700px;">
                     Me inspira el saber de las mujeres,
-                    estoy comprometida con su auto-valoración. Confiero pasión en el empoderamiento de cada mujer, con
+                    estoy comprometida con su autovaloración. Confiero pasión en el empoderamiento de cada mujer, con
                     objetividad y claridad. Mi travesía personal refleja una combinación de saberes cotidianos,
                     profesionales y sociales, inspirados en la necesidad de despertar conciencias de mujeres.
                 </p>
@@ -84,7 +84,8 @@
 
                 <p class="base-body body-1 mx-auto grey--text text--darken-1 text-center mb-10"
                    style="max-width: 700px;">
-                    Estos son algunos de los eventos internacionales y nacionales de los que he sido participe.
+                    Estos son algunos de los eventos academico internacionales y nacionales de los que he participado,
+                    como docente investigadora
                 </p>
             </div>
             <div class="container">

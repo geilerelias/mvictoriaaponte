@@ -16,12 +16,15 @@ use Illuminate\Support\Facades\Artisan;
 
 Route::get('/clear-cache', function () {
     try {
+        $exitCode = Artisan::call('cache:clear');
         $exitCode = Artisan::call('config:cache');
         return 'DONE'; //Return anything
     } catch (Throwable $th) {
         //throw $th;
     }
 });
+
+Route::resource('/message', 'MessageController');
 
 Route::get('/document/{filename}', function ($filename) {
 

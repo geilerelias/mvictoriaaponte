@@ -6,7 +6,7 @@
             <v-container fluid class="text-md-left">
                 <v-row class="text-center">
                     <v-col cols="12" md="6" class="text-md-left pt-1 my-0">
-                        <strong class="subheading">¡Conéctate con migo en mis redes sociales!</strong>
+                        <strong class="subheading">¡Conéctate conmigo en mis redes sociales!</strong>
                     </v-col>
                     <v-col cols="12" md="6" class="text-md-right pt-1 my-0">
                         <v-btn

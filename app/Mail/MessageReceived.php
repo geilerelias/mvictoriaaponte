@@ -11,14 +11,16 @@ class MessageReceived extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $msg;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($message)
     {
-        //
+        $this->msg = $message;
     }
 
     /**
@@ -28,6 +30,8 @@ class MessageReceived extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->from($this->msg["email"])
+            ->subject($this->msg["subject"])
+            ->view('emails.message-received');
     }
 }

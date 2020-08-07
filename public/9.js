@@ -289,6 +289,50 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -373,6 +417,173 @@ var render = function() {
                       staticClass: " justify-center pa-0",
                       attrs: { dark: "", items: _vm.links }
                     })
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "section",
+      [
+        _c(
+          "v-container",
+          [
+            _c(
+              "v-row",
+              { staticClass: "mb-2" },
+              [
+                _c(
+                  "v-col",
+                  { attrs: { sm: "6" } },
+                  [
+                    _c(
+                      "v-card",
+                      { attrs: { height: "300" } },
+                      [
+                        _c(
+                          "v-row",
+                          { staticClass: "ma-0" },
+                          [
+                            _c("v-col", { staticClass: "ma-0 " }, [
+                              _c(
+                                "strong",
+                                {
+                                  staticClass:
+                                    "d-inline-block mb-2 text-primary"
+                                },
+                                [_vm._v("World")]
+                              ),
+                              _vm._v(" "),
+                              _c("h3", { staticClass: "mb-0" }, [
+                                _vm._v("Featured post")
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "mb-1 text-muted" }, [
+                                _vm._v("Nov 12")
+                              ]),
+                              _vm._v(" "),
+                              _c("p", { staticClass: "card-text mb-auto" }, [
+                                _vm._v(
+                                  "This is a wider card with supporting text below as a\n                                    natural\n                                    lead-in to additional content."
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "stretched-link",
+                                  attrs: { href: "#" }
+                                },
+                                [_vm._v("Continue reading")]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "v-col",
+                              {
+                                staticClass: "ma-0 pa-0",
+                                attrs: { cols: "4" }
+                              },
+                              [
+                                _c("v-img", {
+                                  attrs: {
+                                    "aspect-ratio": 5 / 10,
+                                    height: "300",
+                                    src:
+                                      "https://biblioteca.ulpgc.es/files/repositorio_de_docum152/noticias/esto-es-lo-que-cuestan-las-revistas-cientificas-espana-se-ha-pulido-213-millones-desde-2012.jpg"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "v-col",
+                  { attrs: { sm: "6" } },
+                  [
+                    _c(
+                      "v-card",
+                      { attrs: { height: "300" } },
+                      [
+                        _c(
+                          "v-row",
+                          { staticClass: "ma-0" },
+                          [
+                            _c("v-col", { staticClass: "ma-0 " }, [
+                              _c(
+                                "strong",
+                                {
+                                  staticClass:
+                                    "d-inline-block mb-2 text-primary"
+                                },
+                                [_vm._v("World")]
+                              ),
+                              _vm._v(" "),
+                              _c("h3", { staticClass: "mb-0" }, [
+                                _vm._v("Featured post")
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "mb-1 text-muted" }, [
+                                _vm._v("Nov 12")
+                              ]),
+                              _vm._v(" "),
+                              _c("p", { staticClass: "card-text mb-auto" }, [
+                                _vm._v(
+                                  "This is a wider card with supporting text below as a\n                                    natural\n                                    lead-in to additional content."
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "stretched-link",
+                                  attrs: { href: "#" }
+                                },
+                                [_vm._v("Continue reading")]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "v-col",
+                              {
+                                staticClass: "ma-0 pa-0",
+                                attrs: { cols: "4" }
+                              },
+                              [
+                                _c("v-img", {
+                                  attrs: {
+                                    "aspect-ratio": 5 / 10,
+                                    height: "300",
+                                    src:
+                                      "https://www.tuexperto.com/wp-content/uploads/2019/06/5-formas-de-guardar-un-documento-word-como-un-documento-pdf.jpg"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
                   ],
                   1
                 )

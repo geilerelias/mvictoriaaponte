@@ -83,10 +83,12 @@
                             <div>
                                 <div>
                                     <v-text-field
+                                        v-model="message.name"
                                         label="Nombre"
                                         outlined
                                     ></v-text-field>
                                     <v-text-field
+                                        v-model="message.email"
                                         small
                                         label="Correo"
                                         outlined
@@ -94,15 +96,22 @@
                                     ></v-text-field>
 
                                     <v-text-field
+                                        v-model="message.subject"
                                         outlined
                                         label="Tema"
                                     ></v-text-field>
                                     <v-textarea
+                                        v-model="message.content"
                                         outlined
                                         label="Descripción o Mensaje"
                                     ></v-textarea>
 
-                                    <v-btn color="primary" outlined dark>
+                                    <v-btn
+                                        :disabled="dialog"
+                                        :loading="dialog"
+                                        class="white--text"
+                                        @click="enviar()"
+                                        color="primary" outlined dark>
                                         Enviar
                                     </v-btn>
                                 </div>
@@ -111,13 +120,42 @@
                     </v-col>
                 </v-row>
             </v-container>
+            <v-dialog
+                v-model="dialog"
+                hide-overlay
+                persistent
+                width="300"
+            >
+                <v-card
+                    color="primary"
+                    dark
+                >
+                    <v-card-text class="pa-4">
+                        <p class="mb-2">Por favor espere</p>
+                        <v-progress-linear
+                            indeterminate
+                            color="white"
+                            class="mb-0"
+                        ></v-progress-linear>
+                    </v-card-text>
+                </v-card>
+            </v-dialog>
         </section>
     </div>
 </template>
 
 <script>
+    import axios from "axios";
+
     export default {
         data: () => ({
+            dialog: false,
+            message: {
+                name: '',
+                email: '',
+                subject: '',
+                content: ''
+            },
             links: [
                 {
                     text: 'Inicio',
@@ -139,15 +177,67 @@
                 {
                     icon: "mdi-cellphone",
                     name: "Teléfonos",
-                    content: `+57 315 734 0385 `
+                    content: `+57 315 734 0385`
                 },
                 {
                     icon: "mdi-email",
                     name: "Correos",
                     content: `contacto@mvictoriaaponte.com<br/>contacto@soecolombia.com`
                 }
+
+
             ]
         }),
+        methods: {
+            enviar() {
+                this.dialog = true;
+
+                if (this.message.name.trim() === '' || this.message.content.trim() === '') {
+                    alert('Debes completar todos los campos antes de guardar');
+                    return;
+                }
+                const messageNuevo = this.message;
+                axios.post('/message', messageNuevo)
+                    .then(response => {
+                        if (response.status == 200) {
+                            console.log(response)
+                            console.log(response.data);
+                            this.dialog = false;
+                            this.message = {
+                                name: '',
+                                email: '',
+                                subject: '',
+                                content: ''
+                            }
+                            Swal.fire(
+                                'Buen trabajo',
+                                'Mensaje enviado con éxito!',
+                                'success'
+                            )
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Something went wrong!',
+                                footer: '<a href>Why do I have this issue?</a>'
+                            })
+                            console.log(response.data);
+                            this.dialog = false;
+                        }
+
+                    })
+                    .catch(error => {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Something went wrong!',
+                            footer: '<a href>Why do I have this issue?</a>'
+                        })
+                        console.log(error);
+                        this.dialog = false;
+                    })
+            }
+        }
     };
 </script>
 

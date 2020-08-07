@@ -7,6 +7,8 @@ import VueAxios from "vue-axios";
 import PerfectScrollbar from "vue2-perfect-scrollbar";
 import "vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css";
 
+
+
 Vue.use(Vuetify);
 Vue.use(VueAxios, axios);
 Vue.use(PerfectScrollbar);
@@ -51,5 +53,5 @@ const app = new Vue({
         },
     }),
     store,
-    router
+    router,
 });

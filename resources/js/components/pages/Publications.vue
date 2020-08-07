@@ -24,6 +24,50 @@
 
         </section>
         <section>
+            <v-container>
+                <v-row class="mb-2">
+                    <v-col sm="6">
+                        <v-card height="300">
+                            <v-row class="ma-0">
+                                <v-col class="ma-0 ">
+                                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                                    <h3 class="mb-0">Featured post</h3>
+                                    <div class="mb-1 text-muted">Nov 12</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below as a
+                                        natural
+                                        lead-in to additional content.</p>
+                                    <a href="#" class="stretched-link">Continue reading</a>
+                                </v-col>
+
+                                <v-col cols="4" class="ma-0 pa-0">
+                                   <v-img :aspect-ratio="5/10" height="300" src="https://biblioteca.ulpgc.es/files/repositorio_de_docum152/noticias/esto-es-lo-que-cuestan-las-revistas-cientificas-espana-se-ha-pulido-213-millones-desde-2012.jpg"></v-img>
+                                </v-col>
+                            </v-row>
+                        </v-card>
+                    </v-col>
+                    <v-col sm="6">
+                        <v-card height="300">
+                            <v-row class="ma-0">
+                                <v-col class="ma-0 ">
+                                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                                    <h3 class="mb-0">Featured post</h3>
+                                    <div class="mb-1 text-muted">Nov 12</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below as a
+                                        natural
+                                        lead-in to additional content.</p>
+                                    <a href="#" class="stretched-link">Continue reading</a>
+                                </v-col>
+
+                                <v-col cols="4" class="ma-0 pa-0">
+                                    <v-img :aspect-ratio="5/10" height="300" src="https://www.tuexperto.com/wp-content/uploads/2019/06/5-formas-de-guardar-un-documento-word-como-un-documento-pdf.jpg"></v-img>
+                                </v-col>
+                            </v-row>
+                        </v-card>
+                    </v-col>
+                </v-row>
+            </v-container>
+        </section>
+        <section>
             <div class="text-center my-12">
                 <v-avatar class="primary mb-4">
                     <v-icon size="28" dark>

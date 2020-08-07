@@ -11,10 +11,11 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600"
               rel="stylesheet">
-
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
         <!-- Styles -->
         <link href="{{ mix('css/app.css') }}"
               rel="stylesheet">
+
 
     </head>
 
@@ -23,6 +24,7 @@
             <vue-app></vue-app>
         </div>
         <script src="{{ mix('js/app.js') }}"></script>
+
     </body>
 
 </html>
