@@ -55,8 +55,8 @@
                     </v-btn>
                 </v-col>
                 <v-col class="col-md-5 offset-md-1 col-12" v-if="$vuetify.breakpoint.smAndUp">
-                    <v-card  flat v-show="loaded"  class="mx-auto ">
-                        <v-img max-height="500" :aspect-ratio="5/8" contain  src="images/quien-soy/quien-soy.jpg">
+                    <v-card flat v-show="loaded" class="mx-auto ">
+                        <v-img max-height="500" :aspect-ratio="5/8" contain src="images/quien-soy/quien-soy.jpg">
                         </v-img>
                     </v-card>
                     <v-skeleton-loader
@@ -181,7 +181,7 @@
             </v-card>
 
             <v-card flat class="mx-auto">
-                <v-list >
+                <v-list>
                     <template v-for="(item, index) in areasDeActuación">
                         <div
                             v-if="item.header"
@@ -607,7 +607,7 @@ export default {
             },
         ],
         areasDeActuación: [
-            {header:'Areas de Actuación'},
+            {header: 'Areas de Actuación'},
             {
                 data: `Ciencias Sociales -- Ciencias de la Educación -- Educación General (Incluye Capacitación, Pedagogía)`
             },
