@@ -334,8 +334,8 @@ var render = function() {
               attrs: {
                 height: "95vh",
                 src: _vm.$vuetify.breakpoint.smAndUp
-                  ? "images/imagen principal maria victoria.jpg"
-                  : "images/imagen principal maria victoria movil.jpg",
+                  ? "images/imagen principal maria victoria 2.jpg"
+                  : "images/imagen principal maria victoria movil 2.jpg",
                 gradient: _vm.$vuetify.breakpoint.smAndUp
                   ? "to right, rgba(0, 0, 0, 0.7) 40%, rgba(68, 12, 64, 0) 70%"
                   : "to top right, rgba(0, 0, 0, 0.7) 10%, rgba(68, 12, 64, 0) 70%"

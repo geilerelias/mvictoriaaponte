@@ -19,6 +19,11 @@ const store = new Vuex.Store({
                 icon:'mdi-account-question'
             },
             {
+                path: "/my-team",
+                name: "Mi equipo",
+                icon:'mdi-account-multiple'
+            },
+            {
                 path: "/events",
                 name: "Eventos",
                 icon:'mdi-calendar-multiple-check'

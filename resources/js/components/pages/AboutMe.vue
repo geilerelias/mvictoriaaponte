@@ -219,6 +219,193 @@
                 </v-list>
             </v-card>
 
+
+            <v-data-iterator
+                :items="idiomas"
+                :items-per-page.sync="itemsPerPage"
+                hide-default-footer
+            >
+                <template v-slot:header>
+
+                    <div class="base-section-heading text-center">
+                        <h3 class="text-uppercase text-h6 font-weight-bold  text-left">
+                            Idiomas
+                        </h3>
+                        <v-divider class="primary  mr-auto mb-3" style="max-width: 28px;"></v-divider>
+                    </div>
+                </template>
+
+                <template v-slot:default="props">
+                    <v-row>
+                        <v-col
+                            v-for="item in props.items"
+                            :key="item.name"
+                            cols="12"
+                            sm="6"
+                            md="4"
+                            lg="3"
+                        >
+                            <v-card>
+                                <v-card-title class="subheading font-weight-bold">
+                                    {{ item.name }}
+                                </v-card-title>
+
+                                <v-divider></v-divider>
+
+                                <v-list dense>
+                                    <v-list-item>
+                                        <v-list-item-content>Habla:</v-list-item-content>
+                                        <v-list-item-content class="align-end">
+
+                                            <v-progress-linear
+                                                :color="colorPorRango(item.habla)"
+                                                rounded
+                                                :value="item.habla"
+                                                height="12"
+                                            >
+                                                <template v-slot="{ value }">
+                                                        <span class="overline">
+                                                            <strong :class="value>50?'white--text':'black--text'">
+                                                                {{ Math.ceil(value) }}%
+                                                            </strong>
+                                                        </span>
+                                                </template>
+                                            </v-progress-linear>
+                                        </v-list-item-content>
+                                    </v-list-item>
+
+                                    <v-list-item>
+                                        <v-list-item-content>Escribe:</v-list-item-content>
+                                        <v-list-item-content class="align-end">
+                                            <v-progress-linear
+                                                :color="colorPorRango(item.escribe)"
+                                                rounded
+                                                :value="item.escribe"
+                                                height="12"
+                                            >
+                                                <template v-slot="{ value }">
+                                                        <span class="overline">
+                                                            <strong class="white--text">
+                                                                {{ Math.ceil(value) }}%
+                                                            </strong>
+                                                        </span>
+                                                </template>
+                                            </v-progress-linear>
+                                        </v-list-item-content>
+                                    </v-list-item>
+
+                                    <v-list-item>
+                                        <v-list-item-content>Lee:</v-list-item-content>
+                                        <v-list-item-content class="align-end">
+                                            <v-progress-linear
+                                                :color="colorPorRango(item.lee)"
+                                                rounded
+                                                :value="item.lee"
+                                                height="12"
+                                            >
+                                                <template v-slot="{ value }">
+                                                        <span class="overline">
+                                                            <strong class="white--text">
+                                                                {{ Math.ceil(value) }}%
+                                                            </strong>
+                                                        </span>
+                                                </template>
+                                            </v-progress-linear>
+                                        </v-list-item-content>
+                                    </v-list-item>
+
+                                    <v-list-item>
+                                        <v-list-item-content>Entiende:</v-list-item-content>
+                                        <v-list-item-content class="align-end">
+                                            <v-progress-linear
+                                                :color="colorPorRango(item.entiende)"
+                                                rounded
+                                                :value="item.entiende"
+                                                height="12"
+                                            >
+                                                <template v-slot="{ value }">
+                                                        <span class="overline">
+                                                            <strong class="white--text">
+                                                                {{ Math.ceil(value) }}%
+                                                            </strong>
+                                                        </span>
+                                                </template>
+                                            </v-progress-linear>
+                                        </v-list-item-content>
+                                    </v-list-item>
+                                </v-list>
+                            </v-card>
+                        </v-col>
+                    </v-row>
+                </template>
+
+            </v-data-iterator>
+
+            <v-simple-table>
+                <template v-slot:default>
+                    <thead>
+                    <tr>
+                        <th class="text-left">Idioma</th>
+                        <th class="text-left">Habla</th>
+                        <th class="text-left">Escribe</th>
+                        <th class="text-left">Lee</th>
+                        <th class="text-left">Entiende</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="item in idiomas" :key="item.name">
+                        <td><strong>{{ item.name }}</strong></td>
+                        <td> {{ palabraPorRango(item.habla) }}</td>
+                        <td> {{ palabraPorRango(item.escribe) }}</td>
+                        <td> {{ palabraPorRango(item.lee) }}</td>
+                        <td> {{ palabraPorRango(item.entiende) }}</td>
+                    </tr>
+                    </tbody>
+                </template>
+            </v-simple-table>
+
+            <v-card flat class="mx-auto mt-6">
+                <v-list shaped dense>
+                    <template v-for="(item, index) in lineasDeInvestigacion">
+                        <div
+                            v-if="item.header"
+                            :key="item.header"
+                        >
+                            <div class="base-section-heading text-center">
+                                <h3 class="text-uppercase text-h6 font-weight-bold  text-left">
+                                    {{ item.header }}
+                                </h3>
+                                <v-divider class="primary  mr-auto mb-3" style="max-width: 28px;"></v-divider>
+                            </div>
+                        </div>
+
+                        <v-divider
+                            v-else-if="item.divider"
+                            :key="index"
+                            :inset="item.inset"
+                        ></v-divider>
+
+                        <v-list-item
+                            v-else
+                            :key="item.title"
+                            @click=""
+                        >
+                            <v-list-item-avatar>
+                                <v-avatar color="grey lighten-2">
+                                    <span class="font-weight-bold "> {{ index }}</span>
+                                </v-avatar>
+                            </v-list-item-avatar>
+
+                            <v-list-item-content v-html="item.data">
+                            </v-list-item-content>
+
+                            <v-list-item-action>
+                              <span class="caption">Activa: <span :class="item.activa=='Si'?'green--text':'red--text'"> {{ item.activa }}</span></span>
+                            </v-list-item-action>
+                        </v-list-item>
+                    </template>
+                </v-list>
+            </v-card>
         </v-container>
 
 
@@ -307,39 +494,7 @@ export default {
                 href: '/about-me',
             },
         ],
-        items: [
-            {header: 'Today'},
-            {
-                avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg',
-                title: 'Brunch this weekend?',
-                subtitle: "<span class='text--primary'>Ali Connors</span> &mdash; I'll be in your neighborhood doing errands this weekend. Do you want to hang out?",
-            },
-            {divider: true, inset: true},
-            {
-                avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg',
-                title: 'Summer BBQ <span class="grey--text text--lighten-1">4</span>',
-                subtitle: "<span class='text--primary'>to Alex, Scott, Jennifer</span> &mdash; Wish I could come, but I'm out of town this weekend.",
-            },
-            {divider: true, inset: true},
-            {
-                avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg',
-                title: 'Oui oui',
-                subtitle: "<span class='text--primary'>Sandra Adams</span> &mdash; Do you have Paris recommendations? Have you ever been?",
-            },
-            {header: 'Today'},
-            {divider: true, inset: true},
-            {
-                avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg',
-                title: 'Birthday gift',
-                subtitle: "<span class='text--primary'>Trevor Hansen</span> &mdash; Have any ideas about what we should get Heidi for her birthday?",
-            },
-            {divider: true, inset: true},
-            {
-                avatar: 'https://cdn.vuetifyjs.com/images/lists/5.jpg',
-                title: 'Recipe to try',
-                subtitle: "<span class='text--primary'>Britta Holt</span> &mdash; We should eat this: Grate, Squash, Corn, and tomatillo Tacos.",
-            },
-        ],
+
         formacionAcademica: [
             {header: 'Formación Academica'},
             {
@@ -630,9 +785,67 @@ export default {
                 data: `Ciencias Sociales -- Sociología -- Temas Especiales (Estudios de Género, Temas Sociales, Estudios de la Familia)`
             }
         ],
+
+
+        itemsPerPage: 4,
+        idiomas: [
+            {
+                name: 'Inglés',
+                habla: '19',
+                escribe: '65',
+                lee: '75',
+                entiende: '60'
+            },
+            {
+                name: 'Español',
+                habla: '94',
+                escribe: '94',
+                lee: '94',
+                entiende: '94'
+            },
+        ],
+        lineasDeInvestigacion: [
+            {header: "Líneas de investigación"},
+            {data: "Inclusión social", activa: "Si"},
+            {data: "Bienestar integral", activa: "No"},
+            {data: "Apropiación y diseño en el ámbito de la moda", activa: "Si"},
+            {data: "Inclusión social", activa: "Si"},
+            {data: "Pedagogía y enseñabilidad de la fisioterapia", activa: "No"},
+            {data: "Gestión y desarrollo social", activa: "Si"},
+            {data: "inclusión social", activa: "No"},
+            {data: "Gestión y desarrollo social", activa: "Si"},
+            {data: "Pedagogos del patronaje", activa: "Si"},
+            {data: "Inclusión social", activa: "No"},
+            {data: "Apropiación y diseño en el ámbito de la moda", activa: "Si"},
+            {data: "Gestión y desarrollo social", activa: "Si"},
+            {data: "Gestión y desarrollo social", activa: "Si"},
+            {data: "Pedagogos del patronaje", activa: "No"},
+            {data: "Gestión y desarrollo social", activa: "Si"},
+            {data: "Gestión y desarrollo social", activa: "Si"},
+            {data: "Gestión y desarrollo social", activa: "Si"},
+            {data: "Gestión y desarrollo social", activa: "Si"}
+
+        ],
+        reconocimientos: [
+            {header: "Reconocimientos"},
+            {data: "Mención de honor,FUNDACION UNIVERSITARIA DEL AREA ANDINA - Noviembrede 2015"},
+            {data: "Mención de honor: primer concurso de crónica Areandina: Experiencias de vida,FUNDACION UNIVERSITARIA DEL AREA ANDINA - Noviembrede 2015"},
+            {data: "docente distinguida,FUNDACION UNIVERSITARIA DEL AREA ANDINA - Mayode 2012"},
+            {data: "Participación proceso de acreditación de alta calidad- Programa Terapia Respiratoria,FUNDACION UNIVERSITARIA DEL AREA ANDINA - Octubrede 2012"},
+            {data: "grupo intercultural ambiental, social y patrimonial,FUNDACION UNIVERSITARIA DEL AREA ANDINA - Septiembrede 2010"},
+            {data: "Labor docente y compromiso profesional ,FUNDACION UNIVERSITARIA DEL AREA ANDINA - Juliode 2008"},
+            {data: "Docente distinguida del Centro de Investigación y Desarrollo,FUNDACION UNIVERSITARIA DEL AREA ANDINA - Mayode 2008"},
+            {data: "Contribución para engrandecer la investigación. ,UNIVERSIDAD DE SANTANDER - Octubrede 2002"},
+            {data: "destacada y enriquecedora participación como conferencista en el 2 ENCUENTRO INTERNACIONAL DE INVESTIGADORES,Universidad Iberoamericana - Diciembrede 2001"},
+            {data: "Se reconoce públicamente por su destacada participación como docente de la institución,UNIVERSIDAD DE SANTANDER - Diciembrede 2003"},
+            {data: "Agradecimientos por la capacitación en sistemas brindada a las clases menos favorecidas de la comunidad vallenata. ,Corporación Ediles de Valledupar - Diciembrede 2002"},
+            {data: "esfuerzo personal por la producción del trabajo de grado de la carrera interdisciplinaria de especialización en la problemática del uso indebido de drogas. , - Febrerode 1994"}
+
+        ],
+
         dialog: false,
         loading: true,
-        loaded: false
+        loaded: false,
     }),
     created() {
         const readyHandler = () => {
@@ -646,6 +859,34 @@ export default {
         document.addEventListener('readystatechange', readyHandler);
 
         readyHandler(); // in case the component has been instantiated lately after loading
+    },
+    methods: {
+        colorPorRango(value) {
+            if (value < 20) {
+                return "red darken-2";
+            } else if (value < 60) {
+                return "orange";
+            } else if (value < 80) {
+                return "indigo";
+            } else if (value < 95) {
+                return "cyan";
+            } else {
+                return "teal";
+            }
+        },
+        palabraPorRango(value) {
+            if (value < 20) {
+                return "Deficiente";
+            } else if (value < 60) {
+                return "Insuficiente";
+            } else if (value < 80) {
+                return "Aceptable";
+            } else if (value < 95) {
+                return "Sobresaliente";
+            } else {
+                return "Excelente";
+            }
+        }
     }
 
 };

@@ -26,6 +26,11 @@ let routes = [
                 component: () => import ('./components/pages/AboutMe.vue')
             },
             {
+                path: '/my-team',
+                name: 'AboutMe',
+                component: () => import ('./components/pages/MyTeam.vue')
+            },
+            {
                 path: '/events',
                 name: 'Events',
                 component: () => import ('./components/pages/Events.vue')
