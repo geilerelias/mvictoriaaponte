@@ -64878,13 +64878,13 @@ var withPrefix = function withPrefix(prefix, routes) {
 var routes = [{
   path: '/',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(10), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! ./components/Layout.vue */ "./resources/js/components/Layout.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(11), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! ./components/Layout.vue */ "./resources/js/components/Layout.vue"));
   },
   children: [{
     path: '/',
     name: 'Home',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ./components/pages/Home.vue */ "./resources/js/components/pages/Home.vue"));
+      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ./components/pages/Home.vue */ "./resources/js/components/pages/Home.vue"));
     }
   }, {
     path: '/about-me',
@@ -64893,28 +64893,22 @@ var routes = [{
       return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, /*! ./components/pages/AboutMe.vue */ "./resources/js/components/pages/AboutMe.vue"));
     }
   }, {
-    path: '/my-team',
-    name: 'AboutMe',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! ./components/pages/MyTeam.vue */ "./resources/js/components/pages/MyTeam.vue"));
-    }
-  }, {
     path: '/events',
     name: 'Events',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ./components/pages/Events.vue */ "./resources/js/components/pages/Events.vue"));
+      return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ./components/pages/Events.vue */ "./resources/js/components/pages/Events.vue"));
     }
   }, {
     path: '/publications',
     name: 'Publications',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ./components/pages/Publications.vue */ "./resources/js/components/pages/Publications.vue"));
+      return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ./components/pages/Publications.vue */ "./resources/js/components/pages/Publications.vue"));
     }
   }, {
     path: '/services',
     name: 'Services',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./components/pages/Services.vue */ "./resources/js/components/pages/Services.vue"));
+      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./components/pages/Services.vue */ "./resources/js/components/pages/Services.vue"));
     }
   }, {
     path: '/gallery',
@@ -64926,7 +64920,7 @@ var routes = [{
     path: '/contact',
     name: 'Contact',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./components/pages/Contact.vue */ "./resources/js/components/pages/Contact.vue"));
+      return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ./components/pages/Contact.vue */ "./resources/js/components/pages/Contact.vue"));
     }
   }]
 }, {
@@ -64998,12 +64992,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
       icon: 'mdi-home'
     }, {
       path: "/about-me",
-      name: "¿Quíen soy?",
+      name: "Acerca de",
       icon: 'mdi-account-question'
-    }, {
-      path: "/my-team",
-      name: "Mi equipo",
-      icon: 'mdi-account-multiple'
     }, {
       path: "/events",
       name: "Eventos",

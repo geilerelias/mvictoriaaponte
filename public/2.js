@@ -478,6 +478,124 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var loadingTask = vue_pdf__WEBPACK_IMPORTED_MODULE_0__["default"].createLoadingTask('/document/AUTOBIOGRAFÍA-TRAVESÍA%20PERSONAL%20DESDE%20MI%20CONCIENCIA.pdf');
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -504,6 +622,28 @@ var loadingTask = vue_pdf__WEBPACK_IMPORTED_MODULE_0__["default"].createLoadingT
         disabled: true,
         href: '/about-me'
       }],
+      group: [{
+        img: "images/group/RODRIGO ALBERTO TABORDA APONTE.jpeg",
+        name: "RODRIGO ALBERTO TABORDA APONTE",
+        email: "rodrigotaborda@hotmail.com",
+        profession: "ABOGADO",
+        others: "Especialista en derecho procesal\n                    Magister en planificaci\xF3n territorial",
+        description: "Abogao de profesi\xF3n, especializado en derecho procesal.\n                    Mag\xEDster en planificaci\xF3n territorial, altamente competente, con un marco\n                    \xE9tico y de valores para intervenir en procesos humanos y con la sociedad,\n                    en el logro de la justicia material, y protecci\xF3n de los derechos fundamentales\n                    de los ciudadanos. "
+      }, {
+        img: "images/group/VICTOR MAURICIO TABORDA APONTE.jpg",
+        name: "VICTOR MAURICIO TABORDA APONTE",
+        email: "vmaoht@hotmail.com",
+        profession: "MÉDICO Y CIRUJANO",
+        others: "Especialista en Pediatr\xEDa",
+        description: "M\xE9dico especialista en Pediatr\xEDa, altamente competente con\n                     un amplio compromiso, y entendimiento de las necesidades de la sociedad.\n                     Conservo una \xE9tica profesional que me permite involucrarme en la atenci\xF3n\n                     de la poblaci\xF3n pedi\xE1trica, fomentando un cuidado integral de la salud,\n                     mediante la promoci\xF3n, prevenci\xF3n y rehabilitaci\xF3n del ni\xF1o\n                     dentro de los est\xE1ndares de la m\xE1s alta calidad. "
+      }, {
+        img: "images/group/CRISTIAN ALEXANDER TABORDA APONTE.jpeg",
+        name: "CRISTIAN ALEXANDER TABORDA APONTE  ",
+        email: "cristian_tabo5@hotmail.com",
+        profession: "PROFESIONAL EN CULTURA FÍSICA DEPORTE Y RECREACIÓN ",
+        others: "Especialista en Programaci\xF3n y evaluaci\xF3n del ejercicio",
+        description: "Profesional en cultura f\xEDsica deporte y recreaci\xF3n,\n                    especialista en programaci\xF3n y evaluaci\xF3n del ejercicio, altamente\n                    competente con habilidades de manejo de grupo de los diferentes ciclos\n                    acad\xE9micos  din\xE1micos y creativos, comprometido con el aprendizaje y\n                    progreso de los usuarios y b\xFAsqueda continua para desarrollar habilidades\n                    b\xE1sicas como el trabajo en equipo, autonom\xEDa, responsabilidad y habilidades\n                    f\xEDsicas como resistencia fuerza, velocidad etc.  "
+      }],
       formacionAcademica: [{
         header: 'Formación Academica'
       }, {
@@ -511,7 +651,7 @@ var loadingTask = vue_pdf__WEBPACK_IMPORTED_MODULE_0__["default"].createLoadingT
         data: "<b>Maestr\xEDa/Magister</b>\n                            UNIVERSIDAD DISTRITAL FRANCISCO JOS\xC9 DE CALDAS\n                            <br>\n                            Maestr\xEDa en investigaci\xF3n social\n                            <br>\n                            Agosto de 2013 - Octubre de 2015<br>\n                            Visibilizaci\xF3n de las formas de violencia de g\xE9nero en mujeres jefas de hogar y\n                            la configuraci\xF3n de identidades en una realidad comunitaria local."
       }, {
         image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAk1BMVEX///8AAAAFCgf8/Pz29vby8vL5+fn09PTq6urj4+Pn5+fv7+/c3Nzg4ODV1dXp6enHx8fPz8+ysrKHiIehoqF1dnWnp6eWl5bDw8Ntbm0+QD+BgoGPkI9bXFvS0tJDRUQ1Nza7vLsxMzJYWVhmZ2ZNTk16e3qurq4dIB4rLSwWGRclJyZwcXFRU1KTlJNZW1oOEg9/wkFEAAAgAElEQVR4nNU9B7uqurKJWFCKNOkIKMW+/f+/7mUmoSm6XGuXc9989569RMBMMn0mE0L+OsxU3/LsICl3d8rhtCuTwPYsQ539/Z//myCpeZwcEKdDlmyi2HHduq5d17lFmyQ74Tfn4pZr//VIfwJaXZ0Bgb1dG8v5i5vmmlHbe7jtWFnLfzq+3wPVgVHvIkuVRr7VLV/X1oveFUmvqyN7InH/P2A5zQNYOUfvkFs51XU3oYc0Bq7TaANnpf+gtPWu7OLGf7Xg/xMwq1O2dp4+vFogtTrwX/jmRic09CLGn87TC8wbI+2rNf03w/0uzC2G3t5aPH9zZzg5ZMv+S9knk/0bsH8t+qu7xYwMgZZSlwzJfIy+/1sw2Urt83EKixhOFSFH9o9FyJL9U8Dlrd/dorMFzqp6hR+mMFcbffRd/xHMHcZmLuq2RX7bRPnwa4vhlHBEGWprsYYDkOhkAmScyvyzgm/8+yP/DJabZsYVJ+RCZDdYTJXhlBHisH8mhMjwyTAqD76SNxXipLCL2+mFPdry4JZRRbT+d2i8hC2TgA5HqAbkqilgEuKF1SYCeYkLBF/jP4pYrgjugD/gYZ89w3Bj/70RIFPEc+FRWqj/CVYdGCE9tjQ5y9gIbUIq9k9NADOKsoUcKKBmAWpzXK4wvyCGK7gEyx/xOwWLMq6MOEtad1r+lwxpZjQ0ep+nXFzO2D8HAgNl44c1SNmFFcn5Gs44GjE+yJQD3MnmAK7pfIZwEgQZEP9I0/9qHdWShib8oVnNpT1FlErKV4ZZ2me4XODnnPPhrJGlZK0SyXVBL8iAvAPkTWHtXPzIiABtAv9Mk9W/Ro7BoqAHWAYpFqRI+NBozGUKCJK5g+MnG/Y5Jwb774U92GC46lQ+SNsIaPyMKwt/pezfLS228Dln7P3PTR0mBHDlFgy/CW0WEXTdmVNb0bs5QpUPaGy5LIUvZUrN5gZm6U0QkSt8UmEJQVmChcfvcSn9t7rDwKVCYITJxtP4PxQ5jrTSlEMMS0SuyGtIrAWRQPDOpoZrX4LNjeJXgDusYcTJGfGCf4AO5hU9/DuRMy9o2SqqGjFs1FiFq8VECy17DziwKL84guwWsF9QbR7LyLHyPK+9Kpx4S0sQN9wNSoNRa8yfgPXTMrr5RwhalPaMli09wYiO/JPPOSgS6k5AgvhcOMGVp8MxLTY0dYfiYxuDs1wTLnNBxizZKsM3jCOOIE7Zsvvk78N0T4M+189o6cOQkIPInOs8u8djDKzaVIcWeW6PuYJaBSReciMP5okv2hVkLGiRBfvtv26S+0/zSO/gEE3EaGB4PjOyk3cvMYuxuAUQhrKv0eYBdpxTitOgwYUzPYFYtYZT9xdgQxOcRLO2Gho7UyDDCdfVqCgOWd8xeobca/6a2irxPGE0yDh2lzZyxhPTFLILJZDohdHsouS/85dgfUZrjKA3Cw4RQMKocoHiBtSbAd+E+ZuXsCeI6bgiynaoyTL2XBRUK7Rd8kaZUrSHuLGnwORyuePQ7K9F6HJ6ArLxmf7DmeYKYUNdUPrCDInpyfvKAHGM2d4gU5yGBRu81PB1jYh6XBAX3MeSGn07ExgzdUmN55f+CYhQ2itX1MtoZ+3hMqBX6PMDugxE/0Bp1SsUtCYS6xXZ2uDah/uNzAU73Zh4aewhZscrU4NcgXZz8CD3XJn8YZBK1Ep6s1gG/Atz69EJiHYgz9tICGMELjJnJQdQrE9M6ngVn5gcR65zJ3PF/0YxA8u6kEljS93eS7IfgXynaCISPYXfXHNjE2bV5da19rlZlUQiymYDiqkbk+U15FzN0cqcMttwZmPKlpFM0RJmwD67MJ/Hz2bzY9DpqY39FdxlRwYxUYBbrx8cg7JdgBtDUc4NYYLbMnFRrTotn0ViOhvjXmlUL7MG/mikPKcpY4qbUEUnLu1ybqHl3BJ5AWMKujcjOaNXBYYbxIxQr0ycrHD4QhehLQES9CgIJIMLaPzNsz8pb1x4qZSC7wOAvKGBdodft+nJfWFoaOtRuX7uzf46RifQxmlSQnJGjUBRmk0pl14EZgHhQoXiDZZg6nyTdl7DDYzMKYQixA/F3EkywaWZvvgdyTBeidWsC3bP2NxcgKPmzsrxiXuzQ1j3kNmoMx6ibJ0YgtaA0JY7MHcuIzHlH4ENsnmBs3cQi3VET5fN8bpTZgMw3TZ2+oznUTmnzVXmGJNSJ5WFWJJjQYlUSHcmS/BrlXkpMUNmXdlg5NPc5NrxgNa/Tb2nl/8AIpypqVEAisLrQ1PRdF4YULLnNXRoRiP3HOd5cW5Y11ZjEgZTa3KNc5CRB1JbVs99zrnquEswyQk4a8zuNYRJFfdX+OcINlqgArSE24e29sBDasHfOHylpbyg91h5viMk8o40FCYXWqgx/earTsFW5ByQVLLSvucBPHqYAmVSCbMeukSbefN+H0W7p+biVpCBUBtVEnMv4a6H7DDBZMljr7TYGymZJxtOx2omR4ZcUM0Co6zYksBUzrRwO9tWO6ZzjHSYXAvLSSPzAMXfNG9uA2b2Oi/JoYdnD0/Z8ACu7J1C56V1umNLrPud+JWPYqr0DR+tTWhtlHSw+osrJxnwFSvhjCLEvyduXJyhoJ1Op/OS9k83L4sCsFo459R6ExlTL0+X8pItq8JwtkPZ0KcROV69+bYlEWBqMC9gUo4wgh2/rpgwn9HvKI0cpw1M6wZHT1il5AkFLQlg0v3y4Ly3py5jSiQPTRCpSxpuL8yi2RM57pkRlkKmBVeMtA0KGSnlA7v8XPXrwHQLfFEr3C7Ii0/+n7wH/GYx3XwZn6YvLlckdWQaGTlTl+nDl8CUDoxh3gSNwVRlf+5BX1zpD4PiMsSUDCblVn2T5dgFZVqYb/Yy5mg+ML4lSmYKebJ1omJbkmNCSTRlU7AJHpJOuQizLUU0fYHOWrEgaxA/O/ojn1i6Mx00E5684mU0Q3o3n4WoU7I5tE7ZZ8RiOleverzVYSaSa8+orpszikrwHgzu0Xcz8etAP9MJLCAMY8nNu/P38QOrUwZZCmy+DDCyzWWMoJJuxKkBImj/MaUsro9XtAhtk9K/E5kpdvbnJJ26dMCwa/yYc5sDUj2cNDl7Ln/iL9oY1LrSaqEXVKT8ELd8QBGzwsGY0TdSJwp1R/UkWwoULsxk0zSY2WE4awFrVqOYg9DxGYfBLNU7/Ot/X/PnXM1gHQXid1vNdg15dsvlVBL71W+mhtK6HLWGSKGQxYyYzGbwF4EjHYfcNQcsXBDizCrNUDZAsodzaPxdgSqLZTcpD9pHc3wLx7CNWKpMwav39Luu6MuQp5kw+mM/zqiCkaV72Q6/liYcmxWaqaSXoCRAbSP24Rs4T8QfBsRILpyqSnzbvI0I20x0BvfvR2hfU1RUSrYBP2KMroh0R63lUx5RwRxV1XxHs++MoeqFCKaNAq/xHbMGQWOzYL/1TXti5RZ3+kIjArjUXmKkOxth1YUkTQBFk79BBemH+RIFTAB93BEYBx+ZcGYMxKODgkZplD2UlCSv3jnPR8uajOPhZsxI+YaeFBBrtcHmOHgQznmiAy8CihiXAgaipym3SZIZyLuPyWmKGn0DpWeNCFm5ZxTPijCldMaYxv5FLYhxYWpFfdIeSnjlxvpqZ3uvKy5lsBLNVcacJtvvyTSUmUyiblCC2uiulsCOEHwAX5zx8KeJ4gQMP6EikKOvKFHBLBN2vMUWMB4nUDneMDrWnl2LvrSbr3w7DF4iaVbUuStErbtiRbmRKDJoZZu7xTgaD+IaORQ8zAaJ5zeQg9ng0Tpoks3MHaAYvJOE32nKRPNG58uvHDY72ubJcNUfnRyJyFH1eFcHRkT3/Zd4rdWigm24vZSFy0dwAY+RLasDevKj/OIcFIUKFgTERGxBiQ6sWOf3GNuxJ90IOEFPnqMnVvrImFNPJdvju4FsI1qYRLDFtWN5oyUG6a7xtLMJIQ64i36SXiyARjHUhQqV0lMa2EiSQTPKuTnyItlz4Bk/tZ9XNx/gPNM0eNN+SdIv8tZ6dd5wR/TQIwFX2I3SGUbp8CKcOzDojD47n09ggukUY3kIWPITYa+xKawatp+NSBjNQ5pywzGPW+1FGmQzz30rYmpUCpmx/T4PB+PZIXOd+kHniuubjJ4IL/ygaOfIgPwYcQ1hEnJNA5nmSBTzFoyiSN24RvPnBdQdIE+tSsZNp567J4mHpZNGbE2LvpYNEir1cOCYlRAQ2wi3lcenRWZjd/jqfR7oWye6oi/BNGCLjfraetdrFZgwcF54afaY26GERLbJ0f7as1NBiBQDOpfA8fUoT+9BYt1Q76vu5newaKygLTdI29+XXs6NmjPqMC+jaCDog2jYdAWh/sUyZ0QVkNTtu0hLZzQA67Dl8YYMtgJJaHPbBliqC2xt6Kix0ULQCSNUqa3Xnr4I0S99pibd57BGB0qPEJfJZJdlYVkGsbdxSEQqd8A3xvg0JVQ2H8RuDgPl+SdQiF3cb/q+6kbtxyFy5MYjFmCPTy5RTIVM4+idcyH1qHu56zCQmLjYMCX0Om3VA3qWHo1ZkLE2is6E0j76Dn23p6EcvGeWcs8XhOrY3VOd+XOx954qip7u6JnTLr1phbc5k8qcfx3wZFb1UwnmxILSOG8B5WPsu46f6XOgswUTVETuGK1ljMFDtqyTMerR1mTqfLUEUc96M1t6XWTCCGOz4xL6de4/ptnjPMhMSPhc2G8hm3hqfsl6ozGyM68HzNorOlayxiOkvVpz8/Q9uH31cWxmbtsvZZfI4gMXevcY32Pqi41sbZdXT+KbONpKusNjMLIFE8y6khr9iK7HRN7q2RZS2KCMr41AtS/jzYYja/rlzDyBRp8dh7Sz/W+iIhUhf+lGhUeYXhO2FMDHKVRYq+zP46MXMWdWl/ZBXGQ+2HVwXDaj+UkFvv2cSp92SE8zeu8EzPnFIm5hakv4cklpjMIY58J6DEaqK7LQH+WLzKXI4PLAYDEFmdn9ytNvwMgiWj2Z0hBelcAijnP2fgLqYmcQvklAhlIy4N6HmLnCnl49WiL5Brl7pffp2Rs8mPFP9oc+3BO49NnZCoeEJJtugubpuDhdAhlA9JDheKaOjrR/gnj74DaDSdAH/GYeN5Vka+D2DpiQqHzpbm98wi+APis6BbSYZZl+HW+4m06xUqumY/HNDUWTG+zRjKcdl+BSKIMo3dJ/IEQIKdICLqmPm4GGM7PnlYc/R5D5Ac+m8S3GgmQE261dNDV1zPM8AcZb7dg7cxxh+VUIYhT9aFOukcVQrvo7vvnDyh5zsfYg3jRDu9b/wH17CdpYkRCb/xVDTl3cQWjYaKLYoD+fHSCnWSuLB2iYIWox4tN6t65cCEn3oaZXmAqzeN4toA41NLqP6pNO+xbsRvxbn0nGC6gtl32JqT/bkIB8nw2le0sCsIMCcEzSOyOubmlynywHM+NMoA5Bcie0evaBHranARcuy6e7vgXuWKS1zXgBc03ajRHJ/fFGE2IdzVVFBNpyxooNTlIsrwZ6zAnhZVM2HfGIj1cP5bXPTD+XI/1xqk96zCUv6EjkXm2wtpG9GnyNJ60fULinVe1qyitk26CSkk+3/QWsC3jDIqLpaFBReuD0kPiHRmPrlvVZOfoTTY46Rgl/r3pqM2783gcimoP0pP3iWxduVzqy0PvKLceYzaKaeC/C1/ZDaX54D3t3KvZH9RP+UBqb4+FQ9Hs0voI9dXJ7MBAsZkmBqujlIVymV6KGCxf9LdY6+vPzqHhpw88e3En6aImuP3MLO+tLdg+vrNkEmAm4atKf7tVDSiUNQc9NIzoo0pIaLpz38iSyA4hJzhj3NWAPdeYL//lLuDJ9PFvqucfkQuHzgpQBqEFQOMsdr3k9dz8aM7YPB8bprPHtTaYmOgIb0c+ShYSc1+9SBNMhRosxQ/iTbJ9NPS+2bc81YIbNHJ/pYTmHwhr1wtQkeHntF9oV6NmlfU6pWyE1vfa2jDw7ASbit3Xf+/W3YWpsP2ZCGR/0T/BawlTdIuKCIOqZojn/2q4gpCiuSVZIKd+N2+eEsmfve7RRrNvHudcwpKU4X3msD5bseInkB/ZbzBgxvlyZmbUXNLY997lry3DYQ7UpYwSO7PZCeZDQH5LpFIj00igQhuLJ0Ni8B0MXV3JwFt0v3dd8YPFLLwyZ5de1BZ5arvTKUnVdnUJYyDsXQ+K2vbI3JMU7iaQ81mY6vbhizkxxNLoPuzAtMwwGO4/VSz4yl+F8rcuGBrL9iuO+9hMXEoR21rkT21VQXG7G028XZMk4Ysp+UQtCUVNBd44M3LrqCd9gIoJOwgGBeZgSqy8vpgluvPI+CKkon0hOf0/pJ/sJHq2YpTPpy/DIznPG0KXEN4JMYC9Ky+D3TumDihC9AhpgpFX2sMkxEFh/lLV3vw6dWYycwvCluOp1xTAmQulKim7Fex45bCVXLjjLYgPjxNn/bbslQpWZMjNaFJsqshEqKIOfd7brvABGV+MPt8R8dQPgF2mvRU3adwSXk3bWjwXzy3X2mNGoqmaR5ntISO36cgNCZa0R54CB82BmsXG0ItCw2ZxK3qcBsqemFwOYMUHGi7yHErenUYQwF2kqTyfyUlu12j6bM3eG/9ntIStBlfe5VGarJrUu1H6U568NPaPmMj8ys5pfewmrDfPKOGk9yNKko9kZZw+xxtoDTeQOVBEjdN9AXLZDcGrYaJyljRgH7758CjE2RAoUMTe/UXCUvfxGT3rNPPKhLnrSmtOGFk4PXxzZzSgQ/E4rya3XoeTRDmMxGVjf/Bpnw8faH6MfvRjREKobXQIGRRFcGANHduw5tZX7pnoZdxwU98h0UPemx8zh5sHISZo5f8wc2FuRc+WLzO0ndqE+WFZ14tEogEXLiDWd8Yx90K+tj95HfKUB0vPpQlFWqm4aRl67dpIvh8Nf5zZDrxy88knQxDJRuse64gvpwV1fMuK8AAf+wqmfO0Bf0VJ0oEJVV8aGxbShKHYkldCGgPkkQFmvdkT6NUwVWZkNDHFJz29BEbt5nluOXRzpJC2CInAcz3FcKzcxGDJaT2V4HMd10rOJ7YdFZEaaCUwcQqI70XExDAf0BceB0ya4yydOvOcAdmU2VZYIvyAJ/QlIube5XC5ArEWRJHF/ZRXV8H1Df4oec5iPCyQlmxTR5UwHYeiH8AxsjYYV9uJ8ldI4JlVOpD0vbAoskzfcIqeMLTVG+FCmxmvdsstmmdkC5z/ZqPHKoJtPZwrAYtq7w35hl26r3Xk/LBj3hreu2MoUwFBJoep3a7ohv1RgxA3Kki1TnJpsFFAZ7aKjr/ZiNqs8OlKsMdr8uW3v8yUznU3DZyTLIDd0we3W2y3tfZAeQtgZOKjwx9rZlDEQ/JHcmDEAhG20lBiAjgRSyB9Mv4UDQbv7P2gnlifNj6y+6NBmD5NDTKzMWnsBt4Sosc61Dbac4EJlKSqnmRP2uD/EuPRNtr8IWlrlWz2346+84cUwSg+xyVZOgNqfegHnayhUo9Dtjt7RnsWgTMIoePeobs2fZoi+CaqXZPUH1kQ0CEOBt3RpnkLcj7GfEd4tB3LchiUs8BKSUIcNWIJhVG97v+T8od2ZX8MrB3kIylC4gn5vUEYMkwnuKi0oTQbsFQEtUg+e5xBuHAPLoIIPMrx/CD5TSxvMCzZQMY+9ka/o8UDBaQ61GQ+7dlwM2OTEnFhOHJRNi1g2K+fxHRF/A5yPfJY1M6U7xZpbXZ0ORo2c3YyplGU4cNBzqOeWsZKUL6yJmQ2aAQm/KTb/07D4bBELmnfyCNpONHEm9ILz46DwbmH6uZVRXifri9VfXblNgwa4MiH/Drr9RDMzfylVjUGsuux21JgwYp2SKfNBjjbaiSIdTGHfVk4svlw2x08Q9/Y382DfgmbyZVNXZi/V8HyQm2cL2HQp0oD1IMFC+d7dxvye8D6FLrO5CXZgAvzaWJ31r3pOAayfGXEuioD71859uopkUgv/csZ7FLD/TWGvMO3cJ6DOyQ3NhQ0aAWEXxfH+RneUVzBmn0qGw9yhgaIs+rKBoWcIsTnnLSYXJNOYy7srqtj1qAHODiiYXUWCEDfZTuixKZFRdVL9ifZvWlnZrq99Fb561QTaroZBgLhvXW6dLgqCsYDDkiQGo0W8onL7AHT/tSBJAv2KBOySyHPuOdl/GnV6C6FLZD13YwDHMrVR41MS5tRz4v2hotTq1ynMNl2UA82vUCUbi4kjvLLh9gG4FJcSyuVVGuWuF12uoon4loR/xrPoJVwXKxNC1xDsqA21txoNPzybbg/SzhyUHF7xfwgYj2ILGDlMpIJgtWkC5UA6JC+qHRCq0nt0vrIYg95/v4GfNFOmq7Edc9Ja9+u4sXvl1zG8Bz25Huww3HczgK+65OBFbjEFxaMDCjZRte/k9BSDBzv191uHx56R+9FLF0UVsv9NeuYh8yUNjO9f3RoihpFFnAj6ZbRP3Y+3NYRnyGjXBfoHjDYbpjx4GQB3kf9Wbxj+0UEeNDIJ5i2GKEtvLnE3ZF0e2loErmocis89VQB/cz/mCOTVBXs5v97gvQNieqeVHicn6/uI1axNcWG63fGIi4spqQP6Y6Y3k2FTerFyU5M7BftRWugNWDiRMUw670lGFrKsKIvFtItC6mxA03da6ZF9ir6fxVR+074RY/tOTOqxHSE1YrhotcU9K24+kPzvdbXLEw/3eDEXgGzZ767LwrbtqKo2QZFcy3If3HIVM7dvohfaYwly3GdqWyOVWAYXnQub1Iy153pdAXXPigO9zloMZRrXruPdmDC/7KH1r/SbVAqdkPJrzItwApONRX/Ylq0ZThXS+F0S50k/un2jJlZJU2qWg+BnYgbKY6jYKYSnahz4Q4wP5wM+TJhO+VGdcgsR1z5q4RN5Sqa7hV/4XvksvOZ58Frxqk/L6/d3w8Q6abq+ofvkRcRJIAuKE2NDRVcFwpdhOHmU11vmpvxWLzSzFdhbpMJkAYwyP47qWF499hGo/VH1MMQETWRjaxC+2xmaMTMeiHBD7bM+3LK7PtgB8RK0vrUFIcxISITzOGFYxYoovusOhe7SyC0L92u2Q1H6xXiMSm1BFREwbOCR+NKU8d345kIQPUxbgAx2+0ydwBr+3Gozd4OPUpeCmb5S/5sJ3XheQMWuX8ty4luur2YoSbZdE6F+eox5h2J7ayWX2nx5Km9lRDxuR1Dewx7qbOIJuV7gyulwPp+Px90Ocm8Mwx9b3tru8cq6TcHor+IVOdcDam4Hznz+VG0VCTXQN84rBXJVkGWcE9m2reXCOMUkQtFliM0XYLVFZ/AtyLFXooBFqG/aBH4BgUJUy7OZWgguUex5sUaKlkJe1rcZbRZULUbS+xZHLeyJjMsMK6+6BLHpHR2gScKb1lpgsDGJt0nJJYTy4okAdKHYPT/2gB2YLcdxayvPoQV0xZaHYRhxMfjrlYXjQxKeb+dUQzG9PQ+fbxwvepGHX3PirLDtIodVLt0totFSmQa8IyB3odgCxgfshNao/B1uJbz+OIox3zURI4fevSXsosvrbVuWcH9V8OdSNgkisGilmKqVfaetL0My6G/VKKHR6yA7nIOzFIgYhkqSDLd7hBeM0+xcZah9qp9GohYTYfha7akJqmWGOlE4q2kvQ4cRvftEFbNjlAce87PPHGnE1O2NihGatevJw5yJWsAI+6FPOlXAmNNi9PGkXG+P1QGfwon7XdJ12C7mqDaZkPilJXotippIlRjLMuXyfFpiVSUuvdXTQyHuDuwgjxVuas5No6/MmXQyxraXWD+MCKccQYU3rOjBWSMuX5/zS1OUeheDtFqO5KJXid3WyVjdvMsPmSOPqMHYmMGpVMe0u/kzs413XmImxZNfKx2WZIPLpxezlb41TcMwfN/PedrUYnaxJVMfimq4qTKDeeLabVMIqdMzTM2HX1hYpB7bi73FdgsjibTVj5q8bYU3fRpx3Od3maQoL5wiO513WZher/t9khRFsGFqxTJnbNWWsM7YWN5JYVr40JgfsIGVv3UY1kN1dtE6rdkHF/OklIbPRnFfuU6d6jNX485n0XuSJsBF07tC3pzfgG0MqtOK3SqhIA9gBEecKyMn2Iki6kxvcM6mfBWq0zGlztw8Ps2rkbkgZchxf6TRIwrnRpNqJA5946McX83Lp6Vnsx2bk88mC2ksOrJFMuUdxPq5CVylI38lj1QknchIgYpxJmC3naQG9HE7gG6n+Q4T3KQIoSr4Wg8ETsGXY5be7C3RnsqhR+HE7U7r+PzVCs/HmcwVHjxYunVt1bX7JOPUDgcxTUIgIObHLksKA98Cm0KfoBIkgNJN7Mx0AywBLkkC9ATULcEpIbS0a11oZEe03sEPt/p9uWEzOk4ml4FppvBBGUAT8l1SE7IGAfOKXJPWChM7WGqUn7wTQXcuwgym3AmAcIN5zH73Gm45k66cZEK9mJfjF+QONqCoxTCFVXO24dcNyLtVBSaulJ7Z+AZc8fthTwiocSiG5cBPreA9U1VXNXkxNG5MkKfYZbe9xO3TBTYxRo5bdrsIDJjFvcP0O1sp6AlLN04GuOxOKfxgDU/VSqHw001Qbq7x77BmzjjF4NRxkteqJeyt/IOOxLEI7mQPVru8wbXdgORYQqtlVRTXuC6e2uk6UArG9IXraniQQIMhV4NpORcWat6xWgyoUoUfz3KYQQFbYRPzRAOyp95CQambkULn04tyM0DaAqpdHPSSavd0mriwOwaEkKl/YAHE4p7yKcDCWQmtuOUZtYN9A+SgknHLFnS1Wi01KMg3rV5TB1FSnvmWsLmiDsPdAogu4xFUCgF8nboVdk6/UCajSnajfSOpxWc9g1W6OCC8UKXcwaapRU5oCSpuaWZfY+iIwUVjVjtEbrickKTZUjfy2rnZURUk1zJN0zAtr0lQRZ7Vyy+IAuADcUUK9dxiCOleaByLtqucgBrPTiMAABZGSURBVBhnJFwwzpKZpy9Z7CFG0xpJhQaN4B97A+SIGnYj9zYK48unn0T5RWaL5E+ufG2bsxvYKN/KFXCeg6iqj4bEulMINRDcveBcAVWJmyv71XQF4SvXqqfQl393JrNCdPC3gPbjeBZhvoMx5q1qwwUQ8TSE6/wFmIIPF09Kjw1tU2MPue8fLnbRmTWOUulGd42kCWGpG1HlbeGkkyBe6NBjg9T6BZitZhTsNwGQJTxYmGZO5lw7VLGhCrmcQkUV+Wi7YNtRLXwUSxrzis+grrxv50Pk1mGa081cmNDrgVRIJPYdtqIlNfzG8mqzv6v7mkRtFz6wJKBZDFH2GJOaBpGU4Tcxv8P/qEKqCRSNOCY+FHZCdPjjrngCDuum02ZxbgOmm4F9hmX6Gg9fEAhAQ4wmz9nlidO4JcWO6BOoSVVESRG7H59oSl3UT6iUpJEouh7rC7fmgiE9f6vmsboRsUncpTNFOLa8Q0CDpcz0pmdjPnIGXJdAzyWyqHSiJ0EmbnLpnOF0lcSmWIPUFcGOiQU/e9MkHzV6i0N+ZhOx0eRbd7au7zq5OvcPzGDZTb4hbtys8ZhrRm+NZ1nCfE8bsoIOMnsDZRA4japXQrRvDrV9eevFASPeZ+zWOWCYbLUNz69paI6uQjy94GsAe2QGA5pzejWqMEuZf8T3G93pyS7ZFwmNPmVGRu437iJW7MFAkGuAbF43bgb0VqVMjoMQ0IGvkIKqGRtFrzaYVozVdORGku9BZ2wydjkTeCn2BwofNqLKwn9tHbm5ZvqGqfE+DLpj+xfKqDXb2dZW/pIjmTW9QdGX3xmCPlezMx7+WbSOxA6Y6lxgRcYK4iXw20YNpOt2pFdRolQme8XOYuzIVtgFnjaAC3262n16vhIyAAq/111mUbxJWzfan+mkLCKv9k1VHklX5gdaZx5ZmFCtpTb7SpwjJ4AWQTkQJ84lyJpaVMPZl5Bgo/Owc/oYGv6tvhEjvbouhANUmDDsnzsbFxyjgK2cbmCW5q+jIL0myTPVd+yi2TR3z9JrUgRFkeyvRdmLUaMpD+1ZyfIu4rhmm+iteQiRi5ApsStYFtiW611IrxRTos62mO5gxVOPlFBxykZ54nOlfkSiAAGKXNwfWL70KBcjls1CM3PXs6tLwLAr0zDMwI4rNtHNzbk/BwSmeJmwGCRiN/THW9LaZMbMYUdhdo0NugnMsGneNzD2GWPBAuMoMUQc4RqKC4o4fwgx+r46/Fd53WDY+0ks9gjLgEuyBuG5askqwBYsMGmpwqSJkSqcW442Sfrl78wGd2KZs5uW0YJ52DmiuZqGb7qfPYBQ9TFYjfnr5n4/OIoSrBRwAFdxAl1wFl13CwtM/hK6Y8uXNQlUbL9jSNDIdFC7MWcG3E4VtV4qNZYebKixwov0rr3bIzSh1xRTli8f/PL8G6TL/uYTjI7SlX4TAsZtAxbeAoK0OYFcREpmGzirhiZJwfDJh/Gi645IR5tzJvMBtNCjW9m2if1RhEaA2shcPGIve5WhU3fRe/XK39I50iocp1XYtk7cooTZ6Q6yjGC4zJmpM/jbqnc5NiuB3ZbJMH6ag21aVmKgF9hCxCjfLL6xgp3Rh/FfJnJelaxQ6X3hs9sMnkPsQh6Q6ewcdiZ7peO2RuTaAYsM7i+TGIImByhZgJ9Yzx9LAbGGYYfKxmLY7aGc/dsnYrbBQOmskyYZ8wypbrzN3vG3NNvGc99RyaVQZ7wl75WSVUvl3hoSZ/inlWZH8iuWMUNrHRk3PphOG0oPq/kBbVpmnIegBL99yLAInwM3Qnse9QW/Xaz3m444KRmCTO3VssxoKXI9BTRLasceWX4KXF3jd2t/YQZLX2OqQq3po8jWqTOhzjy9amAiMIRnTEaxGbp+p7LmzN+6BBQr2HM9TgOV+97jxBA+0Zo8JNwqb7kWDcAJy9o7p45lMJbLmYK78FZqM7XaZ1D39JyoPydM1R/MmuYz2MBH0UMwD2NtwV5CKDQQDh/OizFG52dTE//dvqoLYjgToVOpt1tmTzchcQekdfVwRw1kr++XrmFc9GynuLzJ3pktYESvTPTScBvuJfc7bnkTKdsi0cxKl2hj1Jjm/eD2M3BR2e5O05rySfVEzb1JJn1Ny6OAMqUpb9s2uVg8ejxSMoDXPJgKRgobCk1v8KClb5xvklCi45uFsMtHT7aH3YTau1oIjprWCqopW7pcUyMazrQdMQfy/dxoOGbX6A7faGHy9XqCiPsa29sVOoSkkWg+7H+jeqigzHYAwuSbkpYmiYtnHB0McL4xbDh5+j1VrEJ6AgzBYksG+6VzfFfirqe8tFvKU7Q5T2NqTh4VnRIp37aGH8CvE5ZBMkhwCpVIJd7+obPXmrpTySonr/1DvoZ5NriIhwVLGRtm/yoI2KTZYsHVy+U21suMv/iZOeWYvsB8FGArI8YJiCqG5+w1so2qW537/hb5Z00z5sNEDj29VBicxo2RmfUMUvVVEJqGcOgjd8FaryV8qltCUIEMNOCPuaIallehk2Yz3vxiD2sLWOOKvLeym2lxsNJ0poglq2kI0mGnn+xX4nTO11AdSQcx27IfrdN4lsOBUW5vIW3KYvVXNV0lWHIhPfXqo7A05fSpsNnAjXjKL3PR24rSldE0I1yzlbOYrVMROk3FVvIR4CJm+TwDVj3sXH4SWpWhCOJ20XDo9VWuDFGXOW6nJHIitvz16cym6sMytwpmn7d/zP2MPCoE1TcXcD6NYRk27J8vXnB4KFt+Q+4DOA53EdxaB9AdbK18uYRsEQH3xNNWBTqwmEg12bO3D+k0xsUWm+FsZzrWNH+2Zrq2WGFCJBm3wD2XbEv/eQ9k7pG6Z4tpTOsotMR5dPuH2pev9xbqjWc+A5FrUXFsDaP/z/xyBzHM0Ke4acyHCu0RcbINAD1+67jOsLHY74lKd3wrUwPgPMDu2BJudmj71fYdySXNvEU0zyme14YnmY+1Ax0BF7UQL4KWdtIErHj7SfXeF3BCIgrMzati5HoXP3WBMTxi9WRkAPpS/oVMFa8ZnTXvyt4dM7dq3G/mVlJ+MkKJmtb/6IhBi/cW44TguGqJWZnrcEq9eArvEicbv8wXGOHjGqaDjVQ5E6oKY75pjeZaCape4V+8jX1WDcftcev+SgkoP00n+iSw7yNfmcKMPC0sQCO/U5p0lR5NkTRIBo/qb473yYYftx4T0O2nFej0E81Ad6w90ZUGv56856h5028PTqR2hK2AF8IP4hk8Vbxu2h/doekIAx/Nxb1t+areVn3LwO2M/o/UexELKIjTNxh/scF3q4PqAfQ8FzAqP05lJo4geQdue6wgewUSuTg1YP7ieOM+6DiJ88bhugVNE+9ZzQ/hG7qle5Qz/p5mN3PEhvOCudWhyNzpvGMw0QEKzkVooh1GcPKe+kuMwRmo6IIN2xj35lpLXo8NQUdA2IytgNzlPZG/MvLBTm3TbL9T64qmz+6U1esuB8ZqZ2xWzaOrI6VZnwaKrzOUOuhOjdt4B+6DzJ0ExLf5ZdhmKgoDms9zujaCF21rZOs6kM/G2ATmJY35iFcxcVoCwL7VixxjFxXth5NG3/IIG3j8Alwnei/nSF/Fwz7VUeC/1eUsNErKNdHGZmY3T4aDmY7KwKnDL1+kOe0qT1V+hi+Wl8AZ3W1gi34U/QQChSPyFpzGsTDcDUGPOF85/EZxLgbjNkIoqFTiJ11T3ojN72z79/rjCZL5jt03q0TFDwFaMgDBvQHueimRKZOKvMKPSfyPIhLNoYYJ9m4MeeszC4Vs/PWWL/UyIBQjQtqysJVI+/AWbGaxx6BrKvbK1w5NEsntQTBodeZIXnM2xImMBg1+fjrc7RUE4kgyWLZQ7M5IGUHkmLX88vEtnc4sO6g8OEaINOVUzKhMGzG3QLIVPmR3jGDyyto6k317XIeK8Y+GMmEZ1xjBgYmk2WcIMh8McLJg1zAcZQ5SdXq8sjWFzvsf0MEBW0WvTCc5e+uuIePtgUmkR64NXsVL9Inf+FJ4mpHpKEzFomVbcy2InYs3n9dub9F4m7h4plljdEDxYgyE+mWpwfVs3S5JYTu57nSW8pY+lpSfHryn11JiQgpDvARlS4Krh/Tv0OYgcv87EWwbxqJJoPh7hqOHKDpfmqjqkU6uURwVO/brQVXBDiEmt1SyH+JQDLPL85e9v1YF4fYaKgOVn+/EXB88MncjkvCz76TJoEkIKjE6MBtNfg5f/nHaWxSTQiAQD198ODbKGZLt68OtnJw3L6sRF19EZMD5mWIg0eVD/lY1ksIPH+IKMeTmho+B5QhI5dtdpHwX2PE6JCNzeAB2+ZL894uCn0csqPzMTTPgQRl6XoAQir67Z9JAWbUHblZ5WAxCWhknifUP0rgMii7eMwXbYU4HudLX9QIUA4xFK+QscT4qSlL2YdqeQf0duAFZQacG/YQ8DWdhHyVV1OOH2TcL1MgglQD9RyVQQT1ZY2UvnzzMPDI/Zr3d9EKobND5Qfr/Qfs1rP030DZKssgSUrUm3KWzP3KJ+5C3YQZ/syY1HDbr9ck0fe0UUMPUkDB9oY1vzdQkcJAsUMOPjo8/w+qvNruswrMHhJsCSgN+x+/IYj5yquXIMDPwosS8YAQbDPyWM5U3sn5n1ILXBBnMmqiMzmVh+LMGAgsYEwc4eoCXOWHjRZ79OqaCUg+iadFpl173SVDZ8c1z6zz3TV1byqK1KcNAyh+77fROU6vfeC5MiLO1nqedaL80f+FiFt8mKAGa+H3clckRxMaLTbzVG3oD84Uir1YaluJDLT5U4Xu3OLbtKLJvxViIr+4O4gpeG0sqCjamBjOoRXP50MSqQUGR/fNtywa+2gcSrcSIJr3jzIk2+Zy/hweJQlcFKFuftIPLXorSGKUbqIYzP5EKKxM6Mex8X4x2YGHoIhBHmuLRu805zxL6n7ePp6+3r1P39mVVq8C8fpuePL8I4y5PV2CKLaVOxm6WMejkNuert2P8MTioFq/NRn5KddGm16e8kaGcpR9l+ptDhxb1fmf3TgDYd8G90edaCmTktMTlMzBh1Aa5808OOX4HN6QGhf8YparKIzgXoNyV+IkP5lA46Hl5tXpRlTVEf4QIdceowacbNhlTK7LXcCqjw8013Kk2oWLv/W/3IW1bGkBARIUfYSrxDsSasZ/EeYy+3r6fwSkxER2mRWeY1RW5C/l5qKvwrJEmXoGTXAq9p8Bsw9Qb9ONWva8hbnzNCchk5pc5MSbeGFpTEctT9l+wo1uQ1a+jPxkeLqRAvtFvQs3hA5kqAX8pmGZVyO3EaXt+ioQxEP87VQav4YZkaPEdK6IPsXUGazCnjeZQw8kbHCWKAnH3qNPjGgxDwcfOIM6lVA3t3Gk4ZdqUi05/sJHS+n0SbX4bJhD3GauoLsrZApXvRmQm4aZt9ppWHQ8O7tk9CnXsjr9uzBGtp11XAcdoC70B0ZxpHLZN72Qy93eFTAdWS+2gL7ANGvoYnHCZgwbHuRK9pPG4XD0rczJ9schdhK07My0VJ0ZegO0ymvZtgXPbT8Cmo23dfwYGDbmMSJifAVhgbAuOYCdoLVJtBqPQLvQ65h0zwyV/FWsNm8ic2D8se/SIcwEHRQQRD6Sdsn2sN0MRe9aC31H0z6DRCUZ5zlQ422DFeXiIhIX+i+CPKRvPc/Vodji+yqK5tkREW5o7pMqYSEEbcwuJDm4EiDPs6ZWLJDyhmEjpz021cZid0TLWORme0e0JwcL3EEEbJnaLqMGRS9HAil4V4x2UCDaS80XPq5Ndp91JfExk+43nMaujAhr/Z/gJt+at6E+N7Tew7yxBE5v3zWCSK0RwhjZjSUM+r37RpQznVnp4Ndv5ZkZsLOJGYkxdFDpK7vrYmSMbnOi46eUnfHr+7Z55IxC3ymePrMB0RVpwF5tvYMVkrGAO0z4wcevax+NzRF/AMo2JfhMNhmSaI6fPbGwlk4EZpdM+qy1pK6ztP6MGn8EQqfI1Q0viCQ2K3VoU7I02BUMuYoMTMGUWpIm8MxbxmLI1KeJtc4puY7wZYBUaApl9fxGbi2Sa/lkZ0wdlxwdyRUXEjwMBEb/BJYxRR+6hN3F4Q3uaawJzjAk9FB53suJmWAibYUEMr/AlKWpgUE2IixuZc/Uo5tegv9OJ7EuI6BUWBLYD6LRBcI1LOGfj0UCfVNjivQB//hDPZWhYNfWHBTmQsEs3Xm5fQ9wMz6iuOuLsTdGyj2AKea0av4YQ9Ebw98BszSY8exeVdIDXbjyTwDTIqjKxq9+KWY/XIidm5EIrh/Ydi6RYtqM8QtXdeQqSRpRnpEAIOcYaV9y+5p26QL+rp28Xn38bJHGEM7ZkanoddEso/DaQpUfuJ9kFHF0D2281FJVG0U+/wVuyEsSkCIJOKNTZQ0pivUL6h4uGE9fwcEyzN7XFfwxyYVTkKV+WgvLeYcxj8yKeU8h7BrJT6UqRJkSF/oFOSIf2d4jewgao0cZFTOmk7I5mmvXyu2R7+mq3zZ8CKejXFfDzySWI5UBLdAzA7WHqTay4NngPSrvMow2zC27GcpAC2yJx+qjAz+Ams0fzoAuqFW3AcXqh6W81rPwWsNlsHfu0XUKJiMsKLIyJ5tUc+ZG5zHTi5aYHVY8i/iCtu+SPiXJyC8RZ0AwNe9R4ssW0I88guE9nbv1lcBrtZILM50vI62P5lyZIHgdLcjxA4xDBVzcI7sTwnwXULge4LyvDNYTnNuyJDZL5Hh+DStAUVYNxeD75+28DI5oTChoZjveEJVyi0IFLB1HamIOJfsSRmkTV0PZZAjoWiFwVT+WI2ARNuf5j8wT9Ss7iFTemJnb4EyozWH+/O/X3QbvSrFEBPJgJ5CmhtXVDbA2Fe5BSE3yogBqZGPId9BsKphnYemOAcAecndPywsMGMpy0wY0hLaHnf3dkyhC2YdNZz88wTjxFfqrQ81gwDFNxgnIjLy6whkyOyHhiL0ihKfv/XlUgGwJseW19JuLy5iYaM33/LQMOwQyp6Pvno0kluA5zuyhUeHZa5d0owYG+oaDcIYZssTXROcjhc6CAGdF7//ZK7/8lfjgGJhScVgjEPBSHQugEo20jDvhniWlktMggig5JYInbMlux2g7tWdv5Tvj7/zEsmcTYNC4S+j7cmi7bjByBiBngxBRm7oDuq0AA87Iyrhj05nyUa2MryGymrn/ubLTfg7kDhWHcuPbtQPg2AeoRRqEQwuFrcwQODegOOFCFlSwA6xP/fiBNcmbYPBdQ/5dgMmHyKx9kSm3ulB+Q5SxUG3eQRFg5ntCDs0eJhBtyzUHVh8EkUvq/QJ5DmNfMxkzyTi+b2FgfpGTi+wd+SjQqj4ROJB6rhxngp0xt2hX0GdGfnP+p5etAcRmSoTMMW1jCu8PCM5Q3TKcc8gVZcSV+KLw2NbxyoSe8919o949hlkMYsHD7WFqg5XjzO+6fKyV9PnRiacG56Ff331nXPwcdutrRNO4VPXPanZuG3//cwMq/wSTsYvMfnLr4p0B3A1B95+CW6695StFz74LHUCXO/4pi+A7M9ToSbViO10t0c13LynkJwy26XEUH6rRyzd87bOI/h9U2d+JNUh67M8TpOU0usSPOzf278H9Tum2N2YxB8QAAAABJRU5ErkJggg==',
-        data: "<b>Especializaci\xF3n</b>\n                                    UNIVERSIDAD DE BUENOS AIRES<br>\n                                    Trabajo social<br>\n                                    Febrerode1993 - Febrerode 1994<br>\n                                    La mujer como agente multiplicadora en prevenci\xF3n: de la subordinaci\xF3n al\n                                    protagonismo\n                                "
+        data: "<b>Especializaci\xF3n</b>\n                                    Problem\xE1tica del uso indebido de drogas<br>\n                                    UNIVERSIDAD DE BUENOS AIRES<br>\n\n                                    Febrerode1993 - Febrerode 1994<br>\n                                    La mujer como agente multiplicadora en prevenci\xF3n: de la subordinaci\xF3n al\n                                    protagonismo\n                                "
       }, {
         image: 'data:image/png;base64,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',
         data: "<b>Especializaci\xF3n</b>\n                                    UNIVERSIDAD DE SANTANDER<br>\n                                    Pedagog\xECa<br>\n                                    Febrero de 1998 - Diciembre de 1999<br>\n                                    Seminario de evaluaci\xF3n\n                                "
@@ -589,27 +729,10 @@ var loadingTask = vue_pdf__WEBPACK_IMPORTED_MODULE_0__["default"].createLoadingT
         data: "\n                        <b>UNIVERSIDAD DE SANTANDER</b><br>\n                        <i>Dedicaci\xF3n: </i>48horas Semanales\n                        Agosto de 1995\n                        Noviembre de 2006<br><br>\n                    ",
         date: '08 - 1995 a 11 - 2006'
       }],
-      areasDeActuación: [{
-        header: 'Areas de Actuación'
-      }, {
-        data: "Ciencias Sociales -- Ciencias de la Educaci\xF3n -- Educaci\xF3n General (Incluye Capacitaci\xF3n, Pedagog\xEDa)"
-      }, {
-        data: "Ciencias M\xE9dicas y de la Salud -- Ciencias de la Salud -- Salud Ocupacional"
-      }, {
-        data: "Ciencias Sociales -- Sociolog\xEDa -- Antropolog\xEDa"
-      }, {
-        data: "Ciencias Sociales -- Periodismo y Comunicaciones -- Medios y Comunicaci\xF3n Social"
-      }, {
-        data: "Ciencias Sociales -- Econom\xEDa y Negocios -- Negocios y Management"
-      }, {
-        data: "Ciencias Sociales -- Psicolog\xEDa -- Psicolog\xEDa (Incluye Terapias de Aprendizaje, Habla, Visual y Otras Discapacidades F\xEDsicas y Mentales)"
-      }, {
-        data: "Ciencias Sociales -- Sociolog\xEDa -- Temas Especiales (Estudios de G\xE9nero, Temas Sociales, Estudios de la Familia)"
-      }],
       itemsPerPage: 4,
       idiomas: [{
         name: 'Inglés',
-        habla: '19',
+        habla: '60',
         escribe: '65',
         lee: '75',
         entiende: '60'
@@ -619,6 +742,45 @@ var loadingTask = vue_pdf__WEBPACK_IMPORTED_MODULE_0__["default"].createLoadingT
         escribe: '94',
         lee: '94',
         entiende: '94'
+      }],
+      camposDelSaber: [{
+        header: "Campos del saber"
+      }, {
+        data: "Docencia Universitaria."
+      }, {
+        data: "Gestión del talento."
+      }, {
+        data: "Investigación académica"
+      }, {
+        data: "Trabajo de grupo y comunitario."
+      }, {
+        data: "Iniciativa socio empresariales y liderazgo."
+      }, {
+        data: "Proyectos sociales, educativos,"
+      }, {
+        data: "Proyectos de gestión y académicos."
+      }, {
+        data: "Gestión social"
+      }, {
+        data: "Acciones  de bienestar universitario."
+      }, {
+        data: "Asesoría de trabajos de grado."
+      }, {
+        data: "Proyección social."
+      }, {
+        data: "Problemáticas de violencia de género"
+      }, {
+        data: "Participación en lo político"
+      }, {
+        data: "Interculturalidad"
+      }, {
+        data: "Semilleros de investigación"
+      }, {
+        data: "Empoderamiento femenino"
+      }, {
+        data: "Escritura de artículos científicos"
+      }, {
+        data: "Apropiación social del conocimiento"
       }],
       lineasDeInvestigacion: [{
         header: "Líneas de investigación"
@@ -632,25 +794,13 @@ var loadingTask = vue_pdf__WEBPACK_IMPORTED_MODULE_0__["default"].createLoadingT
         data: "Apropiación y diseño en el ámbito de la moda",
         activa: "Si"
       }, {
-        data: "Inclusión social",
-        activa: "Si"
-      }, {
         data: "Pedagogía y enseñabilidad de la fisioterapia",
         activa: "No"
-      }, {
-        data: "Gestión y desarrollo social",
-        activa: "Si"
-      }, {
-        data: "inclusión social",
-        activa: "No"
-      }, {
-        data: "Gestión y desarrollo social",
-        activa: "Si"
       }, {
         data: "Pedagogos del patronaje",
         activa: "Si"
       }, {
-        data: "Inclusión social",
+        data: "Problemática del uso indebido de drogas",
         activa: "No"
       }, {
         data: "Apropiación y diseño en el ámbito de la moda",
@@ -659,22 +809,13 @@ var loadingTask = vue_pdf__WEBPACK_IMPORTED_MODULE_0__["default"].createLoadingT
         data: "Gestión y desarrollo social",
         activa: "Si"
       }, {
-        data: "Gestión y desarrollo social",
-        activa: "Si"
-      }, {
         data: "Pedagogos del patronaje",
         activa: "No"
       }, {
-        data: "Gestión y desarrollo social",
+        data: "Violencia de género",
         activa: "Si"
       }, {
-        data: "Gestión y desarrollo social",
-        activa: "Si"
-      }, {
-        data: "Gestión y desarrollo social",
-        activa: "Si"
-      }, {
-        data: "Gestión y desarrollo social",
+        data: "Desarrollo social",
         activa: "Si"
       }],
       reconocimientos: [{
@@ -755,6 +896,55 @@ var loadingTask = vue_pdf__WEBPACK_IMPORTED_MODULE_0__["default"].createLoadingT
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/AboutMe.vue?vue&type=style&index=0&id=31f13d5f&scoped=true&lang=css&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/AboutMe.vue?vue&type=style&index=0&id=31f13d5f&scoped=true&lang=css& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.v-card--reveal[data-v-31f13d5f] {\n    align-items: center;\n    bottom: 0;\n    justify-content: center;\n    opacity: .8;\n    position: absolute;\n    width: 100%;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/AboutMe.vue?vue&type=style&index=0&id=31f13d5f&scoped=true&lang=css&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/AboutMe.vue?vue&type=style&index=0&id=31f13d5f&scoped=true&lang=css& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./AboutMe.vue?vue&type=style&index=0&id=31f13d5f&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/AboutMe.vue?vue&type=style&index=0&id=31f13d5f&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/AboutMe.vue?vue&type=template&id=31f13d5f&scoped=true&":
 /*!****************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/AboutMe.vue?vue&type=template&id=31f13d5f&scoped=true& ***!
@@ -809,7 +999,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                        ¿Quíen Soy?\n                    "
+                            "\n                        Mi perfil y redes de apoyo\n                    "
                           )
                         ]
                       ),
@@ -836,105 +1026,336 @@ var render = function() {
         1
       ),
       _vm._v(" "),
+      _c("section", [
+        _c(
+          "div",
+          { staticClass: "text-center py-9 secondary lighten-4" },
+          [
+            _c(
+              "v-avatar",
+              { staticClass: " mb-2", attrs: { size: "100" } },
+              [
+                _c("v-img", {
+                  attrs: {
+                    src: __webpack_require__(/*! ../../../images/caricaturas/quien-soy.png */ "./resources/images/caricaturas/quien-soy.png"),
+                    contain: "",
+                    height: "100",
+                    width: "100"
+                  }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "h1",
+              {
+                staticClass:
+                  "text-uppercase headline font-weight-bold mb-2 text-center"
+              },
+              [_vm._v("\n                ¿QUIÉN SOY?\n            ")]
+            ),
+            _vm._v(" "),
+            _c("v-divider", {
+              staticClass: "primary mx-auto",
+              staticStyle: { "max-width": "28px" }
+            })
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "container" },
+          [
+            _c(
+              "v-row",
+              [
+                _c(
+                  "v-col",
+                  { staticClass: "col-md-6 col-12" },
+                  [
+                    _c("h2", { staticClass: "display-1 " }, [
+                      _vm._v(
+                        "\n                        Mi nombre es Maria Victoria Aponte.\n                    "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("h2", { staticClass: "headline mb-4 " }, [
+                      _vm._v(
+                        "\n                        Soy Trabajadora Social. Magíster en Investigación Social\n                        Especialista en Administración y docente investigadora.\n                    "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "subtitle-1 text-justify" }, [
+                      _vm._v(
+                        "\n                        Me he desempeñado, desde lo social como profesional universitario,\n                        en oficinas de la mujer a nivel municipal y como personal directivo en el orden\n                        departamental.\n                        De igual manera, me desempeñé, cómo directora de Bienestar Universitario. Así mismo, fui\n                        directora de\n                        la Asociación de Trabajadores Sociales del Cesar y directora de una Fundación sin ánimo de\n                        lucro\n                        que\n                        trabajaba por los jóvenes. Actualmente soy Docente universitaria.\n                    "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "mb-5 text-justify" }, [
+                      _vm._v(
+                        " Mi trayectoria profesional, se ha\n                        caracterizado por investigar problemáticas de la mujer, y la violencia de género,\n                        la recuperación de la memoria entre otros, con el ánimo de ser referente de\n                        cambio para las mujeres a través de un diálogo de saberes que permita\n                        transformarla de la subordinación al protagonismo en el contexto\n                        socio-cultural.\n                    "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "v-btn",
+                      {
+                        staticClass: "px-5  primary--text",
+                        attrs: { outlined: "", text: "", to: "/contact" }
+                      },
+                      [
+                        _vm._v(
+                          "\n                        Contáctame\n                    "
+                        )
+                      ]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _vm.$vuetify.breakpoint.smAndUp
+                  ? _c(
+                      "v-col",
+                      { staticClass: "col-md-5 offset-md-1 col-12" },
+                      [
+                        _c(
+                          "v-card",
+                          {
+                            directives: [
+                              {
+                                name: "show",
+                                rawName: "v-show",
+                                value: _vm.loaded,
+                                expression: "loaded"
+                              }
+                            ],
+                            staticClass: "mx-auto ",
+                            attrs: { flat: "" }
+                          },
+                          [
+                            _c("v-img", {
+                              attrs: {
+                                "max-height": "500",
+                                "aspect-ratio": 5 / 8,
+                                contain: "",
+                                src: "images/quien-soy/quien-soy.jpg"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _vm.loading == true
+                          ? _c("v-skeleton-loader", {
+                              staticClass: "mx-auto",
+                              attrs: {
+                                elevation: "4",
+                                "max-height": "500",
+                                loading: _vm.loading,
+                                transition: "fade-transition",
+                                type: "card"
+                              }
+                            })
+                          : _vm._e()
+                      ],
+                      1
+                    )
+                  : _vm._e()
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
       _c(
-        "div",
-        { staticClass: "container" },
+        "section",
+        { staticClass: " " },
         [
           _c(
-            "v-row",
+            "div",
+            { staticClass: "text-center py-3 pt-6 secondary lighten-4" },
             [
               _c(
-                "v-col",
-                { staticClass: "col-md-6 col-12" },
+                "v-avatar",
+                { staticClass: "white", attrs: { size: "100" } },
                 [
-                  _c("h2", { staticClass: "display-1 " }, [
-                    _vm._v(
-                      "\n                    Mi nombre es Maria Victoria Aponte.\n                "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "headline mb-4 " }, [
-                    _vm._v(
-                      "\n                    Soy Magister en Investigación Social,\n                    Especialista en Administración y docencia universitaria.\n                "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "subtitle-1 text-justify" }, [
-                    _vm._v(
-                      "\n                    Me he desempeñado, desde lo social como profesional universitario,\n                    en oficinas de la mujer a nivel municipal y como personal directivo en el orden departamental.\n                    De igual manera, me desempeñé, cómo directora de Bienestar Universitario. Así mismo, fui\n                    directora de\n                    la Asociación de Trabajadores Sociales del Cesar y directora de una Fundación sin ánimo de lucro\n                    que\n                    trabajaba por los jóvenes. Actualmente soy Docente universitaria.\n                "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "mb-5 text-justify" }, [
-                    _vm._v(
-                      " Mi trayectoria profesional, se ha\n                    caracterizado por investigar problemáticas de la mujer, y la violencia de género,\n                    la recuperación de la memoria entre otros, con el ánimo de ser referente de\n                    cambio para las mujeres a través de un diálogo de saberes que permita\n                    transformarla de la subordinación al protagonismo en el contexto\n                    socio-cultural.\n                "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "v-btn",
-                    {
-                      staticClass: "px-5  primary--text",
-                      attrs: { outlined: "", text: "", to: "/contact" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                    Contáctame\n                "
-                      )
-                    ]
-                  )
+                  _c("v-img", {
+                    attrs: {
+                      src: __webpack_require__(/*! ../../../images/caricaturas/equipazo.png */ "./resources/images/caricaturas/equipazo.png"),
+                      contain: "",
+                      width: "100"
+                    }
+                  })
                 ],
                 1
               ),
               _vm._v(" "),
-              _vm.$vuetify.breakpoint.smAndUp
-                ? _c(
+              _c(
+                "h1",
+                {
+                  staticClass:
+                    "text-uppercase headline font-weight-bold mb-2 text-center"
+                },
+                [_vm._v("\n                Grupo de Apoyo\n            ")]
+              ),
+              _vm._v(" "),
+              _c("v-divider", {
+                staticClass: "primary mx-auto mb-2",
+                staticStyle: { "max-width": "28px" }
+              }),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  staticClass:
+                    "base-body body-1 mx-auto grey--text text--darken-1 text-center ",
+                  staticStyle: { "max-width": "700px" }
+                },
+                [_vm._v("\n                perfiles\n            ")]
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-container",
+            { staticClass: "layout justify-center wrap" },
+            [
+              _c(
+                "v-row",
+                { staticClass: "d-flex  justify-center" },
+                _vm._l(_vm.group, function(item) {
+                  return _c(
                     "v-col",
-                    { staticClass: "col-md-5 offset-md-1 col-12" },
+                    { key: item.name, attrs: { cols: "6", md: "3" } },
                     [
-                      _c(
-                        "v-card",
-                        {
-                          directives: [
+                      _c("v-hover", {
+                        scopedSlots: _vm._u(
+                          [
                             {
-                              name: "show",
-                              rawName: "v-show",
-                              value: _vm.loaded,
-                              expression: "loaded"
+                              key: "default",
+                              fn: function(ref) {
+                                var hover = ref.hover
+                                return [
+                                  _c(
+                                    "v-card",
+                                    {
+                                      staticClass: "mx-auto",
+                                      attrs: {
+                                        height: "400",
+                                        color: "grey lighten-4"
+                                      }
+                                    },
+                                    [
+                                      _c(
+                                        "v-img",
+                                        {
+                                          attrs: {
+                                            height: "400",
+                                            src: item.img
+                                          }
+                                        },
+                                        [
+                                          _c("v-expand-transition", [
+                                            hover
+                                              ? _c(
+                                                  "div",
+                                                  {
+                                                    staticClass:
+                                                      "d-flex transition-fast-in-fast-out primary darken-2 v-card--reveal  white--text",
+                                                    staticStyle: {
+                                                      height: "100%"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "v-container",
+                                                      {
+                                                        staticClass: "body-2",
+                                                        staticStyle: {
+                                                          height: "400px"
+                                                        }
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "p",
+                                                          {
+                                                            staticClass:
+                                                              "pa-6 text-justify"
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              _vm._s(
+                                                                item.description
+                                                              )
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ],
+                                                  1
+                                                )
+                                              : _vm._e()
+                                          ])
+                                        ],
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ]
+                              }
                             }
                           ],
-                          staticClass: "mx-auto ",
-                          attrs: { flat: "" }
+                          null,
+                          true
+                        )
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "h3",
+                        {
+                          staticClass:
+                            "title font-weight-black primary--text mb-2"
                         },
                         [
-                          _c("v-img", {
-                            attrs: {
-                              "max-height": "500",
-                              "aspect-ratio": 5 / 8,
-                              contain: "",
-                              src: "images/quien-soy/quien-soy.jpg"
-                            }
-                          })
-                        ],
-                        1
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(item.name) +
+                              "\n                    "
+                          )
+                        ]
                       ),
                       _vm._v(" "),
-                      _vm.loading == true
-                        ? _c("v-skeleton-loader", {
-                            staticClass: "mx-auto",
-                            attrs: {
-                              elevation: "4",
-                              "max-height": "500",
-                              loading: _vm.loading,
-                              transition: "fade-transition",
-                              type: "card"
-                            }
-                          })
-                        : _vm._e()
+                      _c(
+                        "div",
+                        { staticClass: "font-weight-light subtitle-2 mb-2" },
+                        [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(item.profession)
+                          ),
+                          _c("br")
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("p", {
+                        staticClass:
+                          "base-body body-1 mx-auto grey--text text--darken-1 text-justify mb-10",
+                        staticStyle: { "max-width": "700px" },
+                        domProps: { innerHTML: _vm._s(item.others) }
+                      })
                     ],
                     1
                   )
-                : _vm._e()
+                }),
+                1
+              )
             ],
             1
           )
@@ -1189,91 +1610,6 @@ var render = function() {
                   )
                 }),
                 1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-card",
-            { staticClass: "mx-auto", attrs: { flat: "" } },
-            [
-              _c(
-                "v-list",
-                [
-                  _vm._l(_vm.areasDeActuación, function(item, index) {
-                    return [
-                      item.header
-                        ? _c("div", { key: item.header }, [
-                            _c(
-                              "div",
-                              {
-                                staticClass: "base-section-heading text-center"
-                              },
-                              [
-                                _c(
-                                  "h3",
-                                  {
-                                    staticClass:
-                                      "text-uppercase text-h6 font-weight-bold  text-left"
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                                " +
-                                        _vm._s(item.header) +
-                                        "\n                            "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c("v-divider", {
-                                  staticClass: "primary  mr-auto mb-3",
-                                  staticStyle: { "max-width": "28px" }
-                                })
-                              ],
-                              1
-                            )
-                          ])
-                        : item.divider
-                        ? _c("v-divider", {
-                            key: index,
-                            attrs: { inset: item.inset }
-                          })
-                        : _c(
-                            "v-list-item",
-                            {
-                              key: item.title,
-                              on: { click: function($event) {} }
-                            },
-                            [
-                              _c(
-                                "v-list-item-avatar",
-                                [
-                                  _c(
-                                    "v-avatar",
-                                    { attrs: { color: "grey lighten-2" } },
-                                    [
-                                      _c(
-                                        "span",
-                                        { staticClass: "font-weight-bold " },
-                                        [_vm._v(" " + _vm._s(index))]
-                                      )
-                                    ]
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c("v-list-item-content", {
-                                domProps: { innerHTML: _vm._s(item.data) }
-                              })
-                            ],
-                            1
-                          )
-                    ]
-                  })
-                ],
-                2
               )
             ],
             1
@@ -1658,6 +1994,11 @@ var render = function() {
             ])
           }),
           _vm._v(" "),
+          _c("v-subheader", [
+            _vm._v("Categoría: "),
+            _c("span", { staticClass: "font-weight-bold" }, [_vm._v("B2")])
+          ]),
+          _vm._v(" "),
           _c("v-simple-table", {
             scopedSlots: _vm._u([
               {
@@ -1723,6 +2064,230 @@ var render = function() {
               }
             ])
           }),
+          _vm._v(" "),
+          _c(
+            "v-card",
+            { staticClass: "mx-auto mt-6", attrs: { flat: "" } },
+            [
+              _c(
+                "div",
+                { staticClass: "base-section-heading text-center" },
+                [
+                  _c(
+                    "h3",
+                    {
+                      staticClass:
+                        "text-uppercase text-h6 font-weight-bold  text-left"
+                    },
+                    [
+                      _vm._v(
+                        "\n                    Campos del saber\n                "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("v-divider", {
+                    staticClass: "primary  mr-auto mb-3",
+                    staticStyle: { "max-width": "28px" }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm.$vuetify.breakpoint.mdAndUp
+                ? _c(
+                    "v-row",
+                    [
+                      _c(
+                        "v-col",
+                        [
+                          _c(
+                            "v-list",
+                            { attrs: { shaped: "", dense: "" } },
+                            [
+                              _vm._l(_vm.camposDelSaber, function(item, index) {
+                                return [
+                                  index % 2 !== 0
+                                    ? _c(
+                                        "v-list-item",
+                                        {
+                                          key: item.data,
+                                          on: { click: function($event) {} }
+                                        },
+                                        [
+                                          _c(
+                                            "v-list-item-avatar",
+                                            [
+                                              _c(
+                                                "v-avatar",
+                                                {
+                                                  attrs: {
+                                                    color: "grey lighten-2"
+                                                  }
+                                                },
+                                                [
+                                                  _c(
+                                                    "span",
+                                                    {
+                                                      staticClass:
+                                                        "font-weight-bold "
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        " " + _vm._s(index)
+                                                      )
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c("v-list-item-content", {
+                                            domProps: {
+                                              innerHTML: _vm._s(item.data)
+                                            }
+                                          })
+                                        ],
+                                        1
+                                      )
+                                    : _vm._e()
+                                ]
+                              })
+                            ],
+                            2
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-col",
+                        [
+                          _c(
+                            "v-list",
+                            { attrs: { shaped: "", dense: "" } },
+                            [
+                              _vm._l(_vm.camposDelSaber, function(item, index) {
+                                return [
+                                  index % 2 == 0 && index !== 0
+                                    ? _c(
+                                        "v-list-item",
+                                        {
+                                          key: item.data,
+                                          on: { click: function($event) {} }
+                                        },
+                                        [
+                                          _c(
+                                            "v-list-item-avatar",
+                                            [
+                                              _c(
+                                                "v-avatar",
+                                                {
+                                                  attrs: {
+                                                    color: "grey lighten-2"
+                                                  }
+                                                },
+                                                [
+                                                  _c(
+                                                    "span",
+                                                    {
+                                                      staticClass:
+                                                        "font-weight-bold "
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        " " + _vm._s(index)
+                                                      )
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c("v-list-item-content", {
+                                            domProps: {
+                                              innerHTML: _vm._s(item.data)
+                                            }
+                                          })
+                                        ],
+                                        1
+                                      )
+                                    : _vm._e()
+                                ]
+                              })
+                            ],
+                            2
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                : _c(
+                    "div",
+                    [
+                      _c(
+                        "v-list",
+                        { attrs: { shaped: "", dense: "" } },
+                        [
+                          _vm._l(_vm.camposDelSaber, function(item, index) {
+                            return [
+                              index !== 0
+                                ? _c(
+                                    "v-list-item",
+                                    {
+                                      key: item.data,
+                                      on: { click: function($event) {} }
+                                    },
+                                    [
+                                      _c(
+                                        "v-list-item-avatar",
+                                        [
+                                          _c(
+                                            "v-avatar",
+                                            {
+                                              attrs: { color: "grey lighten-2" }
+                                            },
+                                            [
+                                              _c(
+                                                "span",
+                                                {
+                                                  staticClass:
+                                                    "font-weight-bold "
+                                                },
+                                                [_vm._v(" " + _vm._s(index))]
+                                              )
+                                            ]
+                                          )
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c("v-list-item-content", {
+                                        domProps: {
+                                          innerHTML: _vm._s(item.data)
+                                        }
+                                      })
+                                    ],
+                                    1
+                                  )
+                                : _vm._e()
+                            ]
+                          })
+                        ],
+                        2
+                      )
+                    ],
+                    1
+                  )
+            ],
+            1
+          ),
           _vm._v(" "),
           _c(
             "v-card",
@@ -2024,6 +2589,28 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./resources/images/caricaturas/equipazo.png":
+/*!***************************************************!*\
+  !*** ./resources/images/caricaturas/equipazo.png ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/equipazo.png?ac469616590e53b0dca001bb2a708824";
+
+/***/ }),
+
+/***/ "./resources/images/caricaturas/quien-soy.png":
+/*!****************************************************!*\
+  !*** ./resources/images/caricaturas/quien-soy.png ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/quien-soy.png?0974f640875e7b8091713f977c2f9930";
+
+/***/ }),
+
 /***/ "./resources/js/components/pages/AboutMe.vue":
 /*!***************************************************!*\
   !*** ./resources/js/components/pages/AboutMe.vue ***!
@@ -2035,7 +2622,9 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AboutMe_vue_vue_type_template_id_31f13d5f_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AboutMe.vue?vue&type=template&id=31f13d5f&scoped=true& */ "./resources/js/components/pages/AboutMe.vue?vue&type=template&id=31f13d5f&scoped=true&");
 /* harmony import */ var _AboutMe_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AboutMe.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/AboutMe.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _AboutMe_vue_vue_type_style_index_0_id_31f13d5f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AboutMe.vue?vue&type=style&index=0&id=31f13d5f&scoped=true&lang=css& */ "./resources/js/components/pages/AboutMe.vue?vue&type=style&index=0&id=31f13d5f&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -2043,7 +2632,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _AboutMe_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _AboutMe_vue_vue_type_template_id_31f13d5f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _AboutMe_vue_vue_type_template_id_31f13d5f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -2072,6 +2661,22 @@ component.options.__file = "resources/js/components/pages/AboutMe.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AboutMe_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./AboutMe.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/AboutMe.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AboutMe_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/AboutMe.vue?vue&type=style&index=0&id=31f13d5f&scoped=true&lang=css&":
+/*!************************************************************************************************************!*\
+  !*** ./resources/js/components/pages/AboutMe.vue?vue&type=style&index=0&id=31f13d5f&scoped=true&lang=css& ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AboutMe_vue_vue_type_style_index_0_id_31f13d5f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./AboutMe.vue?vue&type=style&index=0&id=31f13d5f&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/AboutMe.vue?vue&type=style&index=0&id=31f13d5f&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AboutMe_vue_vue_type_style_index_0_id_31f13d5f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AboutMe_vue_vue_type_style_index_0_id_31f13d5f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AboutMe_vue_vue_type_style_index_0_id_31f13d5f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AboutMe_vue_vue_type_style_index_0_id_31f13d5f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AboutMe_vue_vue_type_style_index_0_id_31f13d5f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

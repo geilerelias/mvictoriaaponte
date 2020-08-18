@@ -1,116 +1,14 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[9],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Publications.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Publications.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Home.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Home.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -334,16 +232,73 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    this.dialog = false;
+  },
   data: function data() {
     return {
-      links: [{
-        text: 'Inicio',
-        disabled: false,
-        href: '/'
+      dialog: true,
+      model: null,
+      showArrows: true,
+      items: [{
+        title: "el saber",
+        content: "Me inspira el saber de las mujeres, estoy comprometida con su auto-valoración.",
+        number: "01"
       }, {
-        text: 'Publicaciones',
-        disabled: true,
-        href: '/publications'
+        title: " el empoderamiento",
+        content: "Confiero pasión en el empoderamiento de cada mujer, con objetividad y claridad.",
+        number: "02"
+      }, {
+        title: "despertar conciencias",
+        content: " Mi travesía personal refleja una combinación de saberes cotidianos, profesionales y sociales, inspirados en la necesidad de despertar conciencias de mujeres.",
+        number: "03"
+      }],
+      eventos: [{
+        image: 'images/eventos/X CONGRESO ARGENTINO DE SALUD MENTAL.jpg',
+        title: 'X CONGRESO ARGENTINO DE\n' + 'SALUD MENTAL',
+        location: 'Buenos Aires, agosto\n' + '2016',
+        content: '“Memorias de violencia de género de\n' + 'enfermeras y enfermeros en el ámbito\n' + 'laboral de la salud”.'
+      }, {
+        image: 'images/eventos/VII Simposio Internacional de Investigaciones.jpg',
+        title: 'VII Simposio Internacional de Investigaciones, VIII Nacional Y XIII Premio a la Investigación',
+        location: 'Valledupar, Octubre 2017.',
+        content: '“Significado de memorias de\n' + 'violencia de género de mujeres adultas mayores\n' + 'de Bosa en Bogotá”.'
+      }, {
+        image: 'images/eventos/Una mirada al posconflicto desde lo jurídico, enfocada a la salud.jpg',
+        title: 'Encuentro de semilleros de investigación',
+        location: 'Universidad\n' + 'de Santander- UDES. Abril\n' + '2017',
+        content: 'Una mirada al\n' + 'posconflicto desde lo\n' + 'jurídico, enfocada a la salud.'
+      }, {
+        image: 'images/eventos/10 Congreso Internacional de Salud Pública.png',
+        title: '10 Congreso Internacional de Salud\n' + 'Pública',
+        location: 'Universidad de Antioquia-Bogotá 2017.',
+        content: 'Significados de memorias de violencia de género\n' + 'en mujeres adultas mayores de Bosa en la Ciudad\n' + 'de Bogotá'
+      }, {
+        image: 'images/eventos/Eventos internacionales Veracruz- México.jpg',
+        title: 'VIII Congreso Internacional',
+        location: 'Veracruz- México. 2018',
+        content: '“Transversalidad y\n' + 'multidisciplinariedad en la\n' + 'Complejidad de los Problemas\n' + 'de Salud para el Desarrollo\n' + 'Humano Sustentable”'
+      }],
+      services: [{
+        image: 'images/servicios/capacitacion.jpg',
+        title: 'CAPACITACIÓN',
+        content: 'Son acciones educativas de carácter no formal, que incluye mensajes inspiradores que tienen un alto contenido de motivación para favorecer el empoderamiento de las mujeres, buscando el recorrido de un camino que genera enseñanzas plenas de ambiciones para mujeres mostrando el manejo de emociones y saberes que conduzcan al conocimiento de si mismas, y fortalezcan su autoestima y autovaloración para el logro de sueños.<br>' + '<br>' + 'Ejes temáticos: <br>' + '<br>' + '•\tEstereotipos culturales e identidad femenina<br>' + '•\tPrácticas sexistas y violencia de género<br>' + '•\tEmprendimiento y necesidad de cambio de la mujer<br>' + '•\tManejo de los miedos y las emociones<br>' + '•\tAutovaloración femenina <br>' + '•\tSentido de vida femenino<br>' + '•\tSororidad, y círculos de poder<br>' + '•\tPromoción de la salud<br>' + '•\tDerechos de la mujer<br>' + '•\tActividad física y ejercicios<br>' + '•\tLiderazgo y motivación<br>' + '•\tPersonalidad, imagen y autoimagen<br>' + '•\tAdecuación de indumentaria y maquillaje básico<br>' + '•\tElaboración de adornos con material Reciclable.<br>'
+      }, {
+        image: 'images/servicios/accesorias.jpg',
+        title: 'ASESORÍAS',
+        content: 'Con el fin de que las mujeres vean la vida de otra manera, es necesario que obtengan un marco empírico, dado desde la revisión de estudios sobre el maltrato contra las mujeres y testimonios de mujeres que experimentan la problemática de la violencia de género, para que ellas aprendan a tomar decisiones, que propicien el entendimiento de su propósito existencial, con temas que empoderen a las mujeres, como el manejo de los miedos, y la lucha por lograr sus sueños, desde el recorrido de sus emociones, y la autovaloración. <br>' + '<br>' + 'Estas acciones, serán desarrolladas desde la mediación de la estrategia metodológica virtual, consolidada a través del diseño y desarrollo de la página Web de SOE, con productos encaminados al empoderamiento femenino.<br>' + '<br>' + 'Ejes temáticos:<br>' + '<br>' + '•\tEmpoderamiento femenino: motivación, liderazgo, estereotipos culturales, manejo de prácticas sexistas, elaboración de propuestas para creación de redes, o círculos de poder, etc..<br>' + '•\tEmprendimiento de la mujer: iniciativas de negocios, propuestas creativas micro empresariales, manejo contable y de finanzas.<br>' + '•\tAsesorías legales de la mujer: ejercicio y legitimación de derechos, políticas estatales, cuota alimentaria, protección de bienes. <br>' + '•\tAsesorías psicológicas: personalidad, autoestima, autovaloración y armonía.<br>' + '•\tPromoción de la salud y prevención de enfermedades: estilos de vida saludables, bienestar del cuerpo, de la mente y salud colectiva.<br>' + '•\tAcondicionamiento físico: guías de ejercicios básicos, planes de entrenamiento físico, relajación y orientación nutricional.<br>' + '•\tAsesoría de imagen: orientación en maquillaje básico, modas y peinados<br>' + '•\tOrientación espiritual: crecimiento en el discernimiento de la palabra de Dios.<br>'
+      }, {
+        image: 'images/servicios/investigacion.jpg',
+        title: 'INVESTIGACIÓN',
+        content: 'Se refiere a la actividad productora de nuevas ideas de las mujeres, teniendo como punto de partida, las indagaciones y exploraciones sobre la trayectoria de sus vivencias en todas las dimensiones de su ser, desde la infancia, la adolescencia, la juventud y la adultez. <br>' + '<br>' + 'De igual manera para intervenir esta realidad, se requiere de estrategias valiosas, tales como:  los testimonios y las historias de vida de mujeres, que conjuntamente con la teoría, permiten la comprensión de sus problemas, para ahondar la vida cotidiana, sus miedos, sus sueños, las relaciones de pareja, las pautas de crianza de los hijos, los estereotipos culturales, las acciones comunitarias, y la diversidad cultural. <br>' + '<br>' + 'Lo anterior, con el fin de conocer todo acerca de las relaciones entre los seres que hacen parte de la sociedad, para hacerle comprender a las mujeres que deben evitar desbordar sus pasiones, y saber manejar sus emociones. <br>'
+      }, {
+        image: 'images/servicios/circulo-de-poder.jpg',
+        title: 'CÍRCULOS DE PODER',
+        content: 'Implica la incorporación de vínculos entre mujeres, buscando la sororidad y el manejo de la escucha, así como el valor de la interacción entre las mujeres, la búsqueda de la autovaloración y el reconocimiento entre ellas, es un disparador de intercambio de conocimientos y vivencias que genera aprendizaje. <br>' + '<br>' + 'La interacción entre mujeres, incorpora la mirada que le devuelven las otras mujeres, porque el poder femenino le permite a la mujer mirarse a sí misma de otra manera, porque son afines en la misión existencial que como mujeres van incorporando a su esencia femenina y la autovaloración que van ganando conjuntamente, le permite reconocerse en la diferencia y valorarse. Además es importante ver en otras mujeres el modelo de valentía, de superación, de mujeres empoderadas. <br>'
+      }, {
+        image: 'images/servicios/cohaching.jpg',
+        title: 'COACHING',
+        content: 'Importa, la búsqueda de un estilo de vida saludable, la trascendencia de una vida que deje huellas fuera del hogar de la mujer, para buscar la transformación de la subordinación al protagonismo, permitiendo que sus actuaciones le den paso a la lógica, a lo razonable, donde articulen el pensar, el sentir y el actuar, con el fin de hacer aportes valiosos para la autovaloración femenina. <br>' + 'Es claro que podemos reinventarnos, y establecer nuevas rutas, que nos permita preguntarnos, <br>' + '    <br>' + 'Implica preguntarse:<br>' + '¿Cómo se hace una mujer? ¿Más aún cómo se hace una mujer para el mundo de hoy? ¿cómo podríamos generar en nuestras mentes la objetividad? ¿Cómo socializar, las notas inspiradoras que existen para aprender a conocernos?<br>' + '¿Será que les puedo sugerir a las mujeres, acciones desde mis propias experiencias? ¿funcionará si les expreso que existen mil formas de aprender a entender los llamados de su feminidad?  será más práctico utilizar el arte de hablar con sutileza, para que ellas cuenten sus vivencias, interpretando su significado y dándole sentido a lo que han vivido?<br>'
       }]
     };
   }
@@ -351,10 +306,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Publications.vue?vue&type=template&id=3e308646&scoped=true&":
-/*!*********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Publications.vue?vue&type=template&id=3e308646&scoped=true& ***!
-  \*********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Home.vue?vue&type=template&id=a9aac016&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Home.vue?vue&type=template&id=a9aac016&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -366,243 +321,196 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "section",
-      [
-        _c(
-          "v-img",
-          {
-            attrs: {
-              src: "images/header/web_publicaciones.jpg",
-              gradient: "to top, rgba(5, 11, 31, 0.8), rgba(5, 11, 31, 0.8)",
-              color: "#45516b",
-              flat: "",
-              tile: "",
-              height: "350",
-              "max-width": "100%"
-            }
-          },
-          [
-            _c(
-              "v-row",
-              {
-                staticClass:
-                  "ma-0 fill-height text-center align-center justify-center"
+  return _c(
+    "div",
+    [
+      _c(
+        "section",
+        [
+          _c(
+            "v-img",
+            {
+              staticClass: "white--text",
+              attrs: {
+                height: "95vh",
+                src: _vm.$vuetify.breakpoint.smAndUp
+                  ? "images/imagen principal maria victoria 2.jpg"
+                  : "images/imagen principal maria victoria movil 2.jpg",
+                gradient: _vm.$vuetify.breakpoint.smAndUp
+                  ? "to right, rgba(0, 0, 0, 0.7) 40%, rgba(68, 12, 64, 0) 70%"
+                  : "to top right, rgba(0, 0, 0, 0.7) 10%, rgba(68, 12, 64, 0) 70%"
               },
-              [
-                _c(
-                  "v-col",
-                  { staticClass: "col col-12" },
-                  [
-                    _c(
-                      "h1",
-                      {
-                        staticClass:
-                          "display-2 font-weight-500 mb-2 text-center white--text"
-                      },
-                      [
-                        _vm._v(
-                          "\n                        Publicaciones\n                    "
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("v-divider", {
-                      staticClass: "primary mx-auto mb-6 ",
-                      staticStyle: { "max-width": "28px" }
-                    }),
-                    _vm._v(" "),
-                    _c("v-breadcrumbs", {
-                      staticClass: " justify-center pa-0",
-                      attrs: { dark: "", items: _vm.links }
-                    })
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ],
-          1
-        )
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "section",
-      [
-        _c(
-          "v-container",
-          [
-            _c(
-              "v-row",
-              { staticClass: "mb-2" },
-              [
-                _c(
-                  "v-col",
-                  { attrs: { sm: "6" } },
-                  [
-                    _c(
-                      "v-card",
-                      { attrs: { height: "300" } },
-                      [
-                        _c(
-                          "v-row",
-                          { staticClass: "ma-0" },
-                          [
-                            _c("v-col", { staticClass: "ma-0 " }, [
-                              _c(
-                                "strong",
-                                {
-                                  staticClass:
-                                    "d-inline-block mb-2 text-primary"
-                                },
-                                [_vm._v("World")]
-                              ),
-                              _vm._v(" "),
-                              _c("h3", { staticClass: "mb-0" }, [
-                                _vm._v("Featured post")
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "mb-1 text-muted" }, [
-                                _vm._v("Nov 12")
-                              ]),
-                              _vm._v(" "),
-                              _c("p", { staticClass: "card-text mb-auto" }, [
-                                _vm._v(
-                                  "This is a wider card with supporting text below as a\n                                    natural\n                                    lead-in to additional content."
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "stretched-link",
-                                  attrs: { href: "#" }
-                                },
-                                [_vm._v("Continue reading")]
+              scopedSlots: _vm._u([
+                {
+                  key: "placeholder",
+                  fn: function() {
+                    return [
+                      _c(
+                        "v-row",
+                        {
+                          staticClass: "fill-height ma-0",
+                          attrs: { align: "center", justify: "center" }
+                        },
+                        [
+                          _c("v-progress-circular", {
+                            attrs: {
+                              indeterminate: "",
+                              color: "grey lighten-5",
+                              size: "64"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ]
+                  },
+                  proxy: true
+                }
+              ])
+            },
+            [
+              _vm._v(" "),
+              _c(
+                "v-container",
+                { staticClass: "fill-height px-4 py-12" },
+                [
+                  _c(
+                    "v-flex",
+                    {
+                      staticClass: "d-flex align-end",
+                      staticStyle: {
+                        height: "100%",
+                        "max-width": "700px",
+                        width: "100%"
+                      }
+                    },
+                    [
+                      _c(
+                        "v-content",
+                        [
+                          _c(
+                            "h1",
+                            {
+                              staticClass:
+                                "font-weight-black mb-4 text-left white--text text-uppercase",
+                              class: _vm.$vuetify.breakpoint.smAndUp
+                                ? "display-2"
+                                : "display-1"
+                            },
+                            [
+                              _vm._v(
+                                "\n                            Soy\n                        "
                               )
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "v-col",
-                              {
-                                staticClass: "ma-0 pa-0",
-                                attrs: { cols: "4" }
-                              },
-                              [
-                                _c("v-img", {
-                                  attrs: {
-                                    "aspect-ratio": 5 / 10,
-                                    height: "300",
-                                    src:
-                                      "https://biblioteca.ulpgc.es/files/repositorio_de_docum152/noticias/esto-es-lo-que-cuestan-las-revistas-cientificas-espana-se-ha-pulido-213-millones-desde-2012.jpg"
-                                  }
-                                })
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "v-col",
-                  { attrs: { sm: "6" } },
-                  [
-                    _c(
-                      "v-card",
-                      { attrs: { height: "300" } },
-                      [
-                        _c(
-                          "v-row",
-                          { staticClass: "ma-0" },
-                          [
-                            _c("v-col", { staticClass: "ma-0 " }, [
-                              _c(
-                                "strong",
-                                {
-                                  staticClass:
-                                    "d-inline-block mb-2 text-primary"
-                                },
-                                [_vm._v("World")]
-                              ),
-                              _vm._v(" "),
-                              _c("h3", { staticClass: "mb-0" }, [
-                                _vm._v("Featured post")
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "mb-1 text-muted" }, [
-                                _vm._v("Nov 12")
-                              ]),
-                              _vm._v(" "),
-                              _c("p", { staticClass: "card-text mb-auto" }, [
-                                _vm._v(
-                                  "This is a wider card with supporting text below as a\n                                    natural\n                                    lead-in to additional content."
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "stretched-link",
-                                  attrs: { href: "#" }
-                                },
-                                [_vm._v("Continue reading")]
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h1",
+                            {
+                              staticClass:
+                                " font-weight-black mb-4 text-left white--text text-uppercase",
+                              class: _vm.$vuetify.breakpoint.smAndUp
+                                ? "display-2"
+                                : "display-1"
+                            },
+                            [
+                              _vm._v(
+                                "\n                            Maria Victoria Aponte\n                        "
                               )
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "v-col",
-                              {
-                                staticClass: "ma-0 pa-0",
-                                attrs: { cols: "4" }
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "p",
+                            {
+                              staticClass:
+                                "base-body body-1 white--text text--lighten-1 text-left mb-10"
+                            },
+                            [
+                              _vm._v(
+                                "\n                            Trabajadora Social, con maestría en\n                            Investigación Social Interdisciplinaria, docente\n                            universitaria, e investigadora en problemáticas\n                            sobre violencia de género.\n                        "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              attrs: {
+                                rounded: "",
+                                color: "primary",
+                                dark: ""
                               },
-                              [
-                                _c("v-img", {
-                                  attrs: {
-                                    "aspect-ratio": 5 / 10,
-                                    height: "300",
-                                    src:
-                                      "https://www.tuexperto.com/wp-content/uploads/2019/06/5-formas-de-guardar-un-documento-word-como-un-documento-pdf.jpg"
-                                  }
-                                })
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ],
-          1
-        )
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "section",
-      [
+                              on: {
+                                click: function($event) {
+                                  return _vm.$router.push("/about-me")
+                                }
+                              }
+                            },
+                            [_vm._v("¿Quién soy?")]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "section",
+        { staticClass: "mt-12" },
+        [
+          _c(
+            "v-container",
+            { staticClass: "base-section-heading text-center mb-12" },
+            [
+              _c(
+                "h1",
+                {
+                  staticClass:
+                    "text-uppercase headline font-weight-bold mb-2 text-center"
+                },
+                [_vm._v("\n                Mi motivación\n            ")]
+              ),
+              _vm._v(" "),
+              _c("v-divider", {
+                staticClass: " primary mx-auto mb-6",
+                staticStyle: { "max-width": "28px" }
+              }),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  staticClass:
+                    "body-1 mx-auto grey--text text--darken-1 mb-10 text-left",
+                  staticStyle: { "max-width": "700px" }
+                },
+                [
+                  _vm._v(
+                    "\n                Me inspira el saber de las mujeres,\n                estoy comprometida con su autovaloración. Confiero pasión en el empoderamiento de cada mujer, con\n                objetividad y claridad. Mi travesía personal refleja una combinación de saberes cotidianos,\n                profesionales y sociales, inspirados en la necesidad de despertar conciencias de mujeres.\n            "
+                  )
+                ]
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("section", { staticClass: "py-9 secondary lighten-4" }, [
         _c(
           "div",
-          { staticClass: "text-center my-12" },
+          { staticClass: "text-center mb-12" },
           [
             _c(
               "v-avatar",
@@ -623,15 +531,132 @@ var render = function() {
                 staticClass:
                   "text-uppercase headline font-weight-bold mb-2 text-center"
               },
-              [
-                _vm._v(
-                  "\n                Publicaciones científicas\n            "
-                )
-              ]
+              [_vm._v("\n                Eventos académicos\n            ")]
             ),
             _vm._v(" "),
             _c("v-divider", {
               staticClass: "primary mx-auto mb-6",
+              staticStyle: { "max-width": "28px" }
+            }),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                staticClass:
+                  "base-body body-1 mx-auto grey--text text--darken-1 text-center mb-10",
+                staticStyle: { "max-width": "700px" }
+              },
+              [
+                _vm._v(
+                  "\n                Estos son algunos de los eventos academico internacionales y nacionales de los que he participado,\n                como docente investigadora\n            "
+                )
+              ]
+            )
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "container" },
+          [
+            _c(
+              "v-row",
+              _vm._l(_vm.eventos, function(item) {
+                return _c(
+                  "v-col",
+                  { key: item.title, staticClass: "col-md-6 col-12" },
+                  [
+                    _c(
+                      "div",
+                      { staticClass: "pt-2 mb-8 d-flex" },
+                      [
+                        _c(
+                          "v-avatar",
+                          {
+                            staticClass: "grey lighten-3 mb-3",
+                            attrs: { size: "84" }
+                          },
+                          [_c("v-img", { attrs: { src: item.image } })],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "ml-6" }, [
+                          _c(
+                            "h3",
+                            {
+                              staticClass:
+                                "text-uppercase title font-weight-bold mb-3 text-left"
+                            },
+                            [
+                              _vm._v(
+                                "\n                                " +
+                                  _vm._s(item.title) +
+                                  "\n                            "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "p",
+                            {
+                              staticClass:
+                                "base-body body-1 mx-auto grey--text text--darken-1 text-left mb-0",
+                              staticStyle: { "max-width": "700px" }
+                            },
+                            [
+                              _vm._v(
+                                "\n                                " +
+                                  _vm._s(item.content) +
+                                  "\n                            "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "subtitle-2 mx-auto grey--text text--darken-1 text-left"
+                            },
+                            [
+                              _vm._v(
+                                "\n                                " +
+                                  _vm._s(item.location) +
+                                  "\n                            "
+                              )
+                            ]
+                          )
+                        ])
+                      ],
+                      1
+                    )
+                  ]
+                )
+              }),
+              1
+            )
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "mt-12" }, [
+        _c(
+          "div",
+          { staticClass: "text-center " },
+          [
+            _c(
+              "h1",
+              {
+                staticClass:
+                  "text-uppercase headline font-weight-bold mb-2 text-center"
+              },
+              [_vm._v("\n                Nuestros Servicios\n            ")]
+            ),
+            _vm._v(" "),
+            _c("v-divider", {
+              staticClass: "primary mx-auto ",
               staticStyle: { "max-width": "28px" }
             })
           ],
@@ -639,131 +664,150 @@ var render = function() {
         ),
         _vm._v(" "),
         _c(
-          "v-container",
+          "div",
+          { staticClass: "d-flex justify-center align-center" },
           [
             _c(
-              "div",
-              { staticClass: "col col-9" },
-              [
-                _c(
-                  "h3",
-                  {
-                    staticClass:
-                      "text-uppercase title font-weight-bold mb-1 text-left"
+              "v-slide-group",
+              {
+                staticClass: "py-4",
+                attrs: { "show-arrows": _vm.showArrows },
+                model: {
+                  value: _vm.model,
+                  callback: function($$v) {
+                    _vm.model = $$v
                   },
-                  [_vm._v("Textos y capítulos de libros")]
-                ),
-                _vm._v(" "),
-                _c("v-divider", {
-                  staticClass: "primary mr-auto mb-6",
-                  staticStyle: { "max-width": "28px" }
+                  expression: "model"
+                }
+              },
+              _vm._l(_vm.services, function(item, h) {
+                return _c("v-slide-item", {
+                  key: h,
+                  scopedSlots: _vm._u(
+                    [
+                      {
+                        key: "default",
+                        fn: function(ref) {
+                          var active = ref.active
+                          var toggle = ref.toggle
+                          return [
+                            _c(
+                              "div",
+                              { staticClass: "text-center" },
+                              [
+                                _c(
+                                  "v-avatar",
+                                  {
+                                    staticClass: "mx-6",
+                                    attrs: { size: "100" }
+                                  },
+                                  [
+                                    _c(
+                                      "v-card",
+                                      {
+                                        attrs: {
+                                          flat: "",
+                                          height: "100",
+                                          width: "100",
+                                          href: "/services"
+                                        },
+                                        on: { click: toggle }
+                                      },
+                                      [
+                                        _c(
+                                          "v-row",
+                                          {
+                                            staticClass: "fill-height",
+                                            attrs: {
+                                              align: "center",
+                                              justify: "center"
+                                            }
+                                          },
+                                          [
+                                            _c("v-img", {
+                                              attrs: {
+                                                src: item.image,
+                                                gradient: active
+                                                  ? "to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+                                                  : ""
+                                              },
+                                              on: { click: function($event) {} }
+                                            })
+                                          ],
+                                          1
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "font-weight-light subtitle-2 text-uppercase d-block"
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(item.title) +
+                                        "\n                        "
+                                    )
+                                  ]
+                                )
+                              ],
+                              1
+                            )
+                          ]
+                        }
+                      }
+                    ],
+                    null,
+                    true
+                  )
                 })
-              ],
+              }),
               1
-            ),
-            _vm._v(" "),
+            )
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      [
+        _c(
+          "div",
+          { staticClass: "text-center" },
+          [
             _c(
-              "v-row",
+              "v-dialog",
+              {
+                attrs: { "hide-overlay": "", persistent: "", width: "300" },
+                model: {
+                  value: _vm.dialog,
+                  callback: function($$v) {
+                    _vm.dialog = $$v
+                  },
+                  expression: "dialog"
+                }
+              },
               [
                 _c(
-                  "v-col",
-                  { attrs: { cols: "12", sm: "6", md: "4", lg: "3" } },
+                  "v-card",
+                  { attrs: { color: "primary", dark: "" } },
                   [
                     _c(
-                      "v-card",
-                      { staticClass: "mx-auto", attrs: { "max-width": "343" } },
+                      "v-card-text",
                       [
-                        _c(
-                          "v-list-item",
-                          [
-                            _c(
-                              "v-list-item-content",
-                              [
-                                _c(
-                                  "v-list-item-title",
-                                  { staticClass: "headline" },
-                                  [
-                                    _vm._v(
-                                      "\n                                    Memorias\n                                "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c("v-list-item-subtitle", [
-                                  _vm._v("Congreso Psicología- salud mental")
-                                ]),
-                                _vm._v(" "),
-                                _c("v-list-item-subtitle", [
-                                  _vm._v("Argentina- 2016")
-                                ])
-                              ],
-                              1
-                            )
-                          ],
-                          1
+                        _vm._v(
+                          "\n                        Please stand by\n                        "
                         ),
-                        _vm._v(" "),
-                        _c("v-img", {
-                          attrs: {
-                            src: "images/publicaciones/memorias-congreso.png",
-                            contain: ""
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("v-card-actions")
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "v-col",
-                  { attrs: { cols: "12", sm: "6", md: "4", lg: "3" } },
-                  [
-                    _c(
-                      "v-card",
-                      { staticClass: "mx-auto", attrs: { "max-width": "343" } },
-                      [
-                        _c(
-                          "v-list-item",
-                          [
-                            _c(
-                              "v-list-item-content",
-                              [
-                                _c(
-                                  "v-list-item-title",
-                                  { staticClass: "headline" },
-                                  [
-                                    _vm._v(
-                                      "\n                                    Reflexiones\n                                "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c("v-list-item-subtitle", [
-                                  _vm._v("Humanidades- capítulo libro")
-                                ]),
-                                _vm._v(" "),
-                                _c("v-list-item-subtitle", [
-                                  _vm._v("Bogotá - 2018")
-                                ])
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c("v-img", {
-                          attrs: {
-                            src: "images/publicaciones/reflexiones.jpg",
-                            contain: ""
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("v-card-actions")
+                        _c("v-progress-linear", {
+                          staticClass: "mb-0",
+                          attrs: { indeterminate: "", color: "white" }
+                        })
                       ],
                       1
                     )
@@ -775,609 +819,11 @@ var render = function() {
             )
           ],
           1
-        ),
-        _vm._v(" "),
-        _c("v-container", [
-          _c(
-            "div",
-            { staticClass: "col col-9" },
-            [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "body-2 font-weight-regular mb-1 text-left grey--text"
-                },
-                [_vm._v("Facultad de Humanidades")]
-              ),
-              _vm._v(" "),
-              _c(
-                "h3",
-                {
-                  staticClass:
-                    "text-uppercase title font-weight-bold mb-1 text-left"
-                },
-                [
-                  _vm._v(
-                    "Publicaciones- Capítulo de libro -\n                    Téxticas"
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("v-divider", {
-                staticClass: "primary mr-auto mb-6",
-                staticStyle: { "max-width": "28px" }
-              }),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "row" },
-                [
-                  _c("v-col", { staticClass: "col-12" }, [
-                    _c(
-                      "div",
-                      { staticClass: "d-flex align-center" },
-                      [
-                        _c(
-                          "v-icon",
-                          {
-                            staticClass: "primary--text mr-3",
-                            attrs: { size: "28" }
-                          },
-                          [_vm._v("mdi-check-circle-outline")]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "subtitle-1" }, [
-                          _vm._v("1° puesto concurso de crónica")
-                        ])
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("v-col", { staticClass: "col-12" }, [
-                    _c(
-                      "div",
-                      { staticClass: "d-flex align-center" },
-                      [
-                        _c(
-                          "v-icon",
-                          {
-                            staticClass: "primary--text mr-3",
-                            attrs: { size: "28" }
-                          },
-                          [_vm._v("mdi-check-circle-outline")]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "subtitle-1" }, [
-                          _vm._v("2015: "),
-                          _c("span", { staticClass: "font-weight-bold" }, [
-                            _vm._v(
-                              " Reflexiones, del primer día de clases en el curso de investigación"
-                            )
-                          ])
-                        ])
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("v-col", { staticClass: "col-12" }, [
-                    _c(
-                      "div",
-                      { staticClass: "d-flex align-center" },
-                      [
-                        _c(
-                          "v-icon",
-                          {
-                            staticClass: "primary--text mr-3",
-                            attrs: { size: "28" }
-                          },
-                          [_vm._v("mdi-check-circle-outline")]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "subtitle-1" }, [
-                          _vm._v("Publicado junio 25-2019")
-                        ])
-                      ],
-                      1
-                    )
-                  ])
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            [
-              _c(
-                "v-card",
-                [
-                  _c(
-                    "v-container",
-                    { attrs: { fluid: "" } },
-                    [
-                      _c(
-                        "v-row",
-                        _vm._l(3, function(n) {
-                          return _c(
-                            "v-col",
-                            {
-                              key: n,
-                              staticClass: "d-flex child-flex",
-                              attrs: { cols: "4" }
-                            },
-                            [
-                              _c(
-                                "v-card",
-                                {
-                                  staticClass: "d-flex",
-                                  attrs: { flat: "", tile: "" }
-                                },
-                                [
-                                  _c("v-img", {
-                                    staticClass: "grey lighten-2",
-                                    attrs: {
-                                      src:
-                                        "images/publicaciones/Imagen" +
-                                        n +
-                                        ".jpg",
-                                      "aspect-ratio": 4 / 5
-                                    }
-                                  })
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        }),
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "mt-12" },
-            [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "body-2 font-weight-regular mb-1 text-left grey--text"
-                },
-                [
-                  _vm._v(
-                    "Asociacion de salud\n                    mental-Argentina\n                "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "h3",
-                {
-                  staticClass:
-                    "text-uppercase title font-weight-bold mb-1 text-left"
-                },
-                [
-                  _vm._v(
-                    "Publicaciones- Capítulo de\n                    libro"
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("v-divider", {
-                staticClass: "primary mr-auto mb-6",
-                staticStyle: { "max-width": "28px" }
-              }),
-              _vm._v(" "),
-              _c(
-                "v-row",
-                [
-                  _c(
-                    "v-col",
-                    { staticClass: "col-12 col-sm-4" },
-                    [
-                      _c("v-img", {
-                        attrs: {
-                          src:
-                            "images/publicaciones/los-limites-de-la-clinica.png",
-                          height: "250",
-                          contain: ""
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-col",
-                    { staticClass: "col-12 col-sm-8" },
-                    [
-                      _c(
-                        "p",
-                        {
-                          staticClass:
-                            "base-body body-1  text--darken-1 text-left mb-6"
-                        },
-                        [
-                          _vm._v(
-                            "\n                            Los Límites de la Clínica.\n                        "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("v-col", { staticClass: "col-12" }, [
-                        _c(
-                          "div",
-                          { staticClass: "d-flex align-start" },
-                          [
-                            _c(
-                              "v-icon",
-                              {
-                                staticClass: "primary--text mr-3",
-                                attrs: { size: "28" }
-                              },
-                              [_vm._v("mdi-check-circle-outline")]
-                            ),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "subtitle-1" }, [
-                              _vm._v(
-                                "\n                                    Memorias de violencia de género de enfermeras y enfermeros en el ámbito\n                                    laboral\n                                    de la salud en Bogotá en el año 2016. -3.500 profesionales inscritos y 2.000\n                                    ponencias. Se seleccionaron 270 ponencias, para el libro Los Límites de la\n                                    Clínica, entre los cuales se registra la ponencia del grupo Género e\n                                    Interculturalidad. "
-                              ),
-                              _c("br"),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "font-weight-bold" }, [
-                                _vm._v("Ponente: ")
-                              ]),
-                              _vm._v(
-                                "María Victoria Aponte\n                                    Valverde\n                                "
-                              )
-                            ])
-                          ],
-                          1
-                        )
-                      ])
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "mt-12" },
-            [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "body-2 font-weight-regular mb-1 text-left grey--text"
-                },
-                [_vm._v("Publicación libro-2013")]
-              ),
-              _vm._v(" "),
-              _c(
-                "h3",
-                {
-                  staticClass:
-                    "text-uppercase title font-weight-bold mb-1 text-left"
-                },
-                [
-                  _vm._v(
-                    "Informe final proyecto de\n                    investigación"
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("v-divider", {
-                staticClass: "primary mr-auto mb-6",
-                staticStyle: { "max-width": "28px" }
-              }),
-              _vm._v(" "),
-              _c("v-img", {
-                attrs: {
-                  src: "images/publicaciones/Informe final proyecto.png",
-                  height: "499",
-                  width: "764",
-                  contain: ""
-                }
-              })
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "mt-12" },
-            [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "body-2 font-weight-regular mb-1 text-left grey--text"
-                },
-                [_vm._v("Revista indexada- 2019")]
-              ),
-              _vm._v(" "),
-              _c(
-                "h3",
-                {
-                  staticClass:
-                    "text-uppercase title font-weight-bold mb-1 text-left"
-                },
-                [
-                  _vm._v(
-                    "Publicación de artículos\n                    científicos"
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("v-divider", {
-                staticClass: "primary mr-auto mb-6",
-                staticStyle: { "max-width": "28px" }
-              }),
-              _vm._v(" "),
-              _c(
-                "v-row",
-                [
-                  _c("v-col", [
-                    _c(
-                      "p",
-                      {
-                        staticClass:
-                          "base-body body-1 text--darken-1 text-left mb-6"
-                      },
-                      [
-                        _vm._v(
-                          "\n                            Revista International Journal of Scientific and Research Publications, Volume 9, Issue\n                            12, December 2019 824 ISSN 2250-3153\n                            Artículo: Social control: between theoretical analyzes of the past and future\n                            perspectives. The contribution of the theoretical criminological approach to the\n                            phenomenon. N. Malizia , M.V. Aponte Valverde\n                        "
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "p",
-                      {
-                        staticClass:
-                          "base-body body-1 grey--text text--darken-1 text-left"
-                      },
-                      [
-                        _vm._v(
-                          "\n                            http://dx.doi.org/10.29322/IJSRP.9.12.2019.p96106 www.ijsrp.org\n                            * Associate Professor of Sociology of Law, Deviance and Social change - University of\n                            Enna “Kore”, Faculty of Human and Society Sciences\n                            ** Valverde, Social sciences Researcher, University Foundation of Andean Area, Bogotà,\n                            Colombia, Faculty of Health Sciences\n                            DOI: 10.29322/IJSRP.9.12.2019.p96106\n                            http://dx.doi.org/10.29322/IJSRP.9.12.2019.p96106\n\n                        "
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "v-col",
-                    { attrs: { cols: "4" } },
-                    [
-                      _c(
-                        "v-card",
-                        {
-                          staticClass: "pa-4",
-                          attrs: { flat: "", outlined: "" }
-                        },
-                        [
-                          _c("v-img", {
-                            attrs: {
-                              src: "images/publicaciones/ijsrp-org.jpg",
-                              height: "200",
-                              contain: "",
-                              "aspect-ratio": "1"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("v-card-text", [
-                            _vm._v(
-                              "\n                                International Journal of Scientific and Research Publications\n                            "
-                            )
-                          ])
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "mt-12" },
-            [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "body-2 font-weight-regular mb-1 text-left grey--text"
-                },
-                [_vm._v("Universidad de Antioquia- 2019\n                ")]
-              ),
-              _vm._v(" "),
-              _c(
-                "h3",
-                {
-                  staticClass:
-                    "text-uppercase title font-weight-bold mb-1 text-left"
-                },
-                [
-                  _vm._v(
-                    "Publicación artículos\n                    científicos"
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("v-divider", {
-                staticClass: "primary mr-auto mb-6",
-                staticStyle: { "max-width": "28px" }
-              }),
-              _vm._v(" "),
-              _c(
-                "v-row",
-                [
-                  _c(
-                    "v-col",
-                    [
-                      _c(
-                        "v-row",
-                        [
-                          _c("v-col", { staticClass: "col-12" }, [
-                            _c(
-                              "div",
-                              { staticClass: "d-flex align-start" },
-                              [
-                                _c(
-                                  "v-icon",
-                                  {
-                                    staticClass: "primary--text mr-3",
-                                    attrs: { size: "28" }
-                                  },
-                                  [_vm._v("mdi-check-circle-outline")]
-                                ),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "subtitle-1" }, [
-                                  _vm._v(
-                                    "Universidad de Antioquia. Facultad de Salud Pública.\n                                        "
-                                  ),
-                                  _c(
-                                    "span",
-                                    { staticClass: "font-weight-bold" },
-                                    [
-                                      _vm._v(
-                                        "Revista Facultad Nacional de Salud Pública Vol. 37 Suplemento N.º 1, 2019 "
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(
-                                    '-\n                                        Facultad Nacional de Salud Pública "Héctor Abad Gómez” p.143- 149. Texto\n                                        presentado en el 10 Congreso Internacional de Salud Pública – Medellín,\n                                        octubre 18 de 2017\n                                    '
-                                  )
-                                ])
-                              ],
-                              1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("v-col", { staticClass: "col-12" }, [
-                            _c(
-                              "div",
-                              { staticClass: "d-flex align-start" },
-                              [
-                                _c(
-                                  "v-icon",
-                                  {
-                                    staticClass: "primary--text mr-3",
-                                    attrs: { size: "28" }
-                                  },
-                                  [_vm._v("mdi-check-circle-outline")]
-                                ),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "subtitle-1" }, [
-                                  _c(
-                                    "span",
-                                    { staticClass: "font-weight-bold" },
-                                    [_vm._v("Reseña N°1.")]
-                                  ),
-                                  _vm._v(
-                                    " Una aproximación desde una\n                                        experiencia piloto a los significados\n                                        de memorias de violencia de género en mujeres adultas mayores de Bosa en la\n                                        ciudad de Bogotá en el 2017\n\n                                    "
-                                  )
-                                ])
-                              ],
-                              1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("v-col", { staticClass: "col-12" }, [
-                            _c(
-                              "div",
-                              { staticClass: "d-flex align-start" },
-                              [
-                                _c(
-                                  "v-icon",
-                                  {
-                                    staticClass: "primary--text mr-3",
-                                    attrs: { size: "28" }
-                                  },
-                                  [_vm._v("mdi-check-circle-outline")]
-                                ),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "subtitle-1" }, [
-                                  _c(
-                                    "span",
-                                    { staticClass: "font-weight-bold" },
-                                    [_vm._v("Reseña N°2.")]
-                                  ),
-                                  _vm._v(
-                                    "\n                                        Caracterización de la violencia contra las mujeres estudiantes de\n                                        enfermería. Un primer acercamiento desde la percepción estudiantil de Bogotá\n                                    "
-                                  )
-                                ])
-                              ],
-                              1
-                            )
-                          ])
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-col",
-                    { attrs: { cols: "4" } },
-                    [
-                      _c(
-                        "v-card",
-                        {
-                          staticClass: "pa-4",
-                          attrs: { flat: "", outlined: "" }
-                        },
-                        [
-                          _c("v-img", {
-                            attrs: {
-                              src:
-                                "images/publicaciones/revista facultad de salud.png",
-                              height: "300",
-                              contain: ""
-                            }
-                          })
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          )
-        ])
-      ],
-      1
-    )
-  ])
+        )
+      ]
+    ],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -1386,17 +832,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/Publications.vue":
-/*!********************************************************!*\
-  !*** ./resources/js/components/pages/Publications.vue ***!
-  \********************************************************/
+/***/ "./resources/js/components/pages/Home.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/pages/Home.vue ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Publications_vue_vue_type_template_id_3e308646_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Publications.vue?vue&type=template&id=3e308646&scoped=true& */ "./resources/js/components/pages/Publications.vue?vue&type=template&id=3e308646&scoped=true&");
-/* harmony import */ var _Publications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Publications.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/Publications.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Home_vue_vue_type_template_id_a9aac016_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Home.vue?vue&type=template&id=a9aac016&scoped=true& */ "./resources/js/components/pages/Home.vue?vue&type=template&id=a9aac016&scoped=true&");
+/* harmony import */ var _Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Home.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/Home.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1406,50 +852,50 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Publications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Publications_vue_vue_type_template_id_3e308646_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Publications_vue_vue_type_template_id_3e308646_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Home_vue_vue_type_template_id_a9aac016_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Home_vue_vue_type_template_id_a9aac016_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  "3e308646",
+  "a9aac016",
   null
   
 )
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/pages/Publications.vue"
+component.options.__file = "resources/js/components/pages/Home.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/Publications.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************!*\
-  !*** ./resources/js/components/pages/Publications.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************/
+/***/ "./resources/js/components/pages/Home.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/pages/Home.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Publications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Publications.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Publications.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Publications_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Home.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Home.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/Publications.vue?vue&type=template&id=3e308646&scoped=true&":
-/*!***************************************************************************************************!*\
-  !*** ./resources/js/components/pages/Publications.vue?vue&type=template&id=3e308646&scoped=true& ***!
-  \***************************************************************************************************/
+/***/ "./resources/js/components/pages/Home.vue?vue&type=template&id=a9aac016&scoped=true&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/pages/Home.vue?vue&type=template&id=a9aac016&scoped=true& ***!
+  \*******************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Publications_vue_vue_type_template_id_3e308646_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Publications.vue?vue&type=template&id=3e308646&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Publications.vue?vue&type=template&id=3e308646&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Publications_vue_vue_type_template_id_3e308646_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_a9aac016_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Home.vue?vue&type=template&id=a9aac016&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Home.vue?vue&type=template&id=a9aac016&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_a9aac016_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Publications_vue_vue_type_template_id_3e308646_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_a9aac016_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

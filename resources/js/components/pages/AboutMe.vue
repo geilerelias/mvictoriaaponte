@@ -13,7 +13,7 @@
                 <v-row class="ma-0 fill-height text-center align-center justify-center">
                     <v-col class="col col-12">
                         <h1 class="display-2 font-weight-500 mb-2 text-center white--text">
-                            ¿Quíen Soy?
+                            Mi perfil y redes de apoyo
                         </h1>
                         <v-divider class="primary mx-auto mb-6 " style="max-width:28px"></v-divider>
 
@@ -23,56 +23,138 @@
             </v-img>
         </section>
 
-        <div class="container">
-            <v-row>
-                <v-col class="col-md-6 col-12">
-                    <h2 class="display-1 ">
-                        Mi nombre es Maria Victoria Aponte.
-                    </h2>
-                    <h2 class="headline mb-4 ">
-                        Soy Magister en Investigación Social,
-                        Especialista en Administración y docencia universitaria.
-                    </h2>
-                    <p class="subtitle-1 text-justify">
-                        Me he desempeñado, desde lo social como profesional universitario,
-                        en oficinas de la mujer a nivel municipal y como personal directivo en el orden departamental.
-                        De igual manera, me desempeñé, cómo directora de Bienestar Universitario. Así mismo, fui
-                        directora de
-                        la Asociación de Trabajadores Sociales del Cesar y directora de una Fundación sin ánimo de lucro
-                        que
-                        trabajaba por los jóvenes. Actualmente soy Docente universitaria.
-                    </p>
-                    <p class="mb-5 text-justify"> Mi trayectoria profesional, se ha
-                        caracterizado por investigar problemáticas de la mujer, y la violencia de género,
-                        la recuperación de la memoria entre otros, con el ánimo de ser referente de
-                        cambio para las mujeres a través de un diálogo de saberes que permita
-                        transformarla de la subordinación al protagonismo en el contexto
-                        socio-cultural.
-                    </p>
-                    <v-btn outlined text to="/contact"
-                           class="px-5  primary--text">
-                        Contáctame
-                    </v-btn>
-                </v-col>
-                <v-col class="col-md-5 offset-md-1 col-12" v-if="$vuetify.breakpoint.smAndUp">
-                    <v-card flat v-show="loaded" class="mx-auto ">
-                        <v-img max-height="500" :aspect-ratio="5/8" contain src="images/quien-soy/quien-soy.jpg">
-                        </v-img>
-                    </v-card>
-                    <v-skeleton-loader
-                        elevation="4"
-                        max-height="500"
-                        class="mx-auto"
-                        v-if="loading == true"
-                        :loading="loading"
-                        transition="fade-transition"
-                        type="card">
+        <section>
+            <div class="text-center py-9 secondary lighten-4">
+                <v-avatar class=" mb-2" size="100">
+                    <v-img :src="require('../../../images/caricaturas/quien-soy.png')" contain height="100"
+                           width="100"></v-img>
+                </v-avatar>
 
-                    </v-skeleton-loader>
 
-                </v-col>
-            </v-row>
-        </div>
+                <h1 class="text-uppercase headline font-weight-bold mb-2 text-center">
+                    ¿QUIÉN SOY?
+                </h1>
+                <v-divider class="primary mx-auto" style="max-width: 28px;">
+                </v-divider>
+            </div>
+
+            <div class="container">
+                <v-row>
+                    <v-col class="col-md-6 col-12">
+                        <h2 class="display-1 ">
+                            Mi nombre es Maria Victoria Aponte.
+                        </h2>
+                        <h2 class="headline mb-4 ">
+                            Soy Trabajadora Social. Magíster en Investigación Social
+                            Especialista en Administración y docente investigadora.
+                        </h2>
+                        <p class="subtitle-1 text-justify">
+                            Me he desempeñado, desde lo social como profesional universitario,
+                            en oficinas de la mujer a nivel municipal y como personal directivo en el orden
+                            departamental.
+                            De igual manera, me desempeñé, cómo directora de Bienestar Universitario. Así mismo, fui
+                            directora de
+                            la Asociación de Trabajadores Sociales del Cesar y directora de una Fundación sin ánimo de
+                            lucro
+                            que
+                            trabajaba por los jóvenes. Actualmente soy Docente universitaria.
+                        </p>
+                        <p class="mb-5 text-justify"> Mi trayectoria profesional, se ha
+                            caracterizado por investigar problemáticas de la mujer, y la violencia de género,
+                            la recuperación de la memoria entre otros, con el ánimo de ser referente de
+                            cambio para las mujeres a través de un diálogo de saberes que permita
+                            transformarla de la subordinación al protagonismo en el contexto
+                            socio-cultural.
+                        </p>
+                        <v-btn outlined text to="/contact"
+                               class="px-5  primary--text">
+                            Contáctame
+                        </v-btn>
+                    </v-col>
+                    <v-col class="col-md-5 offset-md-1 col-12" v-if="$vuetify.breakpoint.smAndUp">
+                        <v-card flat v-show="loaded" class="mx-auto ">
+                            <v-img max-height="500" :aspect-ratio="5/8" contain
+                                   src="images/quien-soy/quien-soy.jpg">
+                            </v-img>
+                        </v-card>
+                        <v-skeleton-loader
+                            elevation="4"
+                            max-height="500"
+                            class="mx-auto"
+                            v-if="loading == true"
+                            :loading="loading"
+                            transition="fade-transition"
+                            type="card">
+
+                        </v-skeleton-loader>
+
+                    </v-col>
+                </v-row>
+            </div>
+        </section>
+
+        <section class=" ">
+            <div class="text-center py-3 pt-6 secondary lighten-4">
+                <v-avatar class="white" size="100">
+                    <v-img :src="require('../../../images/caricaturas/equipazo.png')" contain
+                           width="100"></v-img>
+                </v-avatar>
+
+                <h1 class="text-uppercase headline font-weight-bold mb-2 text-center">
+                    Grupo de Apoyo
+                </h1>
+                <v-divider class="primary mx-auto mb-2" style="max-width: 28px;">
+
+                </v-divider>
+
+                <p class="base-body body-1 mx-auto grey--text text--darken-1 text-center "
+                   style="max-width: 700px;">
+                    perfiles
+                </p>
+            </div>
+
+            <v-container class="layout justify-center wrap">
+                <v-row class="d-flex  justify-center">
+                    <v-col cols="6" md="3" v-for="item in group" :key="item.name">
+                        <v-hover v-slot:default="{ hover }">
+                            <v-card
+                                height="400"
+                                class="mx-auto"
+                                color="grey lighten-4"
+                            >
+                                <v-img height="400" :src="item.img">
+                                    <v-expand-transition>
+                                        <div
+                                            v-if="hover"
+                                            class="d-flex transition-fast-in-fast-out primary darken-2 v-card--reveal  white--text"
+                                            style="height: 100%;"
+                                        >
+                                            <v-container
+                                                style="height:400px"
+                                                class="body-2"
+                                            >
+                                                <p class="pa-6 text-justify">{{ item.description }}</p>
+                                            </v-container>
+                                        </div>
+                                    </v-expand-transition>
+                                </v-img>
+                            </v-card>
+                        </v-hover>
+                        <h3 class="title font-weight-black primary--text mb-2">
+                            {{ item.name }}
+                        </h3>
+                        <div class="font-weight-light subtitle-2 mb-2">
+                            {{ item.profession }}<br/>
+                        </div>
+                        <p
+                            class="base-body body-1 mx-auto grey--text text--darken-1 text-justify mb-10"
+                            style="max-width: 700px;"
+                            v-html="item.others"
+                        ></p>
+                    </v-col>
+                </v-row>
+            </v-container>
+        </section>
 
         <v-container>
             <v-card flat class="mx-auto">
@@ -179,46 +261,6 @@
                     </v-timeline-item>
                 </v-timeline>
             </v-card>
-
-            <v-card flat class="mx-auto">
-                <v-list>
-                    <template v-for="(item, index) in areasDeActuación">
-                        <div
-                            v-if="item.header"
-                            :key="item.header"
-                        >
-                            <div class="base-section-heading text-center">
-                                <h3 class="text-uppercase text-h6 font-weight-bold  text-left">
-                                    {{ item.header }}
-                                </h3>
-                                <v-divider class="primary  mr-auto mb-3" style="max-width: 28px;"></v-divider>
-                            </div>
-                        </div>
-
-                        <v-divider
-                            v-else-if="item.divider"
-                            :key="index"
-                            :inset="item.inset"
-                        ></v-divider>
-
-                        <v-list-item
-                            v-else
-                            :key="item.title"
-                            @click=""
-                        >
-                            <v-list-item-avatar>
-                                <v-avatar color="grey lighten-2">
-                                    <span class="font-weight-bold "> {{ index }}</span>
-                                </v-avatar>
-                            </v-list-item-avatar>
-
-                            <v-list-item-content v-html="item.data">
-                            </v-list-item-content>
-                        </v-list-item>
-                    </template>
-                </v-list>
-            </v-card>
-
 
             <v-data-iterator
                 :items="idiomas"
@@ -340,7 +382,7 @@
                 </template>
 
             </v-data-iterator>
-
+            <v-subheader>Categoría: <span class="font-weight-bold">B2</span></v-subheader>
             <v-simple-table>
                 <template v-slot:default>
                     <thead>
@@ -363,6 +405,79 @@
                     </tbody>
                 </template>
             </v-simple-table>
+
+            <v-card flat class="mx-auto mt-6">
+                <div class="base-section-heading text-center">
+                    <h3 class="text-uppercase text-h6 font-weight-bold  text-left">
+                        Campos del saber
+                    </h3>
+                    <v-divider class="primary  mr-auto mb-3" style="max-width: 28px;"></v-divider>
+                </div>
+                <v-row v-if="$vuetify.breakpoint.mdAndUp">
+                    <v-col>
+                        <v-list shaped dense>
+                            <template v-for="(item, index) in camposDelSaber">
+
+                                <v-list-item
+                                    v-if="index%2!==0 "
+                                    :key="item.data"
+                                    @click=""
+                                >
+                                    <v-list-item-avatar>
+                                        <v-avatar color="grey lighten-2">
+                                            <span class="font-weight-bold "> {{ index }}</span>
+                                        </v-avatar>
+                                    </v-list-item-avatar>
+
+                                    <v-list-item-content v-html="item.data">
+                                    </v-list-item-content>
+                                </v-list-item>
+                            </template>
+                        </v-list>
+                    </v-col>
+                    <v-col>
+                        <v-list shaped dense>
+                            <template v-for="(item, index) in camposDelSaber">
+                                <v-list-item
+                                    v-if="index%2==0 && index!==0"
+                                    :key="item.data"
+                                    @click=""
+                                >
+                                    <v-list-item-avatar>
+                                        <v-avatar color="grey lighten-2">
+                                            <span class="font-weight-bold "> {{ index }}</span>
+                                        </v-avatar>
+                                    </v-list-item-avatar>
+
+                                    <v-list-item-content v-html="item.data">
+                                    </v-list-item-content>
+                                </v-list-item>
+                            </template>
+                        </v-list>
+                    </v-col>
+                </v-row>
+                <div v-else>
+                    <v-list shaped dense>
+                        <template v-for="(item, index) in camposDelSaber">
+
+                            <v-list-item
+                                v-if="index!==0 "
+                                :key="item.data"
+                                @click=""
+                            >
+                                <v-list-item-avatar>
+                                    <v-avatar color="grey lighten-2">
+                                        <span class="font-weight-bold "> {{ index }}</span>
+                                    </v-avatar>
+                                </v-list-item-avatar>
+
+                                <v-list-item-content v-html="item.data">
+                                </v-list-item-content>
+                            </v-list-item>
+                        </template>
+                    </v-list>
+                </div>
+            </v-card>
 
             <v-card flat class="mx-auto mt-6">
                 <v-list shaped dense>
@@ -400,7 +515,10 @@
                             </v-list-item-content>
 
                             <v-list-item-action>
-                              <span class="caption">Activa: <span :class="item.activa=='Si'?'green--text':'red--text'"> {{ item.activa }}</span></span>
+                                <span class="caption">Activa: <span
+                                    :class="item.activa=='Si'?'green--text':'red--text'"> {{
+                                        item.activa
+                                    }}</span></span>
                             </v-list-item-action>
                         </v-list-item>
                     </template>
@@ -495,6 +613,53 @@ export default {
             },
         ],
 
+        group: [
+            {
+                img:
+                    "images/group/RODRIGO ALBERTO TABORDA APONTE.jpeg",
+                name: "RODRIGO ALBERTO TABORDA APONTE",
+                email: "rodrigotaborda@hotmail.com",
+                profession: "ABOGADO",
+                others: `Especialista en derecho procesal
+                    Magister en planificación territorial`,
+                description: `Abogao de profesión, especializado en derecho procesal.
+                    Magíster en planificación territorial, altamente competente, con un marco
+                    ético y de valores para intervenir en procesos humanos y con la sociedad,
+                    en el logro de la justicia material, y protección de los derechos fundamentales
+                    de los ciudadanos. `
+            },
+            {
+                img:
+                    "images/group/VICTOR MAURICIO TABORDA APONTE.jpg",
+                name: "VICTOR MAURICIO TABORDA APONTE",
+                email: "vmaoht@hotmail.com",
+                profession: "MÉDICO Y CIRUJANO",
+                others: `Especialista en Pediatría`,
+                description: `Médico especialista en Pediatría, altamente competente con
+                     un amplio compromiso, y entendimiento de las necesidades de la sociedad.
+                     Conservo una ética profesional que me permite involucrarme en la atención
+                     de la población pediátrica, fomentando un cuidado integral de la salud,
+                     mediante la promoción, prevención y rehabilitación del niño
+                     dentro de los estándares de la más alta calidad. `
+            },
+            {
+                img:
+                    "images/group/CRISTIAN ALEXANDER TABORDA APONTE.jpeg",
+                name: "CRISTIAN ALEXANDER TABORDA APONTE  ",
+                email: "cristian_tabo5@hotmail.com",
+                profession:
+                    "PROFESIONAL EN CULTURA FÍSICA DEPORTE Y RECREACIÓN ",
+                others: `Especialista en Programación y evaluación del ejercicio`,
+                description: `Profesional en cultura física deporte y recreación,
+                    especialista en programación y evaluación del ejercicio, altamente
+                    competente con habilidades de manejo de grupo de los diferentes ciclos
+                    académicos  dinámicos y creativos, comprometido con el aprendizaje y
+                    progreso de los usuarios y búsqueda continua para desarrollar habilidades
+                    básicas como el trabajo en equipo, autonomía, responsabilidad y habilidades
+                    físicas como resistencia fuerza, velocidad etc.  `
+            },
+        ],
+
         formacionAcademica: [
             {header: 'Formación Academica'},
             {
@@ -511,8 +676,9 @@ export default {
             {
                 image: 'data:image/png;base64,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',
                 data: `<b>Especialización</b>
+                                    Problemática del uso indebido de drogas<br>
                                     UNIVERSIDAD DE BUENOS AIRES<br>
-                                    Trabajo social<br>
+
                                     Febrerode1993 - Febrerode 1994<br>
                                     La mujer como agente multiplicadora en prevención: de la subordinación al
                                     protagonismo
@@ -761,37 +927,12 @@ export default {
                 date: '08 - 1995 a 11 - 2006'
             },
         ],
-        areasDeActuación: [
-            {header: 'Areas de Actuación'},
-            {
-                data: `Ciencias Sociales -- Ciencias de la Educación -- Educación General (Incluye Capacitación, Pedagogía)`
-            },
-            {
-                data: `Ciencias Médicas y de la Salud -- Ciencias de la Salud -- Salud Ocupacional`
-            },
-            {
-                data: `Ciencias Sociales -- Sociología -- Antropología`
-            },
-            {
-                data: `Ciencias Sociales -- Periodismo y Comunicaciones -- Medios y Comunicación Social`
-            },
-            {
-                data: `Ciencias Sociales -- Economía y Negocios -- Negocios y Management`
-            },
-            {
-                data: `Ciencias Sociales -- Psicología -- Psicología (Incluye Terapias de Aprendizaje, Habla, Visual y Otras Discapacidades Físicas y Mentales)`
-            },
-            {
-                data: `Ciencias Sociales -- Sociología -- Temas Especiales (Estudios de Género, Temas Sociales, Estudios de la Familia)`
-            }
-        ],
-
 
         itemsPerPage: 4,
         idiomas: [
             {
                 name: 'Inglés',
-                habla: '19',
+                habla: '60',
                 escribe: '65',
                 lee: '75',
                 entiende: '60'
@@ -804,26 +945,43 @@ export default {
                 entiende: '94'
             },
         ],
+        camposDelSaber: [
+            {header: "Campos del saber"},
+            {data: "Docencia Universitaria."},
+            {data: "Gestión del talento."},
+            {data: "Investigación académica"},
+            {data: "Trabajo de grupo y comunitario."},
+            {data: "Iniciativa socio empresariales y liderazgo."},
+            {data: "Proyectos sociales, educativos,"},
+            {data: "Proyectos de gestión y académicos."},
+            {data: "Gestión social"},
+            {data: "Acciones  de bienestar universitario."},
+            {data: "Asesoría de trabajos de grado."},
+            {data: "Proyección social."},
+            {data: "Problemáticas de violencia de género"},
+            {data: "Participación en lo político"},
+            {data: "Interculturalidad"},
+            {data: "Semilleros de investigación"},
+            {data: "Empoderamiento femenino"},
+            {data: "Escritura de artículos científicos"},
+            {data: "Apropiación social del conocimiento"}
+        ],
+
         lineasDeInvestigacion: [
             {header: "Líneas de investigación"},
             {data: "Inclusión social", activa: "Si"},
             {data: "Bienestar integral", activa: "No"},
             {data: "Apropiación y diseño en el ámbito de la moda", activa: "Si"},
-            {data: "Inclusión social", activa: "Si"},
+
             {data: "Pedagogía y enseñabilidad de la fisioterapia", activa: "No"},
-            {data: "Gestión y desarrollo social", activa: "Si"},
-            {data: "inclusión social", activa: "No"},
-            {data: "Gestión y desarrollo social", activa: "Si"},
+
             {data: "Pedagogos del patronaje", activa: "Si"},
-            {data: "Inclusión social", activa: "No"},
+            {data: "Problemática del uso indebido de drogas", activa: "No"},
             {data: "Apropiación y diseño en el ámbito de la moda", activa: "Si"},
             {data: "Gestión y desarrollo social", activa: "Si"},
-            {data: "Gestión y desarrollo social", activa: "Si"},
             {data: "Pedagogos del patronaje", activa: "No"},
-            {data: "Gestión y desarrollo social", activa: "Si"},
-            {data: "Gestión y desarrollo social", activa: "Si"},
-            {data: "Gestión y desarrollo social", activa: "Si"},
-            {data: "Gestión y desarrollo social", activa: "Si"}
+            {data: "Violencia de género", activa: "Si"},
+            {data: "Desarrollo social", activa: "Si"}
 
         ],
         reconocimientos: [
@@ -892,4 +1050,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.v-card--reveal {
+    align-items: center;
+    bottom: 0;
+    justify-content: center;
+    opacity: .8;
+    position: absolute;
+    width: 100%;
+}
+</style>

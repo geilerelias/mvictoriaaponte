@@ -2,7 +2,7 @@
     <v-navigation-drawer v-model="localDrawer" app temporary>
 
         <v-img
-            src="images/maria victoria jardin 2.jpg"
+            src="images/imagen principal maria victoria.jpg"
             height="200px"
             dark
         >

@@ -15,13 +15,8 @@ const store = new Vuex.Store({
             },
             {
                 path: "/about-me",
-                name: "¿Quíen soy?",
+                name: "Acerca de",
                 icon:'mdi-account-question'
-            },
-            {
-                path: "/my-team",
-                name: "Mi equipo",
-                icon:'mdi-account-multiple'
             },
             {
                 path: "/events",

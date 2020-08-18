@@ -533,7 +533,7 @@ var render = function() {
         "v-img",
         {
           attrs: {
-            src: "images/maria victoria jardin 2.jpg",
+            src: "images/imagen principal maria victoria.jpg",
             height: "200px",
             dark: ""
           }
