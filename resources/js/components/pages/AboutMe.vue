@@ -114,8 +114,8 @@
             </div>
 
             <v-container class="layout justify-center wrap">
-                <v-row class="d-flex  justify-center">
-                    <v-col cols="6" md="3" v-for="item in group" :key="item.name">
+                <v-row class="d-flex  justify-center  ">
+                    <v-col cols="12" sm="4" md="3" v-for="item in group" :key="item.name">
                         <v-hover v-slot:default="{ hover }">
                             <v-card
                                 height="400"
@@ -243,7 +243,7 @@
                 <v-timeline>
                     <v-timeline-item
                         v-for="(item, index) in experienciaProfesional"
-                        :key="n"
+                        :key="index"
                         large
                     >
                         <template v-slot:icon>

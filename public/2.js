@@ -1227,11 +1227,11 @@ var render = function() {
             [
               _c(
                 "v-row",
-                { staticClass: "d-flex  justify-center" },
+                { staticClass: "d-flex  justify-center  " },
                 _vm._l(_vm.group, function(item) {
                   return _c(
                     "v-col",
-                    { key: item.name, attrs: { cols: "6", md: "3" } },
+                    { key: item.name, attrs: { cols: "12", sm: "4", md: "3" } },
                     [
                       _c("v-hover", {
                         scopedSlots: _vm._u(
@@ -1561,7 +1561,7 @@ var render = function() {
                   return _c(
                     "v-timeline-item",
                     {
-                      key: _vm.n,
+                      key: index,
                       attrs: { large: "" },
                       scopedSlots: _vm._u(
                         [
