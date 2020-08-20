@@ -1,13 +1,14 @@
 window.Vue = require("vue");
 window.Event = new Vue();
 
+import NProgress from "nprogress";
 import Vuetify from "vuetify";
 import axios from "axios";
 import VueAxios from "vue-axios";
 import PerfectScrollbar from "vue2-perfect-scrollbar";
 import "vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css";
-
-
+import "./vue.config";
+import 'nprogress/nprogress.css'
 
 Vue.use(Vuetify);
 Vue.use(VueAxios, axios);
@@ -53,5 +54,5 @@ const app = new Vue({
         },
     }),
     store,
-    router,
+    router
 });

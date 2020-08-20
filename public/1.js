@@ -89,6 +89,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])(["drawer", "page", "color", "flat", "links"]), {
@@ -483,7 +488,7 @@ var render = function() {
       _c("base-drawer"),
       _vm._v(" "),
       _c(
-        "v-content",
+        "v-main",
         { staticStyle: { "min-height": "100vh" } },
         [_c("router-view")],
         1
@@ -581,7 +586,27 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "v-list-item-content",
-                [_c("v-list-item-title", [_vm._v(_vm._s(item.name))])],
+                [
+                  _c("v-list-item-title", [_vm._v(_vm._s(item.name))]),
+                  _vm._v(
+                    "\n                " +
+                      _vm._s("@" + item.image) +
+                      "\n            "
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-list-item-avatar",
+                [
+                  _c("v-img", { attrs: { src: "@" + item.image } }),
+                  _vm._v(
+                    "\n                " +
+                      _vm._s("@" + item.image) +
+                      "\n            "
+                  )
+                ],
                 1
               )
             ],

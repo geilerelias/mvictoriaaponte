@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import NProgress from "nprogress";
 
 Vue.use(VueRouter)
+
 
 const withPrefix = (prefix, routes) =>
     routes.map(route => {
@@ -64,8 +66,13 @@ let routes = [
 
 const router = new VueRouter({
     routes,
-    mode: "history"
+    mode: "history",
+    scrollBehavior() {
+        document.getElementById('app').scrollIntoView();
+    }
 });
+
+
 
 router.beforeEach((to, from, next) => {
     if (to.matched.some(record => record.meta.middlewareAuth)) {
@@ -93,6 +100,17 @@ router.beforeEach((to, from, next) => {
     }
 
     next();
+});
+router.beforeResolve((to, from, next) => {
+    if (to.name) {
+        NProgress.start()
+    }
+    next()
+});
+
+
+router.afterEach((to, from) => {
+    NProgress.done()
 });
 
 export default router;

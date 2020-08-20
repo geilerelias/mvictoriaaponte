@@ -596,6 +596,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 var loadingTask = vue_pdf__WEBPACK_IMPORTED_MODULE_0__["default"].createLoadingTask('/document/AUTOBIOGRAFÍA-TRAVESÍA%20PERSONAL%20DESDE%20MI%20CONCIENCIA.pdf');
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1247,6 +1248,7 @@ var render = function() {
                                       staticClass: "mx-auto",
                                       attrs: {
                                         height: "400",
+                                        width: "300",
                                         color: "grey lighten-4"
                                       }
                                     },
@@ -1256,6 +1258,7 @@ var render = function() {
                                         {
                                           attrs: {
                                             height: "400",
+                                            width: "300",
                                             src: item.img
                                           }
                                         },
@@ -1557,6 +1560,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "v-timeline",
+                { attrs: { dense: _vm.$vuetify.breakpoint.smAndDown } },
                 _vm._l(_vm.experienciaProfesional, function(item, index) {
                   return _c(
                     "v-timeline-item",

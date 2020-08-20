@@ -119,11 +119,12 @@
                         <v-hover v-slot:default="{ hover }">
                             <v-card
                                 height="400"
+                                width="300"
                                 class="mx-auto"
                                 color="grey lighten-4"
                             >
-                                <v-img height="400" :src="item.img">
-                                    <v-expand-transition>
+                                <v-img height="400" width="300" :src="item.img">
+                                    <v-expand-transition >
                                         <div
                                             v-if="hover"
                                             class="d-flex transition-fast-in-fast-out primary darken-2 v-card--reveal  white--text"
@@ -240,7 +241,7 @@
                     </h3>
                     <v-divider class="primary  mr-auto mb-3" style="max-width: 28px;"></v-divider>
                 </div>
-                <v-timeline>
+                <v-timeline :dense="$vuetify.breakpoint.smAndDown">
                     <v-timeline-item
                         v-for="(item, index) in experienciaProfesional"
                         :key="index"
