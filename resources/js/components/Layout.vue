@@ -5,7 +5,10 @@
         <base-drawer></base-drawer>
 
         <v-main style="min-height: 100vh">
-            <router-view></router-view>
+            <transition name="fade"
+                        mode="out-in" duration="400">
+                <router-view></router-view>
+            </transition>
         </v-main>
 
         <base-footer></base-footer>
@@ -29,3 +32,15 @@ export default {
 };
 </script>
 
+<style>
+#nprogress .bar {
+    background: #29d;
+
+    position: fixed;
+    z-index: 1031;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+}
+</style>

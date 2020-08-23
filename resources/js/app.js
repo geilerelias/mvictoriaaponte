@@ -10,6 +10,7 @@ import "vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css";
 import "./vue.config";
 import 'nprogress/nprogress.css'
 
+
 Vue.use(Vuetify);
 Vue.use(VueAxios, axios);
 Vue.use(PerfectScrollbar);

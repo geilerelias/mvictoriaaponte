@@ -24,31 +24,31 @@ const store = new Vuex.Store({
                 path: "/events",
                 name: "Eventos",
                 icon: 'mdi-calendar-multiple-check',
-                image: 'images/caricaturas/quien soy.jpeg'
+                image: 'images/caricaturas/eventos.jpeg'
             },
             {
                 path: "/publications",
                 name: "Publicaciones",
                 icon: 'mdi-newspaper-variant',
-                image: 'images/caricaturas/quien soy.jpeg'
+                image: 'images/caricaturas/publicaciones.jpeg'
             },
             {
                 path: "/services",
                 name: "Servicios",
                 icon: 'mdi-face-agent',
-                image: 'images/caricaturas/quien soy.jpeg'
+                image: 'images/caricaturas/servicios.jpeg'
             },
             {
                 path: "/gallery",
                 name: "Galería",
                 icon: 'mdi-animation-play',
-                image: 'images/caricaturas/quien soy.jpeg'
+                image: 'images/caricaturas/galeria.jpeg'
             },
             {
                 path: "/contact",
                 name: "Contacto",
                 icon: 'mdi-card-account-mail',
-                image: 'images/caricaturas/quien soy.jpeg'
+                image: 'images/caricaturas/contacto.jpeg'
             }
         ],
         search: "",

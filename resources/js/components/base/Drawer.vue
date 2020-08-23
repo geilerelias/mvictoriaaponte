@@ -22,16 +22,13 @@
 
                 <v-list-item-content>
                     <v-list-item-title>{{item.name}}</v-list-item-title>
-                    {{'@'+item.image}}
                 </v-list-item-content>
                 <v-list-item-avatar>
-                    <v-img :src="'@'+item.image"></v-img>
-                    {{'@'+item.image}}
+                    <img :src="item.image" alt="">
                 </v-list-item-avatar>
             </v-list-item>
 
         </v-list>
-
     </v-navigation-drawer>
 </template>
 

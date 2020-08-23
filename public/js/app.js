@@ -2047,7 +2047,7 @@ exports = module.exports = __webpack_require__(/*! ../css-loader/lib/css-base.js
 
 
 // module
-exports.push([module.i, "/* Make clicks pass-through */\n#nprogress {\n  pointer-events: none;\n}\n\n#nprogress .bar {\n  background: #29d;\n\n  position: fixed;\n  z-index: 1031;\n  top: 0;\n  left: 0;\n\n  width: 100%;\n  height: 2px;\n}\n\n/* Fancy blur effect */\n#nprogress .peg {\n  display: block;\n  position: absolute;\n  right: 0px;\n  width: 100px;\n  height: 100%;\n  box-shadow: 0 0 10px #29d, 0 0 5px #29d;\n  opacity: 1.0;\n  transform: rotate(3deg) translate(0px, -4px);\n}\n\n/* Remove these to get rid of the spinner */\n#nprogress .spinner {\n  display: block;\n  position: fixed;\n  z-index: 1031;\n  top: 15px;\n  right: 15px;\n}\n\n#nprogress .spinner-icon {\n  width: 18px;\n  height: 18px;\n  box-sizing: border-box;\n\n  border: solid 2px transparent;\n  border-top-color: #29d;\n  border-left-color: #29d;\n  border-radius: 50%;\n\n  -webkit-animation: nprogress-spinner 400ms linear infinite;\n          animation: nprogress-spinner 400ms linear infinite;\n}\n\n.nprogress-custom-parent {\n  overflow: hidden;\n  position: relative;\n}\n\n.nprogress-custom-parent #nprogress .spinner,\n.nprogress-custom-parent #nprogress .bar {\n  position: absolute;\n}\n\n@-webkit-keyframes nprogress-spinner {\n  0%   { -webkit-transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); }\n}\n@keyframes nprogress-spinner {\n  0%   { transform: rotate(0deg); }\n  100% { transform: rotate(360deg); }\n}\n\n", ""]);
+exports.push([module.i, "/* Make clicks pass-through */\n#nprogress {\n  pointer-events: none;\n}\n\n#nprogress .bar {\n  background: #29d;\n\n  position: fixed;\n  z-index: 1031;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100px;\n}\n\n/* Fancy blur effect */\n#nprogress .peg {\n  display: block;\n  position: absolute;\n  right: 0px;\n  width: 100px;\n  height: 100%;\n  box-shadow: 0 0 10px #29d, 0 0 5px #29d;\n  opacity: 1.0;\n  transform: rotate(3deg) translate(0px, -4px);\n}\n\n/* Remove these to get rid of the spinner */\n#nprogress .spinner {\n  display: block;\n  position: fixed;\n  z-index: 1031;\n  top: 15px;\n  right: 15px;\n    top: 50%;\n    left: 50%;\n}\n\n#nprogress .spinner-icon {\n  width: 100px;\n  height: 100px;\n  box-sizing: border-box;\n\n  border: solid 2px transparent;\n  border-top-color: #29d;\n  border-left-color: #29d;\n  border-radius: 50%;\n\n  -webkit-animation: nprogress-spinner 400ms linear infinite;\n          animation: nprogress-spinner 400ms linear infinite;\n}\n\n.nprogress-custom-parent {\n  overflow: hidden;\n  position: relative;\n}\n\n.nprogress-custom-parent #nprogress .spinner,\n.nprogress-custom-parent #nprogress .bar {\n  position: absolute;\n}\n\n@-webkit-keyframes nprogress-spinner {\n  0%   { -webkit-transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); }\n}\n\n@keyframes nprogress-spinner {\n  0%   { transform: rotate(0deg); }\n  100% { transform: rotate(360deg); }\n}\n\n", ""]);
 
 // exports
 
@@ -65740,7 +65740,7 @@ var withPrefix = function withPrefix(prefix, routes) {
 var routes = [{
   path: '/',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(10), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! ./components/Layout.vue */ "./resources/js/components/Layout.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! ./components/Layout.vue */ "./resources/js/components/Layout.vue"));
   },
   children: [{
     path: '/',
@@ -65752,7 +65752,7 @@ var routes = [{
     path: '/about-me',
     name: 'AboutMe',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, /*! ./components/pages/AboutMe.vue */ "./resources/js/components/pages/AboutMe.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(10), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, /*! ./components/pages/AboutMe.vue */ "./resources/js/components/pages/AboutMe.vue"));
     }
   }, {
     path: '/events',
@@ -65875,27 +65875,27 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
       path: "/events",
       name: "Eventos",
       icon: 'mdi-calendar-multiple-check',
-      image: 'images/caricaturas/quien soy.jpeg'
+      image: 'images/caricaturas/eventos.jpeg'
     }, {
       path: "/publications",
       name: "Publicaciones",
       icon: 'mdi-newspaper-variant',
-      image: 'images/caricaturas/quien soy.jpeg'
+      image: 'images/caricaturas/publicaciones.jpeg'
     }, {
       path: "/services",
       name: "Servicios",
       icon: 'mdi-face-agent',
-      image: 'images/caricaturas/quien soy.jpeg'
+      image: 'images/caricaturas/servicios.jpeg'
     }, {
       path: "/gallery",
       name: "Galería",
       icon: 'mdi-animation-play',
-      image: 'images/caricaturas/quien soy.jpeg'
+      image: 'images/caricaturas/galeria.jpeg'
     }, {
       path: "/contact",
       name: "Contacto",
       icon: 'mdi-card-account-mail',
-      image: 'images/caricaturas/quien soy.jpeg'
+      image: 'images/caricaturas/contacto.jpeg'
     }],
     search: "",
     page: "",
