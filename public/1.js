@@ -594,7 +594,7 @@ var render = function() {
         "v-img",
         {
           attrs: {
-            src: "images/imagen principal maria victoria.jpg",
+            src: "images/fotos/bcbc1336-d827-4047-9804-13db455d6467.JPG",
             height: "200px",
             dark: ""
           }
@@ -647,7 +647,7 @@ var render = function() {
               ),
               _vm._v(" "),
               _c("v-list-item-avatar", [
-                _c("img", { attrs: { src: item.image, alt: "" } })
+                _c("img", { attrs: { src: item.image, alt: item.name } })
               ])
             ],
             1

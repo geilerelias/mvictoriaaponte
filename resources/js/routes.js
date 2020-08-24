@@ -101,6 +101,7 @@ router.beforeEach((to, from, next) => {
 
     next();
 });
+//opcion 1
 router.beforeResolve((to, from, next) => {
     if (to.name) {
         NProgress.start()
@@ -112,5 +113,16 @@ router.beforeResolve((to, from, next) => {
 router.afterEach((to, from) => {
     NProgress.done()
 });
+
+//opcion 2
+router.beforeEach((to, from, next) => {
+    NProgress.start()
+    next()
+})
+
+router.afterEach(() => {
+    NProgress.done()
+})
+
 
 export default router;

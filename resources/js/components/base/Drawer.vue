@@ -2,7 +2,7 @@
     <v-navigation-drawer v-model="localDrawer" app temporary>
 
         <v-img
-            src="images/imagen principal maria victoria.jpg"
+            src="images/fotos/bcbc1336-d827-4047-9804-13db455d6467.JPG"
             height="200px"
             dark
         >
@@ -24,7 +24,7 @@
                     <v-list-item-title>{{item.name}}</v-list-item-title>
                 </v-list-item-content>
                 <v-list-item-avatar>
-                    <img :src="item.image" alt="">
+                    <img :src="item.image" :alt="item.name">
                 </v-list-item-avatar>
             </v-list-item>
 
