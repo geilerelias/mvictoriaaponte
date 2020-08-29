@@ -528,79 +528,15 @@
         </v-container>
 
 
-        <section>
-            <div class="base-section-heading text-center mb-12">
-                <v-avatar class="d-inline-flex mb-4 primary" size="56">
-                    <v-icon size="28" dark>
-                        mdi-vuetify
-                    </v-icon>
-                </v-avatar>
-                <h1 class="text-uppercase headline font-weight-bold mb-2 text-center">
-                    TRAVESÍA PERSONAL DESDE MI CONCIENCIA
-                    <br>
-                    <span class="text-lowercase caption">Autobiografía</span>
-                </h1>
-                <v-divider class="grey lighten-2 mx-auto mb-6" style="max-width: 28px;"></v-divider>
-                <p class="mb-10 grey--text text--darken-1 base-body body-1 mx-auto text-center ">
-                    Esta es una autobiografía de mis vivencias en búsqueda del empoderamiento
-                </p>
-                <v-btn @click="dialog=!dialog">
-                    ver documento
-                </v-btn>
-            </div>
-
-        </section>
-
-        <v-row justify="center">
-            <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
-                <v-card>
-                    <v-toolbar dark color="primary">
-                        <v-btn icon dark @click="dialog = false">
-                            <v-icon>mdi-close</v-icon>
-                        </v-btn>
-                        <v-toolbar-title>TRAVESÍA PERSONAL DESDE MI CONCIENCIA</v-toolbar-title>
-                        <v-spacer></v-spacer>
-                        <v-toolbar-items>
-                            <v-btn dark text @click="dialog = false">Cerrar</v-btn>
-                        </v-toolbar-items>
-                    </v-toolbar>
-                    <v-card-text>
-                        <section>
-                            <v-container>
-                                <v-card v-for="i in numPages"
-                                        :key="i" class="my-2">
-                                    <pdf
-                                        :src="src"
-                                        :page="i"
-                                        style="display: inline-block; width: 100%;"
-                                    ></pdf>
-                                </v-card>
-                            </v-container>
-                        </section>
-                    </v-card-text>
-                </v-card>
-            </v-dialog>
-        </v-row>
 
     </div>
 </template>
 
 <script>
-import pdf from 'vue-pdf'
-
-var loadingTask = pdf.createLoadingTask('/document/AUTOBIOGRAFÍA-TRAVESÍA%20PERSONAL%20DESDE%20MI%20CONCIENCIA.pdf');
 export default {
-    components: {
-        pdf
-    },
-    mounted() {
-        this.src.then(pdf => {
-            this.numPages = pdf.numPages;
-        });
-    },
+
     data: () => ({
-        src: loadingTask,
-        numPages: undefined,
+
         links: [
             {
                 text: 'Inicio',
@@ -706,6 +642,7 @@ export default {
             },
 
         ],
+
         formacionComplementaria: [
             {header: 'Formación Complementaria'},
             {
@@ -779,8 +716,8 @@ export default {
                                     Febrerode2000 - Noviembrede 2000<br >`
             },
         ],
-        experienciaProfesional: [
 
+        experienciaProfesional: [
             {
                 image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAzFBMVEWFtyL//////v////38//yDuCCFtyGAsxf9//WBtxaevl271IP///uGtibR3KmCuByCrh7n79P///T9//GBsBHL3qf5/+uDtyX/+f9/vBp+tBDI3KDz++Lu9tiBuh/e77q704uJtzitxnnW5a3C2pauzXmawF+OtkSArSefvGLe7L6Krzns99SqxWi71JKGtSve6sOSrDqTtU7P3KGnxXH0/Nbi7b6GrSufv1Xu+c26zY+xy4PE25DM4rKiwlWevGPV56Xp7dvY3b6syGRKa3ryAAAH50lEQVR4nO2cCVfjthaAY8mSrCAj1xb2xHECJKHJJGHgscQBZmk7//8/VXJCa2chnmnfw8q73zksB/A5+rjS1Wq1WgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANA5KqfnityghxHwQ8wP9kRSf7YcaiOxLwhhTgdKfWJqmXMp+yz8aQ855yi7bg4vu8Pz8fHg2uvp1PGGcyz557+L9CxhBlX8cTeex5zrI4Dgi6i26D7OAy/cu3j/BVE7S8mUafDybR9ioCSHMV9dzMXJE2Bte5ynvU2ppZdWNjErOZleLyMFCOFvoYEbzTzMmCfXfu7A/xY2pn8Fg7iEsMMbbhliYeM6fcybtrKyUy2B5Gwrh7bArDDWei8Knq4C/d2F/GEp9n/PJyHMQxjsq6LqaGksk3HD4H05M92gRfkJIenfr7XPbaI/i8Vfb0irtdNj1I/pQy1AIV2QXAbMq3QQyuPZC3f/ViqHwkIi6E2u6DGK6N3UVoZ0JdA8YRfe5tKXXkLqKvkT12uDfhiIcBtySQZzsJA/xh3o19BVh8k13Yoehz0k7FgJtx6lAf11/v/k75L34updpfnOkPH8yI7LNKJlBqVhZCs/bVNSSLsrajPjNb4sy+C3cDqAj8EobmxgWM4yqoR6W6yHcjDc/21B2pUei24auGz0uuhdXg8HJaNqLPOFs/Bv0GNV1ThVvdi3V8yV294SqMwldNRHCvaGeDwZ6dp8ypfJlt6dbqnA3DFHUTpudbUi/o7q6/y7F0DQ3PSzr3vkp+2seSJmaPffCrdaK0aLhHT/h/C5zKk3MZNVw8ZX1O7LUwvwbzsb30VZ1RmKg3q/4NaBSdbVeOTQ6g8YXOZekTyrR0f+M4CHD1TCiCM1vGh1Ewu/icjegW6DjZIOAEj2hKhtSSfUfq/aT41Z6Tk94AyYb7CjTES4X2LTB7LvakzyIniLPK1lJd5ViOmm04WReNjTz2+hZ7Zn5JYnUUcyqiReLuM0avDLFrz0PVw2Hk86eEBoPkr6IarbB6DMjzTSk0pfsix6YlNMMmudvFjchaoidykoOmk8aumxDWwm/6VUNnfiBvf2UyU2OWzGMlweeeS90suRfQ1FdeFr4b8dDPxN03UqXgcQFa2gtpf30BItyPLD3cmAQRqlkd1nFEKNh0FBDSXR3XyXL+cGpAmW3lYkURvOgmWNTPeoOphuGw6BG35a+VDKNQFne0BgSmfeqgniQksPLoHwZVw2ju2YaasdZXO7uHSdc6vHowcfYTa86DhLtZiZT6tNx2VDn1Dgn/PBivW6IlVzqiuuGGlK6jJyK4S+qlmF6KiqG+KS5ht6GYdqv0aL8TUPUUEM9VWiXk6IxZEmNAZif3m8ZNjPVEL5lqBJ5eOnMohhuGWYBqWGoM41jpSF2cDSTh8c0LcnmdhqaMD7wGmMaXulk7DLEXVXDkD2E1ho6egx9eEyjzoS1hij+yg7MnnQ3mvcqs2arDLEY7ltnW0NJJ32OHDt7C2OI4vaBLp/wvIeRtYaOwNO39yESkn7CGNvbDoWITtS+3XlziFayZbaxVWWVodm1yL6l/T3zCz1n5rMnsbEdbJkhNiume4KYJJxcDoWeLVlsaPYt3Kex2tkWk5bKhx4WwmbDosS495F1eOmcrG+OnvqUs9lUoNcTGvYa6giJ7GLCCCGvzbE4287p5PpR4M3dfAsNdS1EH8Lzh1z9dfrQ7CQytfwtRh92HR22zRDpAYuLcDy9yhUz26QaFUzaw0gHd9fBN+sMiziarX3RG760x5f5bNw+OZ17QveCO//aSsPCEiGBvSiOI8/zdIIROwNosSH2TMpZYRrn9qkv2w2LnImL6qpF3zq4aK1hbcDwHfk/NfyBs96WGu7u847GcOcLXdv/A4tH3q7u2nccF96I2aqLtNBQf/v7cybEqqvfnCMVR9eRHtogEXf/sHOdxuw9BcsvkRmtIWeHoShOQkfTj6prZwwLw45ansXFIdKdMXTj8+8T1TmzOIa0RYNxN4tWThVDcwzxrO2n1Gf27h/+Ekg9H2Qs+Doyp/NfHbGLsRfPT7/nzLyb76en5aRrn6H5DVPB+PrTl9t5ZujNF/cv7UAxXrytfgyGCeFc8lQFN5eXs9nsZn3lAJGJWbo5BsMWpYnZZjNSsrg1wjeXSLSK+yOOw3BFcSmGuRej+twxGb5Sfe6IDFs7BY/KcDdg2BzAcB9g2BzAcB/WGuLahswWQ6oNnRJIG/JahmdlQ+E6FxYZkuTHDbEthuhnY6gN0/9BcX8C3Q7D0ho3RvhW1Tlf2mIjUdpNxK7z0tAYSj7umVde1iV1kejWKqlMvntm3e2V0G038yB7i8jJUPz9Lr6LDr58uIKSca90iYTAWVPfyaf9tJ2Zqx/W7VCc13vLjkr12eyBr9MTCpvaWZhjasHI87wiHFig3qGTl6Xn5mJ18ZfZDF809OW8AhKMQrMNEeoCP34Lal5TkrTSu6ko9i90KBeNfXOtgAZXc88s4se347RT01DP+vms+1hczpN9zmXnv1vGfwbhanZ9cd99aU8Y6de7go0S6ksSjAej0efB2CyiNviKGrMIQxhTSu1ckdn7VCuhxQWuikmz7NhgwzXrNdIGX43wr3D8hgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBO/gR5x5KFbxu53QAAAABJRU5ErkJggg==',
                 data: `
@@ -1002,7 +939,6 @@ export default {
 
         ],
 
-        dialog: false,
         loading: true,
         loaded: false,
     }),

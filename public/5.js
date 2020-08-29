@@ -77,6 +77,78 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -88,6 +160,19 @@ __webpack_require__.r(__webpack_exports__);
         text: 'Servicios',
         disabled: true,
         href: '/services'
+      }],
+      cards: [{
+        title: 'Pre-fab homes',
+        src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg',
+        flex: 12
+      }, {
+        title: 'Favorite road trips',
+        src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg',
+        flex: 6
+      }, {
+        title: 'Best airlines',
+        src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg',
+        flex: 6
       }],
       services: [{
         image: 'images/servicios/capacitacion 2.jpg',
@@ -348,6 +433,129 @@ var render = function() {
               1
             )
           }),
+          1
+        )
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "section",
+      [
+        _c(
+          "v-card",
+          { staticClass: "mx-auto", attrs: { "max-width": "500" } },
+          [
+            _c(
+              "v-system-bar",
+              { attrs: { color: "indigo darken-2", dark: "" } },
+              [
+                _c("v-spacer"),
+                _vm._v(" "),
+                _c("v-icon", [_vm._v("mdi-window-minimize")]),
+                _vm._v(" "),
+                _c("v-icon", [_vm._v("mdi-window-maximize")]),
+                _vm._v(" "),
+                _c("v-icon", [_vm._v("mdi-close")])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "v-toolbar",
+              { attrs: { color: "indigo", dark: "" } },
+              [
+                _c("v-app-bar-nav-icon"),
+                _vm._v(" "),
+                _c("v-toolbar-title", [_vm._v("Discover")]),
+                _vm._v(" "),
+                _c("v-spacer"),
+                _vm._v(" "),
+                _c(
+                  "v-btn",
+                  { attrs: { icon: "" } },
+                  [_c("v-icon", [_vm._v("mdi-magnify")])],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "v-container",
+              { attrs: { fluid: "" } },
+              [
+                _c(
+                  "v-row",
+                  { attrs: { dense: "" } },
+                  _vm._l(_vm.cards, function(card) {
+                    return _c(
+                      "v-col",
+                      { key: card.title, attrs: { cols: card.flex } },
+                      [
+                        _c(
+                          "v-card",
+                          [
+                            _c(
+                              "v-img",
+                              {
+                                staticClass: "white--text align-end",
+                                attrs: {
+                                  src: card.src,
+                                  gradient:
+                                    "to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)",
+                                  height: "200px"
+                                }
+                              },
+                              [
+                                _c("v-card-title", {
+                                  domProps: { textContent: _vm._s(card.title) }
+                                })
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "v-card-actions",
+                              [
+                                _c("v-spacer"),
+                                _vm._v(" "),
+                                _c(
+                                  "v-btn",
+                                  { attrs: { icon: "" } },
+                                  [_c("v-icon", [_vm._v("mdi-heart")])],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "v-btn",
+                                  { attrs: { icon: "" } },
+                                  [_c("v-icon", [_vm._v("mdi-bookmark")])],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "v-btn",
+                                  { attrs: { icon: "" } },
+                                  [_c("v-icon", [_vm._v("mdi-share-variant")])],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  }),
+                  1
+                )
+              ],
+              1
+            )
+          ],
           1
         )
       ],

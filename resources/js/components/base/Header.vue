@@ -14,7 +14,7 @@
                     :key="link.name"
                     :to="link.path"
                 >
-                    {{ link.name }}
+                  <span class="font-weight-bold" >{{ link.name }}</span>
                 </v-btn>
             </v-toolbar-items>
             <v-app-bar-nav-icon class="hidden-md-and-up" color="white" @click="drawer ? setDrawer(false) : setDrawer(true)"/>

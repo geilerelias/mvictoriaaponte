@@ -65752,7 +65752,7 @@ var routes = [{
     path: '/about-me',
     name: 'AboutMe',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, /*! ./components/pages/AboutMe.vue */ "./resources/js/components/pages/AboutMe.vue"));
+      return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./components/pages/AboutMe.vue */ "./resources/js/components/pages/AboutMe.vue"));
     }
   }, {
     path: '/events',
@@ -65764,7 +65764,7 @@ var routes = [{
     path: '/publications',
     name: 'Publications',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ./components/pages/Publications.vue */ "./resources/js/components/pages/Publications.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(9), __webpack_require__.e(11)]).then(__webpack_require__.bind(null, /*! ./components/pages/Publications.vue */ "./resources/js/components/pages/Publications.vue"));
     }
   }, {
     path: '/services',

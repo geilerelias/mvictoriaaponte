@@ -252,6 +252,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -986,7 +994,51 @@ var render = function() {
                 _c("a", { attrs: { href: "" } }, [
                   _c("strong", [_vm._v(" mvictoriaaponte.com")])
                 ])
-              ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  staticClass: "d-flex justify-end align-start mb-0 mt-0 ",
+                  staticStyle: { "font-size": "10px" }
+                },
+                [
+                  _c("span", { staticClass: "font-weight-bold" }, [
+                    _vm._v("Desarrollado por:   ")
+                  ]),
+                  _vm._v(" Geiler Elias Radillo Sarmiento "),
+                  _c("br")
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  staticClass: "d-flex justify-end align-start mb-0 mt-0  ",
+                  staticStyle: { "font-size": "10px" }
+                },
+                [
+                  _c("span", { staticClass: "font-weight-bold" }, [
+                    _vm._v("Email:   ")
+                  ]),
+                  _vm._v("geilerelias@gmail.com "),
+                  _c("br")
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  staticClass: "d-flex justify-end align-start mb-0 mt-0 ",
+                  staticStyle: { "font-size": "10px" }
+                },
+                [
+                  _c("span", { staticClass: "font-weight-bold" }, [
+                    _vm._v("Cel:   ")
+                  ]),
+                  _vm._v("310 694 7004\n            ")
+                ]
+              )
             ],
             1
           )
@@ -1047,9 +1099,9 @@ var render = function() {
                   attrs: { dark: "", text: "", to: link.path }
                 },
                 [
-                  _vm._v(
-                    "\n                " + _vm._s(link.name) + "\n            "
-                  )
+                  _c("span", { staticClass: "font-weight-bold" }, [
+                    _vm._v(_vm._s(link.name))
+                  ])
                 ]
               )
             }),

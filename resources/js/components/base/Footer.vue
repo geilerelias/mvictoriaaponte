@@ -51,7 +51,7 @@
                         <div v-for="(item, i) in servicios">
                             <v-btn small class="mx-auto text-uppercase subtitle-2 mb-1 text-left black--text"
                                    rounded
-                                   text :href="item.path">{{item.name}}
+                                   text :href="item.path">{{ item.name }}
                             </v-btn>
                         </div>
                     </v-col>
@@ -67,7 +67,7 @@
                         <div v-for="(item, i) in links">
                             <v-btn small class="mx-auto text-uppercase subtitle-2 mb-1 text-left black--text"
                                    rounded
-                                   text :to="item.path">{{item.name}}
+                                   text :to="item.path">{{ item.name }}
                             </v-btn>
                         </div>
                     </div>
@@ -123,7 +123,15 @@
                         <strong> mvictoriaaponte.com</strong>
                     </a>
                 </p>
-
+                <p class="d-flex justify-end align-start mb-0 mt-0 " style="font-size:10px ">
+                    <span class="font-weight-bold">Desarrollado por: &nbsp; </span> Geiler Elias Radillo Sarmiento <br>
+                </p>
+                <p class="d-flex justify-end align-start mb-0 mt-0  " style="font-size:10px ">
+                    <span class="font-weight-bold">Email: &nbsp; </span>geilerelias@gmail.com <br>
+                </p>
+                <p class="d-flex justify-end align-start mb-0 mt-0 " style="font-size:10px ">
+                    <span class="font-weight-bold">Cel: &nbsp; </span>310 694 7004
+                </p>
             </v-container>
         </v-footer>
 
@@ -131,72 +139,72 @@
 </template>
 
 <script>
-    export default {
-        data: () => ({
-            links: [
-                {
-                    path: "/",
-                    name: "Inicio"
-                },
-                {
-                    path: "/about-me",
-                    name: "¿Quíen soy?"
-                },
-                {
-                    path: "/events",
-                    name: "Eventos"
-                },
-                {
-                    path: "/publications",
-                    name: "Publicaciones"
-                },
-                {
-                    path: "/services",
-                    name: "Servicios"
-                },
-                {
-                    path: "/gallery",
-                    name: "Galería"
-                },
-                {
-                    path: "/contact",
-                    name: "Contacto"
-                }
-            ],
-            icons: [
-                {icon: "mdi-facebook", color: '#3b5998'},
-                {icon: "mdi-twitter", color: '#55acee'},
-                {icon: "mdi-google-plus", color: '#dd4b39'},
-                {icon: "mdi-linkedin", color: '#0082ca'},
-                {icon: "mdi-instagram", color: '#ec4a89'},
-            ],
-            contact: [
-                {
-                    icon: "mdi-map-marker-outline",
-                    name: "Dirección",
-                    content: `Cra 4-A # 54-52<br />Chapinero Alto, Bogotá, Colombia`
-                },
-                {
-                    icon: "mdi-cellphone",
-                    name: "Teléfonos",
-                    content: `+57 315 734 0385 `
-                },
-                {
-                    icon: "mdi-email",
-                    name: "Correos",
-                    content: `contacto@mvictoriaaponte.com <br/> contacto@soecolombia.com `
-                }
-            ],
-            servicios: [
-                {name: "Investigación", path: '/services#Investigación'},
-                {name: "Capacitación", path: '/services#Capacitación'},
-                {name: "Asesorías", path: '/services#Asesorías'},
-                {name: "Círculos de poder", path: '/services#Círculos de poder'},
-                {name: "Coaching", path: '/services#Coaching'},
-            ]
+export default {
+    data: () => ({
+        links: [
+            {
+                path: "/",
+                name: "Inicio"
+            },
+            {
+                path: "/about-me",
+                name: "¿Quíen soy?"
+            },
+            {
+                path: "/events",
+                name: "Eventos"
+            },
+            {
+                path: "/publications",
+                name: "Publicaciones"
+            },
+            {
+                path: "/services",
+                name: "Servicios"
+            },
+            {
+                path: "/gallery",
+                name: "Galería"
+            },
+            {
+                path: "/contact",
+                name: "Contacto"
+            }
+        ],
+        icons: [
+            {icon: "mdi-facebook", color: '#3b5998'},
+            {icon: "mdi-twitter", color: '#55acee'},
+            {icon: "mdi-google-plus", color: '#dd4b39'},
+            {icon: "mdi-linkedin", color: '#0082ca'},
+            {icon: "mdi-instagram", color: '#ec4a89'},
+        ],
+        contact: [
+            {
+                icon: "mdi-map-marker-outline",
+                name: "Dirección",
+                content: `Cra 4-A # 54-52<br />Chapinero Alto, Bogotá, Colombia`
+            },
+            {
+                icon: "mdi-cellphone",
+                name: "Teléfonos",
+                content: `+57 315 734 0385 `
+            },
+            {
+                icon: "mdi-email",
+                name: "Correos",
+                content: `contacto@mvictoriaaponte.com <br/> contacto@soecolombia.com `
+            }
+        ],
+        servicios: [
+            {name: "Investigación", path: '/services#Investigación'},
+            {name: "Capacitación", path: '/services#Capacitación'},
+            {name: "Asesorías", path: '/services#Asesorías'},
+            {name: "Círculos de poder", path: '/services#Círculos de poder'},
+            {name: "Coaching", path: '/services#Coaching'},
+        ]
 
-        })
-    }
+    })
+}
 </script>
 
 <style scoped>

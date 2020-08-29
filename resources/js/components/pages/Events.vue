@@ -138,6 +138,10 @@
                         'Humano Sustentable”'
                 },
             ],
+            talleres:[
+                {}
+            ],
+
             links: [
                 {
                     text: 'Inicio',

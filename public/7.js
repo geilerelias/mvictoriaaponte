@@ -125,6 +125,7 @@ __webpack_require__.r(__webpack_exports__);
         location: 'Veracruz- México. 2018',
         content: '“Transversalidad y\n' + 'multidisciplinariedad en la\n' + 'Complejidad de los Problemas\n' + 'de Salud para el Desarrollo\n' + 'Humano Sustentable”'
       }],
+      talleres: [{}],
       links: [{
         text: 'Inicio',
         disabled: false,

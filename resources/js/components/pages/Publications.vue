@@ -2,7 +2,7 @@
     <div>
         <section>
             <v-img
-                src="images/header/web_publicaciones.jpg"
+                :src="require('../../../images/header-publicaciones-revistas.jpg')"
                 gradient="to top, rgba(5, 11, 31, 0.8), rgba(5, 11, 31, 0.8)"
                 color="#45516b"
                 flat
@@ -23,9 +23,205 @@
             </v-img>
 
         </section>
+
+        <template>
+            <v-card
+                class="mx-auto"
+                max-width="500"
+            >
+                <v-toolbar
+                    flat
+                    color="transparent"
+                >
+                    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+                    <v-toolbar-title>Photo Info</v-toolbar-title>
+                    <v-spacer></v-spacer>
+                    <v-btn
+                        icon
+                        @click="$refs.search.focus()"
+                    >
+                        <v-icon>mdi-magnify</v-icon>
+                    </v-btn>
+                </v-toolbar>
+
+                <v-container class="py-0">
+                    <v-row
+                        align="center"
+                        justify="start"
+                    >
+                        <v-col
+                            v-for="(selection, i) in selections"
+                            :key="selection.text"
+                            class="shrink"
+                        >
+                            <v-chip
+                                :disabled="loading"
+                                close
+                                @click:close="selected.splice(i, 1)"
+                            >
+                                <v-icon
+                                    left
+                                    v-text="selection.icon"
+                                ></v-icon>
+                                {{ selection.text }}
+                            </v-chip>
+                        </v-col>
+
+                        <v-col v-if="!allSelected" cols="12">
+                            <v-text-field
+                                ref="search"
+                                v-model="search"
+                                full-width
+                                hide-details
+                                label="Search"
+                                single-line
+                            ></v-text-field>
+                        </v-col>
+                    </v-row>
+                </v-container>
+
+                <v-divider v-if="!allSelected"></v-divider>
+
+                <v-list>
+                    <template v-for="item in categories">
+                        <v-list-item
+                            v-if="!selected.includes(item)"
+                            :key="item.text"
+                            :disabled="loading"
+                            @click="selected.push(item)"
+                        >
+                            <v-list-item-avatar>
+                                <v-icon
+                                    :disabled="loading"
+                                    v-text="item.icon"
+                                ></v-icon>
+                            </v-list-item-avatar>
+                            <v-list-item-title v-text="item.text"></v-list-item-title>
+                        </v-list-item>
+                    </template>
+                </v-list>
+
+                <v-divider></v-divider>
+
+                <v-card-actions>
+                    <v-spacer></v-spacer>
+                    <v-btn
+                        :disabled="!selected.length"
+                        :loading="loading"
+                        color="purple"
+                        text
+                        @click="next"
+                    >Next
+                    </v-btn>
+                </v-card-actions>
+            </v-card>
+        </template>
+
         <section>
+            <div class="text-center my-12">
+                <v-avatar class="primary mb-4">
+                    <v-icon size="28" dark>
+                        mdi-calendar-multiple-check
+                    </v-icon>
+                </v-avatar>
+                <h1 class="text-uppercase headline font-weight-bold mb-2 text-center">
+                    Publicaciones científicas
+                </h1>
+                <v-divider class="primary mx-auto mb-6" style="max-width: 28px;"></v-divider>
+            </div>
             <v-container>
+                <v-card>
+                    <v-tabs
+                        background-color="white"
+                        color="deep-purple accent-4"
+                        right
+                    >
+                        <v-tab>
+                            Todos
+                        </v-tab>
+                        <v-tab>Publicados</v-tab>
+                        <v-tab>Otros</v-tab>
+
+                        <v-tab-item
+                            v-for="n in 3"
+                            :key="n"
+                        >
+                            <v-container fluid>
+                                <v-row>
+                                    <v-col
+                                        v-for="i in 6"
+                                        :key="i"
+                                        cols="12"
+                                        md="4"
+                                    >
+                                        <v-img
+                                            :src="`https://picsum.photos/500/300?image=${i * n * 5 + 10}`"
+                                            :lazy-src="`https://picsum.photos/10/6?image=${i * n * 5 + 10}`"
+                                            aspect-ratio="1"
+                                        ></v-img>
+                                    </v-col>
+                                </v-row>
+                            </v-container>
+                        </v-tab-item>
+                    </v-tabs>
+                </v-card>
                 <v-row class="mb-2">
+                    <v-col sm="6">
+                        <v-card>
+                            <v-img
+                                src="https://www.spanishged365.com/wp-content/uploads/2018/03/colash.jpg"
+                                class="white--text align-end"
+                                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+
+                            >
+                                <v-card-title>PUBLICACIONES CIENTÍFICAS</v-card-title>
+                            </v-img>
+
+                            <v-card-actions>
+                                <v-spacer></v-spacer>
+
+                                <v-btn icon>
+                                    <v-icon>mdi-heart</v-icon>
+                                </v-btn>
+
+                                <v-btn icon>
+                                    <v-icon>mdi-bookmark</v-icon>
+                                </v-btn>
+
+                                <v-btn icon>
+                                    <v-icon>mdi-share-variant</v-icon>
+                                </v-btn>
+                            </v-card-actions>
+                        </v-card>
+                    </v-col>
+                    <v-col sm="6">
+                        <v-card>
+                            <v-img
+                                src="https://live.mrf.io/statics/i/ps/img-aws.ehowcdn.com/600x375/photos.demandstudios.com/getty/article/184/23/86539497.jpg"
+                                class="white--text align-end"
+                                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                                height="300px"
+                            >
+                                <v-card-title>Articulos Escritos</v-card-title>
+                            </v-img>
+
+                            <v-card-actions>
+                                <v-spacer></v-spacer>
+
+                                <v-btn icon>
+                                    <v-icon>mdi-heart</v-icon>
+                                </v-btn>
+
+                                <v-btn icon>
+                                    <v-icon>mdi-bookmark</v-icon>
+                                </v-btn>
+
+                                <v-btn icon>
+                                    <v-icon>mdi-share-variant</v-icon>
+                                </v-btn>
+                            </v-card-actions>
+                        </v-card>
+                    </v-col>
                     <v-col sm="6">
                         <v-card height="300">
                             <v-row class="ma-0">
@@ -40,7 +236,8 @@
                                 </v-col>
 
                                 <v-col cols="4" class="ma-0 pa-0">
-                                   <v-img :aspect-ratio="5/10" height="300" src="https://biblioteca.ulpgc.es/files/repositorio_de_docum152/noticias/esto-es-lo-que-cuestan-las-revistas-cientificas-espana-se-ha-pulido-213-millones-desde-2012.jpg"></v-img>
+                                    <v-img :aspect-ratio="5/10" height="300"
+                                           src="https://biblioteca.ulpgc.es/files/repositorio_de_docum152/noticias/esto-es-lo-que-cuestan-las-revistas-cientificas-espana-se-ha-pulido-213-millones-desde-2012.jpg"></v-img>
                                 </v-col>
                             </v-row>
                         </v-card>
@@ -59,7 +256,8 @@
                                 </v-col>
 
                                 <v-col cols="4" class="ma-0 pa-0">
-                                    <v-img :aspect-ratio="5/10" height="300" src="https://www.tuexperto.com/wp-content/uploads/2019/06/5-formas-de-guardar-un-documento-word-como-un-documento-pdf.jpg"></v-img>
+                                    <v-img :aspect-ratio="5/10" height="300"
+                                           src="https://www.tuexperto.com/wp-content/uploads/2019/06/5-formas-de-guardar-un-documento-word-como-un-documento-pdf.jpg"></v-img>
                                 </v-col>
                             </v-row>
                         </v-card>
@@ -67,6 +265,7 @@
                 </v-row>
             </v-container>
         </section>
+
         <section>
             <div class="text-center my-12">
                 <v-avatar class="primary mb-4">
@@ -319,26 +518,187 @@
                 </div>
             </v-container>
         </section>
+        <section>
+            <div class="base-section-heading text-center mb-12">
+                <v-avatar class="d-inline-flex mb-4 primary" size="56">
+                    <v-icon size="28" dark>
+                        mdi-vuetify
+                    </v-icon>
+                </v-avatar>
+                <h1 class="text-uppercase headline font-weight-bold mb-2 text-center">
+                    TRAVESÍA PERSONAL DESDE MI CONCIENCIA
+                    <br>
+                    <span class="text-lowercase caption">Autobiografía</span>
+                </h1>
+                <v-divider class="grey lighten-2 mx-auto mb-6" style="max-width: 28px;"></v-divider>
+                <p class="mb-10 grey--text text--darken-1 base-body body-1 mx-auto text-center ">
+                    Esta es una autobiografía de mis vivencias en búsqueda del empoderamiento
+                </p>
+                <v-btn @click="dialog=!dialog">
+                    ver documento
+                </v-btn>
+            </div>
+
+        </section>
+
+        <v-row justify="center">
+            <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
+                <v-card>
+                    <v-toolbar dark color="primary">
+                        <v-btn icon dark @click="dialog = false">
+                            <v-icon>mdi-close</v-icon>
+                        </v-btn>
+                        <v-toolbar-title>TRAVESÍA PERSONAL DESDE MI CONCIENCIA</v-toolbar-title>
+                        <v-spacer></v-spacer>
+                        <v-toolbar-items>
+                            <v-btn dark text @click="dialog = false">Cerrar</v-btn>
+                        </v-toolbar-items>
+                    </v-toolbar>
+                    <v-card-text>
+                        <section>
+                            <v-container>
+                                <v-card v-for="i in numPages"
+                                        :key="i" class="my-2">
+                                    <pdf
+                                        :src="src"
+                                        :page="i"
+                                        style="display: inline-block; width: 100%;"
+                                    ></pdf>
+                                </v-card>
+                            </v-container>
+                        </section>
+                    </v-card-text>
+                </v-card>
+            </v-dialog>
+        </v-row>
+
     </div>
 </template>
 
 <script>
-    export default {
-        data: () => ({
-            links: [
-                {
-                    text: 'Inicio',
-                    disabled: false,
-                    href: '/',
-                },
-                {
-                    text: 'Publicaciones',
-                    disabled: true,
-                    href: '/publications',
-                },
-            ],
-        }),
-    };
+import pdf from 'vue-pdf'
+
+var loadingTask = pdf.createLoadingTask('/document/AUTOBIOGRAFÍA-TRAVESÍA%20PERSONAL%20DESDE%20MI%20CONCIENCIA.pdf');
+
+export default {
+    components: {
+        pdf
+    },
+    mounted() {
+        this.src.then(pdf => {
+            this.numPages = pdf.numPages;
+        });
+    },
+    data: () => ({
+        src: loadingTask,
+        numPages: undefined,
+        dialog: false,
+        links: [
+            {
+                text: 'Inicio',
+                disabled: false,
+                href: '/',
+            },
+            {
+                text: 'Publicaciones',
+                disabled: true,
+                href: '/publications',
+            },
+        ],
+        tabs: null,
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        items: [
+            {
+                text: 'Nature',
+                icon: 'mdi-nature',
+            },
+            {
+                text: 'Nightlife',
+                icon: 'mdi-glass-wine',
+            },
+            {
+                text: 'November',
+                icon: 'mdi-calendar-range',
+            },
+            {
+                text: 'Portland',
+                icon: 'mdi-map-marker',
+            },
+            {
+                text: 'Biking',
+                icon: 'mdi-bike',
+            },
+        ],
+        loading: false,
+        search: '',
+        selected: [],
+        publications: [
+
+            {header: "TEXTOS Y CAPÍTULOS DE LIBROS"},
+            {
+                title: "Memorias",
+                content: "Congreso Psicología- salud mental",
+                location: 'Argentina',
+                date: "2016",
+                image: 'images/publicaciones/memorias-congreso.png',
+            },
+            {
+                title: "Reflexiones",
+                content: "Humanidades- capítulo libro",
+                location: 'Bogotá',
+                date: "2018",
+                image: 'images/publicaciones/reflexiones.jpg'
+            },
+            {subheader: "Facultad de Humanidades"},
+            {header: "PUBLICACIONES- CAPÍTULO DE LIBRO - TÉXTICAS"}
+
+
+        ]
+    }),
+    computed: {
+        allSelected() {
+            return this.selected.length === this.items.length
+        },
+        categories() {
+            const search = this.search.toLowerCase()
+
+            if (!search) return this.items
+
+            return this.items.filter(item => {
+                const text = item.text.toLowerCase()
+
+                return text.indexOf(search) > -1
+            })
+        },
+        selections() {
+            const selections = []
+
+            for (const selection of this.selected) {
+                selections.push(selection)
+            }
+
+            return selections
+        },
+    },
+
+    watch: {
+        selected() {
+            this.search = ''
+        },
+    },
+
+    methods: {
+        next() {
+            this.loading = true
+
+            setTimeout(() => {
+                this.search = ''
+                this.selected = []
+                this.loading = false
+            }, 2000)
+        },
+    },
+};
 </script>
 
 <style lang="scss" scoped></style>
