@@ -1,0 +1,1 @@
+import{n as r}from"./_plugin-vue2_normalizer-2bbd088e.js";const _={};var l=function(){var n=this,e=n._self._c;return e("div",[n._v(" example ")])},a=[],s=r(_,l,a,!1,null,null,null,null);const c=s.exports;export{c as default};
