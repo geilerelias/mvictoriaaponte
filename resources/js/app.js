@@ -1,6 +1,7 @@
 import './bootstrap';
 //material icons
 import "@mdi/font/css/materialdesignicons.css";
+import '../css/app.css';
 
 import Vue from 'vue'
 import {createInertiaApp, Head, Link} from '@inertiajs/inertia-vue'
