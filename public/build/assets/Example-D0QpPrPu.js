@@ -1,1 +1,0 @@
-import{n as r}from"./_plugin-vue2_normalizer-p4i_2SC9.js";const _={};var a=function(){var e=this,n=e._self._c;return n("div",[e._v(" example ")])},s=[],t=r(_,a,s,!1,null,null);const l=t.exports;export{l as default};
